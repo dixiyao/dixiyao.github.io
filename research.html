@@ -93,20 +93,20 @@
         <div class="w3l-achievements py-5" id="services">
             <div class="container py-lg-5">
                 <h3 class="title-big text-center mb-sm-5 mb-4">Research Interests</h3>
-                <p> My research interests lie primarily in <b style="color:#0abab5" ;>distributed mobile ML computing</b> (high performance, high privacy preserving, low energy comsumption, low resource usage). More specificallly, my research interests lie
+                <p> My research interests lie primarily in <b style="color:#0abab5" ;>distributed mobile ML computing</b> (high performance, high privacy preserving, low energy consumption, low resource usage). More specifically, my research interests lie
                     primarily in developing <b style="color:#0abab5" ;>more efficient, privacy-preserving and scalable deep learning architecture
-              across multiple moblie, edge devices </b> including following topics: AutoML, Privacy Preserving ML; Federated learning, Distributed Deep Learning; Context-Aware Architecture.
-                </p>
-                <br/>
-                <p>
+                    across multiple mobile, edge devices </b> including following topics: AutoML, Privacy Preserving ML; Federated learning, Distributed Deep Learning; Context-Aware Architecture.
+                    </p>
+                    <br/>
+                    <p>
                     With the development of deep learning, new applications have emerged and I believe we need a new architecture for mobile devices to meet future applications and demand. I wish to build efficient and light weight mobile systems across
                     devices of large scale through network connection. These connected devices work together to complete real industry applications.
-                </p>
-                <br/>
-                <p>
+                    </p>
+                    <br/>
+                    <p>
                     During my experiences of doing research works. I prefer a method of combining theory and experiment. I would like to first derive particular algorithms after investigating related works of my interested problems. After confirming the algorithms, I would
                     like to use systemically method of doing experiments with various variables and then do minor modifications to my algorithms.
-                </p>
+                    </p>                   
                 <!--
             <br/>
             <p>
@@ -124,9 +124,9 @@
                 <h3 class="title-big text-center mb-sm-5 mb-4">Research Projects</h3>
                 <h2 class="title-big">Edge-Cloud Computing</h2>
                 <p><img src="assets/images/r4.PNG" width="600" style="float:left;" />
-                    <h2 class="title-small">Privacy-Preserving Split Learning via Patch Shuffling over Transformers</h2>
+                    <h2 class="title-small"><a href="assets/papers/Privacy-Preserving-Split-Learning-via-Patch-Shuffling-over-Transformers.pdf">Privacy-Preserving Split Learning via Patch Shuffling over Transformers</a></h2>
                     Published in <b> 22nd IEEE International Conference on Data Mining</b>
-                     <b><a href="https://github.com/dixiyao/PatchShuffling">Code</a> <a href="assets/papers/Privacy-Preserving-Split-Learning-via-Patch-Shuffling-over-Transformers.pdf">Paper</a> <!--<a href="assets/slides/PatchShuffle.pptx">PPt</a>--> <a href="assets/slides/PatchShuffle.key">Slides</a></b><br> 
+                     <b><a href="https://github.com/dixiyao/PatchShuffling">Code</a> <a href="assets/slides/PatchShuffle.key">Slides</a></b><br> 
                      
                      We focus on the privacy-preserving
                     problem in split learning n this work. In vanilla split learning, a neural network is split to different devices to be trained, risking leaking the private training data in the process. We novelly propose a patch shuffling scheme on
@@ -177,14 +177,15 @@
                 <p>
                     <h2 class="title-big">Distributed Learning</h2>
                     <h2 class="title-small">Distributed Deep Learning Benchmarking</h2>
-                    With widespread advances in machine learning, the scability of deep learning models is increasing and the development of distributed deep learning, it is a common perform distributed training to speed up the trainng process. To help better instruct the
+                    With widespread advances in machine learning, the scalability of deep learning models is increasing and the development of distributed deep learning, it is common to perform distributed training to speed up the training process. To help better instruct the
                     desgin of distributed data parallel (DDP) training system, in this project, we evaluated different DDP algorithms (All Reduce, Parameter Server) using various neural networks (CNN, transformers) with different frameworks (torch, Ray,
-                    Hoplite) under different environments. Besides, we also tested over other possible factors including settings of hyperparameters, sharing usage of CPU, communication backend. We constructed different GPU and CPU configurations over
-                    AWS and slurm cluster to evaluate the performance including latency, vairability and accuracy to instruct possible improvements when desgining new DDP system. we have several suggestions: 1 We should try to shorten the iterations and
+                    Hoplite) under different environments. Besides, we also tested over other possible factors including settings of hyperparameters, sharing usage of CPU, and communication backend. We constructed different GPU and CPU configurations over
+                    AWS and slurm cluster to evaluate the performance including latency, variability and accuracy to instruct possible improvements when designing new DDP system. we have several suggestions: 1 We should try to shorten the iterations and
                     use as few iterations as possible to let the training converge. Because training for too many iterations can possibly lead to the spiking of latency. 2 We should use good schedule algorithms to assign the tasks on the distributed servers.
                     Let as many resources as possible of the same tasks be placed on the same machine or close to each other. And place different tasks separately. 3 We should have a good fencing design of the data center to minimize the effects of CPU
                     usage. 4 We should design an appropriate checkpointing period, to tradeoff between checkpointing overhead and possible loss caused by the fault happened during training.
                     <br>
+
                 </p>
                 <br>
                 <br>
@@ -195,9 +196,9 @@
                         <p><img src="assets/images/tooth.PNG" width="250" style="float:right;" />
                             <h2 class="title-small"><a href="https://github.com/dixiyao/pullteeth">Navigating Tooth Extraction via UR5</a></h2>
                             Combining digital real-time navigation, robotic arm motion and grinding, a minimally invasive tooth extraction system with digital navigation is established. Combining the dynamic navigator, UR5 robotic arm and dental power unit, through the ICP point
-                            cloud registration method, we can automatically achieve registration on UR5 robotic arm. We perform registration on various dental models, and introduce the dynamic navigator to guide the robotic arm to extract teeth. It is
+                            cloud registration method, we can automatically achieve registration on UR5 robotic arm. We performed registration on various dental models, and introduced the dynamic navigator to guide the robotic arm to extract teeth. It is
                             able to simulate surgical operations on the model.<br>
-                        </p>
+                            </p>                           
                         <br>
                         <br>
                         <br>
