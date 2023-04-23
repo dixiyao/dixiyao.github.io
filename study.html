@@ -54,7 +54,7 @@
                   <a class="nav-link" href="research.html">Research</a>
               </li>
               <li class="nav-item @@about__active">
-                <a class="nav-link" href="study.html">Study</a>
+                <a class="nav-link" href="study.html">Misc</a>
             </li>
             </ul>
         </div>
@@ -98,20 +98,19 @@
 <section class="w3l-services">
   <div class="w3l-achievements py-5" id="services">
       <div class="container py-lg-5">
-          <h3 class="title-big text-center mb-sm-5 mb-4">Selected Course Projects</h3>
+          <h3 class="title-big text-center mb-sm-5 mb-4">Some interesting projects</h3>
           <!--<p>I recieved bachelor degree from <a href="https://www.seiee.sjtu.edu.cn/">School of Electronic Information and Electrical Engineering</a>, Shanghai Jiaotong Unveristy, majoring in <a href=https://www.cs.sjtu.edu.cn/">Computer Science</a>,
             Artifical Intelligence direction. My bachelor thesis is <b style="color:#0abab5";> Research on Privacy Preserving Methods via Transformer</b>-->
           </p>
           <br>
           <p>
-            You can refer to my github and see some open questions and projects I did in my courses. <a href="https://github.com/dixiyao">Github</a>
+            You can refer to my <a href="https://github.com/dixiyao">Github</a> and see some open questions and projects. 
+            You can view these as my blog with open source code to discuss some interesting questions related to my research.
           </p>
           <br>
           <p>
-            <h2 class="title-big">Machine Learning and Artificial Intelligence</h2>
-            <h2 class="title-small">Machine Learning Projects</h2>
-            <b>Projection and Transformation: How to Construct a
-            Good Model<a href="https://github.com/dixiyao/CS385"> Source Code</a></b><br>
+            <h2 class="title-big">Machine Learning</h2>
+            <b>How to Construct a Good Model<a href="https://github.com/dixiyao/CS385"> Source Code</a></b><br>
             Dixi Yao*<br>
             In this project, I implement different machine learning models
             including basic linear models, non-linear models and neural
@@ -124,7 +123,7 @@
             machine learning, I generate some my own understanding and
             conclusions.
           </p>
-          <b>Communication between Machine and Human<a href="https://github.com/dixiyao/CS385"> Source Code</a></b><br>
+          <b>Human understanding of machine's representation<a href="https://github.com/dixiyao/CS385"> Source Code</a></b><br>
             Dixi Yao*, Zhanda Zhu*, Hongjie Fang*, Haoran Zhao*<br>
             In this project, We find that a networks acts with such process: first
             transforming the human knowledge into machine knowledge
@@ -140,7 +139,7 @@
           <br>
           <br>
           <p><img src="assets/images/p3.png" width="400" style="float:left;" />
-            <h2 class="title-small">FlyExpress Pytorch</h2>
+            <h2 class="title-small">Recognize FlyExpress in Pytorch</h2>
             Dixi Yao*, Jiuzhang Wang*<br>
             Fast regulated network over variable sets of features
             with loss annealing<a href="https://github.com/dixiyao/Flyexpress-pytorch"> Source Code</a></b><br>
@@ -154,9 +153,48 @@
             optimization methods including applying different loss functions
             and multiple tempering methods. We then evaluate our method
             on the open dataset FlyExpress, the experiments show our
-            model can reach 95.9%AUC, 64.77% macro F1 score and
+            model can reach 95.9% AUC, 64.77% macro F1 score and
             65.93% micro F1 score.
           </p>
+          <br>
+          <br>
+          <br>
+          <br>
+          <br>
+          <h2 class="title-big">Systems</h2>
+          <p><img src="assets/images/cluster.png" width="400" style="float:right;" />
+            <h2 class="title-small"><b><a href="assets/papers/1776.pdf">Towards Hybrid Fuzzing with Multi-level Coverage Tree and Reinforcement Learning in Greybox Fuzzing</a></b></h2>
+            Dixi Yao*, Kai Shen*, Xiaochong Wei*<br>
+            Coverage-guided greybox fuzzing is considered the state-of-the-art testing technique in vulnerability detection. As
+            for the promising vulnerability detection technique, we address that there are still two challenges to be resolved for
+            better performance. On the one hand, code coverage metrics
+            should be more informative to distinguish between various
+            program executions. On the other hand, seed scoring algorithms should be well-designed for a better balance between
+            seed exploration and seed exploitation.
+            In this paper, we propose a two-fold hybrid solution to
+            tackle these unresolved challenges. We leverage a multi-level
+            coverage tree to take advantage of various coverage metrics
+            with efficiency. Meanwhile, state-of-the-art reinforcement
+            learning algorithms are being leveraged for intelligently scoring the seeds. Evaluations of our work are conducted on a
+            lightweight JSON parser benchmark, which is implemented
+            for experiments under low computation budgets. More importantly, it reveals the superiority of our approach on the
+            basis of unique crashes, unique hangs, and total covered
+            paths
+          </p>
+          <br>
+          <p>
+            <h2 class="title-small"><a href="assets/papers/Optimization-over-Client-Selection-in-Efficient-Federated-Learning.pdf">Optimization over Client Selection in Efficient Federated Learning</a></h2>
+            Dixi Yao*, Kai Wang*<br>
+            <p><img src="assets/images/p6.png" width="200" style="float:left;" />
+            <b><a href="https://github.com/dixiyao/ece1505-course-project"> Source Code</a></b>
+            Federated learning emerges as a branch of machine learning for solving problems by multiple clients in a decentralized fashion, 
+            where various clients learn the local models on the local datasets, and the master server aggregates the updates from selected clients for global updates. 
+            Therefore, efficiently selecting clients for participating in global aggregation is very crucial when considering the trade-off between performance and communication efficiency in federated learning. 
+            In this project, we formulate the client selection problem as solving a convex optimization problem to obtain the optimal selection solution. 
+            Experimental results on the benchmark dataset show that our problem convex optimization based client selection method achieves the same performance to FedAvg baseline model while taking significantly reduced time, 
+            improving the communication efficiency in federated learning.   
+          </p>
+          <br>
           <br>
           <br>
           <br>
@@ -211,7 +249,7 @@
           <br>
           <br>
           <br>
-          <h2 class="title-big">Computer Systems</h2>
+          <h2 class="title-big">Engineering projects</h2>
           <p><img src="assets/images/p5.png" width="600" style="float:left;" />
             <h2 class="title-small">Cloud-Solidwork-Application</h2>
             Dixi Yao*, Letian Peng*, Hongxu Li*<br>
@@ -224,38 +262,6 @@
             Imagine that it would be very useful to convert a physical machine with application software in the Student Innovation Center into a cloud service with big resource savings.
           </p>
           <br>
-          <p><img src="assets/images/cluster.png" width="400" style="float:right;" />
-            <h2 class="title-small"><b><a href="assets/papers/1776.pdf">Towards Hybrid Fuzzing with Multi-level Coverage Tree and Reinforcement Learning in Greybox Fuzzing</a></b></h2>
-            Dixi Yao*, Kai Shen*, Xiaochong Wei*<br>
-            Coverage-guided greybox fuzzing is considered the state-of-the-art testing technique in vulnerability detection. As
-            for the promising vulnerability detection technique, we address that there are still two challenges to be resolved for
-            better performance. On the one hand, code coverage metrics
-            should be more informative to distinguish between various
-            program executions. On the other hand, seed scoring algorithms should be well-designed for a better balance between
-            seed exploration and seed exploitation.
-            In this paper, we propose a two-fold hybrid solution to
-            tackle these unresolved challenges. We leverage a multi-level
-            coverage tree to take advantage of various coverage metrics
-            with efficiency. Meanwhile, state-of-the-art reinforcement
-            learning algorithms are being leveraged for intelligently scoring the seeds. Evaluations of our work are conducted on a
-            lightweight JSON parser benchmark, which is implemented
-            for experiments under low computation budgets. More importantly, it reveals the superiority of our approach on the
-            basis of unique crashes, unique hangs, and total covered
-            paths
-          </p>
-          <br>
-          <p>
-            <h2 class="title-small"><a href="assets/papers/Optimization-over-Client-Selection-in-Efficient-Federated-Learning.pdf">Optimization over Client Selection in Efficient Federated Learning</a></h2>
-            Dixi Yao*, Kai Wang*<br>
-            <p><img src="assets/images/p6.png" width="200" style="float:left;" />
-            <b><a href="https://github.com/dixiyao/ece1505-course-project"> Source Code</a></b>
-            Federated learning emerges as a branch of machine learning for solving problems by multiple clients in a decentralized fashion, 
-            where various clients learn the local models on the local datasets, and the master server aggregates the updates from selected clients for global updates. 
-            Therefore, efficiently selecting clients for participating in global aggregation is very crucial when considering the trade-off between performance and communication efficiency in federated learning. 
-            In this project, we formulate the client selection problem as solving a convex optimization problem to obtain the optimal selection solution. 
-            Experimental results on the benchmark dataset show that our problem convex optimization based client selection method achieves the same performance to FedAvg baseline model while taking significantly reduced time, 
-            improving the communication efficiency in federated learning.   
-          </p>
           <br>
           <p>
             <h2 class="title-small">Simple Simulated Five Level Pipeline CPU</h2>
@@ -266,11 +272,9 @@
             I also added some special feature like better branch prediction and more supported 32-bits commandsresource savings.
           </p>
           <br>
-          <p>
-            <h2 class="title-big">Other Open Questions</h2>
+          <br>
+          <h2 class="title-big">Other Open Questions</h2>
             <a href="https://github.com/dixiyao/Course-Projects"> Link</a><br>
-            For other interesting open questions, I also provided my own perspectives.
-          </p>
       </div>
   </div>
 </section>
