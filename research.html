@@ -122,6 +122,39 @@
         <div class="w3l-achievements py-5" id="services">
             <div class="container py-lg-5">
                 <h3 class="title-big text-center mb-sm-5 mb-4">Research Projects</h3>
+                <h2 class="title-big">Federated Learning</h2>
+                <p><h2 class="title-small"><a href="assets/papers/1771.pdf">Survey on Personalized Federated Learning</a></h2>
+                    <img src="assets/images/PFL.png" width="300" style="float:right;" />
+
+                    Federated learning has emerged as an important paradigm in modern distributed machine learning. 
+                    However, different from conventional distributed learning, the clients in federated learning are 
+                    placed in a wild environment where clients do not have consensus over data, systems, privacy and others. 
+                    What's more, the heterogeneity problems in federated learning can greatly affect performance. 
+                    Personalized federated learning is a method to customize the models on each client and try to 
+                    find efficient and effective ways to let there clients share particular knowledge and personalize, so as to achieve the best performance over local data.
+                    <br>
+                    In this paper, we go through several representative personalized federated learning methods, particularly over three types: global model, 
+                    local customized model and AutoML based methods. We fairly compare these methods on board with consideration of effectiveness, 
+                    feasibility and ubiquitousness. We also do some experiments to show that some methods are not as effective as they were claimed in the original papers. 
+                    Then we delve deeper into the federated neural architecture search based methods and find out it is a promising direction to solve the heterogeneity problems despite of several drawbacks.  
+                    On the basis of that, we give out several directions for future work about how to improve current federated NAS based methods and make them promising. 
+                    We also give out discussion about future work on designing better personalized federated learning methods.
+                </p>
+                <br>
+                <br>
+                <br>
+                <p><img src="assets/images/r2.png" width="600" style="float:left;" />
+                    <h2 class="title-small"><a href="https://ieeexplore.ieee.org/document/9546522">Federated Model Search via Reinforcement Learning</a></h2>
+                    Published in <b> 41st IEEE International Conference on Distributed Computing Systems <a href="assets/slides/FedNas.pdf">Slides</a> <a href="https://github.com/TL-System/plato/tree/main/examples/fedrlnas">Code</a></b><br> Federated Learning (FL) framework enables training over distributed datasets while keeping the
+                    data local. However, it is difficult to customize a model fitting for all unknown local data. A pre-determined model is most likely to lead to slow convergence or low accuracy, especially when the distributed data is non-i.i.d.. To
+                    resolve the issue, we propose a model searching method in the federated learning scenario, and the method automatically searches a model structure fitting for the unseen local data.We novelly design a reinforcement learningbased framework
+                    that samples and distributes sub-models to the participants and updates its model selection policy by maximizing the reward. In practice, the model search algorithm takes a long time to converge, and hence we adaptively assign sub-models
+                    to participants according to the transmission condition. We further propose delay-compensated synchronization to mitigate loss over late updates to facilitate convergence. Extensive experiments show that our federated model search
+                    algorithm produces highly accurate models efficiently, particularly on non-i.i.d. data.
+                </p>
+                <br>
+                <br>
+                <br>
                 <h2 class="title-big">Edge-Cloud Computing</h2>
                 <p><img src="assets/images/r4.PNG" width="600" style="float:left;" />
                     <h2 class="title-small"><a href="https://ieeexplore.ieee.org/abstract/document/10027647">Privacy-Preserving Split Learning via Patch Shuffling over Transformers</a></h2>
@@ -150,18 +183,6 @@
                 <br>
                 <br>
                 <br>
-                <p><img src="assets/images/r2.png" width="600" style="float:left;" />
-                    <h2 class="title-small"><a href="https://ieeexplore.ieee.org/document/9546522">Federated Model Search via Reinforcement Learning</a></h2>
-                    Published in <b> 41st IEEE International Conference on Distributed Computing Systems <a href="assets/slides/FedNas.pdf">Slides</a> <a href="https://github.com/TL-System/plato/tree/main/examples/fedrlnas">Code</a></b><br> Federated Learning (FL) framework enables training over distributed datasets while keeping the
-                    data local. However, it is difficult to customize a model fitting for all unknown local data. A pre-determined model is most likely to lead to slow convergence or low accuracy, especially when the distributed data is non-i.i.d.. To
-                    resolve the issue, we propose a model searching method in the federated learning scenario, and the method automatically searches a model structure fitting for the unseen local data.We novelly design a reinforcement learningbased framework
-                    that samples and distributes sub-models to the participants and updates its model selection policy by maximizing the reward. In practice, the model search algorithm takes a long time to converge, and hence we adaptively assign sub-models
-                    to participants according to the transmission condition. We further propose delay-compensated synchronization to mitigate loss over late updates to facilitate convergence. Extensive experiments show that our federated model search
-                    algorithm produces highly accurate models efficiently, particularly on non-i.i.d. data.
-                </p>
-                <br>
-                <br>
-                <br>
                 <p><img src="assets/images/r1.png" width="600" style="float:left;" />
                     <h2 class="title-small"><a href="https://ieeexplore.ieee.org/abstract/document/9355722">Context-Aware Deep Model Compression for Edge Cloud Computing </a></h2>
                     Published in <b> 40th IEEE International Conference on Distributed Computing Systems </b><br> While deep neural networks (DNNs) have led to a paradigm shift, its exorbitant computational requirement has always been a roadblock in its
@@ -175,7 +196,7 @@
                 <br>
                 <br>
                 <p>
-                    <h2 class="title-big">Distributed Learning</h2>
+                    <h2 class="title-big">Distributed Machine Learning Systems</h2>
                     <h2 class="title-small">Distributed Deep Learning Benchmarking</h2>
                     With widespread advances in machine learning, the scalability of deep learning models is increasing and the development of distributed deep learning, it is common to perform distributed training to speed up the training process. To help better instruct the
                     desgin of distributed data parallel (DDP) training system, in this project, we evaluated different DDP algorithms (All Reduce, Parameter Server) using various neural networks (CNN, transformers) with different frameworks (torch, Ray,
@@ -191,7 +212,6 @@
                 <br>
                 <br>
                 <p>
-                    <h2 class="title-big">Computer Information Systems</h2>
                     <p><img src="assets/images/jaw.PNG" width="200" style="float:left;" />
                         <p><img src="assets/images/tooth.PNG" width="250" style="float:right;" />
                             <h2 class="title-small"><a href="https://github.com/dixiyao/pullteeth">Navigating Tooth Extraction via UR5</a></h2>
