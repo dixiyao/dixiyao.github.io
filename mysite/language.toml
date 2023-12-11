@@ -1,0 +1,13 @@
+[en]
+title = "Dixi Yao's Personal Website"
+weight = 1
+LanguageName = "EN"
+contentDir = "content/about"
+
+[ar]
+title = "姚迪熙"
+description = "姚迪熙的个人网页"
+contentDir = "content/chinese" 
+weight = 2
+LanguageDirection = "rtl" 
+LanguageName = "CN"

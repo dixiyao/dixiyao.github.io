@@ -1,0 +1,51 @@
+baseurl = "/"
+languageCode = "en-us"
+theme = "anatole"
+paginate = 5
+summaryLength = 30
+
+[params]
+  # dir name of your blog content (default is `content/posts`)
+  contentTypeName = "posts"
+  # "light" or "dark"
+  defaultTheme = "light"
+  # if you set this to 0, only submenu trigger will be visible
+  showMenuItems = 3
+  # Enable to show reading time in minutes for posts
+  showReadingTime = false
+
+  title = "I'm Dixi Yao"
+  author = "Dixi Yao"
+  description = "University of Toronto"
+  profilePicture = "assets/images/index.jpeg"
+
+  contentratio = 0.8
+
+  copyright = "2023-{{ YEAR }}"
+  readMore = true
+
+  gtagId = "G-353217296"
+
+[languages]
+  [languages.en]
+    title = "Dixi Yao"
+    subtitle = "Dixi Yao's Personal Website"
+    keywords = ""
+
+    [menu]
+      [[menu.main]]
+        identifier = "publications"
+        weight = 2
+        name = "Publications"
+        url = "/publications"
+      [[menu.main]]
+        identifier = "project"
+        weight = 3
+        name = "Projects"
+        url = "/projects"
+
+
+[[params.socialIcons]]
+icon = "fas fa-envelope"
+title = "e-mail"
+url = "mailto:dixi.yao@mail.utoronto.ca"
