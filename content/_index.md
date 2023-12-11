@@ -37,12 +37,12 @@ I am a Ph.D. student in [iQua](https://iqua.ece.toronto.edu/) at the Department 
 - HuaWei Scholarship. 2020
 - East Dong Businiess Scholarship. 2019
 ### Other Awards
-Honor for outstanding students in the School of Electronic Information and Electrical Engineering. 2018, 2019, 2020, 2021
-Honorable Mention in Interdisciplinary Contest in Modeling 2020.
-First prize in China Collegiate Mathematics contest. 2019<br>
-First prize in National Olympiad in Informatics in Provinces. 2017
-First prize in Minds and Hands: engineering better life by MIT. 2017
-Second prize Shanghai Adolescents Science and Technology Innovation Contest. 2017
+- Honor for outstanding students in the School of Electronic Information and Electrical Engineering. 2018, 2019, 2020, 2021
+- Honorable Mention in Interdisciplinary Contest in Modeling 2020.
+- First prize in China Collegiate Mathematics contest. 2019<br>
+- First prize in National Olympiad in Informatics in Provinces. 2017
+- First prize in Minds and Hands: engineering better life by MIT. 2017
+- Second prize Shanghai Adolescents Science and Technology Innovation Contest. 2017
 
 ## Professional Services
 - 2023 IEEE International Conference on Data Mining. 

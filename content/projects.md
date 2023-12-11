@@ -1,4 +1,4 @@
-I believe having a good code repo is a necessary part of a good paper. You can find the source code for my papers and other interesting projects through my [Github](https://github.com/dixiyao)
+I believe having a good code repo is a necessary part of a good paper. You can find the source code for my papers and other interesting projects through my [Github](https://github.com/dixiyao).
 [![Top Langs](https://github-readme-stats.vercel.app/api/top-langs/?username=dixiyao&layout=donut&theme=buefy)](https://github.com/anuraghazra/github-readme-stats)
 
 Apart from source code for my papers, I would like to share some of my interesting projects.
