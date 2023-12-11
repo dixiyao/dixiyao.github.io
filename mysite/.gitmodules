@@ -1,6 +1,0 @@
-[submodule "themes/whisper"]
-	path = themes/whisper
-	url = https://github.com/zerostaticthemes/hugo-whisper-theme/
-[submodule "themes/anatole"]
-	path = themes/anatole
-	url = https://github.com/lxndrblz/anatole
