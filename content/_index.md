@@ -12,7 +12,7 @@ I am a Ph.D. student in [iQua](https://iqua.ece.toronto.edu/) at the Department 
 - CSC263 Data Structures and Analysis
 - CSC148 Introduction to Computer Science
 #### Shanghai Jiao Tong University
-- MA500 Application of fuzzy Math
+- MA500 Application of Fuzzy Math
 - CS214 Algorithm and Complexity
 - EE447 Mobile Internet
 ### Lectures
@@ -20,7 +20,7 @@ I am a Ph.D. student in [iQua](https://iqua.ece.toronto.edu/) at the Department 
 - CS154 C++ Programming
 - CS149 Data Structure
 #### Academic Guidance
-- Student academic committee School of Electronic Information and Electrical Engineering, Shanghai Jiao Tong University. 2020-2022<br>
+- Academic committee in the School of Electronic Information and Electrical Engineering, Shanghai Jiao Tong University. 2020-2022<br>
 - Study assistance committee in the  School of Electronic Information and Electrical Engineering, Shanghai Jiao Tong University. 2018-2022<br>
 - Student committee under Shanghai Jiao Tong University Office of Undergraduate Education. 2020-2021.<br>
           
@@ -35,17 +35,19 @@ I am a Ph.D. student in [iQua](https://iqua.ece.toronto.edu/) at the Department 
 - Alumni Scholarship. 2021
 - HuaWei Scholarship. 2020
 - East Dong Businiess Scholarship. 2019
+- Shanghai Jiao Tong University ABC Scholarships (B). 2019, 2020, 2021
 ### Other Awards
 - Shanghai Jiao Tong University Outstanding Graduates. 2022
 - National Outstanding College Student Project of Innovation. 2022
 - Honor for outstanding students in the School of Electronic Information and Electrical Engineering. 2018, 2019, 2020, 2021
-- Honorable Mention in Interdisciplinary Contest in Modeling 2020.
-- First prize in China Collegiate Mathematics contest. 2019<br>
+- Honorable Mention in Interdisciplinary Contest in Modeling. 2020
+- First prize in China Collegiate Mathematics contest. 2019
 - First prize in National Olympiad in Informatics in Provinces. 2017
 - First prize in Minds and Hands: engineering better life by MIT. 2017
-- Second prize Shanghai Adolescents Science and Technology Innovation Contest. 2017
+- Second prize in Shanghai Adolescents Science and Technology Innovation Contest. 2017
 
 ## Professional Services
+### Paper reviewing
 - 2023 IEEE International Conference on Data Mining (ICDM).
 - 2023 ACM Multimedia Systems Conference (MMSys).
 - 2023 IEEE/ACM International Symposium on Quality of Service (IWQoS). 
