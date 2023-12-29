@@ -10,5 +10,5 @@ Apart from source code for my papers, I would like to share some of my interesti
 - [V-Guard Applied in Supply Chain](https://github.com/anlowee/vguardbft)
 - [Fly Express Recognition](https://github.com/dixiyao/Flyexpress-pytorch)
 - [Mentor Relate](https://github.com/dixiyao/Mentor-Relate)
-- [Solidwork Applicatoin on the Cloud](https://github.com/dixiyao/Cloud-Solidwork-Application)
+- [Solidwork Application on the Cloud](https://github.com/dixiyao/Cloud-Solidwork-Application)
 - [CPU with Five-level Pipeline](https://github.com/dixiyao/SJTU_CS145)

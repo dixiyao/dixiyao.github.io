@@ -17,7 +17,8 @@ summaryLength = 30
   title = "I'm Dixi Yao"
   author = "Dixi Yao"
   description = "University of Toronto"
-  profilePicture = "assets/images/index.jpeg"
+  # profilePicture = "assets/images/index.jpeg"
+  profilePicture = "assets/images/egypt.jpeg"
 
   contentratio = 0.8
 
