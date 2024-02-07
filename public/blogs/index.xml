@@ -1,12 +1,12 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>Dixi Yao</title>
-    <link>/</link>
-    <description>Recent content on Dixi Yao</description>
+    <title>Blogs on Dixi Yao</title>
+    <link>/blogs/</link>
+    <description>Recent content in Blogs on Dixi Yao</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en</language>
-    <lastBuildDate>Wed, 07 Feb 2024 00:00:00 +0000</lastBuildDate><atom:link href="/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Wed, 07 Feb 2024 00:00:00 +0000</lastBuildDate><atom:link href="/blogs/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Prepare your application for CS PhD.</title>
       <link>/blogs/csphdapp/</link>
@@ -37,29 +37,6 @@
       <guid>/blogs/writegoodcode/</guid>
       
         <description></description>
-      
-    </item>
-    
-    <item>
-      <title></title>
-      <link>/projects/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      
-      <guid>/projects/</guid>
-      
-        <description>I believe having a good code repo is a necessary part of a good paper. You can find the source code for my papers and other interesting projects through my Github.</description>
-      
-    </item>
-    
-    <item>
-      <title>Publications</title>
-      <link>/publications/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      
-      <guid>/publications/</guid>
-      
-        <description>You can learn more about my papers through Google Scholar.
-Privacy-preserving Machine Learning Dixi Yao, Liyao Xiang, Hengyuan Xu, Hangyu Ye, Yingqi Chen. &amp;ldquo;Privacy-Preserving Split Learning via Patch Shuffling over Transformers&amp;rdquo; in Proceedings of the 22nd IEEE International Conference on Data Mining (ICDM), Orlando, USA, November 28 - December 1, 2022.</description>
       
     </item>
     

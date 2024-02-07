@@ -44,6 +44,11 @@ summaryLength = 30
         weight = 3
         name = "Projects"
         url = "/projects"
+      [[menu.main]]
+        identifier = "blogs"
+        weight = 4
+        name = "Blogs"
+        url = "/blogs"
 
 
 [[params.socialIcons]]
