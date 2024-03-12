@@ -1,18 +1,18 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>Blogs on Dixi Yao</title>
-    <link>/blogs/</link>
-    <description>Recent content in Blogs on Dixi Yao</description>
+    <title>Notes on Dixi Yao</title>
+    <link>/notes/</link>
+    <description>Recent content in Notes on Dixi Yao</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en</language>
-    <lastBuildDate>Wed, 07 Feb 2024 00:00:00 +0000</lastBuildDate><atom:link href="/blogs/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Wed, 07 Feb 2024 00:00:00 +0000</lastBuildDate><atom:link href="/notes/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Prepare your application for CS PhD.</title>
-      <link>/blogs/csphdapp/</link>
+      <link>/notes/csphdapp/</link>
       <pubDate>Wed, 07 Feb 2024 00:00:00 +0000</pubDate>
       
-      <guid>/blogs/csphdapp/</guid>
+      <guid>/notes/csphdapp/</guid>
       
         <description>Introduction During my preparation for PhD applications, the most response I got are rejection. However, I also received several offers including MASc/PhD in ECE from University of Toronto, PhD in CS from McGill University, PhD in CS from UMASS, PhD in CS from UTexus Austin, EDIC from EPFL, and PhD in CS from NUS.</description>
       

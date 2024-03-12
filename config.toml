@@ -17,7 +17,6 @@ summaryLength = 30
   title = "I'm Dixi Yao"
   author = "Dixi Yao"
   description = "University of Toronto"
-  # profilePicture = "assets/images/index.jpeg"
   profilePicture = "assets/images/egypt.jpeg"
 
   contentratio = 0.8
@@ -28,7 +27,7 @@ summaryLength = 30
   gtagId = "G-353217296"
 
 [languages]
-  [languages.en]
+  [languages.en.params]
     title = "Dixi Yao"
     subtitle = "Dixi Yao's Personal Website"
     keywords = ""
@@ -45,10 +44,10 @@ summaryLength = 30
         name = "Projects"
         url = "/projects"
       [[menu.main]]
-        identifier = "blogs"
+        identifier = "notes"
         weight = 4
-        name = "Blogs"
-        url = "/blogs"
+        name = "Notes"
+        url = "/notes"
 
 
 [[params.socialIcons]]
