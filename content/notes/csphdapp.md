@@ -9,8 +9,6 @@ During my preparation for PhD applications, the most response I got are rejectio
 
 Before we get started, I would like to introduce an open-source project: [**opencsapp**](https://opencs.app/), which is managed by my friends. It includes tons of past experience applying to graduate programs in CS. In this post, I would like to lay more emphasis on research.
 
-To start with, I will introduce each component of a successful application in the form of timelines.
-![timeline](/assets/images/timeline.png)
 ### Before Application
 I would like to use the timeline of an undergraduate student who wants to apply for a direct PhD. as an example. For the preparation, it means the period before the last summer before your final year of study. The last summer is also included. As you can see from the colors in this graph, it will be relatively chill in the first two years and stressed in your third year. However, to make the application easier and smoother, I would like to provide my point of view: prepare early and distribute your workload evenly.
 
@@ -31,6 +29,27 @@ After thinking about all these, the next thing is to evaluate your opportunities
 
 #### Why do you need papers?
 
+### The Application
+To start with, I will introduce each component of a successful application in the form of timelines.
+![timeline](/assets/images/timeline.png)
+First, I would like to give you a checklist of each component for your application, accompanying in which stage you should prepare for each component. The list is sorted according to the importance. If they are notated with a *, it means such a component will not have much impact as you expected. If anything is not listed in this checklist, that means it is useless. Remember this list includes the things you need to prepare. Some important factors such as diversity are not listed. I believe any top university and research group will definitely bring equality to underrepresented group considering gender, race/ethnicity, physical or metal ability, LGBTQ2+ status, and many more into consideration.
+
+- Connection: First year to 12/15.
+- Reference Letters: Sept. to Dec.
+- Research Experience: Second year to writing your applications.
+- Publications: Second Summer to 12/15.
+- Choosing programs and professors: Sept. to Nov.
+- CV/Resume: Sept. to Dec.
+- Meeting and meeting slides: After 12/15.
+- Personal History Statement*: Sept. to Dec.
+- SOP/PS/Research Proposal: Sept. to Dec.
+- GPA: First year to third year
+- Research internship: First/Second/Third summer.
+- Connecting professors via email (they don't know you before)*: Sept. to Dec.
+
+Now, I would like to give a guide for each component in this checklist.
 
 ### After Application
 To choose from your offers, you should also do the same thing of evaluating your opportunities. If you find that after you enter the research group, you will work closely with senior PhD students, candidates and Postdocs rather than your professor, you should reject the offer. In my current and past research, I always have the chance to discuss ideas, progress, results, and writings with my advisors. Basically speaking, your advisor should be the one you collaborate with the most closely. This is a critical factor when you consider your offers.
+
+I would also suggest you communicate with the current PhD students in the research group to understand all necessary things you think you should ackowledge. In summary, the decision should not be based on what you have and what the prospective supervisor have. It should be based on what you are going to have and what you are going to bring to your prospective supervisor. I strongly recommend you to go over these two checklists before you make the final decision. [Checklist for students](https://www.sgs.utoronto.ca/resources-supports/supervision/supervision-guidelines/supervision-guidelines-for-students-section-10-appendix-2-checklist-for-students/). [Checklist for supervisors](https://www.sgs.utoronto.ca/resources-supports/supervision/supervision-guidelines/supervision-guidelines-for-faculty-section-10-appendix-2-checklist-for-supervisors/)
