@@ -1,7 +1,7 @@
 +++
 author = "Dixi Yao"
 title = "Prepare your application for CS PhD."
-date = "2024-03-12"
+date = "2024-04-09"
 +++
 
 ## Introduction
