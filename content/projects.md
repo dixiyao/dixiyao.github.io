@@ -4,6 +4,8 @@ I believe having a good code repo is a necessary part of a good paper. You can f
 Apart from source code for my papers, I would like to share some of my interesting projects I participated in.
 
 ## Open-source Software Framework
+[LLM for Academic Writing](https://github.com/dixiyao/LLM-Academic-Writing): This is a collection of helpful LLM tools I have found and developed. They leverage large generative models to improve academic writing.
+
 [Plato](https://github.com/TL-System/plato): A New Framework for Scalable Federated Learning Research.
 
 ## Extensions for Course Projects
