@@ -3,6 +3,15 @@ languageCode = "en-us"
 theme = "anatole"
 paginate = 5
 summaryLength = 30
+enableEmoji=true
+
+[markup]
+  defaultMarkdownHandler = 'goldmark'
+  [markup.goldmark]
+    [markup.goldmark.parser]
+      wrapStandAloneImageWithinParagraph = false
+      [markup.goldmark.parser.attribute]
+        block = true
 
 [params]
   # dir name of your blog content (default is `content/posts`)
@@ -17,7 +26,7 @@ summaryLength = 30
   title = "I'm Dixi Yao"
   author = "Dixi Yao"
   description = "University of Toronto"
-  profilePicture = "assets/images/ny.jpg"
+  profilePicture = "assests/images/ny.jpg"
 
   contentratio = 0.8
 
@@ -48,6 +57,11 @@ summaryLength = 30
         weight = 4
         name = "Notes"
         url = "/notes"
+      [[menu.main]]
+        identifier = "gallery"
+        weight = 5
+        name = "Gallery"
+        url = "/gallery"
 
 
 [[params.socialIcons]]

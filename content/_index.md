@@ -3,7 +3,7 @@ title = ""
 framed = true
 +++
 
-I am a Ph.D. student in [iQua](https://iqua.ece.toronto.edu/) at the Department of [Electrical and Computer Engineering](https://www.ece.utoronto.ca/) in the [University of Toronto](https://utoronto.ca/),advised by [Baochun Li](https://iqua.ece.toronto.edu/bli/">). I received my bachelor degree from Department of [CSE](https://www.cs.sjtu.edu.cn/en/) in Shanghai Jiao Tong University. During my undergraduate studies, I was a research intern at [John Hopcroft Center for Computer Science](https://jhc.sjtu.edu.cn/), advised by [Liyao Xiang](http://xiangliyao.cn/). Previously, I took a research fellowship at Max Planck Society, advised by [Yiting Xia](https://sites.google.com/view/yitingxia?pli=1) and [Binghang Yuan](https://binhangyuan.github.io/site/). My research interests are in data privacy, Trustworthy ML, learning in distributed systems and decentralized trust technologies. I'm interested in solving problems with real-world use cases, facilitating data privacy and system security in modern decentralized and AI oriented ecosystem.
+I am a Ph.D. student in [iQua](https://iqua.ece.toronto.edu/) at the Department of [Electrical and Computer Engineering](https://www.ece.utoronto.ca/) in the [University of Toronto](https://utoronto.ca/),advised by [Baochun Li](https://iqua.ece.toronto.edu/bli/). I received my bachelor degree from Department of [CSE](https://www.cs.sjtu.edu.cn/en/) in Shanghai Jiao Tong University. During my undergraduate studies, I was a research intern at [John Hopcroft Center for Computer Science](https://jhc.sjtu.edu.cn/), advised by [Liyao Xiang](http://xiangliyao.cn/). Previously, I took a research fellowship at Max Planck Society, advised by [Yiting Xia](https://sites.google.com/view/yitingxia?pli=1) and [Binghang Yuan](https://binhangyuan.github.io/site/). My research interests are in data privacy, Trustworthy ML, learning in distributed systems and decentralized trust technologies. I'm interested in solving problems with real-world use cases, facilitating data privacy and system security in modern decentralized and AI oriented ecosystem.
 
 ## Teaching Experience
 ### Teaching Assistant
@@ -59,5 +59,5 @@ I am a Ph.D. student in [iQua](https://iqua.ece.toronto.edu/) at the Department 
 ## Volunteer
 - Shanghai Marathon, 2020.
 - International volunteer in Sri Lanka, in 2019. Watch on [Bilibili](https://www.bilibili.com/video/BV1Wb411r7tm/).
-      
+    
 ## Some Useful Resources
