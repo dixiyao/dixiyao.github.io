@@ -1,0 +1,28 @@
+model:
+  _component_: torchtune.models.llama3.llama3_8b
+
+checkpointer:
+  _component_: torchtune.utils.FullModelTorchTuneCheckpointer
+  checkpoint_dir: Models/
+  checkpoint_files: [
+    meta_model_0-4w.pt,
+  ]
+  output_dir: Models
+  model_type: LLAMA3
+
+device: cuda
+dtype: bf16
+seed: 1234
+
+# EleutherAI specific eval args
+tasks: ["truthfulqa_mc2"]
+limit: null
+max_seq_length: 4096
+
+tokenizer:
+  _component_: torchtune.models.llama3.llama3_tokenizer
+  path: /data/dixi/original/tokenizer.model
+
+quantizer:
+    _component_: torchtune.utils.quantization.Int4WeightOnlyQuantizer
+    groupsize: 256

@@ -3,6 +3,10 @@ I believe having a good code repo is a necessary part of a good paper. You can f
 
 Apart from source code for my papers, I would like to share some of my interesting projects I participated in.
 
+## Tutorials
+### Large Language Model
+[Finetune a large laguage model with torchtune](https://github.com/dixiyao/dixiyao.github.io/wiki/Using-Torchtune-to-Fine%E2%80%90tune-an-LLM)
+
 ## Open-source Software Framework
 [LLM for Academic Writing](https://github.com/dixiyao/LLM-Academic-Writing): This is a collection of helpful LLM tools I have found and developed. They leverage large generative models to improve academic writing.
 

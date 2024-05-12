@@ -20,24 +20,24 @@
     
     <item>
       <title></title>
-      <link>/gallery/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      
-      <guid>/gallery/</guid>
-      
-        <description>&amp;#x2b50; With Professor Baochun Li, Professor Vincent Wong, and members of iQua on 2024 Engineering Institute of Canada (EIC) Gala.
-{width=&amp;ldquo;100&amp;rdquo; class=&amp;ldquo;center&amp;rdquo;}</description>
-      
-    </item>
-    
-    <item>
-      <title></title>
       <link>/projects/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
       <guid>/projects/</guid>
       
         <description>I believe having a good code repo is a necessary part of a good paper. You can find the source code for my papers and other interesting projects through my Github.</description>
+      
+    </item>
+    
+    <item>
+      <title>Photo Gallery</title>
+      <link>/gallery/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/gallery/</guid>
+      
+        <description>&amp;#x1f48f; With my beloved beautiful girl, Ziqi Li. &amp;#x2b50; With Professor Baochun Li, Professor Vincent Wong, and members of iQua on 2024 Engineering Institute of Canada (EIC) Gala.
+&amp;#x1f4f7; by Mitch Lenet</description>
       
     </item>
     
