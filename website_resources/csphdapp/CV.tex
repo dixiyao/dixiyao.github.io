@@ -1,0 +1,253 @@
+%-------------------------
+% Resume in Latex
+% Author : Dixi Yao
+% Based off of: https://github.com/sb2nov/resume
+% License : MIT
+%------------------------
+
+\documentclass[letterpaper,12pt]{article}
+
+\usepackage{latexsym}
+\usepackage[empty]{fullpage}
+\usepackage{titlesec}
+\usepackage{marvosym}
+\usepackage[usenames,dvipsnames]{color}
+\usepackage{verbatim}
+\usepackage{enumitem}
+\usepackage[hidelinks]{hyperref}
+\usepackage{fancyhdr}
+\usepackage[english]{babel}
+\usepackage{tabularx}
+\usepackage{hyperref}
+\usepackage{ragged2e}
+\usepackage{mathptmx}
+
+\input{glyphtounicode}
+\pagestyle{fancy}
+\fancyhf{} % clear all header and footer fields
+\fancyfoot{}
+\renewcommand{\headrulewidth}{0pt}
+\renewcommand{\footrulewidth}{0pt}
+
+\addtolength{\oddsidemargin}{-0.5in}
+\addtolength{\evensidemargin}{-0.5in}
+\addtolength{\textwidth}{1in}
+\addtolength{\topmargin}{-.5in}
+\addtolength{\textheight}{1.0in}
+
+\urlstyle{same}
+
+\raggedbottom
+\raggedright
+\setlength{\tabcolsep}{0in}
+
+% Sections formatting
+\titleformat{\section}{
+  \vspace{-4pt}\scshape\raggedright\large
+}{}{0em}{}[\color{black}\titlerule \vspace{-5pt}]
+
+% Ensure that generate pdf is machine readable/ATS parsable
+\pdfgentounicode=1
+
+%-------------------------
+% Custom commands
+\newcommand{\resumeItem}[1]{
+  \item\small{
+    {#1 \vspace{-2pt}}
+  }
+}
+
+\newcommand{\resumeSubheading}[4]{
+  \vspace{-1pt}\item
+    \begin{tabular*}{0.97\textwidth}[t]{l@{\extracolsep{\fill}}r}
+      \textbf{#1} & #2 \\
+      \textit{\small#3} & \textit{\small #4} \\
+    \end{tabular*}\vspace{-8pt}
+}
+
+\newcommand{\resumeSubSubheading}[2]{
+    \item
+    \begin{tabular*}{0.97\textwidth}{l@{\extracolsep{\fill}}r}
+      \textit{\small#1} & \textit{\small #2} \\
+    \end{tabular*}\vspace{-7pt}
+}
+
+\newcommand{\resumeProjectHeading}[2]{
+    \item
+    \begin{tabular*}{0.97\textwidth}{l@{\extracolsep{\fill}}r}
+      \small#1 & #2 \\
+    \end{tabular*}\vspace{-7pt}
+}
+
+\newcommand{\resumeSubItem}[1]{\resumeItem{#1}\vspace{-3pt}}
+
+\renewcommand\labelitemii{$\vcenter{\hbox{\tiny$\bullet$}}$}
+
+\newcommand{\resumeSubHeadingListStart}{\begin{itemize}[leftmargin=0.15in, label={}]}
+\newcommand{\resumeSubHeadingListEnd}{\end{itemize}}
+\newcommand{\resumeItemListStart}{\begin{itemize}}
+\newcommand{\resumeItemListEnd}{\end{itemize}\vspace{-5pt}}
+
+%-------------------------------------------
+%%%%%%  RESUME STARTS HERE  %%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%一般情况请不要修改前面部分
+
+%请定义自己喜欢的颜色在这里
+\definecolor{LightBlue}{rgb}{0.1,0.1,0.5}
+\definecolor{DarkBlue}{rgb}{0.5,0.1,0.7}
+\definecolor{StrongBlue}{rgb}{0.1,0.3,0.7}
+\definecolor{refBlue}{rgb}{0.1,0.1,0.8}
+
+\begin{document}
+
+%----------HEADING----------
+% \begin{tabular*}{\textwidth}{l@{\extracolsep{\fill}}r}
+%   \textbf{\href{http://sourabhbajaj.com/}{\Large Sourabh Bajaj}} & Email : \href{mailto:sourabh@sourabhbajaj.com}{sourabh@sourabhbajaj.com}\\
+%   \href{http://sourabhbajaj.com/}{http://www.sourabhbajaj.com} & Mobile : +1-123-456-7890 \\
+% \end{tabular*}
+
+\begin{center}
+    \textbf{\color{LightBlue} \Huge \scshape Name} \\ \vspace{1pt}
+    \small +86/+1 xxx  $|$ \href{mail address}{mail address} 
+    $|$
+    \href{github address or linkedin address}{link} $|$ \href{personal web page if you have}{link}
+\end{center}
+
+\vspace{-10pt}
+%-----------EDUCATION-----------
+% 请在这里填写你的教育经历，实习经历
+{\color{DarkBlue}\section {}}
+\resumeSubHeadingListStart
+	\resumeSubheading
+		{School}{Country}{Program, e.g: BEng, Deparment of Computer Science}{Peroid, eg: Sept. 2022 --}
+    	\begin{itemize}
+   		%在这里填写你的高光时刻，例如你的毕设项目，你的科研导师是谁，你是否是荣誉项目毕业，你的gpa是多少，排名是多少，注意是高光时刻，如果gpa，排名不行请不要写。
+   		\item GPA: xxx; Rank: xxx
+    	\item AI Honors Program. Bachelor Thesis: \textbf{Research on privacy preserving methods via Transformer} \vspace{-2pt}
+  		\item Advisor: \href{link}{Prof. xxx}. Theme: Intelligent Edge. \vspace{-2pt}
+   		\vspace{-7pt}
+  		\end{itemize}
+\resumeSubHeadingListEnd
+  \vspace{-7.5pt}
+\resumeSubHeadingListStart
+	\resumeSubheading
+    {Max Planck Institute for Informatics}{Saarbrücken,Germany}
+    {Research Intern Fellowship}{Jul. 2021 -- Dec. 2021}
+     \begin{itemize}
+  		\item Advisor: \href{https://sites.google.com/view/yitingxia/}{Prof. Yiting Xia}. Theme: \textbf{Distributed Deep Learning Benchmark}  \vspace{-7pt}
+  	 \end{itemize}
+\resumeSubHeadingListEnd
+
+{\color{DarkBlue}\section {Research interests}}
+% 如果是学术导向或者是phd项目，根据篇幅可适当说明自己的目标研究兴趣。
+\justifying My research interests lie primarily in \textbf{developing more efficient, scalable and privacy-preserving deep learning architecture across multiple devices.} 
+\resumeItemListStart
+\resumeItem{Machine learning (adaptive ML algorithm), AutoML (Neural Architecture Search)}
+\resumeItemListEnd
+
+\vspace{-5pt}
+{\color{DarkBlue}\section {Publications}}
+%没有不写
+\resumeSubHeadingListStart
+	\resumeSubheading
+     {Privacy-Preserving Split Learning via Patch Shuffling over Transformers}
+      {}
+     {Proc. IEEE International Conference
+on Data Mining (ICDM), Orlando, USA}{Nov 28 - Dec 1, 2022}
+     \resumeItemListStart
+      \resumeItem{\textbf{Dixi Yao}, Liyao Xiang, Hengyuan Xu, Hangyu Ye, Yingqi Chen}
+      \resumeItemListEnd
+\vspace{-5pt}
+\resumeSubHeadingListEnd
+
+{\color{DarkBlue}\section {Research experience/Project experience/ Professional experience/Course projects}}
+%请按照申请项目选择，一般学术导向项目为research, project，工作导向的写professional, project，对于大部分申请者来说必要的部分是education和这一部分，你一定有，所以一定要写，至于publication, awards, professional service没有可以不写, social activies和skills大部分情况对于申请无足轻重。
+\resumeSubHeadingListStart
+\resumeSubheading
+{Research experience}
+{Supervisor/Advisor}
+{first author/project leader/research assistant
+}{Duration}
+\resumeItemListStart
+%一般写三点，第一点motivation，第二点方法，第三点结果，可以补充第四点例如获得了什么比赛的什么奖，获得了什么专利，发表了说明论文
+\resumeItem{What is the problem and why is this problem important? What is your motivation to do this and please do not contain words that hard to understand for non-professionals. For example, machine learning/transformers are ok. BERT/LLaMA2 are too detailed, may avoid using them in this item. You can use them in method or results.}
+\resumeItem{What is your method and how different is your method with previous methods. Please remember to present the originality and novelty. Don't list several professional words without any explanation. Make the readers have the feeling that your method is the solution and you/they have strong motivation to adopt the proposed methods.}
+\resumeItem{Show the results. Do demonstrate the numbers to make it more convinving. But don't just list numbers. You need to explain it. What really matters is  insights behind it. But be objective, not subjective. The core idea is to show that your project is outstanding.}
+\resumeItemListEnd
+\vspace{-5pt}
+\resumeSubHeadingListEnd
+
+\resumeSubHeadingListStart
+\resumeSubheading
+{Project experience/Course projects}
+{Course instructor}%如果没有就不写了
+{code language/framework: e.g. Python (Pytorch, Ray); C++ (Hadoop); PHP
+}{Duration, link if possible}
+\resumeItemListStart
+%同样的一般写三点，第一点你们的目标要解决什么问题，第二点overall framework，第三点implementation，可以补充第四点例如获得了什么比赛的什么奖，获得了什么专利，发表了说明论文
+\resumeItem{What is the problem and why is this problem important? Do not repeat the task assigned by your instructor. But illustrate that this problem has real world/ industry application}
+\resumeItem{The overall framework should include all key points during your porjects. Remeber to show that the difficulties and high level ideas. Do not present any trivial parts. Or at least make the readers feel that you add on non-trivial things over the trivial parts.}
+\resumeItem{The implementation can include some discussion about results, though results is not important for projects. The readers may want to know the most difficult part in your implementation, to show that your have made certain contribution.}
+\resumeItemListEnd
+\vspace{-5pt}
+\resumeSubHeadingListEnd
+
+\resumeSubHeadingListStart
+\resumeSubheading
+{Professional experience}
+{Supervisor}%如果没有就不写了
+{Your position: project leader / manager/ group leader}{Duration}
+\resumeItemListStart
+%如果你是申请学术导向性的项目，就不要写professional experiencele，而是写前两个part，一般我们也写三点，第一点有关于你实习期间做的一个项目的大的思路，第二点写your contribution，第三点写结果
+\resumeItem{Give a high level idea of what you do during internship. For example, you may develop a certain big project to solve an industry problem. Such project may involve several difference stages.}
+\resumeItem{The contribution is about your contribution. For example, how you manage to organize the group and make the program move smoothly to the final product. Do not purely show you have good leadership, but your profesionals in managing technique centralized programs.}
+\resumeItem{The final results. For example, your product/ solution is finally adopted by the company or real world application such as Huawei xxx, the government xxx.}
+\resumeItemListEnd
+\vspace{-5pt}
+\resumeSubHeadingListEnd
+ 
+ \vspace{-5pt}
+ \section{\color{DarkBlue}Selective Scholarships and Awards}
+ %注意注明scholarship, award, honor的获得时间，如有必要说明是一等奖，总共多少人获奖等
+ \begin{itemize}[leftmargin=0.15in]
+ 	\small{\item{
+ 			\textbf{Huawei Scholarship:} {Awarded to the top \textbf{\textit{\color{StrongBlue}1\%}} in the School of Electronic Information and Electrical Engineering. 2020} }}\vspace{-5pt}
+ \end{itemize}
+
+% Professional  services,一般有帮助的有，paper review，参加过的学术演讲或者企业演讲，或者助教期间的讲座，助教经历
+\vspace{-5pt}
+{\color{DarkBlue}\section {Academic Presentation and Lectures}}  
+ \begin{itemize}[leftmargin=0.15in]
+ \small{\item Oral presentation \emph{Privacy-Preserving Split Learning via Patch Shuffling over Transformers} in ICDM2022.}\vspace{-5pt}
+ \end{itemize}
+
+\vspace{-5pt}
+{\color{DarkBlue}\section {Teaching Experiences}}  
+\begin{itemize}[leftmargin=0.15in]
+\small{\item Teaching Assistant: UofT ECE243 Computer Organization. 2023 Winter}\vspace{-5pt}
+\small{\item Course Lab Designer: SJTU EE447 Mobile Internet. 2021 Fall}\vspace{-5pt}
+\end{itemize}
+ 
+\vspace{-5pt}
+{\color{DarkBlue}\section {Paper Reviews}}  
+%这个section请极其小心谨慎的填写，如果是老师找你帮忙审稿请不要写，一般来说本科去review论文是很离谱的事情，请保证你特别的优秀，有相当的一作top conference的publication你才应该敢写paper review的经历。
+ \begin{itemize}[leftmargin=0.15in]
+ \small{\item 2023 IEEE International Conference on Data Mining}\vspace{-5pt}
+ \end{itemize}
+
+ \vspace{-5pt}
+\section{\color{DarkBlue}Selective Open Source Projects (Optional part)}
+%既然是oepn source project请提供项目链接，注明编程语言
+\begin{itemize}[leftmargin=0.15in]
+	\small{\item Optimization over Client Selection in Efficient Federated Learning $|$ Python $|$  \href{https://github.com/dixiyao/ece1505-course-project}{{\color{refBlue}code}}}\vspace{-5pt}
+\end{itemize}  
+    
+\vspace{-5pt}
+{\color{DarkBlue}\section {Social Activities and Skills}}  
+%这个部分基本没什么用，大部分时候是用来凑篇幅，让整个简历看上去更好看，实在没东西写的时候写的，不要写自己的language skill，你自己想下你的中文简历上你会强调你的中文很流利吗？不要写自己会office软件，画图软件等，如果写会的编程语言适当的跟一下框架例如python (pytorch, tensorflow), C++ (OpenMP), C( CUDA), Matlab (CVX tools)这样，而不是简单罗列编程语言。不要写抽象的能力，例如solid mathematical skills, mathematical modeling 等，如果你这方面skill很强，应该在前面的经历里表现出来。
+ \begin{itemize}[leftmargin=0.15in]
+\small{\item Member of SJTU SEIEE reserve of talents for academic guidance, 2020, 2021, 2022.}\vspace{-5pt}
+\small{\item Skills: Pytorch, Hadoop, Latex}
+\end{itemize}
+%-------------------------------------------
+\end{document}

@@ -53,10 +53,10 @@ enableEmoji=true
         name = "Projects"
         url = "/projects"
       [[menu.main]]
-        identifier = "notes"
+        identifier = "blog_posts"
         weight = 4
-        name = "Notes"
-        url = "/notes"
+        name = "Blog Posts"
+        url = "/blog_posts"
       [[menu.main]]
         identifier = "gallery"
         weight = 5
