@@ -59,5 +59,3 @@ I am a Ph.D. student in [iQua](https://iqua.ece.toronto.edu/) at the Department 
 ## Volunteer
 - Shanghai Marathon, 2020.
 - International volunteer in Sri Lanka, in 2019. Watch on [Bilibili](https://www.bilibili.com/video/BV1Wb411r7tm/).
-    
-## Some Useful Resources
