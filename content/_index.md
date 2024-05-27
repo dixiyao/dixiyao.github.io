@@ -36,7 +36,9 @@ I am a Ph.D. student in [iQua](https://iqua.ece.toronto.edu/) at the Department 
 - HuaWei Scholarship. 2020
 - East Dong Businiess Scholarship. 2019
 - Shanghai Jiao Tong University ABC Scholarships (B). 2019, 2020, 2021
-### Other Awards
+### Travel Grants
+- School of Graduate Studies (SGS) Conference Grant, University of Toronto. 2024
+### Awards
 - Shanghai Jiao Tong University Outstanding Graduates. 2022
 - National Outstanding College Student Project of Innovation. 2022
 - Honor for outstanding students in the School of Electronic Information and Electrical Engineering. 2018, 2019, 2020, 2021
