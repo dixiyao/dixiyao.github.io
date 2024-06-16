@@ -50,6 +50,7 @@ I am a Ph.D. student in [iQua](https://iqua.ece.toronto.edu/) at the Department 
 
 ## Professional Services
 ### Paper Review
+- 2024 the Thirty-eighth Annual Conference on Neural Information Processing Systems (NeurIPS).
 - 2024, 2023 IEEE/ACM International Symposium on Quality of Service (IWQoS). 
 - 2024 Network and Operating System Support for Digital Audio and Video (NOSSDAV).
 - 2024 IEEE/CVF Conference on Computer Vision and Pattern Recognition (CVPR).
@@ -57,6 +58,8 @@ I am a Ph.D. student in [iQua](https://iqua.ece.toronto.edu/) at the Department 
 - 2023 ACM Multimedia Systems Conference (MMSys).
 - 2022 IEEE the 8th International Conference on Computer and Communications (ICCC).
 - IEEE Transactions on Dependable and Secure Computing (TDSC).
+- IEEE Transactions on Network Science and Engineering (TNSE).
+- Transactions on Machine Learning Research (TMLR).
 
 ## Volunteer
 - Shanghai Marathon, 2020.
