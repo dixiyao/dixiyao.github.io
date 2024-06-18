@@ -11,10 +11,22 @@ Apart from source code for my papers, I would like to share some of my interesti
 [LLM for Academic Writing](https://github.com/dixiyao/LLM-Academic-Writing): This is a collection of helpful LLM tools I have found and developed. They leverage large generative models to improve academic writing.
 
 [Plato](https://github.com/TL-System/plato): A New Framework for Scalable Federated Learning Research.
+- [Federated Neural Architecture Search](https://github.com/TL-System/plato/tree/main/examples/model_search)
+- [System-heterogenous Federated Learning](https://github.com/TL-System/plato/tree/main/examples/model_search/sysheterofl)
+- [Split Learning](https://github.com/TL-System/plato/tree/main/examples/split_learning)
+- [Personalized Federated Learning](https://github.com/TL-System/plato/tree/main/examples/personalized_fl)
+
+[Edge-Cloud Computing Framework](https://github.com/dixiyao/Context-Aware-Compilation-of-DNN-Training-Pipelines-across-Edge-and-Cloud): An egde-cloud computing framework across the IoT devices and a public cloud server for deep learning models.
 
 ## Extensions for Course Projects
 - [V-Guard Applied in Supply Chain](https://github.com/anlowee/vguardbft)
 - [Fly Express Recognition](https://github.com/dixiyao/Flyexpress-pytorch)
+- [Extended Structure Entropy](https://github.com/dixiyao/Extended-Structure-Entropy)
 - [Mentor Relate](https://github.com/dixiyao/Mentor-Relate)
 - [Solidwork Application on the Cloud](https://github.com/dixiyao/Cloud-Solidwork-Application)
 - [CPU with Five-level Pipeline](https://github.com/dixiyao/SJTU_CS145)
+
+## Useful Tools
+- [SpecNet](https://github.com/dixiyao/SpecNet): Replication of a series of networks completely training and inferencing over spectral/frequency domain. 
+- [Non-IID Dataset Creater](https://github.com/dixiyao/Create-Non-IID-dataset-torch): A interface to create non-i.i.d. dataset quickly in federated learning.
+- [Hirschberge editing distance](https://github.com/dixiyao/Hirschberge-Editing-distance): A C++ implementation of Hirschberge editing distance

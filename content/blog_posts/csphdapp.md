@@ -31,6 +31,7 @@ date = "2024-05-14"
     - [Connecting Professors via Email](#connecting-professors-via-email)
   - [After Application](#after-application)
 - [Contact Me](#contact-me)
+  - [Previous students advised](#previous-students-advised)
 ## Before You Read
 This will be a long article which will take you approximately about 15 minutes to read. If you think it is too long to read. Please directly go to the [end](#contact-me).
 ## Let's Start
@@ -166,3 +167,10 @@ I would also suggest you communicate with the current PhD students in the resear
 
 ## Contact Me
 I also provide advising service for CS/EE PhD application. Feel free to contact me via email or social media such as [Zhihu](https://www.zhihu.com/people/13641911058). 
+
+### Previous students advised
+I am always happy to help students with their PhD applications and I also have advised several students who finally received offers to top universities.
+
+- [Yaxin Ma](https://scholar.google.com/citations?user=nbxl56oAAAAJ&hl=en). PhD in University of Floria.
+- Zeshan Hu. MASc. in York University.
+- Liangbing Zhao. MSc. in University College London.
