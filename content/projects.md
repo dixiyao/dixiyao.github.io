@@ -1,7 +1,7 @@
 I believe having a good code repo is a necessary part of a good paper. You can find the source code for my papers and other interesting projects through my [Github](https://github.com/dixiyao).
 [![Top Langs](https://github-readme-stats.vercel.app/api/top-langs/?username=dixiyao&layout=donut&theme=buefy)](https://github.com/anuraghazra/github-readme-stats)
 
-Apart from source code for my papers, I would like to share some of my interesting projects I participated in.
+Apart from source code for my papers, I would like to share some of my interesting projects, tutorials and useful resources.
 
 ## Tutorials
 ### Large Language Model
@@ -31,3 +31,8 @@ Apart from source code for my papers, I would like to share some of my interesti
 - [SpecNet](https://github.com/dixiyao/SpecNet): Replication of a series of networks completely training and inferencing over spectral/frequency domain. 
 - [Non-IID Dataset Creater](https://github.com/dixiyao/Create-Non-IID-dataset-torch): A interface to create non-i.i.d. dataset quickly in federated learning.
 - [Hirschberge editing distance](https://github.com/dixiyao/Hirschberge-Editing-distance): A C++ implementation of Hirschberge editing distance
+  
+## Useful Resources
+I would like to share some useful references during my research experience. Please kindly check them.
+
+- [An archive of useful resources](https://github.com/dixiyao/dixiyao.github.io/wiki/An-archive-of-useful-resources).
