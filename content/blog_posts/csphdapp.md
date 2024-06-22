@@ -172,5 +172,6 @@ I also provide advising service for CS/EE PhD application. Feel free to contact 
 I am always happy to help students with their PhD applications and I also have advised several students who finally received offers to top universities.
 
 - [Yaxin Ma](https://scholar.google.com/citations?user=nbxl56oAAAAJ&hl=en). PhD in University of Floria.
+- Tengjiao Fu, PhD in Cambridge University.
 - Zeshan Hu. MASc. in York University.
 - Liangbing Zhao. MSc. in University College London.
