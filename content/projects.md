@@ -5,8 +5,8 @@ Apart from source code for my papers, I would like to share some of my interesti
 
 ## Tutorials
 ### Large Language Model
-[Finetune a large laguage model with torchtune](https://github.com/dixiyao/dixiyao.github.io/wiki/Using-Torchtune-to-Fine%E2%80%90tune-an-LLM)     
-[Crate an Arxiv paper dataset](https://github.com/dixiyao/dixiyao.github.io/wiki/Create-an-Arxiv-Paper-Dataset)
+[Finetune a Large Laguage Model with Torchtune](https://github.com/dixiyao/dixiyao.github.io/wiki/Using-Torchtune-to-Fine%E2%80%90tune-an-LLM)     
+[CrEate an Arxiv Paper Dataset](https://github.com/dixiyao/dixiyao.github.io/wiki/Create-an-Arxiv-Paper-Dataset)
 
 ## Open-source Software Framework
 [LLM for Academic Writing](https://github.com/dixiyao/LLM-Academic-Writing): This is a collection of helpful LLM tools I have found and developed. They leverage large generative models to improve academic writing.
@@ -30,9 +30,9 @@ Apart from source code for my papers, I would like to share some of my interesti
 ## Useful Tools
 - [SpecNet](https://github.com/dixiyao/SpecNet): Replication of a series of networks completely training and inferencing over spectral/frequency domain. 
 - [Non-IID Dataset Creater](https://github.com/dixiyao/Create-Non-IID-dataset-torch): A interface to create non-i.i.d. dataset quickly in federated learning.
-- [Hirschberge editing distance](https://github.com/dixiyao/Hirschberge-Editing-distance): A C++ implementation of Hirschberge editing distance
+- [Hirschberge Editing Distance](https://github.com/dixiyao/Hirschberge-Editing-distance): A C++ implementation of Hirschberge editing distance
   
 ## Useful Resources
 I would like to share some useful references during my research experience. Please kindly check them.
 
-- [An archive of useful resources](https://github.com/dixiyao/dixiyao.github.io/wiki/An-archive-of-useful-resources).
+- [An Archive of Useful Resources](https://github.com/dixiyao/dixiyao.github.io/wiki/An-archive-of-useful-resources).
