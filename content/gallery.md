@@ -26,7 +26,7 @@ title = "Photo Gallery"
 
 ------------------------------------------
 
-:rice: With Research scientists and my friends, working on research of machine learning, in Vancouver. 
+:rice: With research scientists and my friends, working on research of machine learning, in Vancouver. 
 
 {{< figure src="/assests/images/gallery/huawei.jpg" height="300" class="left">}}
 

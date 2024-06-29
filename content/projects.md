@@ -20,12 +20,14 @@ Apart from source code for my papers, I would like to share some of my interesti
 [Edge-Cloud Computing Framework](https://github.com/dixiyao/Context-Aware-Compilation-of-DNN-Training-Pipelines-across-Edge-and-Cloud): An egde-cloud computing framework across the IoT devices and a public cloud server for deep learning models.
 
 ## Extensions for Course Projects
+- [Hybrid Fuzzing](/assests/papers/1776.pdf)
 - [V-Guard Applied in Supply Chain](https://github.com/anlowee/vguardbft)
 - [Fly Express Recognition](https://github.com/dixiyao/Flyexpress-pytorch)
 - [Extended Structure Entropy](https://github.com/dixiyao/Extended-Structure-Entropy)
 - [Mentor Relate](https://github.com/dixiyao/Mentor-Relate)
 - [Solidwork Application on the Cloud](https://github.com/dixiyao/Cloud-Solidwork-Application)
 - [CPU with Five-level Pipeline](https://github.com/dixiyao/SJTU_CS145)
+- [Medical Image Classification](https://github.com/dixiyao/ECE1513)
 
 ## Useful Tools
 - [SpecNet](https://github.com/dixiyao/SpecNet): Replication of a series of networks completely training and inferencing over spectral/frequency domain. 

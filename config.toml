@@ -36,6 +36,10 @@ enableEmoji=true
 
   gtagId = "G-353217296"
 
+[params.math]
+enable = true 
+use = "katex"
+
 [languages]
   [languages.en.params]
     title = "Dixi Yao"
@@ -69,3 +73,11 @@ enableEmoji=true
 icon = "fas fa-envelope"
 title = "e-mail"
 url = "mailto:dixi.yao@mail.utoronto.ca"
+[[params.socialIcons]]
+icon = "fa-brands fa-linkedin"
+title = "Linkedin"
+url = "https://www.linkedin.com/in/dixi-yao-328710261/"
+[[params.socialIcons]]
+icon ="fa-brands fa-github"
+title = "Github"
+url = "https://github.com/dixiyao"

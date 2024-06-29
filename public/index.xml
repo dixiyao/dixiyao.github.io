@@ -6,7 +6,18 @@
     <description>Recent content on </description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en</language>
-    <lastBuildDate>Tue, 14 May 2024 00:00:00 +0000</lastBuildDate><atom:link href="/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Sat, 22 Jun 2024 00:00:00 +0000</lastBuildDate><atom:link href="/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Prepare and Pass the Qualifying Exams.</title>
+      <link>/blog_posts/qe/</link>
+      <pubDate>Sat, 22 Jun 2024 00:00:00 +0000</pubDate>
+      
+      <guid>/blog_posts/qe/</guid>
+      
+        <description>Taking the qualifying exam is the first milestone for most of the PhD students. I&amp;rsquo;ve just passed my qualifying exam on June 12th, 2024 in the ECE department at University of Toronto.</description>
+      
+    </item>
+    
     <item>
       <title>Prepare your application for CS PhD.</title>
       <link>/blog_posts/csphdapp/</link>
@@ -15,17 +26,6 @@
       <guid>/blog_posts/csphdapp/</guid>
       
         <description>Catalog Catalog Before You Read Let&amp;rsquo;s Start Introduction Before Application What do I mean by managing research? Why do you need papers? The Application Connection Reference Letter Research Experience Publications Choosing programs and professors CV Meeting Slides Personal History Statement SOP/PS/RP Writing a PS Paragraph 1 Paragraph 2-4 Last two paragraphs GPA Research Internship TOFEL/GRE Connecting Professors via Email After Application Contact Me Previous students advised Before You Read This will be a long article which will take you approximately about 15 minutes to read.</description>
-      
-    </item>
-    
-    <item>
-      <title>Write High-quality code</title>
-      <link>/blog_posts/_codewriting/</link>
-      <pubDate>Tue, 14 May 2024 00:00:00 +0000</pubDate>
-      
-      <guid>/blog_posts/_codewriting/</guid>
-      
-        <description>Definition of Well-Organized Code Introduction of Tools IDEs LLMs </description>
       
     </item>
     

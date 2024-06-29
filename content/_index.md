@@ -3,12 +3,20 @@ title = ""
 framed = true
 +++
 
-I am a Ph.D. student in [iQua](https://iqua.ece.toronto.edu/) at the Department of [Electrical and Computer Engineering](https://www.ece.utoronto.ca/) in the [University of Toronto](https://utoronto.ca/),advised by [Baochun Li](https://iqua.ece.toronto.edu/bli/). I received my bachelor degree from Department of [CSE](https://www.cs.sjtu.edu.cn/en/) in Shanghai Jiao Tong University. During my undergraduate studies, I was a research intern at [John Hopcroft Center for Computer Science](https://jhc.sjtu.edu.cn/), advised by [Liyao Xiang](http://xiangliyao.cn/). Previously, I took a research fellowship at Max Planck Society, advised by [Yiting Xia](https://sites.google.com/view/yitingxia?pli=1) and [Binghang Yuan](https://binhangyuan.github.io/site/). My research interests are in data privacy, system security, Trustworthy ML, and decentralized trust technologies. I'm interested in solving problems with real-world use cases, facilitating full-stack solutions for data privacy and system security in modern decentralized and AI oriented ecosystem.
+I am a Ph.D. student in [iQua](https://iqua.ece.toronto.edu/) at the Department of [Electrical and Computer Engineering](https://www.ece.utoronto.ca/) in the [University of Toronto](https://utoronto.ca/),advised by [Baochun Li](https://iqua.ece.toronto.edu/bli/). I received my bachelor degree from Department of [CSE](https://www.cs.sjtu.edu.cn/en/) in Shanghai Jiao Tong University. During my undergraduate studies, I was a research intern at [John Hopcroft Center for Computer Science](https://jhc.sjtu.edu.cn/), advised by [Liyao Xiang](http://xiangliyao.cn/). Previously, I took a research fellowship at Max Planck Society, advised by [Yiting Xia](https://sites.google.com/view/yitingxia?pli=1) and [Binghang Yuan](https://binhangyuan.github.io/site/). 
 
+My research focuses on **privacy-preserving machine learning in distributed systems**. My research interest includes data privacy, system security, Trustworthy ML, and decentralized trust technologies. I'm interested in solving problems with real-world use cases, facilitating full-stack solutions for data privacy and system security in modern decentralized and AI oriented ecosystem. Here are some examples of my constributions:
+    
+- How can we realize privacy-preserving split learning and have as much as possible tradeoff for privacy, accuracy and efficiency? [CVPR](https://openreview.net/pdf?id=GuXxYkFBBy), [ICDM](/assests/papers/Privacy-Preserving-Split-Learning-via-Patch-Shuffling-over-Transformers.pdf).
+- How can we improve the performance of Federated Learning, without compromising the privacy requirements? [AAAI](/assests/papers/dyao-aaai24.pdf), [ICDCS](assests/papers/Federated_Model_Search_via_Reinforcement_Learning.pdf).
+- Open-sourced distributed systems for privacy-preserving machine learning. [IMWUT](https://dl.acm.org/doi/10.1145/3494981), [ICDCS](assests/papers/lwang-icdcs20.pdf).
+
+------------------------
 ## Teaching Experience
 ### Teaching Assistant
 #### University of Toronto
 - ECE243 Computer Organization
+- CSC258 Computer Organization
 - CSC263 Data Structures and Analysis
 - CSC148 Introduction to Computer Science
 #### Shanghai Jiao Tong University
@@ -19,10 +27,6 @@ I am a Ph.D. student in [iQua](https://iqua.ece.toronto.edu/) at the Department 
 #### Shanghai Jiao Tong University
 - CS154 C++ Programming
 - CS149 Data Structure
-#### Academic Guidance
-- Academic committee in the School of Electronic Information and Electrical Engineering, Shanghai Jiao Tong University. 2020-2022<br>
-- Study assistance committee in the  School of Electronic Information and Electrical Engineering, Shanghai Jiao Tong University. 2018-2022<br>
-- Student committee under Shanghai Jiao Tong University Office of Undergraduate Education. 2020-2021.<br>
           
 ## Honors and Academic Awards
 ### Scholarships
@@ -63,6 +67,10 @@ I am a Ph.D. student in [iQua](https://iqua.ece.toronto.edu/) at the Department 
 - IEEE Transactions on Dependable and Secure Computing (TDSC).
 - IEEE Transactions on Network Science and Engineering (TNSE).
 - Transactions on Machine Learning Research (TMLR).
+### Appointments in Student Academic Committee
+- Academic Committee, School of Electronic Information and Electrical Engineering, Shanghai Jiao Tong University. 2020-2022<br>
+- Study Assistance Committee, School of Electronic Information and Electrical Engineering, Shanghai Jiao Tong University. 2018-2022<br>
+- Student Committee, Office of Undergraduate Education, Shanghai Jiao Tong University . 2020-2021.<br>
 
 ## Fundings
 - Mitacs Accelerate Program
