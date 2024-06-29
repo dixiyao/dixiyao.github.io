@@ -166,7 +166,8 @@ I would also suggest you communicate with the current PhD students in the resear
 - [Checklist for supervisors](https://www.sgs.utoronto.ca/resources-supports/supervision/supervision-guidelines/supervision-guidelines-for-faculty-section-10-appendix-2-checklist-for-supervisors/)
 
 ## Contact Me
-I also provide advising service for CS/EE PhD application. Feel free to contact me via email or social media such as [Zhihu](https://www.zhihu.com/people/13641911058). 
+I also provide advising service for CS/EE PhD application. Feel free to contact me via email or social media such as [Zhihu](https://www.zhihu.com/people/13641911058). To support the free resources provided, sponsorship is welcomed: 
+[![](https://img.shields.io/static/v1?label=Sponsor&message=%E2%9D%A4&logo=GitHub&color=%23fe8e86)](https://github.com/sponsors/dixiyao).
 
 ### Previous students advised
 I am always happy to help students with their PhD applications and I also have advised several students who finally received offers to top universities.

@@ -6,7 +6,7 @@ Apart from source code for my papers, I would like to share some of my interesti
 ## Tutorials
 ### Large Language Model
 [Finetune a Large Laguage Model with Torchtune](https://github.com/dixiyao/dixiyao.github.io/wiki/Using-Torchtune-to-Fine%E2%80%90tune-an-LLM)     
-[CrEate an Arxiv Paper Dataset](https://github.com/dixiyao/dixiyao.github.io/wiki/Create-an-Arxiv-Paper-Dataset)
+[Create an Arxiv Paper Dataset](https://github.com/dixiyao/dixiyao.github.io/wiki/Create-an-Arxiv-Paper-Dataset)
 
 ## Open-source Software Framework
 [LLM for Academic Writing](https://github.com/dixiyao/LLM-Academic-Writing): This is a collection of helpful LLM tools I have found and developed. They leverage large generative models to improve academic writing.
@@ -36,3 +36,8 @@ Apart from source code for my papers, I would like to share some of my interesti
 I would like to share some useful references during my research experience. Please kindly check them.
 
 - [An Archive of Useful Resources](https://github.com/dixiyao/dixiyao.github.io/wiki/An-archive-of-useful-resources).
+
+--------------
+
+If  you like my projects, sponsorship is welcomed!
+[![](https://img.shields.io/static/v1?label=Sponsor&message=%E2%9D%A4&logo=GitHub&color=%23fe8e86)](https://github.com/sponsors/dixiyao)
