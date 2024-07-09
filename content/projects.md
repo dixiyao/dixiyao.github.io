@@ -1,7 +1,8 @@
-I believe having a good code repo is a necessary part of a good paper. You can find the source code for my papers and other interesting projects through my [Github](https://github.com/dixiyao).
+I believe having a good code repo is a necessary part of a good paper. You can find the source code for my papers and other interesting projects through my [Github](https://github.com/dixiyao). 
 [![Top Langs](https://github-readme-stats.vercel.app/api/top-langs/?username=dixiyao&layout=donut&theme=buefy)](https://github.com/anuraghazra/github-readme-stats)
 
-Apart from source code for my papers, I would like to share some of my interesting projects, tutorials and useful resources.
+Apart from source code for my papers, I would like to share some of my interesting projects, tutorials and useful resources. I also share some interesting spaces, models, and datasets I created during my past projects on my [Hugging Face](https://huggingface.co/dixiyao). 
+
 
 ## Tutorials
 ### Large Language Model
@@ -43,3 +44,8 @@ I would like to share some useful references during my research experience. Plea
 
 If  you like my projects, sponsorship is welcomed!
 [![](https://img.shields.io/static/v1?label=Sponsor&message=%E2%9D%A4&logo=GitHub&color=%23fe8e86)](https://github.com/sponsors/dixiyao)
+
+<!--
+[![](https://badgen.net/badge/icon/GitHub?icon=github&label)](https://github.com/dixiyao)
+[![](https://badgen.net/badge/icon/HuggingFace/yellow?icon=git&label)](https://github.com/dixiyao)
+--> 
