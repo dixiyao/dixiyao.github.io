@@ -6,7 +6,19 @@
     <description>Recent content on </description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en</language>
-    <lastBuildDate>Sat, 22 Jun 2024 00:00:00 +0000</lastBuildDate><atom:link href="/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Tue, 09 Jul 2024 00:00:00 +0000</lastBuildDate><atom:link href="/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Write High-quality code</title>
+      <link>/blog_posts/codewriting/</link>
+      <pubDate>Tue, 09 Jul 2024 00:00:00 +0000</pubDate>
+      
+      <guid>/blog_posts/codewriting/</guid>
+      
+        <description>!NOTE! This Blog is under continuing updating.
+Some Experience to Share For Writing Good Code During my experience of researching and doing projects, I believe it is always very helpful to manage good code.</description>
+      
+    </item>
+    
     <item>
       <title>Prepare and Pass the Qualifying Exams.</title>
       <link>/blog_posts/qe/</link>

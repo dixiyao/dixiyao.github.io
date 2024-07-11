@@ -113,17 +113,19 @@
 
   
   <meta name="twitter:card" content="summary"/><meta name="twitter:title" content="Write High-quality code"/>
-<meta name="twitter:description" content="Definition of Well-Organized Code Introduction of Tools IDEs LLMs "/>
+<meta name="twitter:description" content="!NOTE! This Blog is under continuing updating.
+Some Experience to Share For Writing Good Code During my experience of researching and doing projects, I believe it is always very helpful to manage good code."/>
 
 
 
   
   <meta property="og:title" content="Write High-quality code" />
-<meta property="og:description" content="Definition of Well-Organized Code Introduction of Tools IDEs LLMs " />
+<meta property="og:description" content="!NOTE! This Blog is under continuing updating.
+Some Experience to Share For Writing Good Code During my experience of researching and doing projects, I believe it is always very helpful to manage good code." />
 <meta property="og:type" content="article" />
 <meta property="og:url" content="/blog_posts/codewriting/" /><meta property="article:section" content="blog_posts" />
-<meta property="article:published_time" content="2024-05-14T00:00:00+00:00" />
-<meta property="article:modified_time" content="2024-05-14T00:00:00+00:00" /><meta property="og:site_name" content="Dixi Yao" />
+<meta property="article:published_time" content="2024-07-09T00:00:00+00:00" />
+<meta property="article:modified_time" content="2024-07-09T00:00:00+00:00" /><meta property="og:site_name" content="Dixi Yao" />
 
 
 
@@ -142,7 +144,7 @@
         "alternativeHeadline": "",
         "description": "
       
-        Definition of Well-Organized Code Introduction of Tools IDEs LLMs 
+        !NOTE! This Blog is under continuing updating.\nSome Experience to Share For Writing Good Code During my experience of researching and doing projects, I believe it is always very helpful to manage good code.
 
 
       
@@ -172,9 +174,9 @@
             "name": "Dixi Yao"
         },
         "copyrightYear" : "2024",
-        "dateCreated": "2024-05-14T00:00:00.00Z",
-        "datePublished": "2024-05-14T00:00:00.00Z",
-        "dateModified": "2024-05-14T00:00:00.00Z",
+        "dateCreated": "2024-07-09T00:00:00.00Z",
+        "datePublished": "2024-07-09T00:00:00.00Z",
+        "dateModified": "2024-07-09T00:00:00.00Z",
         "publisher":{
             "@type":"Organization",
             "name": "Dixi Yao",
@@ -192,7 +194,7 @@
 
     ,
         "url" : "\/blog_posts\/codewriting\/",
-        "wordCount" : "9",
+        "wordCount" : "313",
         "genre" : [ ],
         "keywords" : [ ]
     }
@@ -241,6 +243,30 @@
           </a>
         </li>
       
+        <li class="sidebar__list-item">
+          <a
+            href="https://www.linkedin.com/in/dixi-yao-328710261/"
+            target="_blank"
+            rel="noopener me"
+            aria-label="Linkedin"
+            title="Linkedin"
+          >
+            <i class="fa-brands fa-linkedin fa-2x" aria-hidden="true"></i>
+          </a>
+        </li>
+      
+        <li class="sidebar__list-item">
+          <a
+            href="https://github.com/dixiyao"
+            target="_blank"
+            rel="noopener me"
+            aria-label="Github"
+            title="Github"
+          >
+            <i class="fa-brands fa-github fa-2x" aria-hidden="true"></i>
+          </a>
+        </li>
+      
     </ul>
   </div><footer class="footer footer__sidebar">
   <ul class="footer__list">
@@ -259,7 +285,13 @@
     src="/js/medium-zoom.min.1248fa75275e5ef0cbef27e8c1e27dc507c445ae3a2c7d2ed0be0809555dac64.js"
     integrity="sha256-Ekj6dSdeXvDL7yfoweJ9xQfERa46LH0u0L4ICVVdrGQ="
     crossorigin="anonymous"
-  ></script>
+  ></script><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.13.0/dist/katex.min.css" integrity="sha384-t5CR&#43;zwDAROtph0PXGte6ia8heboACF9R5l/DiY&#43;WZ3P2lxNgvJkQk5n7GPvLMYw" crossorigin="anonymous" /><script defer src="https://cdn.jsdelivr.net/npm/katex@0.13.0/dist/katex.min.js" integrity="sha384-FaFLTlohFghEIZkw6VGwmf9ISTubWAVYW8tG8&#43;w2LAIftJEULZABrF9PPFv&#43;tVkH" crossorigin="anonymous"></script><script
+      defer
+      src="https://cdn.jsdelivr.net/npm/katex@0.13.0/dist/contrib/auto-render.min.js"
+      integrity="sha384-bHBqxz8fokvgoJ/sc17HODNxa42TlaEhB&#43;w8ZJXTc2nZf1VgEaFZeZvT4Mznfz0v"
+      crossorigin="anonymous"
+      onload="renderMathInElement(document.body);"
+    ></script>
 <script async src="https://www.googletagmanager.com/gtag/js?id=G-353217296"></script>
 <script>
   window.dataLayer = window.dataLayer || [];
@@ -374,10 +406,24 @@
     
     <div class="post__content">
       <h1>Write High-Quality Code</h1>
-      <h2 id="definition-of-well-organized-code">Definition of Well-Organized Code</h2>
+      <p><em>!NOTE! This Blog is under continuing updating.</em></p>
+<h2 id="some-experience-to-share-for-writing-good-code">Some Experience to Share For Writing Good Code</h2>
+<p>During my experience of researching and doing projects, I believe it is always very helpful to manage good code. Clear code with good annotations will help us complete projects and develop products more smoothly.</p>
+<p>For different programming languages, we have different forms. For example, object oriented programming and functional programming. Different programming languages also have different rules. For example, C++, Python, Rust, and Java, they all have different rules.</p>
+<p>Here, I would like to share some of my thoughts based on my past experiences. I will generally use Python as the example but may also discuss other languages as well.</p>
 <h3 id="introduction-of-tools">Introduction of Tools</h3>
+<p>I place the usage of tools as the first important thing to talk about. The reason is that a good choice of coding environment will to a large extension decide the quality of the code.</p>
 <h4 id="ides">IDEs</h4>
-<h4 id="llms">LLMs</h4>
+<p>Many people have different preferences for IDEs. I would like to recommend <strong>VS Code</strong> as an extension. The merit of the VS code is that you can add any extensions and build up your own working station. Choose a good appearance and the placement of toolbox bars.</p>
+<h4 id="packages">Packages</h4>
+<ul>
+<li><a href="https://code.visualstudio.com/docs/python/formatting">Formatter</a>. I would suggest choosing a formatter before the start of coding. Some languages such as Python, rely heavily on formatting and indentation. Some languages like C++ might not. But a good formatter will greatly improve the readability of your code.</li>
+<li><a href="https://code.visualstudio.com/docs/python/linting">Grammar Checker</a>. Usually, in the IDE, it will highlight the warnings and potential errors before compiling or running the program. But Linting is also another important part during the writing of your code. It will give hints to better improve the code, avoid potential bugs, mistakes causing overheads, and etc. It is highly recommended to have the Grammar checker prepared.</li>
+</ul>
+<h4 id="ai-assistant">AI Assistant</h4>
+<h3 id="project-management">Project Management</h3>
+<h3 id="code-logistics">Code Logistics</h3>
+<h4 id="doc-string-and-annotation">Doc String and Annotation</h4>
 </div>
     <div class="post__footer">
       
@@ -406,7 +452,13 @@
     src="/js/medium-zoom.min.1248fa75275e5ef0cbef27e8c1e27dc507c445ae3a2c7d2ed0be0809555dac64.js"
     integrity="sha256-Ekj6dSdeXvDL7yfoweJ9xQfERa46LH0u0L4ICVVdrGQ="
     crossorigin="anonymous"
-  ></script>
+  ></script><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.13.0/dist/katex.min.css" integrity="sha384-t5CR&#43;zwDAROtph0PXGte6ia8heboACF9R5l/DiY&#43;WZ3P2lxNgvJkQk5n7GPvLMYw" crossorigin="anonymous" /><script defer src="https://cdn.jsdelivr.net/npm/katex@0.13.0/dist/katex.min.js" integrity="sha384-FaFLTlohFghEIZkw6VGwmf9ISTubWAVYW8tG8&#43;w2LAIftJEULZABrF9PPFv&#43;tVkH" crossorigin="anonymous"></script><script
+      defer
+      src="https://cdn.jsdelivr.net/npm/katex@0.13.0/dist/contrib/auto-render.min.js"
+      integrity="sha384-bHBqxz8fokvgoJ/sc17HODNxa42TlaEhB&#43;w8ZJXTc2nZf1VgEaFZeZvT4Mznfz0v"
+      crossorigin="anonymous"
+      onload="renderMathInElement(document.body);"
+    ></script>
 <script async src="https://www.googletagmanager.com/gtag/js?id=G-353217296"></script>
 <script>
   window.dataLayer = window.dataLayer || [];
