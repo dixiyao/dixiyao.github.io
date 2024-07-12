@@ -51,10 +51,10 @@ class UnslothQAFinetuning:
         
         logging.critical(f"Loaded {self.model_name}")
         
-        self.prompt_template = """Below is a conservation between a PhD student and Professor Baochun Li. Reply as you are Professor Baochun Li and repspond to the student
+        self.prompt_template = """Below is a conservation between a PhD student and Professor. Reply as you are Professor and repspond to the student
             ### Student Question:
             {}
-            ### Professor Baochun Li Response:
+            ### Professor  Response:
             {}"""
 
         self.load_data()
