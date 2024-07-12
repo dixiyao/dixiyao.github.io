@@ -42,7 +42,7 @@ dpo_trainer = DPOTrainer(
         per_device_train_batch_size = 4,
         gradient_accumulation_steps = 8,
         warmup_ratio = 0.1,
-        num_train_epochs = 30,
+        num_train_epochs = 3,
         fp16 = not is_bfloat16_supported(),
         bf16 = is_bfloat16_supported(),
         logging_steps = 1,
@@ -61,12 +61,12 @@ dpo_trainer.train()
 
 FastLanguageModel.for_inference(model)
 inputs = tokenizer(
-        ["""Below is a conservation between a PhD student and Professor Li. Reply as you are Professor Baochun Li and respond to the student
+        ["""Below is a conservation between a PhD student and Professor Li. Reply as you are Professor and respond to the student
         ### Student Question: Sorry for making the mistake
         ### Professor Li Response: """
         ], return_tensors = "pt").to("cuda")
 
 text_streamer = TextStreamer(tokenizer)
 model.generate(**inputs, streamer = text_streamer, max_new_tokens = 1024)
-model.save_pretrained("dpo-enhanced-model-30")
-tokenizer.save_pretrained("dpo-enhanced-model-30")
+model.save_pretrained("dpo-enhanced-model-3")
+tokenizer.save_pretrained("dpo-enhanced-model-3")
