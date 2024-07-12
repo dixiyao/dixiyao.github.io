@@ -6,6 +6,7 @@ Apart from source code for my papers, I would like to share some of my interesti
 
 ## Tutorials
 ### Large Language Model
+[Build a ChatBot Application with Own Data Using Unsloth and RAG](https://github.com/dixiyao/dixiyao.github.io/wiki/Build-a-ChatBot-Application-with-Own-Data-Using-Unsloth-and-RAG)   
 [Finetune a Large Laguage Model with Torchtune](https://github.com/dixiyao/dixiyao.github.io/wiki/Using-Torchtune-to-Fine%E2%80%90tune-an-LLM)     
 [Create an Arxiv Paper Dataset](https://github.com/dixiyao/dixiyao.github.io/wiki/Create-an-Arxiv-Paper-Dataset)
 
