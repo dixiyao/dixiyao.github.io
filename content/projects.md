@@ -21,6 +21,8 @@ Apart from source code for my papers, I would like to share some of my interesti
 
 [Edge-Cloud Computing Framework](https://github.com/dixiyao/Context-Aware-Compilation-of-DNN-Training-Pipelines-across-Edge-and-Cloud): An egde-cloud computing framework across the IoT devices and a public cloud server for deep learning models.
 
+[Automatic Tooth Extraction System](https://github.com/dixiyao/pullteeth) A system developed upon UR5 and Python, navigating the robotic arm to automatically plan and conduct the tooth extraction surgery.
+
 ## Extensions for Course Projects
 - [Hybrid Fuzzing](/assests/papers/1776.pdf)
 - [V-Guard Applied in Supply Chain](https://github.com/anlowee/vguardbft)
