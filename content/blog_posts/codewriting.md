@@ -1,10 +1,8 @@
 +++
 author = "Dixi Yao"
-title = "Write High-quality code"
+title = "Write High-quality Code"
 date = "2024-07-11"
 +++
-
-*!NOTE! This Blog is under continuing updating.*
 
 ## Some Experience to Share For Writing Good Code
 During my experience of researching and doing projects, I believe it is always very helpful to manage good code. Clear code with good annotations will help us complete projects and develop products more smoothly. 

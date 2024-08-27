@@ -124,8 +124,8 @@ Some Experience to Share For Writing Good Code During my experience of researchi
 Some Experience to Share For Writing Good Code During my experience of researching and doing projects, I believe it is always very helpful to manage good code." />
 <meta property="og:type" content="article" />
 <meta property="og:url" content="/blog_posts/codewriting/" /><meta property="article:section" content="blog_posts" />
-<meta property="article:published_time" content="2024-07-09T00:00:00+00:00" />
-<meta property="article:modified_time" content="2024-07-09T00:00:00+00:00" /><meta property="og:site_name" content="Dixi Yao" />
+<meta property="article:published_time" content="2024-07-11T00:00:00+00:00" />
+<meta property="article:modified_time" content="2024-07-11T00:00:00+00:00" /><meta property="og:site_name" content="Dixi Yao" />
 
 
 
@@ -174,9 +174,9 @@ Some Experience to Share For Writing Good Code During my experience of researchi
             "name": "Dixi Yao"
         },
         "copyrightYear" : "2024",
-        "dateCreated": "2024-07-09T00:00:00.00Z",
-        "datePublished": "2024-07-09T00:00:00.00Z",
-        "dateModified": "2024-07-09T00:00:00.00Z",
+        "dateCreated": "2024-07-11T00:00:00.00Z",
+        "datePublished": "2024-07-11T00:00:00.00Z",
+        "dateModified": "2024-07-11T00:00:00.00Z",
         "publisher":{
             "@type":"Organization",
             "name": "Dixi Yao",
@@ -194,7 +194,7 @@ Some Experience to Share For Writing Good Code During my experience of researchi
 
     ,
         "url" : "\/blog_posts\/codewriting\/",
-        "wordCount" : "313",
+        "wordCount" : "1208",
         "genre" : [ ],
         "keywords" : [ ]
     }
@@ -421,9 +421,59 @@ Some Experience to Share For Writing Good Code During my experience of researchi
 <li><a href="https://code.visualstudio.com/docs/python/linting">Grammar Checker</a>. Usually, in the IDE, it will highlight the warnings and potential errors before compiling or running the program. But Linting is also another important part during the writing of your code. It will give hints to better improve the code, avoid potential bugs, mistakes causing overheads, and etc. It is highly recommended to have the Grammar checker prepared.</li>
 </ul>
 <h4 id="ai-assistant">AI Assistant</h4>
+<p>With the fast development of Generative AI and large models, we have a lot of tools which can help us write the code. With proper annotations and hints, they can complete the remaining codes. I think they are very helpful sometimes and it is recommended to have them installed in your IDE. For example, we can use the <a href="https://code.visualstudio.com/docs/copilot/overview">Copilot</a> extension in VS Code.</p>
 <h3 id="project-management">Project Management</h3>
+<p>Project management is usually very important, especially if there is a project with a large team. The Github and own GitLan are both good options. The Git provides the flexibility of pull, push, commit tracing, pulling request, rolling back, and so on for the easy management of a project.</p>
+<p><strong>Here is a <a href="https://rogerdudler.github.io/git-guide/">good guide</a> on git commands.</strong></p>
+<p>Apart from these, there are some important logistics in managing projects.</p>
+<ul>
+<li>
+<p>README is a very important file to introduce the project, which should be continuously maintained till the end of the project. <code>.gitignore</code> is another important file.</p>
+</li>
+<li>
+<p>Always commit and push your updates of the code immediately. With a specific change in your code, you should update the repo to make sure others can get the updated version in time.</p>
+</li>
+<li>
+<p>Provide a proper description of your commit. The reason for doing this is that others can quickly grab your change without reading your code and it will make it more convenient if some cases come to the rolling back.</p>
+</li>
+</ul>
+<ol>
+<li>Capitalize the first letter of the message.</li>
+<li>Always started with a verb.</li>
+<li>The start verb should be in past tense, such as &ldquo;Added&hellip;&rdquo; and &ldquo;Supported&hellip;&rdquo;.</li>
+<li>Capitalize proper nouns.</li>
+<li>End with a period.</li>
+</ol>
+<ul>
+<li>When there is a big change or an important change, a pull request is usually a good option.</li>
+<li>Git submodule, subtree, or subrepo are better choices than copying and pasting the code from an existing repo. But if you plan to have some big modifications, copying and pasting and then revision and including a proper citation in the README is fine.</li>
+<li>Even if it is a personal project, using Git does not have any drawbacks. The reason is that I can track progress and roll back when necessary. If I want to involve other people in, it will also be easier.</li>
+<li>Setting several milestones either in the README or some places like Wikipages is helpful for the management of the project.</li>
+</ul>
 <h3 id="code-logistics">Code Logistics</h3>
+<p>The code logistics is another important component of having good code. However, this may vary between case by case.</p>
+<ul>
+<li><strong>Occam&rsquo;s razor</strong>: Always remember, unless it is really necessary, do not make the code more complicated. A usual case is that there will be a lot of functions and classes one out of another. When we want to check one function, we need to check another function and sometimes it will be defined in another file. However, for more simple cases, for example, if there are several command lines, we can just move it into another function with a line of annotation. This will improve readability.</li>
+<li><strong>Trojan Horse</strong>: Always be careful when you copy and paste others&rsquo; code. Even if their code does not have bugs or vulnerabilities, you may misuse them when you do the copy and paster. Some copying and pasting is fine, for example,</li>
+</ul>
+<pre tabindex="0"><code>loss.backward()
+optimizer.step()
+optimizer.zero_grad()
+</code></pre><p>in a usual training script by PyTorch. However, even for this kind of code, a better way is to use the package where the code is well-checked, in most programming languages.</p>
+<ul>
+<li>
+<p><strong>Odysseus</strong>: Your codes do not have to be great epics. Having millions of codes will not increase the quality of the code. Make each code file at a proper length and have good functionalities.</p>
+</li>
+<li>
+<p><strong>Misuse of concepts</strong>: In different programming languages, there are usually helpful features. For example, heritage, pointers, reference, and so on. But one thing we need to do is make sure that they are properly used. For example, sometimes, a callback function is a better solution than a heritage or direct calling function.</p>
+</li>
+</ul>
 <h4 id="doc-string-and-annotation">Doc String and Annotation</h4>
+<p>I think doc strings and annotations are always important and well-discussed. Here is a guide of writing <a href="https://docs.github.com/en/contributing/writing-for-github-docs/annotating-code-examples">code annotation</a>. <em>Code annotations help explain longer code examples by describing what a code example does and why.</em></p>
+<p>The meaning of code annotation is to help others understand the functionalities of each piece of the code very quickly. As a result, they should be short. This is a little bit similar to writing a <em>TL;DR</em> for a paper. We need to catch the high-level idea very quickly. Usually, a comment should not be longer than <strong>50</strong> words.</p>
+<p>The doc string is a little bit different, it should be more detailed, giving the idea of each module and package. Some references to papers and other codes may be needed. You also want to include the author names of the code in the doc string. When you write a doc string for a package, a class, or a function. Others can know what they need to put in as the arguments and what they will get from the returning, without reading your code.</p>
+<p>The names of variables, classes, and functions are also important. There have been different naming rules and formats. No matter which one you choose, you should make them easy to understand. Something like <code>abc</code> and <code>qwe</code> are very bad examples. <code>Tree1</code>, <code>Tree2</code> are also not very good. <code>TreeClassification</code>, <code>TreeRecognition</code> are better options to clearly convey the meanings.</p>
+<p>I would like to provide a <a href="https://curc.readthedocs.io/en/latest/programming/coding-best-practices.html#:~:text=Variable%20naming%20is%20an%20important,consistent%20theme%20throughout%20your%20code.">coding best practices</a> as a reference.</p>
 </div>
     <div class="post__footer">
       

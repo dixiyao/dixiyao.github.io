@@ -1,6 +1,6 @@
 +++
 author = "Dixi Yao"
-title = "Prepare your application for CS PhD."
+title = "Prepare Your Application for CS PhD."
 date = "2024-05-14"
 +++
 ## Catalog
