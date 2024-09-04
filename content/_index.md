@@ -16,6 +16,7 @@ My research focuses on **privacy-preserving machine learning in distributed syst
 ### Teaching Assistant
 #### University of Toronto
 - Writing Development Initiative
+- ECE 344 Operating Systems
 - ECE243 Computer Organization
 - CSC258 Computer Organization
 - CSC263 Data Structures and Analysis
