@@ -15,8 +15,9 @@ My research focuses on **privacy-preserving machine learning in distributed syst
 ## Teaching Experience
 ### Teaching Assistant
 #### University of Toronto
+- ECE244 Programming Fundamentals
 - Writing Development Initiative
-- ECE 344 Operating Systems
+- ECE344 Operating Systems
 - ECE243 Computer Organization
 - CSC258 Computer Organization
 - CSC263 Data Structures and Analysis
@@ -50,8 +51,8 @@ My research focuses on **privacy-preserving machine learning in distributed syst
 - Honor for outstanding students in the School of Electronic Information and Electrical Engineering. 2018, 2019, 2020, 2021
 - Third prize in 17th "Challenger" Shanghai Collegiate Science and Technology Competition. 2021.
 - Honorable Mention in Interdisciplinary Contest in Modeling. 2020
-- First prize in China Collegiate Mathematics contest. 2019
-- First prize in National Olympiad in Informatics in Provinces. 2017
+- **First prize in China Collegiate Mathematics contest**. 2019
+- **First prize in National Olympiad in Informatics in Provinces**. 2017
 - First prize in Minds and Hands: engineering better life by MIT. 2017
 - Second prize in Shanghai Adolescents Science and Technology Innovation Contest. 2017
 
