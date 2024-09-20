@@ -59,6 +59,7 @@ My research focuses on **privacy-preserving machine learning in distributed syst
 ## Professional Services
 ### Paper Review
 #### Conferences
+- 2025 IEEE/CVF Winter Conference on Applications of Computer Vision (WACV). 
 - 2025 the Thirteenth International Conference on Learning Representations (ICLR).
 - 2024 the 62nd Annual Meeting of the Association for Computational Linguistics, Student Research Workshop. (ACL SRW).
 - 2024 the Thirty-eighth Annual Conference on Neural Information Processing Systems (NeurIPS).

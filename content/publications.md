@@ -9,6 +9,8 @@ Hengyuan Xu, Liyao Xiang, Hangyu Ye, **Dixi Yao**, Pengzhi Chu, Baochun Li. "[Pe
 
 **Dixi Yao**, Liyao Xiang, Hengyuan Xu, Hangyu Ye, Yingqi Chen. "[Privacy-Preserving Split Learning via Patch Shuffling over Transformers](https://ieeexplore.ieee.org/abstract/document/10027647)" in Proceedings of the 22nd IEEE International Conference on Data Mining (ICDM), Orlando, USA, November 28 - December 1, 2022. [[Slides]](/assests/slides/PatchShuffle.pdf).[[Code]](https://github.com/dixiyao/PatchShuffling).
 
+**Dixi Yao**, Baochun Li. "Is Split Learning Privacy-Preserving for Fine-Tuning Large Language Models?" in Special Issue on Pre-Trained Large Language Models of Transactions on Big Data (TBD). (To be appeared soon).
+
 Hengyuan Xu, Liyao Xiang, Hangyu Ye, **Dixi Yao**, Pengzhi Chu, Baochun Li. "[Shuffled Transformer for Privacy-Preserving Split Learning](https://arxiv.org/abs/2304.07735)" arXiv 2304.07735, 2023.
 
 ## Federated Learning
