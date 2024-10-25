@@ -3,7 +3,7 @@ title = ""
 framed = true
 +++
 
-I am the CEO and co-founder of a startup company: [Hemlig AI](https://hemligca.github.io/). Hemlig aims to study the cutting edge topics in privacy-preserving machine learning and implement these techniques into our products. I am going to receive Master's degree from the Department of [Electrical and Computer Engineering](https://www.ece.utoronto.ca/) in the [University of Toronto](https://utoronto.ca/). I previously worked in [iQua](https://iqua.ece.toronto.edu/), advised by [Baochun Li](https://iqua.ece.toronto.edu/bli/). I received my bachelor degree from Department of [CSE](https://www.cs.sjtu.edu.cn/en/) in Shanghai Jiao Tong University. During my undergraduate studies, I was a research intern at [John Hopcroft Center for Computer Science](https://jhc.sjtu.edu.cn/), advised by [Liyao Xiang](http://xiangliyao.cn/). Previously, I took a research fellowship at Max Planck Society, advised by [Yiting Xia](https://sites.google.com/view/yitingxia?pli=1) and [Binghang Yuan](https://binhangyuan.github.io/site/). 
+I'm currently working as an machine learning engineer at [EV.com](ev.com). Previouly, I co-founded a startup company: [Hemlig AI](https://hemligca.github.io/). Hemlig aims to study the cutting edge topics in privacy-preserving machine learning and implement these techniques into our products. I am going to receive Master's degree from the Department of [Electrical and Computer Engineering](https://www.ece.utoronto.ca/) in the [University of Toronto](https://utoronto.ca/). I previously worked in [iQua](https://iqua.ece.toronto.edu/), advised by [Baochun Li](https://iqua.ece.toronto.edu/bli/). I received my bachelor degree from Department of [CSE](https://www.cs.sjtu.edu.cn/en/) in Shanghai Jiao Tong University. During my undergraduate studies, I was a research intern at [John Hopcroft Center for Computer Science](https://jhc.sjtu.edu.cn/), advised by [Liyao Xiang](http://xiangliyao.cn/). Previously, I took a research fellowship at Max Planck Society, advised by [Yiting Xia](https://sites.google.com/view/yitingxia?pli=1) and [Binghang Yuan](https://binhangyuan.github.io/site/). I speak Mandarin, English, and French.
 
 My research focuses on **privacy-preserving machine learning in distributed systems**. My research interest includes data privacy, system security, Trustworthy ML, and decentralized trust technologies. I'm interested in solving problems with real-world use cases, facilitating full-stack solutions for data privacy and system security in modern decentralized and AI oriented ecosystem. Here are some examples of my constributions:
     
@@ -59,6 +59,7 @@ My research focuses on **privacy-preserving machine learning in distributed syst
 ## Professional Services
 ### Paper Review
 #### Conferences
+- 2025 the 28th International Conference on Artificial Intelligence and Statistics (AISTATS).
 - 2025 IEEE/CVF Winter Conference on Applications of Computer Vision (WACV). 
 - 2025 the Thirteenth International Conference on Learning Representations (ICLR).
 - 2024 the 62nd Annual Meeting of the Association for Computational Linguistics, Student Research Workshop. (ACL SRW).
