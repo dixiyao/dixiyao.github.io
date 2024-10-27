@@ -13,12 +13,18 @@ Hengyuan Xu, Liyao Xiang, Hangyu Ye, **Dixi Yao**, Pengzhi Chu, Baochun Li. "[Pe
 
 Hengyuan Xu, Liyao Xiang, Hangyu Ye, **Dixi Yao**, Pengzhi Chu, Baochun Li. "[Shuffled Transformer for Privacy-Preserving Split Learning](https://arxiv.org/abs/2304.07735)" arXiv 2304.07735, 2023.
 
+**Dixi Yao**. "[Risks When Sharing LoRA Fine-Tuned Diffusion Model Weights](https://arxiv.org/pdf/2409.08482)" arXiv 2409.08482, 2024.
+
+**Dixi Yao**. "[Enhancing Privacy in ControlNet and Stable Diffusion via Split Learning](https://arxiv.org/pdf/2409.08503)" arXiv 2409.08503, 2024.
+
 ## Federated Learning
 **Dixi Yao**, Baochun Li. "[PerFedRLNAS: One-for-all Personalized Federated Neural Architecture Search](https://ojs.aaai.org/index.php/AAAI/article/view/29576)” in Proceedings of the 38th Annual AAAI Conference on Artificial Intelligence (AAAI), Vancouver, Canada, February 20-27, 2024. [[Paper](/assests/papers/dyao-aaai24)].[[Supplementary](/public/assests/papers/dyao-aaai24-appendix)].[[Code]](https://github.com/TL-System/plato/tree/main/examples/model_search/pfedrlnas).
 
 **Dixi Yao** *, Lingdong Wang *, Jiayu Xu, Liyao Xiang, Shuo Shao, Yingqi Chen, Yanjun Tong. "[Federated Model Search via Reinforcement Learning](https://ieeexplore.ieee.org/document/9546522)," in Proceedings of the 41st IEEE International Conference on Distributed Computing Systems (ICDCS), Virtual, July 7 –10, 2021. [[Slides]](/assests/slides/FedNas.pdf). [[Code]](https://github.com/TL-System/plato/tree/main/examples/model_search/fedrlnas)
 
 **Dixi Yao** "[Survey on Personalized Federated Learning](/assests/papers/1771.pdf)" in Proceedings of University of Toronto Engineering Research Conference (UTERC), Toronto, Canada, August 2, 2023.
+
+**Dixi Yao**. "[Exploring System-Heterogeneous Federated Learning with Dynamic Model Selection](https://arxiv.org/pdf/2409.08858)" arXiv 2409.08858, 2024.
 
 ## Edge and Cloud Computing
 **Dixi Yao**, Liyao Xiang, Zifan Wang, Jiayu Xu, Chao Li, Xinbing Wang. "[Context-Aware Compilation of DNN Training Pipelines across Edge and Cloud](https://dl.acm.org/doi/10.1145/3494981)" in Proceedings of ACM on Interactive, Mobile, Wearable and Ubiquitous Technologies (IMWUT), Volume 5, Issue 4, December 2021. [[Code]](https://github.com/dixiyao/Context-Aware-Compilation-of-DNN-Training-Pipelines-across-Edge-and-Cloud).
