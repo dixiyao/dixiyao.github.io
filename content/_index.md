@@ -3,34 +3,15 @@ title = ""
 framed = true
 +++
 
-I'm currently working as an machine learning engineer at [EV.com](https://ev.com). Previouly, I co-founded a startup company: [Hemlig AI](https://hemligca.github.io/). Hemlig aims to study the cutting edge topics in privacy-preserving machine learning and implement these techniques into our products. I am going to receive Master's degree from the Department of [Electrical and Computer Engineering](https://www.ece.utoronto.ca/) in the [University of Toronto](https://utoronto.ca/). I previously worked in [iQua](https://iqua.ece.toronto.edu/), advised by [Baochun Li](https://iqua.ece.toronto.edu/bli/). I received my bachelor degree from Department of [CSE](https://www.cs.sjtu.edu.cn/en/) in Shanghai Jiao Tong University. During my undergraduate studies, I was a research intern at [John Hopcroft Center for Computer Science](https://jhc.sjtu.edu.cn/), advised by [Liyao Xiang](http://xiangliyao.cn/). Previously, I took a research fellowship at Max Planck Society, advised by [Yiting Xia](https://sites.google.com/view/yitingxia?pli=1) and [Binghang Yuan](https://binhangyuan.github.io/site/). I speak Mandarin, English, and French.
+I'm currently working as an machine learning engineer at [EV.com](https://ev.com). Previouly, I co-founded a startup company: [Hemlig AI](https://hemligca.github.io/). Hemlig aims to study the cutting edge topics in privacy-preserving machine learning and implement these techniques into our products. I am going to receive Master's degree from the Department of [Electrical and Computer Engineering](https://www.ece.utoronto.ca/) in the [University of Toronto](https://utoronto.ca/). I previously worked in [iQua](https://iqua.ece.toronto.edu/), advised by [Baochun Li](https://iqua.ece.toronto.edu/bli/). I received my bachelor degree from Department of [CSE](https://www.cs.sjtu.edu.cn/en/) in Shanghai Jiao Tong University. During my undergraduate studies, I was a research intern at [John Hopcroft Center for Computer Science](https://jhc.sjtu.edu.cn/), advised by [Liyao Xiang](http://xiangliyao.cn/) and [Xinbing Wang](https://www.cs.sjtu.edu.cn/~wang-xb/). Previously, I took a research fellowship at Max Planck Society, advised by [Yiting Xia](https://sites.google.com/view/yitingxia?pli=1) and [Binghang Yuan](https://binhangyuan.github.io/site/). I speak Mandarin, English, and French.
 
 My research focuses on **privacy-preserving machine learning in distributed systems**. My research interest includes data privacy, system security, Trustworthy ML, and decentralized trust technologies. I'm interested in solving problems with real-world use cases, facilitating full-stack solutions for data privacy and system security in modern decentralized and AI oriented ecosystem. Here are some examples of my constributions:
     
 - How can we realize privacy-preserving split learning and have as much as possible tradeoff for privacy, accuracy and efficiency? [CVPR](https://openreview.net/pdf?id=GuXxYkFBBy), [ICDM](/assests/papers/Privacy-Preserving-Split-Learning-via-Patch-Shuffling-over-Transformers.pdf).
-- How can we improve the performance of Federated Learning, without compromising the privacy requirements? [AAAI](/assests/papers/dyao-aaai24.pdf), [ICDCS](assests/papers/Federated_Model_Search_via_Reinforcement_Learning.pdf).
+- How can we improve the performance of Federated Learning, without compromising the privacy requirements? [AAAI](/assests/papers/dyao-aaai24.pdf), [ICDCS](assests/papers/Federated_Model_Search_via_Reinforcement_Learning.pdf), [BigData](https://arxiv.org/pdf/2409.08858).
 - Open-sourced distributed systems for privacy-preserving machine learning. [IMWUT](https://dl.acm.org/doi/10.1145/3494981), [ICDCS](assests/papers/lwang-icdcs20.pdf).
 
-------------------------
-## Teaching Experience
-### Teaching Assistant
-#### University of Toronto
-- ECE244 Programming Fundamentals
-- Writing Development Initiative
-- ECE344 Operating Systems
-- ECE243 Computer Organization
-- CSC258 Computer Organization
-- CSC263 Data Structures and Analysis
-- CSC148 Introduction to Computer Science
-#### Shanghai Jiao Tong University
-- MA500 Application of Fuzzy Math
-- CS214 Algorithm and Complexity
-- EE447 Mobile Internet
-### Lectures
-#### Shanghai Jiao Tong University
-- CS154 C++ Programming
-- CS149 Data Structure
-          
+------------------------          
 ## Honors and Academic Awards
 ### Scholarships
 #### Graduate
@@ -56,8 +37,8 @@ My research focuses on **privacy-preserving machine learning in distributed syst
 - First prize in Minds and Hands: engineering better life by MIT. 2017
 - Second prize in Shanghai Adolescents Science and Technology Innovation Contest. 2017
 
-## Professional Services
-### Paper Review
+## Professional Experience
+### Academic Reviewer
 #### Conferences
 - 2025 the 28th International Conference on Artificial Intelligence and Statistics (AISTATS).
 - 2025 IEEE/CVF Winter Conference on Applications of Computer Vision (WACV). 
@@ -74,14 +55,44 @@ My research focuses on **privacy-preserving machine learning in distributed syst
 - IEEE Transactions on Dependable and Secure Computing (TDSC).
 - IEEE Transactions on Network Science and Engineering (TNSE).
 - Transactions on Machine Learning Research (TMLR).
-### Appointments in Student Academic Committee
+  
+### Full-Time Experience
+- Machine Learning Engineer, EV.com. Oct. 2024-present.
+
+### Academic Appointments
+#### Appointments in Student Academic Committee
+- Academic Mentor, Global Graduates’ Union (GGU) Consulting. 2022-present<br>
+- Academic Mentor, Turing Academy. 2023-present<br>
 - Academic Committee, School of Electronic Information and Electrical Engineering, Shanghai Jiao Tong University. 2020-2022<br>
 - Study Assistance Committee, School of Electronic Information and Electrical Engineering, Shanghai Jiao Tong University. 2018-2022<br>
 - Student Committee, Office of Undergraduate Education, Shanghai Jiao Tong University . 2020-2021.<br>
 
+## Teaching Experience
+### Teaching Assistant
+#### University of Toronto
+- ECE244 Programming Fundamentals
+- Writing Development Initiative
+- ECE344 Operating Systems
+- ECE243 Computer Organization
+- CSC258 Computer Organization
+- CSC263 Data Structures and Analysis
+- CSC148 Introduction to Computer Science
+#### Shanghai Jiao Tong University
+- MA500 Application of Fuzzy Math
+- CS214 Algorithm and Complexity
+- EE447 Mobile Internet
+### Lectures
+#### Shanghai Jiao Tong University
+- CS154 C++ Programming
+- CS149 Data Structure
+
+------------------------    
 ## Fundings
 - Mitacs Accelerate Program
 - UofT ZJU Joint Seed Fund
 ## Volunteer
 - Shanghai Marathon, 2020.
 - International volunteer in Sri Lanka, in 2019. Watch on [Bilibili](https://www.bilibili.com/video/BV1Wb411r7tm/).
+## Hobbies
+- Basketball Team of Computer Science Department, SJTU. Champion, 2023.
+- Chinese National Third Grade Sportsman. Track-100 meters.
