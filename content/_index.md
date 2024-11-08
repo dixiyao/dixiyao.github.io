@@ -21,7 +21,7 @@ My research focuses on **privacy-preserving machine learning in distributed syst
 - Edward S. Rogers Sr. Graduate Scholarships. 2022, 2023, 2024.
 #### Undergraduate
 - Alumni Scholarship. 2021
-- HuaWei Scholarship. 2020
+<!-- - HuaWei Scholarship. 2020 -->
 - East Dong Businiess Scholarship. 2019
 - Shanghai Jiao Tong University ABC Scholarships (B). 2019, 2020, 2021
 ### Travel Grants
