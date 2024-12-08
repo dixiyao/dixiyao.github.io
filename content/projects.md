@@ -10,6 +10,9 @@ Apart from source code for my papers, I would like to share some of my interesti
 [Finetune a Large Laguage Model with Torchtune](https://github.com/dixiyao/dixiyao.github.io/wiki/Using-Torchtune-to-Fine%E2%80%90tune-an-LLM)     
 [Create an Arxiv Paper Dataset](https://github.com/dixiyao/dixiyao.github.io/wiki/Create-an-Arxiv-Paper-Dataset)
 
+### Privacy-Preserving Machine Learning
+[Bilibili video channel](https://space.bilibili.com/1260434578?plat_id=1&share_from=space&share_medium=iphone_i&share_plat=ios&share_session_id=7A5BE89F-6E00-499C-96B6-1089FCAC620E&share_source=WEIXIN&share_tag=s_i&spmid=main.space-contribution.0.0&timestamp=1733688077&unique_k=gzVYl8D)
+
 ## Open-source Software Framework
 [LLM for Academic Writing](https://github.com/dixiyao/LLM-Academic-Writing): This is a collection of helpful LLM tools I have found and developed. They leverage large generative models to improve academic writing.
 
