@@ -8,7 +8,7 @@ I'm currently working as a machine learning engineer at [EV.com](https://ev.com)
 My research focuses on **privacy-preserving machine learning in distributed systems**. My research interest includes data privacy, system security, Trustworthy ML, and decentralized trust technologies. I'm interested in solving problems with real-world use cases, facilitating full-stack solutions for data privacy and system security in modern decentralized and AI oriented ecosystem. Here are some examples of my constributions:
     
 - How can we realize privacy-preserving split learning and have as much as possible tradeoff for privacy, accuracy and efficiency? [CVPR](https://openreview.net/pdf?id=GuXxYkFBBy), [ICDM](/assests/papers/Privacy-Preserving-Split-Learning-via-Patch-Shuffling-over-Transformers.pdf), [TBD](/assests/papers/tbd-24.pdf), [WACV](/assests/papers/wacv-25.pdf).
-- How can we improve the performance of Federated Learning, without compromising the privacy requirements? [AAAI](/assests/papers/dyao-aaai24.pdf), [ICDCS](assests/papers/Federated_Model_Search_via_Reinforcement_Learning.pdf), [BigData](https://arxiv.org/pdf/2409.08858).
+- How can we address the data and device heterogeneity towards robuts Federated Learning, without compromising the privacy requirements? [AAAI](/assests/papers/dyao-aaai24.pdf), [ICDCS](assests/papers/Federated_Model_Search_via_Reinforcement_Learning.pdf), [BigData](https://arxiv.org/pdf/2409.08858).
 - Open-sourced distributed systems for privacy-preserving machine learning. [IMWUT](https://dl.acm.org/doi/10.1145/3494981), [ICDCS](assests/papers/lwang-icdcs20.pdf).
 
 ------------------------     
