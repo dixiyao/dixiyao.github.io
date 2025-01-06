@@ -38,6 +38,7 @@ My research focuses on **privacy-preserving machine learning in distributed syst
      
 ## Honors and Academic Awards
 ### Awards
+- **Bronze Medal for International Programs in China Collegiate Entrepreneurship Comptetition (National)**. 2024.
 - **Bronze Medal for International Programs in China Collegiate Entrepreneurship Comptetition (Shanghai)**. 2024.
 - Shanghai Jiao Tong University Outstanding Graduates. 2022
 - National Outstanding College Student Project of Innovation. 2022
