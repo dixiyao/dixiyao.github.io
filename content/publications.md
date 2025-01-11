@@ -9,13 +9,13 @@ Hengyuan Xu, Liyao Xiang, Hangyu Ye, **Dixi Yao**, Pengzhi Chu, Baochun Li. "[Pe
 
 **Dixi Yao**, Liyao Xiang, Hengyuan Xu, Hangyu Ye, Yingqi Chen. "[Privacy-Preserving Split Learning via Patch Shuffling over Transformers](https://ieeexplore.ieee.org/abstract/document/10027647)" in Proceedings of the 22nd IEEE International Conference on Data Mining (ICDM), Orlando, USA, November 28 - December 1, 2022. [[Slides]](/assests/slides/PatchShuffle.pdf).[[Code]](https://github.com/dixiyao/PatchShuffling).
 
-**Dixi Yao**, Baochun Li. "Is Split Learning Privacy-Preserving for Fine-Tuning Large Language Models?" in Special Issue on Pre-Trained Large Language Models of Transactions on Big Data (TBD). (To be appeared soon).
+**Dixi Yao**, Baochun Li. "[Is Split Learning Privacy-Preserving for Fine-Tuning Large Language Models?](https://ieeexplore.ieee.org/abstract/document/10818584)" in Special Issue on Pre-Trained Large Language Models of Transactions on Big Data (TBD), Earrly Access, December 30, 2024 [[Code]](https://github.com/TL-System/plato/tree/main/examples/split_learning/llm_split_learning).
 
 Hengyuan Xu, Liyao Xiang, Hangyu Ye, **Dixi Yao**, Pengzhi Chu, Baochun Li. "[Shuffled Transformer for Privacy-Preserving Split Learning](https://arxiv.org/abs/2304.07735)" arXiv 2304.07735, 2023.
 
 **Dixi Yao**. "[Risks When Sharing LoRA Fine-Tuned Diffusion Model Weights](https://arxiv.org/pdf/2409.08482)" arXiv 2409.08482, 2024.
 
-**Dixi Yao**. "[Towards Privacy-Preserving Split Learning for ControlNet](https://arxiv.org/pdf/2409.08503)" in Proceedings of IEEE/CVF Winter Conference on Applications of Computer Vision (WACV), Tucson, Arizona, USA, Feburary 28 March 4, 2024.
+**Dixi Yao**. "[Towards Privacy-Preserving Split Learning for ControlNet](https://arxiv.org/pdf/2409.08503)" in Proceedings of IEEE/CVF Winter Conference on Applications of Computer Vision (WACV), Tucson, Arizona, USA, Feburary 28 March 4, 2025.
 
 ## Personalized Federated Learning
 **Dixi Yao**, Baochun Li. "[PerFedRLNAS: One-for-all Personalized Federated Neural Architecture Search](https://ojs.aaai.org/index.php/AAAI/article/view/29576)” in Proceedings of the 38th Annual AAAI Conference on Artificial Intelligence (AAAI), Vancouver, Canada, February 20-27, 2024. [[Paper](/assests/papers/dyao-aaai24)].[[Supplementary](/public/assests/papers/dyao-aaai24-appendix)].[[Code]](https://github.com/TL-System/plato/tree/main/examples/model_search/pfedrlnas).
