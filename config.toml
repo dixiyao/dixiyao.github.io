@@ -72,7 +72,7 @@ use = "katex"
 [[params.socialIcons]]
 icon = "fas fa-envelope"
 title = "e-mail"
-url = "mailto:t-9dixi@cs.uchicago.edu"
+url = "mailto:dixi@cs.uchicago.edu"
 [[params.socialIcons]]
 icon = "fa-brands fa-google-scholar"
 title = "scholar"
