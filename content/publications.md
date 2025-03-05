@@ -5,6 +5,9 @@ title: Publications
 You can learn more about my papers through [Google Scholar](https://scholar.google.hk/citations?user=6f5HCVAAAAAJ&hl=en&oi=ao) and [OpenReview](https://openreview.net/profile?id=~Dixi_Yao1).
 
 ## Privacy-Preserving Machine Learning
+**Dixi Yao**, Tian Li. "Differentially Private Retrieval Augmented Generation with Random Projection" in ICLR 2025 Workshop
+Building Trust in LLMs and LLM Applications: From Guardrails to Explainability to Regulation, Singapore, Apr 27 - Apr 28, 2025.
+
 Hengyuan Xu, Liyao Xiang, Hangyu Ye, **Dixi Yao**, Pengzhi Chu, Baochun Li. "[Permutation Equivariance of Transformers and Its Applications](https://openreview.net/forum?id=GuXxYkFBBy)" in Proceedings of The IEEE/CVF Conference on Computer Vision and Pattern Recognition 2024 (CVPR), Seattle, USA, Jun 17 - Jun 21, 2024.
 
 **Dixi Yao**, Liyao Xiang, Hengyuan Xu, Hangyu Ye, Yingqi Chen. "[Privacy-Preserving Split Learning via Patch Shuffling over Transformers](https://ieeexplore.ieee.org/abstract/document/10027647)" in Proceedings of the 22nd IEEE International Conference on Data Mining (ICDM), Orlando, USA, November 28 - December 1, 2022. [[Slides]](/assests/slides/PatchShuffle.pdf).[[Code]](https://github.com/dixiyao/PatchShuffling).
