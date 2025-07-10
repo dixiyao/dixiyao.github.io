@@ -3,7 +3,7 @@ title = ""
 framed = true
 +++
 
-I'm currently working as a machine learning engineer at [EV.com](https://ev.com). Previouly, I co-founded a startup company: [Hemlig AI](https://hemligca.github.io/). Hemlig aims to study the cutting edge topics in trustworthy machine learning and implement these techniques into our products. I received my Master's degree from the Department of [Electrical and Computer Engineering](https://www.ece.utoronto.ca/) in the [University of Toronto](https://utoronto.ca/). I previously worked in [iQua](https://iqua.ece.toronto.edu/), advised by [Baochun Li](https://iqua.ece.toronto.edu/bli/). I received my bachelor degree from Department of [CSE](https://www.cs.sjtu.edu.cn/en/) in Shanghai Jiao Tong University. During my undergraduate studies, I was a research intern at [John Hopcroft Center for Computer Science](https://jhc.sjtu.edu.cn/), advised by [Liyao Xiang](http://xiangliyao.cn/) and [Xinbing Wang](https://www.cs.sjtu.edu.cn/~wang-xb/). Previously, I took a research fellowship at Max Planck Society, advised by [Yiting Xia](https://sites.google.com/view/yitingxia?pli=1) and [Binghang Yuan](https://binhangyuan.github.io/site/). I speak Mandarin, English, and French.
+I'm currently working as a machine learning engineer at [EV.com](https://ev.com) and [CarAI.com](https://www.carai.com/). Previouly, I co-founded a startup company: [Hemlig AI](https://hemligca.github.io/). Hemlig aims to study the cutting edge topics in trustworthy machine learning and implement these techniques into our products. I received my Master's degree from the Department of [Electrical and Computer Engineering](https://www.ece.utoronto.ca/) in the [University of Toronto](https://utoronto.ca/). I previously worked in [iQua](https://iqua.ece.toronto.edu/), advised by [Baochun Li](https://iqua.ece.toronto.edu/bli/). I received my bachelor degree from Department of [CSE](https://www.cs.sjtu.edu.cn/en/) in Shanghai Jiao Tong University. During my undergraduate studies, I was a research intern at [John Hopcroft Center for Computer Science](https://jhc.sjtu.edu.cn/), advised by [Liyao Xiang](http://xiangliyao.cn/) and [Xinbing Wang](https://www.cs.sjtu.edu.cn/~wang-xb/). Previously, I took a research fellowship at Max Planck Society, advised by [Yiting Xia](https://sites.google.com/view/yitingxia?pli=1) and [Binghang Yuan](https://binhangyuan.github.io/site/). I speak Mandarin, English, and French.
 
 My research focuses on **privacy-preserving machine learning in distributed systems**. My research interest includes data privacy, system security, Trustworthy ML, and decentralized trust technologies. I'm interested in solving problems with real-world use cases, facilitating full-stack solutions for data privacy and system security in modern decentralized and AI oriented ecosystem. Here are some examples of my constributions:
     
@@ -15,6 +15,7 @@ My research focuses on **privacy-preserving machine learning in distributed syst
 ## Professional Experience
 ### Academic Reviewer
 #### Conferences
+- 2025 NeurIPS 2025 Datasets and Benchmarks Track.
 - 2025 the International Conference on Machine Learning (ICML).
 - 2025 the 28th International Conference on Artificial Intelligence and Statistics (AISTATS).
 - 2025 IEEE/CVF Winter Conference on Applications of Computer Vision (WACV). 
@@ -35,6 +36,7 @@ My research focuses on **privacy-preserving machine learning in distributed syst
   
 ### Full-Time Experience
 - Machine Learning Engineer, EV.com. Oct. 2024-present.
+- Machine Learning Enginner, CarAI.com. Mar. 2025-present
      
 ## Honors and Academic Awards
 ### Awards
@@ -47,11 +49,12 @@ My research focuses on **privacy-preserving machine learning in distributed syst
 - Honorable Mention in Interdisciplinary Contest in Modeling. 2020
 - **First prize in China Collegiate Mathematics contest**. 2019
 - **First prize in National Olympiad in Informatics in Provinces**. 2017
-- First prize in Minds and Hands: engineering better life by MIT. 2017
+- First prize in Minds and Hands: engineering better life by MIT. 2017. [Newsletter](https://freewechat.com/a/MzA5ODAzMjcwMQ==/2652532910/2)
 - Second prize in Shanghai Adolescents Science and Technology Innovation Contest. 2017
   
 ### Scholarships
 #### Graduate
+<!-- - **Eckhardt Graduate Scholarship to The University of Chicago** (50,000 dollars). 2025 -->
 - Kwok Sau Po Scholarship. 2023
 - Czeslaw and Irene Klawe Scholarship. 2023
 - Ewing Rae Graduate Scholarship. 2023
@@ -96,7 +99,7 @@ My research focuses on **privacy-preserving machine learning in distributed syst
 - Mitacs Accelerate Program
 - UofT ZJU Joint Seed Fund
 ## Volunteer
-- Shanghai Marathon, 2020.
+- [Shanghai Marathon](https://paper.xinmin.cn/html/dfsports/2019-11-15/A14/14867.html), 2020.
 - International volunteer in Sri Lanka, in 2019. Watch on [Bilibili](https://www.bilibili.com/video/BV1Wb411r7tm/).
 ## Hobbies
 - Basketball Team of Computer Science Department, SJTU. Champion, 2023.

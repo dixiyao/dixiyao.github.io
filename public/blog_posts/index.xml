@@ -62,5 +62,38 @@
       
     </item>
     
+    <item>
+      <title>Ninth Art</title>
+      <link>/blog_posts/ninthart/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/blog_posts/ninthart/</guid>
+      
+        <description>Thoughts on Red Deepemtion 2, GTA, Cypberpunk, Mafia, Borderland, Assain Creed, Split Fiction, It takes two, Tumber Raider, Civilization, OverWatch, HearthStone, Wolong, Resident Evil</description>
+      
+    </item>
+    
+    <item>
+      <title>Some Interesting Stories during My Master</title>
+      <link>/blog_posts/masterinteresting/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/blog_posts/masterinteresting/</guid>
+      
+        <description>Some interesting stories during my master</description>
+      
+    </item>
+    
+    <item>
+      <title>Some Pieces of Advices on Chossing Career Path</title>
+      <link>/blog_posts/careerpath/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/blog_posts/careerpath/</guid>
+      
+        <description></description>
+      
+    </item>
+    
   </channel>
 </rss>

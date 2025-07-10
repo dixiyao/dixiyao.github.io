@@ -7,7 +7,7 @@ You can learn more about my papers through [Google Scholar](https://scholar.goog
 ## Privacy-Preserving Machine Learning
 
 ### Differential Privacy and Foundation Models
-**Dixi Yao**, Tian Li. "Differentially Private Retrieval Augmented Generation with Random Projection" in ICLR 2025 Workshop
+**Dixi Yao**, Tian Li. "[Differentially Private Retrieval Augmented Generation with Random Projection](https://openreview.net/forum?id=5DfhoxRPXh)" in ICLR 2025 Workshop
 Building Trust in LLMs and LLM Applications: From Guardrails to Explainability to Regulation, Singapore, Apr 27 - Apr 28, 2025.
 
 **Dixi Yao**. "[Towards Privacy-Preserving Split Learning for ControlNet](https://arxiv.org/pdf/2409.08503)" in Proceedings of IEEE/CVF Winter Conference on Applications of Computer Vision (WACV), Tucson, Arizona, USA, Feburary 28 March 4, 2025. Oral. [[Paper]](https://openaccess.thecvf.com/content/WACV2025/html/Yao_Towards_Privacy-Preserving_Split_Learning_for_ControlNet_WACV_2025_paper.html). [[Poster]](https://ieeecs-media.computer.org/media/conferences/wacv/2025/posters/Towards%20Privacy-Preserving%20Split%20Learning%20for%20ControlNet.pdf). [[Video]](https://video.computer.org/WACV-Posters25/4nqxoCyiSwisBpdnpnO3jS-wacv25-1723.mp4). [[Code]](https://github.com/TL-System/plato/tree/main/examples/split_learning/controlnet_split_learning).

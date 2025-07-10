@@ -3,7 +3,13 @@
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   <url>
     <loc>/</loc>
-    <lastmod>2025-02-08T00:00:00+00:00</lastmod>
+    <lastmod>2025-07-02T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>/stories/</loc>
+    <lastmod>2025-07-02T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>/stories/ningxin/</loc>
+    <lastmod>2025-07-02T00:00:00+00:00</lastmod>
   </url><url>
     <loc>/blog_posts/</loc>
     <lastmod>2025-02-08T00:00:00+00:00</lastmod>
@@ -27,9 +33,15 @@
   </url><url>
     <loc>/categories/</loc>
   </url><url>
+    <loc>/blog_posts/ninthart/</loc>
+  </url><url>
     <loc>/gallery/</loc>
   </url><url>
     <loc>/publications/</loc>
+  </url><url>
+    <loc>/blog_posts/masterinteresting/</loc>
+  </url><url>
+    <loc>/blog_posts/careerpath/</loc>
   </url><url>
     <loc>/tags/</loc>
   </url>
