@@ -13,6 +13,9 @@ My research focuses on **privacy-preserving machine learning in distributed syst
 
 ------------------------     
 ## Professional Experience
+### Program Committee
+- 2026 The 40th Annual AAAI Conference on Artificial Intelligence
+
 ### Academic Reviewer
 #### Conferences
 - 2025 NeurIPS 2025 Datasets and Benchmarks Track.
@@ -96,8 +99,8 @@ My research focuses on **privacy-preserving machine learning in distributed syst
 
 ------------------------    
 ## Fundings
-- Mitacs Accelerate Program
-- UofT ZJU Joint Seed Fund
+- [Mitacs Accelerate Program](https://www.mitacs.ca/our-programs/accelerate/)
+- [UofT ZJU Joint Seed Fund](https://research.utoronto.ca/sites/default/files/2024-01/UofT-ZJUJointSeedFundCallforProposal2024-Final.pdf)
 ## Volunteer
 - [Shanghai Marathon](https://paper.xinmin.cn/html/dfsports/2019-11-15/A14/14867.html), 2020.
 - International volunteer in Sri Lanka, in 2019. Watch on [Bilibili](https://www.bilibili.com/video/BV1Wb411r7tm/).
