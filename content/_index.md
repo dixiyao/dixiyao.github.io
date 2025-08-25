@@ -12,12 +12,16 @@ My research focuses on **privacy-preserving machine learning in distributed syst
 - Open-sourced distributed systems for privacy-preserving machine learning. [IMWUT](https://dl.acm.org/doi/10.1145/3494981), [ICDCS](assests/papers/lwang-icdcs20.pdf).
 
 ------------------------     
-## Professional Experience
+## Academia and Industry
+### Publication
+[Google Scholar](https://scholar.google.com/citations?user=6f5HCVAAAAAJ&hl=en) | [OpenReview](https://openreview.net/profile?id=%7EDixi_Yao1) | [DBLP](https://dblp.org/pid/286/5265) | [Semantic Scholar](https://www.semanticscholar.org/author/Dixi-Yao/2051655806)
+
 ### Program Committee
 - 2026 The 40th Annual AAAI Conference on Artificial Intelligence
 
-### Academic Reviewer
+### Reviewer
 #### Conferences
+- 2026 the 29th International Conference on Artificial Intelligence and Statistics (AISTATS).
 - 2025 NeurIPS 2025 Datasets and Benchmarks Track.
 - 2025 the International Conference on Machine Learning (ICML).
 - 2025 the 28th International Conference on Artificial Intelligence and Statistics (AISTATS).
@@ -37,11 +41,21 @@ My research focuses on **privacy-preserving machine learning in distributed syst
 - IEEE Transactions on Network Science and Engineering (TNSE).
 - Transactions on Machine Learning Research (TMLR).
   
-### Full-Time Experience
+### Full-Time Work Experience
 - Machine Learning Engineer, EV.com. Oct. 2024-present.
 - Machine Learning Enginner, CarAI.com. Mar. 2025-present
-     
-## Honors and Academic Awards
+
+### Appointments in Student Academic Committee
+- Academic Committee, School of Electronic Information and Electrical Engineering, Shanghai Jiao Tong University. 2020-2022<br>
+- Study Assistance Committee, School of Electronic Information and Electrical Engineering, Shanghai Jiao Tong University. 2018-2022<br>
+- Student Committee, Office of Undergraduate Education, Shanghai Jiao Tong University . 2020-2021.<br>
+
+### Part-Time Work Experience
+- Academic Mentor, Global Graduates’ Union (GGU) Consulting. 2022-present<br>
+- Academic Mentor, Turing Academy. 2023-present<br>
+
+---------------------------
+## Honors
 ### Awards
 - **Bronze Medal for International Programs in China Collegiate Entrepreneurship Comptetition (National)**. 2024.
 - **Bronze Medal for International Programs in China Collegiate Entrepreneurship Comptetition (Shanghai)**. 2024.
@@ -54,6 +68,10 @@ My research focuses on **privacy-preserving machine learning in distributed syst
 - **First prize in National Olympiad in Informatics in Provinces**. 2017
 - First prize in Minds and Hands: engineering better life by MIT. 2017. [Newsletter](https://freewechat.com/a/MzA5ODAzMjcwMQ==/2652532910/2)
 - Second prize in Shanghai Adolescents Science and Technology Innovation Contest. 2017
+
+### Academic Fundings
+- [Mitacs Accelerate Program](https://www.mitacs.ca/our-programs/accelerate/)
+- [UofT ZJU Joint Seed Fund](https://research.utoronto.ca/sites/default/files/2024-01/UofT-ZJUJointSeedFundCallforProposal2024-Final.pdf)
   
 ### Scholarships
 #### Graduate
@@ -70,15 +88,9 @@ My research focuses on **privacy-preserving machine learning in distributed syst
 #### Travel Grants
 - School of Graduate Studies (SGS) Conference Grant, University of Toronto. 2024
 
-### Academic Appointments
-#### Appointments in Student Academic Committee
-- Academic Mentor, Global Graduates’ Union (GGU) Consulting. 2022-present<br>
-- Academic Mentor, Turing Academy. 2023-present<br>
-- Academic Committee, School of Electronic Information and Electrical Engineering, Shanghai Jiao Tong University. 2020-2022<br>
-- Study Assistance Committee, School of Electronic Information and Electrical Engineering, Shanghai Jiao Tong University. 2018-2022<br>
-- Student Committee, Office of Undergraduate Education, Shanghai Jiao Tong University . 2020-2021.<br>
+------------------------    
 
-## Teaching Experience
+## Teaching 
 ### Teaching Assistant
 #### University of Toronto
 - ECE244 Programming Fundamentals
@@ -96,14 +108,21 @@ My research focuses on **privacy-preserving machine learning in distributed syst
 #### Shanghai Jiao Tong University
 - CS154 C++ Programming
 - CS149 Data Structure
+  
+---------------------------------
 
-------------------------    
-## Fundings
-- [Mitacs Accelerate Program](https://www.mitacs.ca/our-programs/accelerate/)
-- [UofT ZJU Joint Seed Fund](https://research.utoronto.ca/sites/default/files/2024-01/UofT-ZJUJointSeedFundCallforProposal2024-Final.pdf)
-## Volunteer
+## Personal Life
+### Volunteer
 - [Shanghai Marathon](https://paper.xinmin.cn/html/dfsports/2019-11-15/A14/14867.html), 2020.
 - International volunteer in Sri Lanka, in 2019. Watch on [Bilibili](https://www.bilibili.com/video/BV1Wb411r7tm/).
-## Hobbies
-- Basketball Team of Computer Science Department, SJTU. Champion, 2023.
-- Chinese National Third Grade Sportsman. Track-100 meters.
+  
+### Skills
+- CITI Program: Responsible Conduct of Research and Responsible Conduct of Research (RCR) course
+- Canada CELPIP Test (Canadian Culture English): CLP Level 9
+- Canada TCF Test (French): A2
+
+### Hobbies
+- Basketball Team of Computer Science Department, SJTU. Champion of Season 2021--2022.
+- Chinese National Third Grade Sportsman--Track-100 Meters.
+- Video Game Mods: [Suldan's Game](https://steamcommunity.com/sharedfiles/filedetails/?id=3489424957): Over 25,000 visitors and 6,500 subscription.
+- Back to the Dawn: One of the Winners of the Official [Collection Competition](https://www.xiaohongshu.com/explore/689f1367000000001b03d787?app_platform=ios&app_version=8.97.1&share_from_user_hidden=true&xsec_source=app_share&type=normal&xsec_token=CBiL1MVUbpyt6BEK1abWvD8YTsmrZegp6foeP8BLW36KE=&author_share=1&xhsshare=WeixinSession&shareRedId=N0kyNDpKOzk2NzUyOTgwNjY7OTc3PT5A&apptime=1756155988&share_id=767504fb555e44e6baa6582547beca83&wechatWid=51d371cf88b76841abbfe7415f9d17ef&wechatOrigin=menu)

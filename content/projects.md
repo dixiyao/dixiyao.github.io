@@ -56,5 +56,3 @@ If  you like my projects, sponsorship is welcomed!
 [![](https://badgen.net/badge/icon/HuggingFace/yellow?icon=git&label)](https://github.com/dixiyao)
 --> 
 
-## Video Game Mods
-- [Suldan's Game](https://steamcommunity.com/sharedfiles/filedetails/?id=3489424957): Over 21,538 visitors and 6,288 subscription.

@@ -6,22 +6,7 @@
     <description>Recent content on </description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en</language>
-    <lastBuildDate>Wed, 02 Jul 2025 00:00:00 +0000</lastBuildDate><atom:link href="/index.xml" rel="self" type="application/rss+xml" />
-    <item>
-      <title>我在多大读研究生的二三事--苏学姐篇--卷一</title>
-      <link>/stories/ningxin/</link>
-      <pubDate>Wed, 02 Jul 2025 00:00:00 +0000</pubDate>
-      
-      <guid>/stories/ningxin/</guid>
-      
-        <description>前言 小y曾在多伦多大学读硕士研究生。这篇“小故事集”讲的是小y和同组的苏学姐之间发生的几件趣事。原本这些都不算什么大事，小y也没打算提，但因为小y曾在社交媒体“小红书”上一条帖子下留过一句不到十个字的评论（帖子现已删除），结果却引得苏学姐在微信上大发雷霆。她发来一长串莫名其妙的话（稍后详述），大意是指责小y“造谣”，还说那条评论影响了她招生。好吧，既然如此，小y就借本文把当时评论展开说说。是真是假，读者诸君自有判断。如果真是无稽之谈，不攻自破便是。注意：鉴于网络并非法外之地，文中小y只会叙述自己亲身经历的事情，听说来的传闻一律不写。
-好客之道 初来导师的课题组时，小y举目无亲，人生地不熟。热情好客的苏学姐便邀约小y去聚会联谊。在另一位同学的阳台上，一群研究生难免一起吐槽起导师。期间小y感叹了一下多伦多这地方房租离谱，系里发的补助根本不够花。没想到苏学姐告诉我，在她刚来多伦多的时候，她是住在导师家的。导师和家人住在house楼上，苏学姐住在地下室，苏学姐还顺便吐槽说导师工作太忙，晚饭老吃鸡胸肉。
-众望所归 我们导师是联邦学习（federated learning）领域的大牛，还主导开发了一个非常好用的开源框架 Plato。这个框架能高效模拟联邦学习中客户端的并行训练，并且实现了许多不同的FL算法。苏学姐的主要研究方向之一就是联邦学习，并是一篇发表在 ACM TURC 会议上的论文的共同作者。那篇论文的一作是导师，Plato的大部分核心代码都是导师敲出来的心血结晶。而论文的二作正是苏学姐。不过我看了下 Plato 代码仓库的贡献排行榜，导师的贡献断崖式第一毋庸置疑，苏学姐的贡献度排第九位，只有10 次commit。
-题外话：苏学姐的研究兴趣相当广泛，发表论文涉猎metaverse, async federated learning, unlearning, large model.
-不耻下问 片段一 苏学姐有时也会向小y这个后辈讨教学术问题。印象中有两次：一次她问我有没有现成的 Matplotlib 画图脚本（比如画柱状图、散点图之类）。小y心想，学姐你之前发论文里的图表难道不是用代码画的？便好奇反问：“学姐，你以前论文里的图都是怎么弄的呀？” 没料到苏学姐回答：“就用 keynote 画。” 小y之后默默分享给她一个前辈整理的画图脚本。事后小y特意翻了翻苏学姐以前的论文，那里面的图怎么看都不像是 Keynote 里手工画出来的。</description>
-      
-    </item>
-    
+    <lastBuildDate>Sat, 08 Feb 2025 00:00:00 +0000</lastBuildDate><atom:link href="/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Prepare for CELPIP Test</title>
       <link>/blog_posts/celpip/</link>
@@ -89,29 +74,6 @@
     </item>
     
     <item>
-      <title>Ninth Art</title>
-      <link>/blog_posts/ninthart/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      
-      <guid>/blog_posts/ninthart/</guid>
-      
-        <description>Thoughts on Red Deepemtion 2, GTA, Cypberpunk, Mafia, Borderland, Assain Creed, Split Fiction, It takes two, Tumber Raider, Civilization, OverWatch, HearthStone, Wolong, Resident Evil</description>
-      
-    </item>
-    
-    <item>
-      <title>Photo Gallery</title>
-      <link>/gallery/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      
-      <guid>/gallery/</guid>
-      
-        <description>&amp;#x1f48f; With my beloved beautiful girl, Ziqi Li. &amp;#x2b50; With Professor Baochun Li, Professor Vincent Wong, and members of iQua on 2024 Engineering Institute of Canada (EIC) Gala.
-&amp;#x1f4f7; by Mitch Lenet</description>
-      
-    </item>
-    
-    <item>
       <title>Publications</title>
       <link>/publications/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
@@ -120,28 +82,6 @@
       
         <description>You can learn more about my papers through Google Scholar and OpenReview.
 Privacy-Preserving Machine Learning Differential Privacy and Foundation Models Dixi Yao, Tian Li. &amp;ldquo;Differentially Private Retrieval Augmented Generation with Random Projection&amp;rdquo; in ICLR 2025 Workshop Building Trust in LLMs and LLM Applications: From Guardrails to Explainability to Regulation, Singapore, Apr 27 - Apr 28, 2025.</description>
-      
-    </item>
-    
-    <item>
-      <title>Some Interesting Stories during My Master</title>
-      <link>/blog_posts/masterinteresting/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      
-      <guid>/blog_posts/masterinteresting/</guid>
-      
-        <description>Some interesting stories during my master</description>
-      
-    </item>
-    
-    <item>
-      <title>Some Pieces of Advices on Chossing Career Path</title>
-      <link>/blog_posts/careerpath/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      
-      <guid>/blog_posts/careerpath/</guid>
-      
-        <description></description>
       
     </item>
     
