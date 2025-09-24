@@ -24,6 +24,10 @@ Hengyuan Xu, Liyao Xiang, Hangyu Ye, **Dixi Yao**, Pengzhi Chu, Baochun Li. "[Sh
 
 **Dixi Yao**. "[Risks When Sharing LoRA Fine-Tuned Diffusion Model Weights](https://arxiv.org/pdf/2409.08482)" arXiv 2409.08482, 2024.
 
+## Optimization for Foundation Models
+### KV Cache
+Minghui Liu, Tahseen Rabbani, Aadi Palnitkar, Hyunwoo Jae, Kyle Rui Sang, **Dixi Yao**, Shayan Shabihi, Fuheng Zhao, Tian Li, Ce Zhang, Furong Huang, Kunpeng Zhang "[Hold Onto That Thought: Assessing KV Cache Compression On Reasoning](https://openreview.net/forum?id=OtZtLYAdQY)" in NeurIPS 2025 Workshop on Efficient Reasoning, Mexico City, Mexico, December 16 - 17, 2025.
+
 
 ## Federated Learning
 ### Federated Neural Architecture Search
