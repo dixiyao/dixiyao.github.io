@@ -16,12 +16,12 @@ My research focuses on **privacy-preserving machine learning in distributed syst
 ### Publication
 [Google Scholar](https://scholar.google.com/citations?user=6f5HCVAAAAAJ&hl=en) | [OpenReview](https://openreview.net/profile?id=%7EDixi_Yao1) | [DBLP](https://dblp.org/pid/286/5265) | [Semantic Scholar](https://www.semanticscholar.org/author/Dixi-Yao/2051655806)
 
-### Program Committee
-- 2026 The 40th Annual AAAI Conference on Artificial Intelligence
-
 ### Reviewer
 #### Conferences
+- 2026 IEEE/CVF Conference on Computer Vision and Pattern Recognition (CVPR).
+- 2026 the Fourteenth International Conference on Learning Representations (ICLR).
 - 2026 the 29th International Conference on Artificial Intelligence and Statistics (AISTATS).
+- 2026 The 40th Annual AAAI Conference on Artificial Intelligence
 - 2025 NeurIPS 2025 Datasets and Benchmarks Track.
 - 2025 the International Conference on Machine Learning (ICML).
 - 2025 the 28th International Conference on Artificial Intelligence and Statistics (AISTATS).
@@ -44,6 +44,9 @@ My research focuses on **privacy-preserving machine learning in distributed syst
 ### Full-Time Work Experience
 - Machine Learning Engineer, EV.com. Oct. 2024-present.
 - Machine Learning Enginner, CarAI.com. Mar. 2025-present
+
+### Talks
+- Invited to SDLab (hosted by Professor Jingbo Shang) at UCSD (online). [Slides](/assests/talks/ucsd_talk.pdf)
 
 ### Appointments in Student Academic Committee
 - Academic Committee, School of Electronic Information and Electrical Engineering, Shanghai Jiao Tong University. 2020-2022<br>
@@ -75,18 +78,18 @@ My research focuses on **privacy-preserving machine learning in distributed syst
   
 ### Scholarships
 #### Graduate
-<!-- - **Eckhardt Graduate Scholarship to The University of Chicago** (50,000 dollars). 2025 -->
-- Kwok Sau Po Scholarship. 2023
-- Czeslaw and Irene Klawe Scholarship. 2023
-- Ewing Rae Graduate Scholarship. 2023
-- Edward S. Rogers Sr. Graduate Scholarships. 2022, 2023, 2024.
+- Eckhardt Graduate Scholarship to The University of Chicago. **50,000 USD dollars**. 2025 
+- Kwok Sau Po Scholarship. **1,500 USD dollars**. 2023
+- Czeslaw and Irene Klawe Scholarship. **9,720.40 CAD dollars**. 2023
+- Ewing Rae Graduate Scholarship. **5,279.60 CAD dollars**. 2023
+- Edward S. Rogers Sr. Graduate Scholarships. **28, CAD dollars**. 2022, 2023, 2024.
 #### Undergraduate
-- Alumni Scholarship. 2021
-- HuaWei Scholarship. 2020
-- East Dong Businiess Scholarship. 2019
+- Alumni Scholarship. **15,000 CNY**. 2021
+- HuaWei Scholarship. **8,000 CNY**. 2020
+- East Dong Businiess Scholarship. **10,000 CNY**. 2019
 - Shanghai Jiao Tong University ABC Scholarships (B). 2019, 2020, 2021
 #### Travel Grants
-- School of Graduate Studies (SGS) Conference Grant, University of Toronto. 2024
+- School of Graduate Studies (SGS) Conference Grant, University of Toronto. **1,500 USD dollars**. 2024
 
 ------------------------    
 
