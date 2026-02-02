@@ -1,0 +1,53 @@
+{
+  "posts": [
+    {
+      "id": "csphdapp",
+      "title": "Prepare Your Application for CS PhD.",
+      "author": "Dixi Yao",
+      "date": "2024-05-14",
+      "content": "blog_posts/csphdapp.md"
+    },
+    {
+      "id": "codewriting",
+      "title": "Write High-quality Code",
+      "author": "Dixi Yao",
+      "date": "2024-07-11",
+      "content": "blog_posts/codewriting.md"
+    },
+    {
+      "id": "celpip",
+      "title": "Prepare for CELPIP Test",
+      "author": "Dixi Yao",
+      "date": "2025-02-08",
+      "content": "blog_posts/celpip.md"
+    },
+    {
+      "id": "workstation",
+      "title": "Build Your Own GPU Workstation",
+      "author": "Dixi Yao",
+      "date": "2024-08-27",
+      "content": "blog_posts/workstation.md"
+    },
+    {
+      "id": "ssh_llm",
+      "title": "Efficient Coding Trick: Letting Cursor Access Project Folder via SSH",
+      "author": "Dixi Yao",
+      "date": "2025-11-11",
+      "content": "blog_posts/ssh_llm.md"
+    },
+    {
+      "id": "openbusiness",
+      "title": "Open a Start-Up",
+      "author": "Dixi Yao",
+      "date": "2025-01-06",
+      "content": "blog_posts/openbusiness.md"
+    },
+    {
+      "id": "academicsocial",
+      "title": "Random Thoughts on Academic Social",
+      "author": "Dixi Yao",
+      "date": "2026-01-01",
+      "content": "blog_posts/academic_social.md"
+    }
+  ]
+}

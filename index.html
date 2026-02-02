@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Dixi Yao - PhD Student at University of Chicago">
+    <meta http-equiv="Cache-Control" content="no-cache, no-store, must-revalidate">
+    <meta http-equiv="Pragma" content="no-cache">
+    <meta http-equiv="Expires" content="0">
+    <title>Dixi Yao</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="css/style.css?v=1">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=JetBrains+Mono:wght@400;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <!-- Navigation -->
+    <nav class="navbar" id="navbar">
+        <div class="nav-container">
+            <div class="nav-profile">
+                <img id="navProfileImage" src="" alt="Dixi Yao" class="nav-profile-img">
+                <div class="nav-profile-text">
+                    <div class="nav-brand">
+                        <a href="/" id="navTitle"></a>
+                    </div>
+                    <p class="nav-subtitle" id="navSubtitle"></p>
+                    <div class="nav-social-links" id="navSocialLinks">
+                        <!-- Social links will be populated by JS -->
+                    </div>
+                </div>
+            </div>
+            <ul class="nav-menu" id="navMenu">
+                <!-- Navigation items will be populated by JS -->
+            </ul>
+            <button class="nav-toggle" id="navToggle" aria-label="Toggle navigation">
+                <span></span>
+                <span></span>
+                <span></span>
+            </button>
+        </div>
+    </nav>
+
+    <!-- Left Sidebar Navigation -->
+    <aside class="sidebar-nav" id="sidebarNav">
+        <div class="sidebar-header">
+            <button class="sidebar-toggle" id="sidebarToggle" aria-label="Toggle sidebar">
+                <i class="fas fa-bars"></i>
+            </button>
+            <h3 class="sidebar-title">Navigation</h3>
+        </div>
+        <nav class="sidebar-menu" id="sidebarMenu">
+            <!-- Navigation items will be populated by JS -->
+        </nav>
+    </aside>
+
+    <!-- Sidebar Expand Button (shown when collapsed) -->
+    <button class="sidebar-expand-btn" id="sidebarExpandBtn" aria-label="Expand sidebar">
+        <i class="fas fa-bars"></i>
+    </button>
+
+    <!-- Main Content -->
+    <main class="main-content" id="mainContent">
+        <!-- Hero Section -->
+        <section class="hero" id="home">
+            <div class="container">
+                <div class="hero-content">
+                    <div class="hero-research" id="heroResearch">
+                        <!-- Research content will be populated by JS -->
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Home Content -->
+        <section class="content-section" id="homeContent">
+            <div class="container">
+                <div class="content-wrapper" id="homeContentWrapper">
+                    <!-- Content will be populated by JS -->
+                </div>
+            </div>
+        </section>
+
+        <!-- Publications Section -->
+        <section class="content-section" id="publications">
+            <div class="container">
+                <h2 class="section-title">Publications</h2>
+                <div id="publicationsContent">
+                    <!-- Publications will be populated by JS -->
+                </div>
+            </div>
+        </section>
+
+        <!-- Projects Section -->
+        <section class="content-section" id="projects">
+            <div class="container">
+                <h2 class="section-title">Projects</h2>
+                <div id="projectsContent">
+                    <!-- Projects will be populated by JS -->
+                </div>
+            </div>
+        </section>
+
+        <!-- Blog Section -->
+        <section class="content-section" id="blog">
+            <div class="container">
+                <h2 class="section-title">Blogs</h2>
+                <div id="blogContent">
+                    <!-- Blog posts will be populated by JS -->
+                </div>
+            </div>
+        </section>
+
+        <!-- Pets Section -->
+        <section class="content-section" id="pets">
+            <div class="container">
+                <h2 class="section-title">Pets</h2>
+                <div id="petsContent">
+                    <!-- Pet images will be populated by JS -->
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- Image Modal -->
+    <div class="image-modal" id="imageModal">
+        <div class="image-modal-content">
+            <span class="image-modal-close" id="imageModalClose">&times;</span>
+            <img class="image-modal-img" id="imageModalImg" src="" alt="">
+            <div class="image-modal-title" id="imageModalTitle"></div>
+        </div>
+    </div>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <p>&copy; 2023-<span id="currentYear"></span> Dixi Yao. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <!-- Scripts -->
+    <script src="https://cdn.jsdelivr.net/npm/marked@11.1.1/marked.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/dompurify@3.0.6/dist/purify.min.js"></script>
+    <script src="js/app.js?v=1"></script>
+    
+    <!-- Google Analytics -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-353217296"></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
+        function gtag(){dataLayer.push(arguments);}
+        gtag('js', new Date());
+        gtag('config', 'G-353217296');
+    </script>
+</body>
+</html>
+

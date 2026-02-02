@@ -1,2 +1,7 @@
+node_modules/
+dist/
 .DS_Store
-.hugo_build.lock
+*.log
+.env
+.idea/
+.vscode/

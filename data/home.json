@@ -1,0 +1,110 @@
+{
+  "research": {
+    "title": "Research",
+    "content": "My current research is on **privacy-preserving machine learning and federated agents (learning)**. I am generally interested in **advancing the efficiency, privacy, and trustworthiness of foundation models in distributed systems**. My research focuses on challenges encountered when deploying AI methods in real-world commercial environments, including accelerating training and inference, protecting confidential and private data, avoiding data breaches of companies' databases, preventing copyright infringement, and improving the stability and robustness of foundation model systems. Below are some examples of my contributions:\n\n- **Data Breach:** Assessing the extent of data leakage in various settings, including LLMs ([TBD](/assests/papers/tbd-24.pdf)), RAG systems ([ICLR](https://openreview.net/forum?id=5DfhoxRPXh)), vision transformers ([CVPR](https://openreview.net/pdf?id=GuXxYkFBBy), [ICDM](/assests/papers/Privacy-Preserving-Split-Learning-via-Patch-Shuffling-over-Transformers.pdf)), and diffusion models ([WACV](/assests/papers/wacv-25.pdf)).\n- **Copyright:** Developing strategies for model developers to protect their model copyrights.\n- **Utility:** Improving the efficiency of knowledge aggregation across multiple agents.\n- **Efficiency:** Enhancing distributed training and efficient inference such as studying KVCache compression ([NeurIPS](https://openreview.net/forum?id=OtZtLYAdQY)).\n- **Customer Personalization:** Advancing personalized federated learning ([AAAI](/assests/papers/dyao-aaai24.pdf), [ICDCS](assests/papers/Federated_Model_Search_via_Reinforcement_Learning.pdf), [BigData](https://arxiv.org/pdf/2409.08858)).\n- **Open-Source Platforms:** Contributing to edge–cloud computing frameworks ([IMWUT](https://dl.acm.org/doi/10.1145/3494981), [ICDCS](assests/papers/lwang-icdcs20.pdf)) and federated learning platforms ([Plato](https://github.com/TL-System/plato))."
+  },
+  "about": {
+    "title": "About Me",
+    "content": "I am currently a first-year PhD student at University of Chicago. My supervisor is [Tian Li](https://litian96.github.io/). I also work closely with [Tahseen Rabbani](https://twr7bm.github.io/).\n\nBefore I began my PhD study, I was a machine learning engineer at [EV.com](https://ev.com) and [CarAI.com](https://www.carai.com/) where I built complete agent pipelines from scratch for customer service at car dealerships. I was one of the lead team members on the backend where we built a database system, multi-language TTS, a GraphRAG system to store inventory information, agents with various DMS tools via MCP, and cloud deployment. The company made significant profits by deploying CarAI agents for big dealerships across Canada and the US.\n\nI received my Master's degree from the Department of [Electrical and Computer Engineering](https://www.ece.utoronto.ca/) at the [University of Toronto](https://utoronto.ca/). I previously worked in [iQua](https://iqua.ece.toronto.edu/) and collaborated with [Baochun Li](https://iqua.ece.toronto.edu/bli/). During my master's, I also founded a start-up [HemligAI](https://hemligca.github.io/), studying privacy-preserving solutions for foundation models. Although I currently do not actively get involved in company business, we are still receiving several awards across the world.\n\nI received my bachelor's degree from the Department of [CSE](https://www.cs.sjtu.edu.cn/en/) at Shanghai Jiao Tong University. During my undergraduate studies, I was a research intern at [John Hopcroft Center for Computer Science](https://jhc.sjtu.edu.cn/), advised by [Liyao Xiang](http://xiangliyao.cn/) and [Xinbing Wang](https://www.cs.sjtu.edu.cn/~wang-xb/). Meanwhile, I took a research fellowship at Max Planck Society, advised by [Yiting Xia](https://sites.google.com/view/yitingxia?pli=1), [Binghang Yuan](https://binhangyuan.github.io/site/) and [Florin Dinu](https://scholar.google.com/citations?user=zmI-4VkAAAAJ&hl=en). I speak Mandarin, English, and French."
+  },
+  "academia": {
+    "title": "Academia and Industry",
+    "reviewer": {
+      "content": "I am active in the machine learning community and have served as a reviewer in",
+      "conferences": {
+        "2026": ["CVPR", "ICLR", "AISTATS", "AAAI"],
+        "2025": ["NeurIPS", "ICML", "AISTATS", "WACV", "ICLR", "ACL"],
+        "2024": ["NeurIPS", "CVPR"]
+      },
+      "journals": ["IEEE TPDS", "IEEE TDSC", "IEEE TNSE", "TMLR","Array","Neural Networks"]
+    },
+    "workExperience": {
+      "fullTime": [
+        "Machine Learning Engineer, EV.com and CarAI.com.",
+        "CEO, HemligAI"
+      ],
+      "partTime": [
+        "Academic Mentor, Global Graduates' Union (GGU) Consulting.",
+        "Academic Mentor, Turing Academy."
+      ]
+    },
+    "talks": [
+      "Invited to SDLab (hosted by Professor [Jingbo Shang](https://shangjingbo1226.github.io/)) at UCSD (online). [Slides](/assests/talks/ucsd_talk.pdf)",
+      "Presentation given at security seminar (hosted by Professor [Grant Ho](https://people.cs.uchicago.edu/~grantho/)) at UChicago. [Slides](https://docs.google.com/presentation/d/1RIntczKrfX6t5WCO-3XVcfX8Z4h7iY_0sbdJGeSARvY/edit?usp=sharing)"
+    ],
+    "appointments": [
+      "Academic Committee, School of Electronic Information and Electrical Engineering, Shanghai Jiao Tong University. 2020-2022",
+      "Study Assistance Committee, School of Electronic Information and Electrical Engineering, Shanghai Jiao Tong University. 2018-2022",
+      "Student Committee, Office of Undergraduate Education, Shanghai Jiao Tong University. 2020-2021."
+    ]
+  },
+  "honors": {
+    "title": "Honors",
+    "awards": [
+      "**Bronze Medal for International Programs in China Collegiate Entrepreneurship Competition (National)**. 2024.",
+      "**Bronze Medal for International Programs in China Collegiate Entrepreneurship Competition (Shanghai)**. 2024.",
+      "Shanghai Jiao Tong University Outstanding Graduates. 2022",
+      "National Outstanding College Student Project of Innovation. 2022",
+      "Honor for outstanding students in the School of Electronic Information and Electrical Engineering. 2018, 2019, 2020, 2021",
+      "Third prize in 17th \"Challenger\" Shanghai Collegiate Science and Technology Competition. 2021.",
+      "Honorable Mention in Interdisciplinary Contest in Modeling. 2020",
+      "**First prize in China Collegiate Mathematics contest**. 2019",
+      "**First prize in National Olympiad in Informatics in Provinces**. 2017",
+      "First prize in Minds and Hands: engineering better life by MIT. 2017. [Newsletter](https://freewechat.com/a/MzA5ODAzMjcwMQ==/2652532910/2)",
+      "Second prize in Shanghai Adolescents Science and Technology Innovation Contest. 2017"
+    ],
+    "fundings": [
+      "[Mitacs Accelerate Program](https://www.mitacs.ca/our-programs/accelerate/)",
+      "[UofT ZJU Joint Seed Fund](https://research.utoronto.ca/sites/default/files/2024-01/UofT-ZJUJointSeedFundCallforProposal2024-Final.pdf)"
+    ],
+    "scholarships": {
+      "graduate": [
+        "Eckhardt Graduate Scholarship to The University of Chicago. **50,000 USD dollars**. 2025",
+        "Kwok Sau Po Scholarship. **1,500 USD dollars**. 2023",
+        "Czeslaw and Irene Klawe Scholarship. **9,720.40 CAD dollars**. 2023",
+        "Ewing Rae Graduate Scholarship. **5,279.60 CAD dollars**. 2023",
+        "Edward S. Rogers Sr. Graduate Scholarships. **28,000 CAD dollars**. 2022, 2023, 2024."
+      ],
+      "undergraduate": [
+        "Alumni Scholarship. **15,000 CNY**. 2021",
+        "HuaWei Scholarship. **8,000 CNY**. 2020",
+        "East Dong Business Scholarship. **10,000 CNY**. 2019",
+        "Shanghai Jiao Tong University ABC Scholarships (B). 2019, 2020, 2021"
+      ],
+      "travelGrants": [
+        "School of Graduate Studies (SGS) Conference Grant, University of Toronto. **1,500 USD dollars**. 2024"
+      ]
+    }
+  },
+  "teaching": {
+    "title": "Teaching",
+    "teachingAssistant": {
+      "University of Toronto": ["ECE244 Programming Fundamentals", "Writing Development Initiative (UTM)", "ECE344 Operating Systems", "ECE243 Computer Organization", "CSC258 Computer Organization", "CSC263 Data Structures and Analysis", "CSC148 Introduction to Computer Science"],
+      "Shanghai Jiao Tong University": ["MA500 Application of Fuzzy Math", "CS214 Algorithm and Complexity", "EE447 Mobile Internet"]
+    },
+    "lecturer": {
+      "Shanghai Jiao Tong University": ["CS154 C++ Programming", "CS149 Data Structure"]
+    }
+  },
+  "personalLife": {
+    "title": "Personal Life",
+    "volunteer": [
+      "[Shanghai Marathon](https://paper.xinmin.cn/html/dfsports/2019-11-15/A14/14867.html).",
+      "International volunteer in Sri Lanka. Watch on [Bilibili](https://www.bilibili.com/video/BV1Wb411r7tm/).",
+      "Donation to super talented secondary school students who are in under-average economic conditions, organized by Bilibili.",
+      "Donation to OpenReview community. [Donation link](https://openreview.net/donate)"
+    ],
+    "skills": [
+      "CITI Program: Responsible Conduct of Research and Responsible Conduct of Research (RCR) course",
+      "Canada CELPIP Test (Canadian Culture English): CLP Level 9",
+      "Canada TCF Test (French): A2"
+    ],
+    "hobbies": [
+      "Basketball Team of Computer Science Department, SJTU. Champion of Season 2021-2022.",
+      "Chinese National Third Grade Sportsman: Track 100 Meters.",
+      "Video Game Mods: [Suldan's Game](https://steamcommunity.com/sharedfiles/filedetails/?id=3489424957): Over **25,000** visitors and **6,500** subscription.",
+      "Back to the Dawn: One of the Winners of the Official [Collection Competition](https://www.xiaohongshu.com/explore/689f1367000000001b03d787?app_platform=ios&app_version=8.97.1&share_from_user_hidden=true&xsec_source=app_share&type=normal&xsec_token=CBiL1MVUbpyt6BEK1abWvD8YTsmrZegp6foeP8BLW36KE=&author_share=1&xhsshare=WeixinSession&shareRedId=N0kyNDpKOzk2NzUyOTgwNjY7OTc3PT5A&apptime=1756155988&share_id=767504fb555e44e6baa6582547beca83&wechatWid=51d371cf88b76841abbfe7415f9d17ef&wechatOrigin=menu)."
+    ]
+  }
+}
+

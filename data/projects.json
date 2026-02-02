@@ -1,0 +1,141 @@
+{
+  "intro": "I believe having a good code repo is a necessary part of a good paper. You can find the source code for my papers and other interesting projects through my [Github](https://github.com/dixiyao).",
+  "githubGraph": "https://github-readme-activity-graph.vercel.app/graph?username=dixiyao&theme=github-light&bg_color=f8f9fa&color=4a90e2&line=5b9bd5&point=5b9bd5&area=true&hide_border=true",
+  "huggingFace": "I also share some interesting spaces, models, and datasets I created during my past projects on my [Hugging Face](https://huggingface.co/dixiyao).",
+  "sections": [
+    {
+      "title": "Tutorials",
+      "subsections": [
+        {
+          "title": "Large Language Model",
+          "items": [
+            {
+              "title": "Build a ChatBot Application with Own Data Using Unsloth and RAG",
+              "url": "https://github.com/dixiyao/dixiyao.github.io/wiki/Build-a-ChatBot-Application-with-Own-Data-Using-Unsloth-and-RAG"
+            },
+            {
+              "title": "Finetune a Large Language Model with Torchtune",
+              "url": "https://github.com/dixiyao/dixiyao.github.io/wiki/Using-Torchtune-to-Fine%E2%80%90tune-an-LLM"
+            },
+            {
+              "title": "Create an Arxiv Paper Dataset",
+              "url": "https://github.com/dixiyao/dixiyao.github.io/wiki/Create-an-Arxiv-Paper-Dataset"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "title": "Open-source Software Framework",
+      "items": [
+        {
+          "title": "LLM for Academic Writing",
+          "url": "https://github.com/dixiyao/LLM-Academic-Writing",
+          "description": "This is a collection of helpful LLM tools I have found and developed. They leverage large generative models to improve academic writing."
+        },
+        {
+          "title": "Plato",
+          "url": "https://github.com/TL-System/plato",
+          "description": "A New Framework for Scalable Federated Learning Research.",
+          "subitems": [
+            {
+              "title": "Federated Neural Architecture Search",
+              "url": "https://github.com/TL-System/plato/tree/main/examples/model_search"
+            },
+            {
+              "title": "System-heterogenous Federated Learning",
+              "url": "https://github.com/TL-System/plato/tree/main/examples/model_search/sysheterofl"
+            },
+            {
+              "title": "Split Learning",
+              "url": "https://github.com/TL-System/plato/tree/main/examples/split_learning"
+            },
+            {
+              "title": "Personalized Federated Learning",
+              "url": "https://github.com/TL-System/plato/tree/main/examples/personalized_fl"
+            }
+          ]
+        },
+        {
+          "title": "Edge-Cloud Computing Framework",
+          "url": "https://github.com/dixiyao/Context-Aware-Compilation-of-DNN-Training-Pipelines-across-Edge-and-Cloud",
+          "description": "An edge-cloud computing framework across IoT devices and a public cloud server for deep learning models."
+        },
+        {
+          "title": "Automatic Tooth Extraction System",
+          "url": "https://github.com/dixiyao/pullteeth",
+          "description": "A system developed upon UR5 and Python, navigating the robotic arm to automatically plan and conduct the tooth extraction surgery."
+        }
+      ]
+    },
+    {
+      "title": "Extensions for Course Projects",
+      "items": [
+        {
+          "title": "V-Guard Applied in Supply Chain",
+          "url": "https://github.com/anlowee/vguardbft"
+        },
+        {
+          "title": "Fly Express Recognition",
+          "url": "https://github.com/dixiyao/Flyexpress-pytorch"
+        },
+        {
+          "title": "Extended Structure Entropy",
+          "url": "https://github.com/dixiyao/Extended-Structure-Entropy"
+        },
+        {
+          "title": "Mentor Relate",
+          "url": "https://github.com/dixiyao/Mentor-Relate"
+        },
+        {
+          "title": "Solidwork Application on the Cloud",
+          "url": "https://github.com/dixiyao/Cloud-Solidwork-Application"
+        },
+        {
+          "title": "CPU with Five-level Pipeline",
+          "url": "https://github.com/dixiyao/SJTU_CS145"
+        },
+        {
+          "title": "Medical Image Classification",
+          "url": "https://github.com/dixiyao/ECE1513"
+        }
+      ]
+    },
+    {
+      "title": "Useful Tools",
+      "items": [
+        {
+          "title": "SpecNet",
+          "url": "https://github.com/dixiyao/SpecNet",
+          "description": "Replication of a series of networks completely training and inferencing over spectral/frequency domain."
+        },
+        {
+          "title": "Non-IID Dataset Creator",
+          "url": "https://github.com/dixiyao/Create-Non-IID-dataset-torch",
+          "description": "An interface to create non-i.i.d. datasets quickly in federated learning."
+        },
+        {
+          "title": "Hirschberg Editing Distance",
+          "url": "https://github.com/dixiyao/Hirschberge-Editing-distance",
+          "description": "A C++ implementation of Hirschberg editing distance"
+        }
+      ]
+    },
+    {
+      "title": "Useful Resources",
+      "content": "I would like to share some useful references during my research experience. Please kindly check them.",
+      "items": [
+        {
+          "title": "An Archive of Useful Resources",
+          "url": "https://github.com/dixiyao/dixiyao.github.io/wiki/An-archive-of-useful-resources"
+        }
+      ]
+    }
+  ],
+  "sponsor": {
+    "text": "If you like my projects, sponsorship is welcome!",
+    "url": "https://github.com/sponsors/dixiyao",
+    "badge": "https://img.shields.io/static/v1?label=Sponsor&message=%E2%9D%A4&logo=GitHub&color=%23fe8e86"
+  }
+}
+

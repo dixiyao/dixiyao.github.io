@@ -1,0 +1,189 @@
+{
+  "header": "You can learn more about my papers through [Google Scholar](https://scholar.google.com/citations?user=6f5HCVAAAAAJ&hl=en) | [OpenReview](https://openreview.net/profile?id=~Dixi_Yao1) | [DBLP](https://dblp.org/pid/286/5265) | [Semantic Scholar](https://www.semanticscholar.org/author/Dixi-Yao/2051655806).",
+  "categories": [
+    {
+      "name": "Privacy-Preserving Machine Learning",
+      "subcategories": [
+        {
+          "name": "Foundation Models",
+          "publications": [
+            {
+              "authors": "**Dixi Yao**, Tian Li",
+              "title": "Differentially Private Retrieval Augmented Generation with Random Projection",
+              "venue": "ICLR 2025 Workshop",
+              "venueType": "workshop",
+              "links": {
+                "paper": "https://openreview.net/forum?id=5DfhoxRPXh"
+              },
+              "image": "paper_figs/privacy_rag.png"
+            },
+            {
+              "authors": "**Dixi Yao**",
+              "title": "Towards Privacy-Preserving Split Learning for ControlNet",
+              "venue": "WACV 2025",
+              "venueType": "conference",
+              "links": {
+                "paper": "https://openaccess.thecvf.com/content/WACV2025/html/Yao_Towards_Privacy-Preserving_Split_Learning_for_ControlNet_WACV_2025_paper.html",
+                "code": "https://github.com/TL-System/plato/tree/main/examples/split_learning/controlnet_split_learning",
+                "poster": "https://ieeecs-media.computer.org/media/conferences/wacv/2025/posters/Towards%20Privacy-Preserving%20Split%20Learning%20for%20ControlNet.pdf",
+                "video": "https://video.computer.org/WACV-Posters25/4nqxoCyiSwisBpdnpnO3jS-wacv25-1723.mp4"
+              },
+              "image":"paper_figs/sl_controlnet.png"
+            },
+            {
+              "authors": "**Dixi Yao**, Baochun Li",
+              "title": "Is Split Learning Privacy-Preserving for Fine-Tuning Large Language Models?",
+              "venue": "TBD 2024",
+              "venueType": "journal",
+              "links": {
+                "paper": "https://ieeexplore.ieee.org/abstract/document/10818584",
+                "code": "https://github.com/TL-System/plato/tree/main/examples/split_learning/llm_split_learning"
+              },
+              "image": "paper_figs/sl_llm.png"
+            },
+            {
+              "authors": "**Dixi Yao**",
+              "title": "Risks When Sharing LoRA Fine-Tuned Diffusion Model Weights",
+              "venue": "arXiv 2024",
+              "venueType": "workshop",
+              "links": {
+                "arxiv": "https://arxiv.org/pdf/2409.08482"
+              },
+              "image": "paper_figs/lora_controlnet.png"
+            }
+          ]
+        },
+        {
+          "name": "Pertubation Techniques",
+          "publications": [
+            {
+              "authors": "Hengyuan Xu, Liyao Xiang, Hangyu Ye, **Dixi Yao**, Pengzhi Chu, Baochun Li",
+              "title": "Permutation Equivariance of Transformers and Its Applications",
+              "venue": "CVPR 2024",
+              "venueType": "conference",
+              "links": {
+                "paper": "https://openreview.net/forum?id=GuXxYkFBBy"
+              },
+              "image": "paper_figs/patch_shuffling.png"
+            },
+            {
+              "authors": "**Dixi Yao**, Liyao Xiang, Hengyuan Xu, Hangyu Ye, Yingqi Chen",
+              "title": "Privacy-Preserving Split Learning via Patch Shuffling over Transformers",
+              "venue": "ICDM 2022",
+              "venueType": "conference",
+              "links": {
+                "paper": "https://ieeexplore.ieee.org/abstract/document/10027647",
+                "code": "https://github.com/dixiyao/PatchShuffling",
+                "slides": "/assests/slides/PatchShuffle.pdf"
+              },
+              "image": "paper_figs/icdm_patch_shuffling.png"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "name": "Optimization",
+      "subcategories": [
+        {
+          "name": "Optimization for Federated Learning",
+          "publications": [
+            {
+              "authors": "**Dixi Yao**",
+              "title": "Revisiting System-Heterogeneous Federated Learning through Dynamic Model Search",
+              "venue": "BigData 2024",
+              "venueType": "conference",
+              "links": {
+                "paper": "https://arxiv.org/pdf/2409.08858",
+                "code": "https://github.com/TL-System/plato/tree/main/examples/model_search/sysheterofl"
+              },
+              "image": "paper_figs/sysheterofl.png"
+            },
+            {
+              "authors": "**Dixi Yao**, Baochun Li",
+              "title": "PerFedRLNAS: One-for-all Personalized Federated Neural Architecture Search",
+              "venue": "AAAI 2024",
+              "venueType": "conference",
+              "links": {
+                "paper": "/assests/papers/dyao-aaai24.pdf",
+                "supplementary": "/assests/papers/dyao-aaai24-appendix.pdf",
+                "code": "https://github.com/TL-System/plato/tree/main/examples/model_search/pfedrlnas"
+              },
+              "image": "paper_figs/perfedrlnas.png"
+            },
+            {
+              "authors": "**Dixi Yao** *, Lingdong Wang *, Jiayu Xu, Liyao Xiang, Shuo Shao, Yingqi Chen, Yanjun Tong",
+              "title": "Federated Model Search via Reinforcement Learning",
+              "venue": "ICDCS 2021",
+              "venueType": "conference",
+              "links": {
+                "paper": "https://ieeexplore.ieee.org/document/9546522",
+                "code": "https://github.com/TL-System/plato/tree/main/examples/model_search/fedrlnas",
+                "slides": "/assests/slides/FedNas.pdf"
+              },
+              "image": "paper_figs/fedrlnas.png"
+            },
+            {
+              "authors": "**Dixi Yao**",
+              "title": "Survey on Personalized Federated Learning",
+              "venue": "UTERC 2023",
+              "venueType": "conference",
+              "links": {
+                "paper": "/assests/papers/1771.pdf"
+              },
+              "image": "paper_figs/personalized_fl_survey.png"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "name": "Machine Learning Systems",
+      "subcategories": [
+        {
+          "name": "Edge Computing",
+          "publications": [
+            {
+              "authors": "**Dixi Yao**, Liyao Xiang, Zifan Wang, Jiayu Xu, Chao Li, Xinbing Wang",
+              "title": "Context-Aware Compilation of DNN Training Pipelines across Edge and Cloud",
+              "venue": "IMWUT 2021",
+              "venueType": "journal",
+              "links": {
+                "paper": "https://dl.acm.org/doi/10.1145/3494981",
+                "code": "https://github.com/dixiyao/Context-Aware-Compilation-of-DNN-Training-Pipelines-across-Edge-and-Cloud"
+              },
+              "image": "paper_figs/imwut.png"
+            },
+            {
+              "authors": "Lingdong Wang, Liyao Xiang, Jiayu Xu, Jiaju Chen, Xing Zhao, **Dixi Yao**, Xinbing Wang, Baochun Li",
+              "title": "Context-Aware Deep Model Compression for Edge Cloud Computing",
+              "venue": "ICDCS 2020",
+              "venueType": "conference",
+              "links": {
+                "paper": "/assests/papers/lwang-icdcs20.pdf"
+              },
+              "image": "paper_figs/icdcs.png"
+            }
+          ]
+        },
+        {
+          "name": "KV-Cache",
+          "publications": [
+            {
+              "authors": "Minghui Liu, Tahseen Rabbani, Aadi Palnitkar, Hyunwoo Jae, Kyle Rui Sang, **Dixi Yao**, Shayan Shabihi, Fuheng Zhao, Tian Li, Ce Zhang, Furong Huang, Kunpeng Zhang",
+              "title": "Hold Onto That Thought: Assessing KV Cache Compression On Reasoning",
+              "venue": "NeurIPS 2025 Workshop",
+              "venueType": "workshop",
+              "links": {
+                "paper": "https://openreview.net/forum?id=OtZtLYAdQY",
+                "arxiv":"https://arxiv.org/abs/2512.12008"
+              },
+              "image": "paper_figs/kvcache_compression.png"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}
+
