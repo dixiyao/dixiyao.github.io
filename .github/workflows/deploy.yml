@@ -21,26 +21,45 @@ jobs:
     steps:
       - name: Checkout
         uses: actions/checkout@v4
-      
+
       - name: Setup Node.js
         uses: actions/setup-node@v4
         with:
           node-version: '20'
           cache: 'npm'
-      
+
       - name: Install dependencies
         run: npm ci
-      
+
       - name: Build
         run: npm run build
-      
+
+      - name: Prepare deployment folder
+        run: |
+          mkdir -p _site
+          # Copy only necessary static files (exclude node_modules, .git, etc.)
+          cp -r index.html _site/
+          cp -r css _site/ 2>/dev/null || true
+          cp -r js _site/ 2>/dev/null || true
+          cp -r assests _site/ 2>/dev/null || true
+          cp -r data _site/ 2>/dev/null || true
+          cp -r blog_posts _site/ 2>/dev/null || true
+          cp -r paper_figs _site/ 2>/dev/null || true
+          cp -r resources _site/ 2>/dev/null || true
+          cp -r on_progress _site/ 2>/dev/null || true
+          cp -r build _site/ 2>/dev/null || true
+          cp .htaccess _site/ 2>/dev/null || true
+          # List what's being deployed
+          echo "Files to be deployed:"
+          find _site -type f | head -50
+
       - name: Setup Pages
-        uses: actions/configure-pages@v4
-      
+        uses: actions/configure-pages@v5
+
       - name: Upload artifact
         uses: actions/upload-pages-artifact@v3
         with:
-          path: '.'
+          path: '_site'
 
   deploy:
     environment:
@@ -52,4 +71,3 @@ jobs:
       - name: Deploy to GitHub Pages
         id: deployment
         uses: actions/deploy-pages@v4
-
