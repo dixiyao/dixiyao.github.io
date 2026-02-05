@@ -49,6 +49,10 @@ jobs:
           cp -r on_progress _site/ 2>/dev/null || true
           cp -r build _site/ 2>/dev/null || true
           cp .htaccess _site/ 2>/dev/null || true
+          # SEO files
+          cp robots.txt _site/ 2>/dev/null || true
+          cp sitemap.xml _site/ 2>/dev/null || true
+          cp google0f6b632ff4dcfe69.html _site/ 2>/dev/null || true
           # List what's being deployed
           echo "Files to be deployed:"
           find _site -type f | head -50

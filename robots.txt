@@ -1,0 +1,8 @@
+# robots.txt for dixiyao.github.io
+# Allow all search engines to crawl the site
+
+User-agent: *
+Allow: /
+
+# Sitemap location
+Sitemap: https://dixiyao.github.io/sitemap.xml
