@@ -48,6 +48,13 @@
       "author": "Dixi Yao",
       "date": "2026-01-01",
       "content": "blog_posts/academic_social.md"
+    },
+    {
+      "id": "good_paper_llm",
+      "title": "What's the Point of Writing in the Era of LLM?",
+      "author": "Dixi Yao",
+      "date": "2026-02-08",
+      "content": "blog_posts/good_paper_llm.md"
     }
   ]
 }
