@@ -44,10 +44,10 @@
             {
               "authors": "**Dixi Yao**",
               "title": "Risks When Sharing LoRA Fine-Tuned Diffusion Model Weights",
-              "venue": "arXiv 2024",
+              "venue": "arXiv",
               "venueType": "workshop",
               "links": {
-                "arxiv": "https://arxiv.org/pdf/2409.08482"
+                "paper": "https://arxiv.org/pdf/2409.08482"
               },
               "image": "paper_figs/lora_controlnet.png"
             }
@@ -85,8 +85,37 @@
     {
       "name": "Optimization",
       "subcategories": [
+          {
+            "name":"Federation over Text",
+            "publications":[
+              {
+                "authors": "**Dixi Yao**, Tahseen Rabbani, Tian Li",
+                "title": "Federation over Text",
+                "venue": "ICLR 2026 Workshop MALGAI",
+                "venueType": "workshop",
+                "links": {
+                },
+                "image": "paper_figs/fot.png"
+              }
+            ]
+          },
+          {
+          "name":"Distributed Training",
+          "publications":[
+            {
+              "authors": "Junfei Sun, **Dixi Yao**, Xuchen Gong, Tahseen Rabbani, Manzil Zaheer, Tian Li",
+              "title": "Asynchronous Heavy-Tailed Optimization",
+              "venue": "arXiv",
+              "venueType": "workshop",
+              "links": {
+                "paper": "https://arxiv.org/abs/2602.18002"
+              },
+              "image": "paper_figs/async_heavytail.png"
+            }
+          ]
+        },
         {
-          "name": "Optimization for Federated Learning",
+          "name": "Federated Learning",
           "publications": [
             {
               "authors": "**Dixi Yao**",
@@ -169,6 +198,15 @@
         {
           "name": "KV-Cache",
           "publications": [
+            {
+              "authors": "Aadi Palnitkar, Tahseen Rabbani, **Dixi Yao**, Ce Zhang, Tian Li ",
+              "title": "R-KVHash: Reasoning Model KV Cache Compression Via SimHash-based Estimation of Redundant Tokens",
+              "venue": "ICLR 2026 Workshop MemAgents",
+              "venueType": "workshop",
+              "links": {
+              },
+              "image": "paper_figs/rkvlsh.png"
+            },
             {
               "authors": "Minghui Liu, Tahseen Rabbani, Aadi Palnitkar, Hyunwoo Jae, Kyle Rui Sang, **Dixi Yao**, Shayan Shabihi, Fuheng Zhao, Tian Li, Ce Zhang, Furong Huang, Kunpeng Zhang",
               "title": "Hold Onto That Thought: Assessing KV Cache Compression On Reasoning",

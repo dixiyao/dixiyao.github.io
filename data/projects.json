@@ -29,6 +29,11 @@
       "title": "Open-source Software Framework",
       "items": [
         {
+          "title": "PhDBot",
+          "url": "https://github.com/dixiyao/IOS2SlurmCluster",
+          "description": "Your AI research assistant that lives on your cluster server. Run experiments, manage code, and check results — from your browser, iPhone, or Apple Watch."
+        },
+        {
           "title": "LLM for Academic Writing",
           "url": "https://github.com/dixiyao/LLM-Academic-Writing",
           "description": "This is a collection of helpful LLM tools I have found and developed. They leverage large generative models to improve academic writing."
