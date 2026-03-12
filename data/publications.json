@@ -94,6 +94,7 @@
                 "venue": "ICLR 2026 Workshop MALGAI, RIS",
                 "venueType": "workshop",
                 "links": {
+                    "paper": "https://openreview.net/forum?id=OxFGVlUSAH"
                 },
                 "image": "paper_figs/fot.png"
               }
