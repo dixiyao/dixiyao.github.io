@@ -15,18 +15,63 @@
         breaks: true,
         gfm: true
     });
+
+    const blogContentCache = new Map();
+    const isLocalDevelopment = ['localhost', '127.0.0.1'].includes(window.location.hostname);
+
+    function buildRequestUrl(path) {
+        if (!isLocalDevelopment) {
+            return path;
+        }
+
+        const separator = path.includes('?') ? '&' : '?';
+        return `${path}${separator}v=${Date.now()}`;
+    }
+
+    async function fetchJson(path) {
+        const response = await fetch(buildRequestUrl(path), {
+            cache: isLocalDevelopment ? 'no-store' : 'default'
+        });
+        return response.json();
+    }
+
+    function scheduleNonCriticalWork(task) {
+        if ('requestIdleCallback' in window) {
+            window.requestIdleCallback(task, { timeout: 1200 });
+        } else {
+            window.setTimeout(task, 0);
+        }
+    }
+
+    async function fetchTextContent(path) {
+        if (blogContentCache.has(path)) {
+            return blogContentCache.get(path);
+        }
+
+        const response = await fetch(buildRequestUrl(path), {
+            cache: isLocalDevelopment ? 'no-store' : 'default'
+        });
+        const text = await response.text();
+        blogContentCache.set(path, text);
+        return text;
+    }
+
+    function stripFrontMatter(text) {
+        return text
+            .replace(/^\+{3}[\s\S]*?\+{3}\n?/m, '')
+            .replace(/^-{3}[\s\S]*?-{3}\n?/m, '');
+    }
     
     // Load JSON data
     async function loadData() {
         try {
-            const cacheBuster = '?v=' + Date.now();
             [config, homeData, publicationsData, projectsData, blogData, petsData] = await Promise.all([
-                fetch('data/config.json' + cacheBuster).then(r => r.json()),
-                fetch('data/home.json' + cacheBuster).then(r => r.json()),
-                fetch('data/publications.json' + cacheBuster).then(r => r.json()),
-                fetch('data/projects.json' + cacheBuster).then(r => r.json()),
-                fetch('data/blog.json' + cacheBuster).then(r => r.json()),
-                fetch('data/pets.json' + cacheBuster).then(r => r.json())
+                fetchJson('data/config.json'),
+                fetchJson('data/home.json'),
+                fetchJson('data/publications.json'),
+                fetchJson('data/projects.json'),
+                fetchJson('data/blog.json'),
+                fetchJson('data/pets.json')
             ]);
             
             await renderPage();
@@ -42,15 +87,18 @@
         renderHome();
         renderPublications();
         renderProjects();
-        await renderBlog();
-        renderPets();
         updateFooter();
-        // Render sidebar after content is rendered so it can find all IDs
         renderSidebar();
-        // Use setTimeout to ensure DOM is fully rendered
-        setTimeout(() => {
+
+        requestAnimationFrame(() => {
             initCollapsibleSections();
-        }, 100);
+            initImageModal();
+        });
+
+        scheduleNonCriticalWork(() => {
+            renderBlog();
+            renderPets();
+        });
     }
     
     // Render Sidebar Navigation
@@ -887,7 +935,7 @@
         
         if (projectsData.githubGraph) {
             html += `<div style="text-align: center; margin: 2rem 0;">`;
-            html += `<img src="${projectsData.githubGraph}" alt="GitHub Activity Graph" style="max-width: 70%; height: auto; margin: 0 auto; display: block;">`;
+            html += `<img src="${projectsData.githubGraph}" alt="GitHub Activity Graph" loading="lazy" decoding="async" style="max-width: 70%; height: auto; margin: 0 auto; display: block;">`;
             html += `</div>`;
         }
         
@@ -984,64 +1032,54 @@
     }
     
     // Render Blog
-    async function renderBlog() {
+    function renderBlog() {
         const container = document.getElementById('blogContent');
         if (!container) return;
         
-        // Sort posts by date in descending order (newest first)
         const sortedPosts = [...blogData.posts].sort((a, b) => {
             const dateA = new Date(a.date);
             const dateB = new Date(b.date);
-            return dateB - dateA; // Descending order (newest first)
+            return dateB - dateA;
         });
-        
-        // Load excerpts for each post
-        const cacheBuster = '?v=' + Date.now();
-        const postsWithExcerpts = await Promise.all(sortedPosts.map(async (post) => {
-            let excerpt = '';
-            if (post.content && post.content.endsWith('.md')) {
-                try {
-                    const response = await fetch(post.content + cacheBuster);
-                    const text = await response.text();
-                    // Remove front matter (+++ ... +++ or --- ... ---)
-                    let content = text.replace(/^\+{3}[\s\S]*?\+{3}\n?/m, '').replace(/^-{3}[\s\S]*?-{3}\n?/m, '');
-                    // Get first 200 characters
-                    excerpt = content.substring(0, 200).trim() + '...';
-                } catch (error) {
-                    console.error(`Error loading ${post.content}:`, error);
-                    excerpt = 'Click to read more...';
-                }
-            } else {
-                excerpt = post.content ? post.content.substring(0, 200) + '...' : 'Click to read more...';
-            }
-            return { ...post, excerpt };
-        }));
-        
-        // Aspect mapping for blog posts (cycling through aspects)
+
         const aspects = ['winter', 'heart', 'cup', 'forge', 'lantern', 'edge'];
-        const aspectIcons = {
-            'winter': '❄',
-            'heart': '❤',
-            'cup': '🍷',
-            'forge': '🔥',
-            'lantern': '🕯',
-            'edge': '⚔'
-        };
         
         const html = `<div class="blog-grid">
-            ${postsWithExcerpts.map((post, index) => {
+            ${sortedPosts.map((post, index) => {
                 const aspect = aspects[index % aspects.length];
                 return `
                 <div class="blog-card" data-aspect="${aspect}" onclick="showBlogPost('${post.id}')">
                     <h3>${post.title}</h3>
                     <div class="blog-date">${new Date(post.date).toLocaleDateString('en-US', { year: 'numeric', month: 'long', day: 'numeric' })}</div>
-                    <div class="blog-excerpt">${DOMPurify.sanitize(marked.parse(post.excerpt))}</div>
+                    <div class="blog-excerpt" data-post-id="${post.id}">Loading preview...</div>
                 </div>
             `;
             }).join('')}
         </div>`;
         
         container.innerHTML = html;
+
+        sortedPosts.forEach(async (post) => {
+            const excerptEl = container.querySelector(`[data-post-id="${post.id}"]`);
+            if (!excerptEl) return;
+
+            let excerpt = 'Click to read more...';
+
+            if (post.excerpt) {
+                excerpt = post.excerpt;
+            } else if (post.content && post.content.endsWith('.md')) {
+                try {
+                    const text = stripFrontMatter(await fetchTextContent(post.content));
+                    excerpt = `${text.substring(0, 200).trim()}...`;
+                } catch (error) {
+                    console.error(`Error loading ${post.content}:`, error);
+                }
+            } else if (post.content) {
+                excerpt = `${post.content.substring(0, 200)}...`;
+            }
+
+            excerptEl.innerHTML = DOMPurify.sanitize(marked.parse(excerpt));
+        });
     }
     
     // Render Pets
@@ -1052,7 +1090,7 @@
         const html = `<div class="pets-grid">
             ${petsData.images.map((pet, index) => `
                 <div class="pet-card" data-pet-index="${index}">
-                    <img src="${pet.image}" alt="${pet.name}" class="pet-image" 
+                    <img src="${pet.image}" alt="${pet.name}" class="pet-image" loading="lazy" decoding="async"
                          data-full-image="${pet.image}" 
                          data-image-title="${pet.name}">
                     <div class="pet-name">${pet.name}</div>
@@ -1100,12 +1138,7 @@
         let content = '';
         if (post.content && post.content.endsWith('.md')) {
             try {
-                const cacheBuster = '?v=' + Date.now();
-                const response = await fetch(post.content + cacheBuster);
-                let text = await response.text();
-                // Remove front matter
-                text = text.replace(/^\+{3}[\s\S]*?\+{3}\n?/m, '').replace(/^-{3}[\s\S]*?-{3}\n?/m, '');
-                content = text;
+                content = stripFrontMatter(await fetchTextContent(post.content));
             } catch (error) {
                 console.error(`Error loading ${post.content}:`, error);
                 content = 'Error loading content. Please try again later.';
@@ -1275,9 +1308,4 @@
     // Initialize
     loadData();
     
-    // Initialize image modal after page loads
-    setTimeout(() => {
-        initImageModal();
-    }, 500);
 })();
-

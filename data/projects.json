@@ -4,6 +4,16 @@
   "huggingFace": "I also share some interesting spaces, models, and datasets I created during my past projects on my [Hugging Face](https://huggingface.co/dixiyao).",
   "sections": [
     {
+      "title": "Research Project Pages",
+      "items": [
+        {
+          "title": "Federation over Text (FoT)",
+          "url": "/fot/",
+          "description": "Project page for Federation over Text: insight sharing for multi-agent reasoning."
+        }
+      ]
+    },
+    {
       "title": "Tutorials",
       "subsections": [
         {
@@ -143,4 +153,3 @@
     "badge": "https://img.shields.io/static/v1?label=Sponsor&message=%E2%9D%A4&logo=GitHub&color=%23fe8e86"
   }
 }
-

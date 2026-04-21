@@ -1,0 +1,310 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Federation over Text (FoT): a project page for multi-agent reasoning through insight sharing.">
+  <meta name="author" content="Dixi Yao">
+  <meta name="robots" content="index, follow">
+  <title>Federation over Text</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=JetBrains+Mono:wght@400;600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <header class="site-header">
+    <div class="container topbar">
+      <nav class="section-nav" aria-label="Section navigation">
+        <a href="#overview">Overview</a>
+        <a href="#method">Method</a>
+        <a href="#algorithm">Algorithm</a>
+        <a href="#applications">Applications</a>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+    <section class="hero">
+      <div class="container narrow">
+        <div class="hero-copy">
+          <h1>Federation over Text: Insight Sharing for Multi-Agent Reasoning</h1>
+          <p class="authors">Dixi Yao, Tahseen Rabbani, Tian Li</p>
+          <p class="affiliation">University of Chicago</p>
+          <div class="action-row">
+            <!-- Replace # with the final links. -->
+            <a class="action-pill" href="https://arxiv.org/pdf/2604.16778" aria-label="arXiv link placeholder">
+              <span class="icon" aria-hidden="true">
+                <svg viewBox="0 0 24 24" role="img">
+                  <path d="M6 3.5h8.5L20.5 9v11a1.5 1.5 0 0 1-1.5 1.5h-13A1.5 1.5 0 0 1 4.5 20V5A1.5 1.5 0 0 1 6 3.5Z"></path>
+                  <path d="M14.5 3.5V9H20"></path>
+                </svg>
+              </span>
+              <span>arXiv</span>
+            </a>
+            <a class="action-pill" href="https://github.com/dixiyao/FoTClaw" aria-label="FoTClaw repository placeholder">
+              <span class="icon" aria-hidden="true">
+                <svg viewBox="0 0 24 24" role="img">
+                  <path d="M12 .5C5.65.5.5 5.8.5 12.32c0 5.22 3.3 9.64 7.88 11.2.58.1.78-.25.78-.57 0-.28-.01-1.22-.02-2.21-3.2.71-3.88-1.39-3.88-1.39-.52-1.37-1.28-1.73-1.28-1.73-1.05-.73.08-.71.08-.71 1.16.08 1.77 1.23 1.77 1.23 1.03 1.8 2.7 1.28 3.35.98.1-.76.4-1.28.72-1.57-2.56-.3-5.26-1.32-5.26-5.9 0-1.3.46-2.36 1.21-3.2-.12-.3-.52-1.52.12-3.18 0 0 .99-.33 3.25 1.22a11.04 11.04 0 0 1 5.92 0c2.26-1.55 3.25-1.22 3.25-1.22.64 1.66.24 2.88.12 3.18.76.84 1.21 1.9 1.21 3.2 0 4.59-2.7 5.6-5.28 5.89.42.37.78 1.08.78 2.19 0 1.58-.01 2.84-.01 3.23 0 .31.2.68.79.56 4.57-1.56 7.86-5.98 7.86-11.2C23.5 5.8 18.35.5 12 .5Z"></path>
+                </svg>
+              </span>
+              <span>FoTClaw</span>
+            </a>
+          </div>
+          <p class="lead hero-abstract">
+            LLM-powered agents often reason from scratch when presented with a new problem instance and lack automatic
+            mechanisms to transfer learned skills to other agents. We propose a federated learning-like framework,
+            <em>Federation over Text</em> (FoT), that enables multiple agents solving different tasks to collectively
+            generate a shared library of metacognitive insights by iteratively federating their local reasoning
+            processes. Instead of federation over gradients, as in distributed training, FoT operates at the
+            <strong>semantic level</strong> without any gradient optimization or supervision signal. Iteratively, each
+            agent does local thinking and self-improvement on its specific tasks independently, and shares reasoning
+            traces with a central server, which aggregates and distills them into a cross-task and cross-domain
+            <em>insight library</em> that existing and future agents can leverage to improve performance on related
+            tasks. Experiments show that FoT improves reasoning effectiveness and efficiency across a wide range of
+            challenging applications, including mathematical problem solving, cross-domain collaboration, and machine
+            learning research insight discovery.
+          </p>
+        </div>
+        <figure class="hero-figure hero-figure-wide">
+          <img src="assets/fot-workflow.png" alt="FoT workflow compared with federated learning">
+        </figure>
+        <div class="stats-grid">
+          <article class="stat-card">
+            <span class="stat-value">+24%</span>
+            <p class="stat-label">Average downstream accuracy improvement across the math and scientific question answering tasks</p>
+          </article>
+          <article class="stat-card">
+            <span class="stat-value">-28%</span>
+            <p class="stat-label">Reasoning token reduction across math, science, and coding settings</p>
+          </article>
+          <article class="stat-card">
+            <span class="stat-value">86.82</span>
+            <p class="stat-label">On PinchBench, average score of FoT with Gemini 3.1 Pro exceeds the best achieved by isolated agents.</p>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section class="section" id="overview">
+      <div class="container narrow">
+        <div class="section-heading">
+          <h2>Why FoT</h2>
+        </div>
+        <div class="prose">
+          <p>
+            FoT starts from a simple observation: agents often solve different tasks in isolation, even when their
+            reasoning contains reusable ideas that could help other agents. Instead of treating each task as a separate
+            session, FoT aggregates reasoning insights from many agents, each working on its own local problem, and
+            turns those distributed experiences into a shared library of reusable guidance.
+          </p>
+          <p>
+            This also creates a direct bridge to federated learning. Classical federated learning aggregates updates
+            from decentralized clients while keeping raw data local; FoT keeps the same high-level structure, but moves
+            from gradient aggregation to semantic aggregation. Agents keep private tasks local, summarize useful
+            reasoning traces, send them to a server, and receive back a compact insight library for future rounds.
+          </p>
+
+          <p>
+            The main contribution is not just another multi-agent workflow. It is a different interface for collaboration: agents do local work, export reusable abstractions, and improve future reasoning without
+            needing gradient access or centralized raw data.
+          </p>
+        </div>
+        <div class="comparison-card">
+          <div class="comparison-table-wrap">
+            <table class="comparison-table">
+              <thead>
+                <tr>
+                  <th>Component</th>
+                  <th>Federated Learning</th>
+                  <th>Federation over Text</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td>Learning objective</td>
+                  <td>Learn a global model that generalizes across clients</td>
+                  <td>Learn an insight library that improves reasoning across agents</td>
+                </tr>
+                <tr>
+                  <td>Local work</td>
+                  <td>Local training via optimization</td>
+                  <td>Local task solving via reasoning and self-improvement</td>
+                </tr>
+                <tr>
+                  <td>Local to server</td>
+                  <td>Weights or gradients</td>
+                  <td>Reasoning traces and reusable insights</td>
+                </tr>
+                <tr>
+                  <td>Server aggregation</td>
+                  <td>Average model updates</td>
+                  <td>Distill text-space patterns into a shared library</td>
+                </tr>
+                <tr>
+                  <td>Server to local</td>
+                  <td>Updated global model</td>
+                  <td>Updated insight library</td>
+                </tr>
+                <tr>
+                  <td>Privacy pattern</td>
+                  <td>Keep raw data local</td>
+                  <td>Keep raw tasks and detailed histories local</td>
+                </tr>
+                <tr>
+                  <td>Personalization</td>
+                  <td>Client-specific adaptation</td>
+                  <td>Task-specific reasoning with shared high-level guidance</td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="section alt" id="method">
+      <div class="container narrow">
+        <div class="section-heading">
+          <h2>How Federation over Text works</h2>
+        </div>
+        <div class="steps-grid">
+          <article class="step-card">
+            <span class="step-index">01</span>
+            <h3>Local Reasoning</h3>
+            <p>Each agent solves its own task using any base model and any local reasoning strategy.</p>
+          </article>
+          <article class="step-card">
+            <span class="step-index">02</span>
+            <h3>Trace Extraction</h3>
+            <p>Agents turn successful reasoning into concise, reusable traces that explain what worked and when to use it.</p>
+          </article>
+          <article class="step-card">
+            <span class="step-index">03</span>
+            <h3>Server Aggregation</h3>
+            <p>The server clusters related traces, identifies shared patterns, and distills them into a compact insight library.</p>
+          </article>
+          <article class="step-card">
+            <span class="step-index">04</span>
+            <h3>Broadcast and Reuse</h3>
+            <p>The updated library goes back to agents and becomes an external reasoning prior for the next round.</p>
+          </article>
+        </div>
+        <div class="two-column">
+        </div>
+      </div>
+    </section>
+
+    <section class="section" id="algorithm">
+      <div class="container narrow">
+        <div class="section-heading">
+          <h2>Algorithm</h2>
+        </div>
+        <div class="algorithm-grid">
+          <article class="code-card">
+            <h3>Federation over Gradients</h3>
+            <div class="algorithm-shell">
+              <ol class="algorithm-steps">
+                <li>
+                  <strong>For each iteration</strong>
+                  <ol>
+                    <li>For each <strong>client</strong>, perform local optimization starting from the current global model.</li>
+                    <li>Upload new model weights to the server.</li>
+                    <li>The <strong>server</strong> collects all local model weights.</li>
+                    <li>Aggregate over model weights.</li>
+                    <li>Broadcast the updated global model back to clients.</li>
+                  </ol>
+                </li>
+              </ol>
+            </div>
+          </article>
+          <article class="code-card">
+            <h3>Federation over Text</h3>
+            <div class="algorithm-shell">
+              <ol class="algorithm-steps">
+                <li>
+                  <strong>For each iteration</strong>
+                  <ol>
+                    <li>For each <strong>agent</strong>, perform local reasoning given the base LLM and current insight library.</li>
+                    <li>Upload reasoning traces to the server.</li>
+                    <li>The <strong>server</strong> gathers and aggregates all reasoning traces.</li>
+                    <li>Update the insight library.</li>
+                    <li>Broadcast the new library back to agents.</li>
+                  </ol>
+                </li>
+              </ol>
+            </div>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section class="section alt" id="applications">
+      <div class="container narrow">
+        <div class="section-heading">
+          <h2>Applications</h2>
+        </div>
+        <div class="application-list">
+          <article class="application-card application-visual">
+            <figure class="application-figure">
+              <img src="assets/app-math.svg" alt="Illustration of math reasoning agents contributing to a shared library">
+            </figure>
+            <div class="application-copy">
+              <h3>Mathematical Problem Solving</h3>
+            </div>
+          </article>
+
+          <article class="application-card application-visual">
+            <figure class="application-figure">
+              <img src="assets/app-crossdomain.svg" alt="Illustration of math, science, and coding agents connected through a shared reasoning library">
+            </figure>
+            <div class="application-copy">
+              <h3>Collaboration: Math, Science, Coding</h3>
+            </div>
+          </article>
+
+          <article class="application-card application-visual">
+            <figure class="application-figure">
+              <img src="assets/app-research.svg" alt="Illustration of research papers being distilled into a shared insight library">
+            </figure>
+            <div class="application-copy">
+              <h3>Research Insight Discovery</h3>
+            </div>
+          </article>
+
+          <article class="application-card application-visual">
+            <figure class="application-figure">
+              <img src="assets/app-daily-agent.svg" alt="Illustration of a daily agent using shared reasoning guidance for everyday assistance">
+            </figure>
+            <div class="application-copy">
+              <h3>Daily Agent</h3>
+            </div>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section class="section" id="citation">
+      <div class="container narrow">
+        <div class="section-heading">
+          <h2>Citation</h2>
+        </div>
+        <article class="code-card citation-card">
+          <div class="algorithm-shell">
+            <pre><code>
+@misc{yao2026federationtextinsightsharing,
+      title={Federation over Text: Insight Sharing for Multi-Agent Reasoning},
+      author={Dixi Yao and Tahseen Rabbani and Tian Li},
+      year={2026},
+      eprint={2604.16778},
+      archivePrefix={arXiv},
+      primaryClass={cs.LG},
+      url={https://arxiv.org/abs/2604.16778},
+}</code></pre>
+          </div>
+        </article>
+      </div>
+    </section>
+  </main>
+</body>
+</html>
