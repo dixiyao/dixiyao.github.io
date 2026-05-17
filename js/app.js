@@ -969,6 +969,16 @@
                         subsection.items.forEach(item => {
                             html += `<div class="project-item">`;
                             html += `<a href="${item.url}" target="_blank">${item.title}</a>`;
+                            if (item.description) {
+                                html += `<p>${item.description}</p>`;
+                            }
+                            if (item.subitems) {
+                                html += `<ul>`;
+                                item.subitems.forEach(subitem => {
+                                    html += `<li><a href="${subitem.url}" target="_blank">${subitem.title}</a></li>`;
+                                });
+                                html += `</ul>`;
+                            }
                             html += `</div>`;
                         });
                     }

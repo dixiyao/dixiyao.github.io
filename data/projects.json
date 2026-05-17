@@ -14,6 +14,22 @@
       ]
     },
     {
+      "title": "Course Project Pages",
+      "items": [
+        {
+          "title": "Debate and Rebuttal: AIReviewer",
+          "url": "/aireviewer/",
+          "description": "Course project website for a multi-agent reviewer that supports pre-submission manuscript polishing through debate and rebuttal.",
+          "subitems": [
+            {
+              "title": "Code",
+              "url": "https://github.com/dixiyao/LLM-Academic-Writing/tree/main/AIReviewer"
+            }
+          ]
+        }
+      ]
+    },
+    {
       "title": "Tutorials",
       "subsections": [
         {
