@@ -1,0 +1,108 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="712" height="656" viewBox="0 0 712 656" role="img" aria-label="Cohen kappa heatmap">
+<rect width="100%" height="100%" fill="#fffaf0"/>
+<text x="36" y="42" font-family="Inter, Arial, sans-serif" font-size="24" font-weight="700" fill="#243447">Pairwise Agreement: Cohen&apos;s Kappa</text>
+<text x="239.0" y="72" font-family="Inter, Arial, sans-serif" font-size="13" font-weight="700" fill="#243447" text-anchor="middle">Human</text>
+<text x="357.0" y="72" font-family="Inter, Arial, sans-serif" font-size="13" font-weight="700" fill="#243447" text-anchor="middle">Ours</text>
+<text x="475.0" y="72" font-family="Inter, Arial, sans-serif" font-size="13" font-weight="700" fill="#243447" text-anchor="middle">Single Agent</text>
+<text x="593.0" y="72" font-family="Inter, Arial, sans-serif" font-size="13" font-weight="700" fill="#243447" text-anchor="middle">Agentic Reviewer</text>
+<text x="162" y="156.0" font-family="Inter, Arial, sans-serif" font-size="13" font-weight="700" fill="#243447" text-anchor="end">Human</text>
+<text x="162" y="274.0" font-family="Inter, Arial, sans-serif" font-size="13" font-weight="700" fill="#243447" text-anchor="end">Ours</text>
+<text x="162" y="392.0" font-family="Inter, Arial, sans-serif" font-size="13" font-weight="700" fill="#243447" text-anchor="end">Single Agent</text>
+<text x="162" y="510.0" font-family="Inter, Arial, sans-serif" font-size="13" font-weight="700" fill="#243447" text-anchor="end">Agentic Reviewer</text>
+<rect x="180" y="92" width="118" height="118" fill="rgb(31, 120, 94)" stroke="#fffaf0" stroke-width="4" rx="10"/>
+<text x="239.0" y="159.0" font-family="Inter, Arial, sans-serif" font-size="24" font-weight="700" fill="#ffffff" text-anchor="middle">1.00</text>
+<rect x="298" y="92" width="118" height="118" fill="rgb(84, 151, 128)" stroke="#fffaf0" stroke-width="4" rx="10"/>
+<text x="357.0" y="159.0" font-family="Inter, Arial, sans-serif" font-size="24" font-weight="700" fill="#ffffff" text-anchor="middle">0.76</text>
+<rect x="416" y="92" width="118" height="118" fill="rgb(100, 160, 139)" stroke="#fffaf0" stroke-width="4" rx="10"/>
+<text x="475.0" y="159.0" font-family="Inter, Arial, sans-serif" font-size="24" font-weight="700" fill="#ffffff" text-anchor="middle">0.69</text>
+<rect x="534" y="92" width="118" height="118" fill="rgb(255, 250, 240)" stroke="#fffaf0" stroke-width="4" rx="10"/>
+<text x="593.0" y="159.0" font-family="Inter, Arial, sans-serif" font-size="24" font-weight="700" fill="#1f2933" text-anchor="middle">0.00</text>
+<rect x="180" y="210" width="118" height="118" fill="rgb(84, 151, 128)" stroke="#fffaf0" stroke-width="4" rx="10"/>
+<text x="239.0" y="277.0" font-family="Inter, Arial, sans-serif" font-size="24" font-weight="700" fill="#ffffff" text-anchor="middle">0.76</text>
+<rect x="298" y="210" width="118" height="118" fill="rgb(31, 120, 94)" stroke="#fffaf0" stroke-width="4" rx="10"/>
+<text x="357.0" y="277.0" font-family="Inter, Arial, sans-serif" font-size="24" font-weight="700" fill="#ffffff" text-anchor="middle">1.00</text>
+<rect x="416" y="210" width="118" height="118" fill="rgb(49, 131, 106)" stroke="#fffaf0" stroke-width="4" rx="10"/>
+<text x="475.0" y="277.0" font-family="Inter, Arial, sans-serif" font-size="24" font-weight="700" fill="#ffffff" text-anchor="middle">0.92</text>
+<rect x="534" y="210" width="118" height="118" fill="rgb(247, 232, 223)" stroke="#fffaf0" stroke-width="4" rx="10"/>
+<text x="593.0" y="277.0" font-family="Inter, Arial, sans-serif" font-size="24" font-weight="700" fill="#1f2933" text-anchor="middle">-0.09</text>
+<rect x="180" y="328" width="118" height="118" fill="rgb(100, 160, 139)" stroke="#fffaf0" stroke-width="4" rx="10"/>
+<text x="239.0" y="395.0" font-family="Inter, Arial, sans-serif" font-size="24" font-weight="700" fill="#ffffff" text-anchor="middle">0.69</text>
+<rect x="298" y="328" width="118" height="118" fill="rgb(49, 131, 106)" stroke="#fffaf0" stroke-width="4" rx="10"/>
+<text x="357.0" y="395.0" font-family="Inter, Arial, sans-serif" font-size="24" font-weight="700" fill="#ffffff" text-anchor="middle">0.92</text>
+<rect x="416" y="328" width="118" height="118" fill="rgb(31, 120, 94)" stroke="#fffaf0" stroke-width="4" rx="10"/>
+<text x="475.0" y="395.0" font-family="Inter, Arial, sans-serif" font-size="24" font-weight="700" fill="#ffffff" text-anchor="middle">1.00</text>
+<rect x="534" y="328" width="118" height="118" fill="rgb(242, 221, 213)" stroke="#fffaf0" stroke-width="4" rx="10"/>
+<text x="593.0" y="395.0" font-family="Inter, Arial, sans-serif" font-size="24" font-weight="700" fill="#1f2933" text-anchor="middle">-0.15</text>
+<rect x="180" y="446" width="118" height="118" fill="rgb(255, 250, 240)" stroke="#fffaf0" stroke-width="4" rx="10"/>
+<text x="239.0" y="513.0" font-family="Inter, Arial, sans-serif" font-size="24" font-weight="700" fill="#1f2933" text-anchor="middle">0.00</text>
+<rect x="298" y="446" width="118" height="118" fill="rgb(247, 232, 223)" stroke="#fffaf0" stroke-width="4" rx="10"/>
+<text x="357.0" y="513.0" font-family="Inter, Arial, sans-serif" font-size="24" font-weight="700" fill="#1f2933" text-anchor="middle">-0.09</text>
+<rect x="416" y="446" width="118" height="118" fill="rgb(242, 221, 213)" stroke="#fffaf0" stroke-width="4" rx="10"/>
+<text x="475.0" y="513.0" font-family="Inter, Arial, sans-serif" font-size="24" font-weight="700" fill="#1f2933" text-anchor="middle">-0.15</text>
+<rect x="534" y="446" width="118" height="118" fill="rgb(31, 120, 94)" stroke="#fffaf0" stroke-width="4" rx="10"/>
+<text x="593.0" y="513.0" font-family="Inter, Arial, sans-serif" font-size="24" font-weight="700" fill="#ffffff" text-anchor="middle">1.00</text>
+<rect x="180.00" y="602" width="5.47" height="14" fill="rgb(164, 54, 54)"/>
+<rect x="184.67" y="602" width="5.47" height="14" fill="rgb(167, 61, 60)"/>
+<rect x="189.33" y="602" width="5.47" height="14" fill="rgb(170, 67, 67)"/>
+<rect x="194.00" y="602" width="5.47" height="14" fill="rgb(173, 74, 73)"/>
+<rect x="198.67" y="602" width="5.47" height="14" fill="rgb(176, 81, 79)"/>
+<rect x="203.33" y="602" width="5.47" height="14" fill="rgb(179, 87, 86)"/>
+<rect x="208.00" y="602" width="5.47" height="14" fill="rgb(183, 94, 92)"/>
+<rect x="212.67" y="602" width="5.47" height="14" fill="rgb(186, 101, 98)"/>
+<rect x="217.33" y="602" width="5.47" height="14" fill="rgb(189, 107, 104)"/>
+<rect x="222.00" y="602" width="5.47" height="14" fill="rgb(192, 114, 111)"/>
+<rect x="226.67" y="602" width="5.47" height="14" fill="rgb(195, 120, 117)"/>
+<rect x="231.33" y="602" width="5.47" height="14" fill="rgb(198, 127, 123)"/>
+<rect x="236.00" y="602" width="5.47" height="14" fill="rgb(201, 134, 130)"/>
+<rect x="240.67" y="602" width="5.47" height="14" fill="rgb(204, 140, 136)"/>
+<rect x="245.33" y="602" width="5.47" height="14" fill="rgb(207, 147, 142)"/>
+<rect x="250.00" y="602" width="5.47" height="14" fill="rgb(210, 154, 149)"/>
+<rect x="254.67" y="602" width="5.47" height="14" fill="rgb(213, 160, 155)"/>
+<rect x="259.33" y="602" width="5.47" height="14" fill="rgb(216, 167, 161)"/>
+<rect x="264.00" y="602" width="5.47" height="14" fill="rgb(220, 174, 167)"/>
+<rect x="268.67" y="602" width="5.47" height="14" fill="rgb(223, 180, 174)"/>
+<rect x="273.33" y="602" width="5.47" height="14" fill="rgb(226, 187, 180)"/>
+<rect x="278.00" y="602" width="5.47" height="14" fill="rgb(229, 194, 186)"/>
+<rect x="282.67" y="602" width="5.47" height="14" fill="rgb(232, 200, 193)"/>
+<rect x="287.33" y="602" width="5.47" height="14" fill="rgb(235, 207, 199)"/>
+<rect x="292.00" y="602" width="5.47" height="14" fill="rgb(238, 213, 205)"/>
+<rect x="296.67" y="602" width="5.47" height="14" fill="rgb(241, 220, 212)"/>
+<rect x="301.33" y="602" width="5.47" height="14" fill="rgb(244, 227, 218)"/>
+<rect x="306.00" y="602" width="5.47" height="14" fill="rgb(247, 233, 224)"/>
+<rect x="310.67" y="602" width="5.47" height="14" fill="rgb(250, 240, 231)"/>
+<rect x="315.33" y="602" width="5.47" height="14" fill="rgb(253, 247, 237)"/>
+<rect x="320.00" y="602" width="5.47" height="14" fill="rgb(251, 248, 238)"/>
+<rect x="324.67" y="602" width="5.47" height="14" fill="rgb(244, 243, 233)"/>
+<rect x="329.33" y="602" width="5.47" height="14" fill="rgb(236, 239, 228)"/>
+<rect x="334.00" y="602" width="5.47" height="14" fill="rgb(228, 235, 223)"/>
+<rect x="338.67" y="602" width="5.47" height="14" fill="rgb(221, 230, 218)"/>
+<rect x="343.33" y="602" width="5.47" height="14" fill="rgb(213, 226, 213)"/>
+<rect x="348.00" y="602" width="5.47" height="14" fill="rgb(206, 221, 208)"/>
+<rect x="352.67" y="602" width="5.47" height="14" fill="rgb(198, 217, 203)"/>
+<rect x="357.33" y="602" width="5.47" height="14" fill="rgb(190, 213, 198)"/>
+<rect x="362.00" y="602" width="5.47" height="14" fill="rgb(183, 208, 193)"/>
+<rect x="366.67" y="602" width="5.47" height="14" fill="rgb(175, 204, 188)"/>
+<rect x="371.33" y="602" width="5.47" height="14" fill="rgb(168, 199, 183)"/>
+<rect x="376.00" y="602" width="5.47" height="14" fill="rgb(160, 195, 178)"/>
+<rect x="380.67" y="602" width="5.47" height="14" fill="rgb(152, 191, 173)"/>
+<rect x="385.33" y="602" width="5.47" height="14" fill="rgb(145, 186, 168)"/>
+<rect x="390.00" y="602" width="5.47" height="14" fill="rgb(137, 182, 163)"/>
+<rect x="394.67" y="602" width="5.47" height="14" fill="rgb(130, 177, 158)"/>
+<rect x="399.33" y="602" width="5.47" height="14" fill="rgb(122, 173, 153)"/>
+<rect x="404.00" y="602" width="5.47" height="14" fill="rgb(115, 168, 148)"/>
+<rect x="408.67" y="602" width="5.47" height="14" fill="rgb(107, 164, 143)"/>
+<rect x="413.33" y="602" width="5.47" height="14" fill="rgb(99, 160, 139)"/>
+<rect x="418.00" y="602" width="5.47" height="14" fill="rgb(92, 155, 134)"/>
+<rect x="422.67" y="602" width="5.47" height="14" fill="rgb(84, 151, 129)"/>
+<rect x="427.33" y="602" width="5.47" height="14" fill="rgb(77, 146, 124)"/>
+<rect x="432.00" y="602" width="5.47" height="14" fill="rgb(69, 142, 119)"/>
+<rect x="436.67" y="602" width="5.47" height="14" fill="rgb(61, 138, 114)"/>
+<rect x="441.33" y="602" width="5.47" height="14" fill="rgb(54, 133, 109)"/>
+<rect x="446.00" y="602" width="5.47" height="14" fill="rgb(46, 129, 104)"/>
+<rect x="450.67" y="602" width="5.47" height="14" fill="rgb(39, 124, 99)"/>
+<rect x="455.33" y="602" width="5.47" height="14" fill="rgb(31, 120, 94)"/>
+<text x="180" y="638" font-family="Inter, Arial, sans-serif" font-size="12" fill="#52616b" text-anchor="middle">-1</text>
+<text x="320.0" y="638" font-family="Inter, Arial, sans-serif" font-size="12" fill="#52616b" text-anchor="middle">0</text>
+<text x="460" y="638" font-family="Inter, Arial, sans-serif" font-size="12" fill="#52616b" text-anchor="middle">1</text>
+<text x="484" y="614" font-family="Inter, Arial, sans-serif" font-size="12" fill="#52616b">higher agreement</text>
+</svg>

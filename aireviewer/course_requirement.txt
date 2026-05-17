@@ -1,0 +1,33 @@
+Final Report
+×
+Due: Wed at noon
+Submission: PDF on Canvas
+The final report is your chance to show your thinking process, not just your final output. Your project type shapes the content, but every report should make a reader care, demonstrate critical engagement with AI, and reflect honestly on what worked and what did not.
+
+AI policy reminder: You are fully responsible for everything you submit. If any part of your submitted work is inconsistent, unexplained, or something you cannot speak to during the poster session, it will be treated as a violation of the course AI policy.
+Required Sections (all projects)
+Title and abstract. A short paragraph a non-specialist can follow. State what you did and why someone should care.
+AI disclosure. Apply one of the disclosure approaches you learned in Week 8 -- or your own design -- to this report and to the project itself. Briefly justify your choice: why this approach for this project, and what does it reveal or obscure?
+Motivation. Why does this project matter? What gap, tension, frustration, curiosity, or opportunity are you responding to? Connect to course readings where relevant -- at least two from the syllabus, but don't force it. Make us care.
+Process and iterations (the heart of the report). Document what you actually did, including dead ends. Show at least two meaningful iterations or pivots. What did you try first? What surprised you? What did you change and why? Concrete artifacts (prompts, screenshots, before/after excerpts, failure cases) are encouraged -- they're often more revealing than prose summaries.
+Reflection and limitations. What did you learn -- about the task, about AI, about yourself as a writer or designer? What are the limits of what you produced? What would you do differently with another month? Where are you genuinely uncertain?
+References. Standard citation format of your choice (ACM, APA, etc.), used consistently.
+Project-Specific Sections
+Insert between Motivation and Process.
+
+Content: A design rationale, intended users and use contexts, the prototype itself (link, screenshots, or runnable artifact), key design decisions with alternatives considered, and an honest assessment of ethical implications. If you vibe-coded, justify every meaningful design choice -- the report is where you show you understood what you built.
+
+Supplementary Materials (optional)
+For code, datasets, full transcripts, or other supporting artifacts, sharing a public GitHub repo is preferred over appending them to the PDF. Include the URL in your report. Raw notes, additional examples, and supplementary figures can go in a PDF appendix if needed, but keep the main report self-contained.
+
+A Note on Length, Style, and Format
+Be concise and visual. Use diagrams, screenshots, tables, and before/after excerpts wherever they communicate more clearly than prose. Don't make the report longer to signal effort -- we all know that signal is no longer valuable. A focused 6-page report with strong visuals will read better than a 20-page one that repeats itself. Aim for the shortest version that still makes your case fully.
+
+You're also welcome to be creative with the format. If you'd rather build a project website that covers all the required content, that's great -- submit the URL on Canvas instead of a PDF. Whatever format you choose, make sure all the required sections are present and easy to navigate.
+
+What We're Looking For
+Thoughtfulness and intellectual risk. Does the project go beyond what 2-3 days of prompting could produce?
+Process visibility. Can we see how you got here, including the messy parts?
+Critical and responsible AI use. Meaningful disclosure (not a checkbox), ethical reflection, and a clear sense of why you incorporated AI in the project and when you pushed back.
+Communication. Clear to a general reader, jargon defined, honest about uncertainty.
+Project-specific quality. Tutorial usability, literature review rigor, design novelty, etc.

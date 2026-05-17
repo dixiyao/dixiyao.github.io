@@ -1,0 +1,668 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Debate and Rebuttal: Multi-Agent Reviewer for Pre-Submission Manuscript Polishing, a Writing with AI course project by Dixi Yao.">
+  <meta name="author" content="Dixi Yao">
+  <meta name="robots" content="index, follow">
+  <link rel="canonical" href="https://dixiyao.github.io/aireviewer/">
+  <meta property="og:type" content="website">
+  <meta property="og:title" content="Debate and Rebuttal: Multi-Agent Reviewer">
+  <meta property="og:description" content="A multi-agent AI reviewer that supports manuscript improvement through debate, linked suggestions, and author rebuttal.">
+  <meta property="og:url" content="https://dixiyao.github.io/aireviewer/">
+  <meta property="og:image" content="https://dixiyao.github.io/aireviewer/assests/workflow.png">
+  <title>Debate and Rebuttal: Multi-Agent Reviewer</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&amp;family=JetBrains+Mono:wght@400;700&amp;family=Source+Serif+4:wght@600;700;800&amp;display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <header class="site-header">
+    <div class="container topbar">
+      <a class="brand" href="/aireviewer/" aria-label="AIReviewer home">
+        <span class="brand-mark">AR</span>
+        <span>AIReviewer</span>
+      </a>
+      <nav class="section-nav" aria-label="Project navigation">
+        <a href="#motivation">Introduction</a>
+        <a href="#design">Design</a>
+        <a href="#interface">Interface</a>
+        <a href="#process">Process</a>
+        <a href="#evaluation">Evaluation</a>
+        <a href="#reflection">Conclusion</a>
+        <a href="#acknowledgement">Acknowledgement</a>
+        <a href="#disclosure">AI Disclosure</a>
+        <a href="#references">References</a>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+    <section class="hero" id="top">
+      <div class="container hero-grid">
+        <div class="hero-copy">
+          <p class="eyebrow">CMSC 33231 Writing with AI Course Project</p>
+          <h1>Debate and Rebuttal: Multi-Agent Reviewer for Pre-Submission Manuscript Polishing</h1>
+          <p class="authors">Dixi Yao</p>
+          <p class="affiliation">University of Chicago</p>
+          <p class="lead">
+            Existing agent-based AI reviewers focus on generating review text that resembles conference feedback. That
+            framing misses the more useful author need: writing a strong paper. In this project, we narrow the goal to
+            helping authors improve a manuscript before submission and increase its chance of acceptance. We
+            build an interactive review system that uses multiple agents to produce helpful reviews, debate uncertain
+            judgments, and let authors respond through multi-round rebuttal. The system gives suggestions linked to
+            manuscript sentences, supports venue-specific guidelines, and helps authors distinguish actionable problems
+            from noisy or unfair reviewer complaints. Case studies and a small quantitative evaluation suggest that
+            multi-agent debate and rebuttal interaction can produce fairer judgments and more useful improvement
+            suggestions than a single-pass AI review.
+          </p>
+          <p class="lead">
+            The central claim of this project is that an AI reviewer should not be positioned as a generator of
+            ready-made conference reviews. It should be positioned as a pre-submission writing and research assistant
+            that helps authors polish papers, strengthen experiments, clarify claims, and improve the quality of the
+            research project itself.
+          </p>
+          <div class="actions">
+            <a class="action-pill primary" href="https://github.com/dixiyao/LLM-Academic-Writing/tree/main/AIReviewer">
+              <i class="fa-brands fa-github" aria-hidden="true"></i>
+              <span>Code</span>
+            </a>
+            <a class="action-pill" href="https://www.youtube.com/watch?v=-wzwkXZaeKI">
+              <i class="fa-brands fa-youtube" aria-hidden="true"></i>
+              <span>Demo Video</span>
+            </a>
+            <a class="action-pill" href="#" aria-label="Poster placeholder">
+              <i class="fa-regular fa-image" aria-hidden="true"></i>
+              <span>Poster Placeholder</span>
+            </a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="section alt" id="motivation">
+      <div class="container">
+        <div class="section-header">
+          <span class="section-kicker">Introduction</span>
+        </div>
+        <div class="prose">
+          <p>
+            With the emergence of LLMs and agentic systems, several AI paper review tools have appeared, including
+            <a href="https://paperreview.ai/">AgenticReviewer</a> and multi-agent review generation systems. Given an
+            academic paper, these systems can generate human-like reviews that follow a guideline template <a href="#ref-1">[1]</a><a href="#ref-2">[2]</a><a href="#ref-3">[3]</a>. However,
+            the most important use of an AI reviewer is not to replace conference reviewers. It is to help authors
+            produce stronger research papers, more concrete work, and more rigorous experimental evidence before
+            submission. 
+          </p>
+          <p>
+            From the reviewer side, many conferences explicitly restrict fully AI-generated reviews. For example,
+            conferences such as ICML may allow reviewers to use AI as an assistant, but they do not allow
+            fully AI-generated reviews. <a href="https://blog.icml.cc/2026/03/18/on-violations-of-llm-review-policies/">ICML
+            has discussed violations of LLM review policies</a> and has injected artifacts into PDFs to detect whether
+            reviewers directly copy and paste AI reviews. Submitting fully LLM-generated reviews violates academic
+            integrity policies; such reviews risk removal, and papers authored by those reviewers may face desk
+            rejection. From the author side, a one-shot AI review is useful only if it leads to clearer claims, stronger
+            experiments, better positioning, and a higher chance of acceptance.
+            <a href="https://blog.neurips.cc/2026/04/21/neurips-supports-authors-with-googles-paper-assistant-tool-pat/">NeurIPS
+            also provides each paper with a voucher for paper-assistant tooling</a> to help authors improve their
+            manuscripts, which points to the same shift:
+            <strong>AI review should support author revision, not manufacture official reviews.</strong>
+          </p>
+          <p>
+            Existing tools often optimize for alignment with human reviews in soundness, tone, and score distribution,
+            but human reviews themselves can be noisy, guideline-inconsistent, or factually wrong. We therefore define
+            the objective from the author perspective: identify flaws that reviewers are likely to criticize, provide
+            actionable suggestions, and help authors improve the manuscript enough to receive higher review scores.
+          </p>
+          <p>
+            This reframing matters because the current tool landscape often starts from the wrong position. If the goal
+            is only to imitate human review style, the system may reproduce the same problems that human reviews have:
+            vague requests for more experiments, weakly justified novelty concerns, or score distributions that look
+            plausible but do not actually help the author decide what to change. Our objective is instead practical:
+            help the author understand what a reviewer may criticize, whether that criticism is fair, and what concrete
+            change would make the paper stronger.
+          </p>
+          <p>
+            To meet this objective, AIReviewer has two main features. First, it uses multiple agents <a href="#ref-4">[4]</a> with different
+            roles, including experiment reviewer, method reviewer, harsh reviewer, standard reviewer, related-work
+            searcher, and area chair. These agents debate with each other so the system can check different parts of a
+            paper and mark each suggestion with the corresponding sentence in the manuscript. Second, the interface lets
+            authors rebut or respond to the general review or to a specific reviewer. This allows users to ask follow-up
+            questions, challenge unreasonable weaknesses, and obtain more useful suggestions for improving the paper.
+          </p>
+          <p>
+            In the project examples, we use papers from top machine-learning venues, including ICLR, NeurIPS, and ICML,
+            to show how AIReviewer behaves
+            differently from existing tools, why the resulting reviews are more calibrated, and how the interaction can
+            help polish a pre-submission manuscript.
+          </p>
+        </div>
+        <div class="meta-grid">
+          <article class="meta-item">
+            <div class="meta-icon" aria-hidden="true"><i class="fa-solid fa-user-graduate"></i></div>
+            <strong>Intended users</strong>
+            Graduate students and researchers preparing papers before submission, especially when they need critical
+            but actionable feedback before asking human collaborators for another review pass.
+          </article>
+          <article class="meta-item">
+            <div class="meta-icon" aria-hidden="true"><i class="fa-solid fa-pen-to-square"></i></div>
+            <strong>Use context</strong>
+            Pre-submission polishing, claim checking, related-work positioning, experiment-gap discovery, and rebuttal
+            rehearsal before an actual conference review process.
+          </article>
+          <article class="meta-item">
+            <div class="meta-icon" aria-hidden="true"><i class="fa-solid fa-comments"></i></div>
+            <strong>Design alternative</strong>
+            A single AI reviewer is simpler, but it hides uncertainty. We choose multi-agent debate because disagreement
+            between role-specific reviewers makes weak assumptions and overreaching criticisms easier to inspect.
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section class="section" id="design">
+      <div class="container">
+        <div class="section-header">
+          <span class="section-kicker">Design</span>
+        </div>
+        <figure class="figure">
+          <img src="assests/workflow.png" alt="Workflow of the multi-agent AI reviewer system">
+          <figcaption>System workflow: PDF upload, guideline configuration, multi-agent debate, area-chair synthesis, linked suggestions, and rebuttal.</figcaption>
+        </figure>
+        <div class="prose">
+          <p>
+            The system begins with a user-provided PDF and a review guideline. The guideline becomes a system-level
+            reference for all reviewer agents. Users can choose predefined venues or paste a custom template, making the
+            same system usable for machine learning, systems, HCI, or other research communities.
+          </p>
+          <p>
+            The workflow figure shows the full design logic. Given a PDF, the system first configures the review
+            guideline because the guideline is an important reference for generating reviews at the system level. The
+            following components then define how the system constructs reviews, debates, suggestions, and author
+            interaction.
+          </p>
+          <p>
+            A central contribution is the use of a multi-agent system with multi-round debate among reviewers. The
+            system first asks each role-specific reviewer to read and review the paper. Reviewers then discuss those
+            reviews across agents, and the debate results go to the area chair for a final synthesis. This
+            design is meant to prevent one reviewer persona from dominating the entire judgment.
+          </p>
+        </div>
+        <div class="agent-grid">
+          <article class="agent">
+            <strong>Summary Reviewer</strong>
+            Summarizes what the paper does, the main contribution, and the intended claim structure.
+          </article>
+          <article class="agent">
+            <strong>Method and Experiment Reviewer</strong>
+            Reads the parts of the guideline related to method and experiments, then focuses on whether the method
+            makes sense and whether the experiments are rigorous.
+          </article>
+          <article class="agent">
+            <strong>Related Work and Novelty Reviewer</strong>
+            Checks whether similar work already exists. When search is enabled, this reviewer can search for related
+            work and use that evidence to evaluate novelty.
+          </article>
+          <article class="agent">
+            <strong>Writing and Claim-Evidence Reviewer</strong>
+            Checks whether each claim has sufficient evidence in the manuscript, while also flagging writing issues,
+            impact claims, and ethical concerns.
+          </article>
+          <article class="agent">
+            <strong>Standard Reviewer</strong>
+            Follows the chosen review guideline strictly and gives a conventional conference-style assessment.
+          </article>
+          <article class="agent">
+            <strong>Harsh Reviewer and Area Chair</strong>
+            The harsh reviewer is prompted to assume that the paper should be rejected, then stress-tests the
+            manuscript. The area chair combines all reviews and gives final comments and suggestions.
+          </article>
+        </div>
+        <div class="prose">
+          <p>
+            In each round, all reviewers except the area chair first generate independent reviews. They then debate
+            with each other, exposing conflicts between overly harsh, overly lenient, novelty-focused, and
+            experiment-focused readings. The debate results and reviews go to the area chair, which produces a
+            final judgment and a set of revision suggestions. <a href="#ref-4">[4]</a>
+          </p>
+          <p>
+            In other words, the system does not treat review generation as a single model call. Each reviewer contributes
+            a different view of the manuscript, and the area chair aggregates those views after debate. The area chair is
+            also responsible for turning the debate into actionable revision guidance rather than only a score or a list
+            of weaknesses.
+          </p>
+          <p>
+            A key difference from a simple review generator is that the system monitors the review process, connecting
+            to the Week 3 discussion of monitoring in the writing process <a href="#ref-5">[5]</a><a href="#ref-6">[6]</a>. The area
+            chair can guide reviewers to revise or focus on issues that survive debate. This reflects the course
+            theme that useful AI writing support should not only generate content, but also shape the process of
+            thinking and revision.
+          </p>
+          <p>
+            This monitoring role is central to the design. Instead of simply asking one model to review or generate,
+            the area chair can tell reviewers what to revise, route concerns back into the debate, and use multi-round
+            interaction to reduce one-shot noise.
+          </p>
+          <h3>Prompting logic</h3>
+          <p>
+            Each reviewer has a role-specific system prompt that includes the review guideline and a description of its
+            responsibilities. The prompts ask reviewers to prioritize suggestions over generic weakness lists, verify
+            weaknesses before presenting them, and avoid low-value reviewer habits such as asking for larger models,
+            broader benchmarks, or more statistical tests without explaining why those additions are necessary.
+          </p>
+          <p>
+            The full prompts are available in the code base, but the high-level principle is simple: reviewers should
+            focus on actionable and solid weaknesses. The prompts explicitly discourage random or generic demands, such
+            as asking for more experiments without justification, asking authors to scale to larger models without a
+            reason, or listing weaknesses that are not supported by the manuscript.
+          </p>
+          <p>
+            The system also supports in-context learning. Authors can provide example reviews to guide what counts as
+            a useful review, a fair criticism, or a preferred style of feedback.
+          </p>
+          <h3>Reply and rebuttal</h3>
+          <p>
+            The interface adapts the conference rebuttal process into an open-ended writing interaction, connecting to
+            the Week 5 discussion of new interaction paradigms <a href="#ref-7">[7]</a><a href="#ref-8">[8]</a>. Authors can
+            respond to a general review or to a specific reviewer, challenge unreasonable weaknesses, ask follow-up
+            questions, and highlight manuscript sentences as context. The goal is not to win an argument against the
+            AI, but to discover what evidence, framing, or experiment would make the manuscript stronger.
+          </p>
+          <p>
+            This mirrors the rebuttal process in many machine-learning conferences, where authors usually have one or
+            two rounds to resolve questions or correct factual mistakes reviewers make. AIReviewer uses the same idea
+            but does not limit interaction to one or two rounds. Users can continue interacting with each reviewer to
+            address questions, ask new questions, and improve the manuscript.
+          </p>
+          <h3>Alternatives considered</h3>
+          <p>
+            We consider a simpler report-only interface that uploads a PDF and returns a polished review. We move
+            away from that design because it repeats the central problem: the author receives a finished judgment
+            but cannot test whether the criticism is fair. We also consider one global chat box, but per-reviewer
+            rebuttal makes it clearer whether a factual correction should affect novelty, experiments, writing, or the
+            area-chair synthesis.
+          </p>
+        </div>
+      </div>
+    </section>
+
+    <section class="section alt" id="interface">
+      <div class="container">
+        <div class="section-header">
+          <span class="section-kicker">Prototype</span>
+        </div>
+        <figure class="figure">
+          <img src="assests/ui.png" alt="AIReviewer user interface">
+          <figcaption>
+            Main UI of AIReviewer. The left panel collects the manuscript PDF, venue-specific or custom review
+            guideline, model backend, and search setting before running the review. The right panel organizes the
+            reviews by agent role, supports targeted author replies, and keeps the review process interactive
+            instead of returning a single static report.
+          </figcaption>
+        </figure>
+        <div class="prose">
+          <p>
+            The user interface is shown in the figure above. On the left side, after users click the upload-PDF control,
+            they can select their manuscript. They then provide the review guideline in one of two ways: by selecting a
+            venue name from predefined templates, where the current prototype includes
+            <a href="https://neurips.cc/Conferences/2026">NeurIPS 2026</a>,
+            <a href="https://icml.cc/Conferences/2026">ICML 2026</a>, and
+            <a href="https://iclr.cc/Conferences/2026">ICLR 2026</a>, or by entering a self-defined review template
+            copied or adapted from another venue. After the guideline is set, users configure the LLM backend, where the
+            prototype supports <a href="https://deepmind.google/technologies/gemini/">Gemini</a> and
+            <a href="https://openrouter.ai/">OpenRouter</a>. Users also choose whether search mode is enabled. Once
+            these settings are ready, the Run Review button starts the first review generation.
+          </p>
+          <p>
+            On the right interaction panel, users first see reviews from different reviewer types under the Complete
+            Review tab. If a review does not make sense, the user can select the corresponding reviewer in the chat box
+            and send a rebuttal or follow-up question. For sentence-level interaction, users can mark text in the PDF:
+            as shown in the highlight example below, selecting a sentence inserts that passage into the chat context for
+            the next response.
+          </p>
+          <p>
+            In the Suggestions tab, the system lists detailed revision suggestions. Clicking a specific suggestion jumps
+            to the corresponding area in the paper, as shown in the suggestion example below. The Context tab supports
+            in-context learning, where users can customize or explicitly guide the AI reviewer by providing review
+            examples or instructions about what to focus on. Rebuttal History and Sources make it easier to inspect
+            previous author responses, reviewer updates, and external material that the system uses.
+          </p>
+        </div>
+        <div class="feature-grid">
+          <article class="feature">
+            <strong>Configuration</strong>
+            Users upload a PDF, select a venue guideline or paste a custom one, choose
+            <a href="https://deepmind.google/technologies/gemini/">Gemini</a> or
+            <a href="https://openrouter.ai/">OpenRouter</a>, and decide whether web search is enabled. The prototype
+            includes predefined templates for <a href="https://neurips.cc/Conferences/2026">NeurIPS 2026</a>,
+            <a href="https://icml.cc/Conferences/2026">ICML 2026</a>, and
+            <a href="https://iclr.cc/Conferences/2026">ICLR 2026</a>.
+          </article>
+          <article class="feature">
+            <strong>Complete Review</strong>
+            Reviews from each agent are organized under tabs. Users can address one reviewer or the full panel through the chat box.
+          </article>
+          <article class="feature">
+            <strong>Suggestion Linking</strong>
+            Suggestions are linked to manuscript regions, so feedback stays connected to the evidence in the paper instead of becoming abstract advice.
+          </article>
+        </div>
+        <div class="screenshot-grid">
+          <figure class="figure">
+            <img src="assests/highlight.png" alt="Highlighted manuscript sentence used as rebuttal context">
+            <figcaption>Sentence highlighting: a selected passage becomes context for a follow-up question or rebuttal.</figcaption>
+          </figure>
+          <figure class="figure">
+            <img src="assests/suggestion.png" alt="Suggestion list linked to manuscript locations">
+            <figcaption>Suggestion tab: clicking a suggestion jumps to the corresponding location in the manuscript.</figcaption>
+          </figure>
+        </div>
+        <div class="prose">
+          <p>
+            The context tab supports in-context learning by allowing users to add review examples or explicit focus
+            instructions. Rebuttal history and source tabs preserve the conversation trail so authors can inspect how a
+            reviewer changed its assessment over time.
+          </p>
+          <p>
+            Complete implementation: <a href="https://github.com/dixiyao/LLM-Academic-Writing/tree/main/AIReviewer">AIReviewer code repository</a>.
+          </p>
+          <p>
+            Interaction Demo: <a href="https://www.youtube.com/watch?v=-wzwkXZaeKI">Video</a>.
+          </p>
+        </div>
+      </div>
+    </section>
+
+    <section class="section" id="process">
+      <div class="container">
+        <div class="section-header">
+          <span class="section-kicker">Case Studies</span>
+        </div>
+        <div class="prose">
+          <p>
+            We use case studies to improve the system because the central design question is qualitative: does the tool
+            help authors identify real revision opportunities, or does it merely imitate the surface form of peer
+            review? The two features we focus on most are multi-agent debate and rebuttal interaction. Experiments
+            use the system workflow above and the
+            <a href="https://openrouter.ai/openrouter/owl-alpha">Owl Alpha</a> backend through
+            <a href="https://openrouter.ai/">OpenRouter</a> unless otherwise noted.
+          </p>
+          <p>
+            We use these examples to show how the system improves through use, why it can resolve problems that
+            previous tools do not handle well, and how the two main design features, multi-agent debate and rebuttal
+            interaction, change the quality of the review. We first use a very strong paper, then a paper with more
+            fundamental weaknesses, and finally one of our own papers where rebuttal directly helps revision.
+          </p>
+          <h3>Example 1: a very strong paper should not be dragged to borderline</h3>
+          <p>
+            We first test the system on <a href="https://arxiv.org/abs/1706.03762">"Attention Is All You Need"</a>, <a href="#ref-9">[9]</a> a
+            highly influential paper with more than 247K citations. In the first version, the harsh reviewer generates a
+            familiar set of criticisms: 
+          </p>
+        </div>
+        <div class="excerpt">-The claim that the Transformer is 'the first transduction model relying entirely on self-attention' is not rigorously substantiated against decomposable attention [22] and end-to-end memory networks [28], which also use attention without recurrence.
+- Evaluation is limited to two machine translation tasks. No experiments on other sequence tasks (parsing, summarization, language modeling) are provided, undermining the claim of a general-purpose architecture.
+- The sinusoidal positional encoding extrapolation hypothesis is not empirically validated. Table 3 row (E) only compares sinusoidal vs. learned embeddings on in-distribution data, leaving the core motivation unsubstantiated.
+- Training cost FLOP estimates rely on an unspecified sustained GPU capacity (footnote 5 is missing), making cross-model comparisons difficult to verify. Differences in GPU utilization and implementation efficiency are unaccounted for.
+- Checkpoint averaging (last 5/20 checkpoints) is used but not ablated, making it unclear how much reported gains stem from architecture vs. ensembling effects.
+- No statistical significance testing or variance across runs is reported; all BLEU scores are single-run point estimates, making small differences unreliable.
+- The baseline comparison in Table 2 mixes single models and ensembles without separating them, obscuring architecture vs. ensembling contributions.</div>
+        <div class="prose">
+          <p>
+            Some points are reasonable, but others are common noisy review tropes: ask for broader tasks, statistical
+            significance, more compute accounting, or more ablations without calibrating against the paper's actual
+            contribution. <a href="https://paperreview.ai/">Stanford Agentic Reviewer</a> produces similar comments:
+          </p>
+          <p>
+            These are the kinds of weaknesses that can appear in real venue reviews but are not always equally important.
+            For example, a reviewer may ask for more datasets, stronger statistical reporting, or more compute details.
+            Those comments can be useful, but a harsh reviewer can also overestimate them and make them shadow the main
+            contribution of the paper.
+          </p>
+        </div>
+        <div class="excerpt">- Evaluation is limited to MT; broader applicability is asserted but not substantiated with non-MT tasks (e.g., language modeling, summarization).
+- Comparisons to some contemporaneous or near-contemporaneous attention-only or highly parallel models could be deeper; fairness of compute/hyperparameter tuning across baselines (e.g., ConvS2S, GNMT) is hard to fully verify from presented details.
+- FLOP-based training cost accounting is coarse and relies on sustained TFLOPS assumptions rather than end-to-end wall-clock and efficiency breakdowns (communication vs. compute).</div>
+        <div class="prose">
+          <p>
+            Stanford Agentic Reviewer has a similar venue-guideline feature, but one difference is that it does not use
+            the same multi-agent debate structure. It can therefore produce unfair comments when one review perspective
+            dominates. This failure motivated the debate mechanism. Instead of allowing a single harsh pass to dominate
+            the judgment, we separate experiment, novelty, writing, standard, and skeptical agents. The experiment
+            reviewer could still ask detailed questions while assigning a weak accept:
+          </p>
+        </div>
+        <div class="excerpt">Questions
+What is the standard deviation of BLEU scores across multiple random seeds?
+What is the contribution of checkpoint averaging to the final BLEU scores—can you report single-checkpoint results?
+What sustained FLOP rate per GPU was used in the training cost calculation?
+Were all baseline models in Table 2 evaluated under the same inference settings, or were results taken from original papers with different decoding configurations?
+Can you provide empirical evidence that sinusoidal positional encodings enable extrapolation to longer sequences?
+Recommendation: weak accept</div>
+        <div class="prose">
+          <p>
+            During debate, reviewers began to distinguish fatal weaknesses from addressable revisions:
+          </p>
+        </div>
+        <div class="excerpt">Skeptical Reviewer 2: The Transformer is a novel, fully attention-based architecture achieving state-of-the-art BLEU scores on two translation benchmarks with lower training cost. While impactful, several high-impact weaknesses remain that are difficult to fix in rebuttal, including unsubstantiated novelty claims, narrow evaluation, and unverified extrapolation hypotheses.
+Methodology and Experiments Reviewer: The Transformer introduces a fully attention-based architecture with strong empirical results on two MT tasks. The ablation study is thorough, but evaluation is narrow, statistical reporting is absent, and key reproducibility details (FLOP estimates, checkpoint averaging contribution) are missing or underspecified.</div>
+        <div class="prose">
+          <p>
+            The final area-chair response becomes more calibrated:
+          </p>
+          <p>
+            The multi-agent debate helps reviewers build a clearer image of what they should focus on. Instead of
+            treating every criticism as equally fatal, the agents can compare experiment concerns, novelty concerns, and
+            writing concerns across multiple perspectives and reduce noise from a single run.
+          </p>
+        </div>
+        <div class="excerpt">The paper's strengths—novel architecture, strong SOTA results, thorough ablation study (Table 3), clear theoretical motivation (Table 1), and detailed training setup—far outweigh its weaknesses for NeurIPS. The weaknesses are addressable through minor revisions (softening claims, adding citations, clarifying methodology) rather than requiring new experiments that would fundamentally change the paper. The hard_reviewer's concerns about 'fatal risks' are overstated: the novelty claim can be precisely scoped against prior work, and the evaluation scope (two major MT benchmarks) is standard for architecture papers at top venues. The paper is clearly above the NeurIPS bar.</div>
+        <div class="prose">
+          <p>
+            The final area-chair response also provides concrete suggestions for improving the paper. We omit the full
+            suggestion list here, but this example shows the intended improvement: the review is more solid, fairer,
+            and less dominated by generic one-shot complaints. We then use a borderline paper to demonstrate the
+            suggestion features more directly.
+          </p>
+          <h3>Example 2: a weak paper should receive concrete, not polite, criticism</h3>
+          <p>
+            We then test a <a href="https://openreview.net/forum?id=USjSdem7WO">2026 ICLR submission</a> about privacy,
+            feature reconstruction attacks, and split learning. The topic overlaps with our expertise, so we can inspect
+            whether the system produces meaningful criticism. The system generates suggestions such as:
+          </p>
+        </div>
+        <div class="excerpt">- Qualify claims in the abstract and introduction to specify 'resistant to evaluated attacks' rather than 'state-of-the-art feature reconstruction attacks' to avoid overstatement.
+- Formally state Hypothesis 1 with clear, testable conditions rather than as an informal question, and explicitly connect Table 1 results (low MSE in activation space but failed reconstruction) to Lemma 3 in the main text discussion.</div>
+        <div class="prose">
+          <p>
+            Multiple reviewers converge on the same core issue: the hypothesis is unclear, and the paper does not
+            adequately motivate why MLP-based split learning in vision should be the central setting. One reviewer writes:
+          </p>
+        </div>
+        <div class="excerpt">But again, what is the motivation for using MLP in vision? The reason why contribution 1 stands out in NLP is because it is basically impossible to find similar prior knowledge of data distribution in the real world. But for image, it is common. There is a lot of medical image application and human face identification systems in real-world using split learning. You can easily get public datasets of medical images and human faces. The assumption that attackers have no chance to know prior data distribution does not hold.</div>
+        <div class="prose">
+          <p>
+            We agree with the human-reviewer-style judgment here: this is not a minor phrasing issue, but a fundamental
+            motivation problem. This case helps tune the system to give concrete judgments when the paper has a real
+            conceptual gap.
+          </p>
+          <p>
+            This example is important because it shows the opposite side of the first case. For a strong paper,
+            AIReviewer should not over-penalize generic weaknesses. For a paper with a fundamental motivation issue, it
+            should not hide the problem behind polite language. The system should be able to state that the issue may
+            require a substantive solution.
+          </p>
+          <h3>Example 3: using rebuttal to improve the paper</h3>
+          <p>
+            The most realistic use case is the author's own paper. We test AIReviewer on our
+            <a href="https://dixiyao.github.io/fot/">FoT paper</a> <a href="#ref-10">[10]</a>. Initially, the system says the paper is not novel
+            compared with existing multi-agent systems. In rebuttal, we explain to the related-work reviewer and the
+            area chair that <a href="https://dixiyao.github.io/fot/">FoT</a> is not simply decomposing one big task into
+            subtasks; it aggregates insights from agents working on different tasks to build a shared high-level idea
+            library. The reviewer then suggests important related work, including ExpeL <a href="#ref-11">[11]</a> and Hyperagents <a href="#ref-12">[12]</a>, and we revise
+            the paper's positioning accordingly.
+          </p>
+          <p>
+            A second <a href="https://dixiyao.github.io/fot/">FoT</a> example involves our claim that the system provides
+            strong research-idea guidance. The reviewer flags the claim as overstated. We use the highlight function
+            to show the experiment details and rebut with context. The final reviewer response suggests cross-model
+            validation for LLM-as-a-judge, which becomes a useful revision direction. We also add the corresponding revision into our paper.
+          </p>
+          <p>
+            This is the interaction pattern we care about most. The goal is not for the author to simply accept the
+            review. The author can push back, explain the intended contribution, highlight evidence, and then use the
+            updated reviewer response to improve the actual manuscript.
+          </p>
+        </div>
+      </div>
+    </section>
+
+    <section class="section alt" id="evaluation">
+      <div class="container">
+        <div class="section-header">
+          <span class="section-kicker">Evaluation</span>
+        </div>
+        <div class="prose">
+          <p>
+            We randomly select 5 <a href="https://iclr.cc/Conferences/2026">ICLR 2026</a> oral papers, 5
+            <a href="https://iclr.cc/Conferences/2026">ICLR 2026</a> poster papers, and 10 rejected papers. We encode
+            the ground truth as 2 for oral (strong accept), 1 for poster (accept), and 0 for reject. For AIReviewer,
+            we revise the system prompt to ask for a judgment among strong accept, accept, weak accept, and reject. In
+            this experiment, we use a <a href="https://deepmind.google/technologies/gemini/">Gemini</a> 3.1 Pro backend.
+            For baselines, the first method directly asks Gemini 3.1 Pro for a quick judgment with the paper and the
+            following prompt:
+          </p>
+        </div>
+        <div class="excerpt">Please refer to the ICLR 2026 review guideline to have a fair and reasonable judge on the paper.</div>
+        <div class="prose">
+          <p>
+            The second baseline is <a href="https://paperreview.ai/">Stanford Agentic Reviewer</a>. We acknowledge that it
+            may use a different backend LLM from AIReviewer, so the comparison can be biased. Here, we use the results only as a
+            tool-level comparison. We measure Cohen's kappa to estimate the agreement between each system and the human
+            outcome labels.
+          </p>
+        </div>
+        <figure class="figure compact-figure">
+          <img src="assests/kappa_heatmap.svg" alt="Cohen's kappa heatmap comparing human, AIReviewer, single-agent, and Agentic Reviewer labels">
+          <figcaption>
+            Pairwise Cohen's kappa from <code>aireviewer/script.py</code>. Higher values indicate stronger agreement with human outcome labels.
+          </figcaption>
+        </figure>
+        <div class="prose">
+          <p>
+            The result suggests that AIReviewer better tracks the human labels than the compared tool baselines in this
+            small sample. The remaining problem is also visible: AI reviewers tend to pull papers toward the borderline,
+            likely because post-training and review-style prompting make models cautious and moderate.
+          </p>
+        </div>
+      </div>
+    </section>
+
+    <section class="section" id="reflection">
+      <div class="container">
+        <div class="section-header">
+          <span class="section-kicker">Conclusion, Limitations, and Future Work</span>
+        </div>
+        <div class="prose">
+          <p>
+            In future work, we explore whether different venues, tracks, and disciplines require different
+            reviewer characters and debate topologies. Benchmark tracks, industry tracks, and human-subjects studies may
+            need agents focused on data quality, engineering realism, IRB concerns, and evaluation validity. A future
+            version could automatically design the agent topology from the paper type and venue guideline.
+          </p>
+          <p>
+            We do not systematically test the in-context learning feature. We include it because review examples are
+            important for author control, but future work should evaluate whether examples improve review quality,
+            reduce generic comments, or merely make feedback match a preferred style.
+          </p>
+          <p>
+            The quantitative experiment also shows a fundamental limitation: AI review systems still tend to compress
+            judgments toward borderline categories. This may reflect RLHF and politeness biases in current LLMs. Better
+            calibration, reviewer-specific thresholds, and stronger evidence tracking may help. In the future, we will conduct a more thorough quantitative comparison with existing AI reviewers and use a
+            larger evaluation set, such as including all papers from ICLR, ICML, and other major venues.
+          </p>
+          <p>
+            The case-study papers are sampled to evaluate system behavior, not to target any specific paper or author,
+            especially for examples serving as weak or borderline papers. One ethical concern is that some people may
+            exploit the system to adversarially tune a paper so that it passes an LLM review and gets accepted. However,
+            passing an LLM review does not necessarily mean that the paper contains strong research or a concrete
+            contribution; it may still be purely incremental. We acknowledge this risk, but we hope the system is used
+            to produce useful academic papers that strengthen the research community.
+          </p>
+        </div>
+      </div>
+    </section>
+
+    <section class="section alt" id="acknowledgement">
+      <div class="container">
+        <div class="section-header">
+          <span class="section-kicker section-title-only">Acknowledgement</span>
+        </div>
+        <div class="prose">
+          <p>
+            This is a course project for the graduate course
+            <a href="https://minalee-research.github.io/teaching/writing-with-ai.html">Writing with AI</a> by
+            <a href="https://minalee-research.github.io/">Mina Lee</a>. We thank Mina for teaching this course,
+            providing many cutting-edge and elegant ideas, and giving suggestions on the project. We also appreciate the
+            discussions with classmates, whose comments give us useful insights for improving this project and for
+            thinking more carefully about the multi-agent field we are currently working on.
+          </p>
+        </div>
+      </div>
+    </section>
+
+    <section class="section" id="disclosure">
+      <div class="container">
+        <div class="section-header">
+          <span class="section-kicker">AI Disclosure</span>
+        </div>
+        <div class="prose">
+          <p>
+            We choose a visual disclosure approach because this is a design project centered on a working system and an
+            interaction workflow, rather than only a literature-style report. The disclosure should make visible where
+            AI supported design, writing, implementation, review simulation, and evaluation, while also making clear
+            that we are responsible for the final claims, examples, and ethical decisions.
+          </p>
+        </div>
+        <figure class="figure">
+          <img src="assests/aidisclosure.png" alt="AI disclosure judgment for the project">
+          <figcaption>AI disclosure artifact for the report.</figcaption>
+        </figure>
+      </div>
+    </section>
+
+    <section class="section alt" id="references">
+      <div class="container">
+        <div class="section-header">
+          <span class="section-kicker section-title-only">Reference</span>
+        </div>
+        <ol class="reference-list">
+          <li id="ref-1">D'Arcy, M., Hope, T., Birnbaum, L., and Downey, D. 2024. Marg: Multi-agent review generation for scientific papers. <em>arXiv preprint arXiv:2401.04259</em>.</li>
+          <li id="ref-2">Bolanos, F., Salatino, A., Osborne, F., and Motta, E. 2024. Artificial intelligence for literature reviews: opportunities and challenges. <em>Artificial Intelligence Review</em> 57, 10, 259.</li>
+          <li id="ref-3">Couto, P. H., Ho, Q. P., Kumari, N., Rachmat, B. K., Khuong, T. G. H., Ullah, I., and Sun-Hosoya, L. 2024. Relevai-reviewer: A benchmark on AI reviewers for survey paper relevance. <em>arXiv preprint arXiv:2406.10294</em>.</li>
+          <li id="ref-4">Liang, T., He, Z., Jiao, W., Wang, X., Wang, Y., Wang, R., Yang, Y., Shi, S., and Tu, Z. 2024. Encouraging divergent thinking in large language models through multi-agent debate. <em>Proceedings of EMNLP 2024</em>, 17889-17904.</li>
+          <li id="ref-5">Flower, L., and Hayes, J. R. 1981. A cognitive process theory of writing. <em>College Composition and Communication</em> 32, 4, 365-387.</li>
+          <li id="ref-6">Lee, M., Liang, P., and Yang, Q. 2022. CoAuthor: Designing a Human-AI Collaborative Writing Dataset for Exploring Language Model Capabilities. <em>Proceedings of CHI 2022</em>.</li>
+          <li id="ref-7">Gero, K. I., Long, T., and Chilton, L. B. 2022. A design space for writing support tools using a cognitive process model of writing. <em>Proceedings of In2Writing 2022</em>.</li>
+          <li id="ref-8">Buschek, D. 2024. Collage is the new writing: Exploring the fragmentation of text and user interfaces in AI tools. <em>Proceedings of DIS 2024</em>.</li>
+          <li id="ref-9">Vaswani, A., Shazeer, N., Parmar, N., Uszkoreit, J., Jones, L., Gomez, A. N., Kaiser, L., and Polosukhin, I. 2017. Attention is all you need. <em>Advances in Neural Information Processing Systems</em> 30.</li>
+          <li id="ref-10">Yao, D., Rabbani, T., and Li, T. 2026. Federation over Text: Insight Sharing for Multi-Agent Reasoning. <em>arXiv preprint arXiv:2604.16778</em>.</li>
+          <li id="ref-11">Zhao, A., Huang, D., Xu, Q., Lin, M., Liu, Y.-J., and Huang, G. 2024. ExpeL: LLM agents are experiential learners. <em>Proceedings of AAAI</em> 38, 17, 19632-19642.</li>
+          <li id="ref-12">Zhang, J., Zhao, B., Yang, W., Foerster, J., Clune, J., Jiang, M., Devlin, S., and Shavrina, T. 2026. Hyperagents. <em>arXiv preprint arXiv:2603.19461</em>.</li>
+          <li id="ref-13">He, J., et al. 2025. Which contributions deserve credit? Perceptions of attribution in human-AI co-creation. Proceedings of CHI 2025.</li>
+          <li id="ref-14">Fang, X., et al. 2026. What influences readers' and writers' perceived necessity of AI disclosure? <em>Proceedings of FAccT 2026</em>.</li>
+        </ol>
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <div class="container">
+      <p>Course project for CMSC 33231 Writing with AI.</p>
+    </div>
+  </footer>
+</body>
+</html>
