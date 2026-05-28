@@ -56,5 +56,13 @@
       "date": "2026-02-08",
       "content": "blog_posts/good_paper_llm.md"
     }
+    ,
+    {
+      "id": "research_assistant",
+      "title": "My Research Workflow with Agents",
+      "author": "Dixi Yao",
+      "date": "2026-05-26",
+      "content": "blog_posts/research_assistant.md"
+    }
   ]
 }
