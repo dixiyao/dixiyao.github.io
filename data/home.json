@@ -12,11 +12,11 @@
     "reviewer": {
       "content": "I am active in the machine learning community and have served as a reviewer in",
       "conferences": {
-        "2026": ["CVPR", "ICLR", "AISTATS", "AAAI"],
+        "2026": ["NeurIPS", "ICML","CVPR", "ICLR", "AISTATS", "AAAI"],
         "2025": ["NeurIPS", "ICML", "AISTATS", "WACV", "ICLR", "ACL"],
         "2024": ["NeurIPS", "CVPR"]
       },
-      "journals": ["IEEE TPDS", "IEEE TDSC", "IEEE TNSE", "TMLR","Array","Neural Networks"]
+      "journals": ["IEEE TPDS", "IEEE TDSC", "IEEE TNSE", "TMLR","Array","Neural Networks","Qeios"]
     },
     "workExperience": {
       "fullTime": [
