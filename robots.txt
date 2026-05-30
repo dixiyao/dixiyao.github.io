@@ -25,11 +25,17 @@ Allow: /
 User-agent: ChatGPT-User
 Allow: /
 
+User-agent: OAI-AdsBot
+Allow: /
+
 # Anthropic / Claude
 User-agent: ClaudeBot
 Allow: /
 
 User-agent: Claude-SearchBot
+Allow: /
+
+User-agent: Claude-User
 Allow: /
 
 User-agent: anthropic-ai
@@ -39,8 +45,14 @@ Allow: /
 User-agent: PerplexityBot
 Allow: /
 
+User-agent: Perplexity-User
+Allow: /
+
 # Google AI (Gemini)
 User-agent: Google-Extended
+Allow: /
+
+User-agent: GoogleOther
 Allow: /
 
 # Apple (AI features)
@@ -54,8 +66,15 @@ Allow: /
 User-agent: FacebookBot
 Allow: /
 
+User-agent: Meta-ExternalAgent
+Allow: /
+
 # ByteDance (Doubao, Coze)
 User-agent: Bytespider
+Allow: /
+
+# Amazon / Alexa-style crawlers
+User-agent: Amazonbot
 Allow: /
 
 # You.com
@@ -75,6 +94,9 @@ User-agent: CCBot
 Allow: /
 
 User-agent: omgili
+Allow: /
+
+User-agent: omgilibot
 Allow: /
 
 # Sitemap location

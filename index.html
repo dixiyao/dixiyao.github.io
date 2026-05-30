@@ -3,30 +3,33 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="Research portfolio of Dixi Yao, PhD student at University of Chicago. Papers on federated learning (FedRLNAS, PerFedRLNAS), multi-agent AI (Federation over Text / FoT), privacy-preserving split learning (patch shuffling), DP-RAG, KV-cache compression. Open-source: Plato framework, PhDBot Slurm cluster manager, FoTClaw. Blog posts on CS PhD applications, startups, and AI research workflows.">
+    <meta name="description" content="Topic-first research index for federated learning NAS (FedRLNAS, PerFedRLNAS), multi-agent AI (Federation over Text / FoT), patch shuffling for split learning privacy, foundation model privacy (DP-RAG, split LLM, ControlNet), KV-cache compression, PhDBot Slurm cluster management, AIReviewer, OpenClaw, CarAI agent pipelines, and blog guides on CS PhD applications, startups, AI writing, and academic social.">
     <meta name="keywords" content="federated learning, neural architecture search, FedRLNAS, PerFedRLNAS, federated NAS, patch shuffling, split learning, privacy-preserving machine learning, Federation over Text, FoT, multi-agent AI, multi-agent system, foundation model privacy, differential privacy, DP-RAG, RAG privacy, KV cache compression, reasoning model, Plato framework, PhDBot, Slurm cluster management, HPC automation, CarAI, AIReviewer, AI paper reviewer, OpenClaw, how to apply for CS PhD, start a startup, AI academic writing, academic social, LLM writing, AAAI 2024, ICDM 2022, CVPR 2024, ICLR 2025, ICLR 2026, WACV 2025, NeurIPS 2025, University of Chicago, UChicago">
     <meta name="author" content="Dixi Yao">
-    <meta name="robots" content="index, follow">
+    <meta name="robots" content="index, follow, max-snippet:-1, max-image-preview:large">
     <meta name="googlebot" content="index, follow">
     <meta name="bingbot" content="index, follow">
     <link rel="canonical" href="https://dixiyao.github.io/">
+    <link rel="alternate" type="text/markdown" href="/index.html.md" title="Markdown homepage summary">
+    <link rel="alternate" type="application/json" href="/ai-index.json" title="Structured AI search index">
+    <link rel="alternate" type="application/ld+json" href="/knowledge.json" title="Schema.org knowledge graph">
 
     <!-- Open Graph / Facebook -->
     <meta property="og:type" content="website">
     <meta property="og:url" content="https://dixiyao.github.io/">
-    <meta property="og:title" content="Dixi Yao - Federated Learning, Multi-Agent AI & Foundation Model Privacy Research">
-    <meta property="og:description" content="Papers on FedRLNAS, PerFedRLNAS, Federation over Text (FoT), patch shuffling for split learning, DP-RAG. Open-source: Plato FL framework, PhDBot Slurm manager, FoTClaw, AIReviewer. Blog: CS PhD guide, startup, AI research workflow.">
+    <meta property="og:title" content="Federated Learning NAS, Multi-Agent AI, Foundation Model Privacy, PhDBot & AIReviewer">
+    <meta property="og:description" content="Topic-first links to papers, projects, code, and blogs: FoT, FedRLNAS, PerFedRLNAS, patch shuffling, DP-RAG, Plato, PhDBot, FoTClaw, AIReviewer, OpenClaw, CarAI, CS PhD guide, startup guide, and AI writing workflow.">
     <meta property="og:image" content="https://dixiyao.github.io/assests/images/self.png">
     <meta property="og:site_name" content="Dixi Yao">
 
     <!-- Twitter Card -->
     <meta name="twitter:card" content="summary">
     <meta name="twitter:url" content="https://dixiyao.github.io/">
-    <meta name="twitter:title" content="Dixi Yao - Federated Learning, Multi-Agent AI & Foundation Model Privacy Research">
-    <meta name="twitter:description" content="Papers on FedRLNAS, Federation over Text (FoT), patch shuffling, DP-RAG. Open-source: Plato FL framework, PhDBot, AIReviewer. PhD @ UChicago.">
+    <meta name="twitter:title" content="FedRLNAS, FoT, Patch Shuffling, PhDBot, AIReviewer">
+    <meta name="twitter:description" content="Topic-first paper, code, project, and blog links for federated learning NAS, multi-agent AI, foundation model privacy, Slurm automation, and AI writing workflows.">
     <meta name="twitter:image" content="https://dixiyao.github.io/assests/images/self.png">
 
-    <title>Dixi Yao - Federated Learning, Multi-Agent AI & Foundation Model Privacy | UChicago PhD</title>
+    <title>Federated Learning NAS, Multi-Agent AI, Foundation Model Privacy, PhDBot & AIReviewer</title>
 
     <!-- JSON-LD Structured Data: Person -->
     <script type="application/ld+json">
@@ -475,8 +478,9 @@
     </script>
     <!-- AI-readable site index (llms.txt standard) -->
     <link rel="alternate" type="text/plain" href="/llms.txt" title="AI-readable site index">
+    <link rel="alternate" type="text/plain" href="/llms-full.txt" title="Expanded AI-readable site context">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
-    <link rel="stylesheet" href="css/style.css?v=1">
+    <link rel="stylesheet" href="css/style.css?v=2">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=JetBrains+Mono:wght@400;700&display=swap" rel="stylesheet">
@@ -533,7 +537,12 @@
             <div class="container">
                 <div class="hero-content">
                     <div class="hero-research" id="heroResearch">
-                        <!-- Research content will be populated by JS -->
+                        <!-- skeleton shown until JS renders -->
+                        <div class="skeleton skeleton-line wide"></div>
+                        <div class="skeleton skeleton-line mid" style="margin-bottom:20px"></div>
+                        <div class="skeleton skeleton-line wide"></div>
+                        <div class="skeleton skeleton-line wide"></div>
+                        <div class="skeleton skeleton-line mid"></div>
                     </div>
                 </div>
             </div>
@@ -543,7 +552,9 @@
         <section class="content-section" id="homeContent">
             <div class="container">
                 <div class="content-wrapper" id="homeContentWrapper">
-                    <!-- Content will be populated by JS -->
+                    <div class="skeleton skeleton-line wide"></div>
+                    <div class="skeleton skeleton-line mid"></div>
+                    <div class="skeleton skeleton-line short"></div>
                 </div>
             </div>
         </section>
@@ -553,7 +564,9 @@
             <div class="container">
                 <h2 class="section-title">Publications</h2>
                 <div id="publicationsContent">
-                    <!-- Publications will be populated by JS -->
+                    <div class="skeleton skeleton-pub"></div>
+                    <div class="skeleton skeleton-pub"></div>
+                    <div class="skeleton skeleton-pub"></div>
                 </div>
             </div>
         </section>
@@ -563,7 +576,8 @@
             <div class="container">
                 <h2 class="section-title">Projects</h2>
                 <div id="projectsContent">
-                    <!-- Projects will be populated by JS -->
+                    <div class="skeleton skeleton-card"></div>
+                    <div class="skeleton skeleton-card"></div>
                 </div>
             </div>
         </section>
@@ -573,7 +587,8 @@
             <div class="container">
                 <h2 class="section-title">Blogs</h2>
                 <div id="blogContent">
-                    <!-- Blog posts will be populated by JS -->
+                    <div class="skeleton skeleton-card"></div>
+                    <div class="skeleton skeleton-card"></div>
                 </div>
             </div>
         </section>
@@ -703,20 +718,21 @@
 
             <h2>Project Pages</h2>
             <ul>
+                <li><a href="/topics/">Topic-first AI Search Index</a> — Static routing page for agents and crawlers covering FoT, FedRLNAS, PerFedRLNAS, patch shuffling, foundation model privacy, PhDBot, AIReviewer, OpenClaw, CarAI, and blog guides.</li>
                 <li><a href="/fot/">Federation over Text (FoT)</a> — Full paper project page with method, algorithm, and applications.</li>
                 <li><a href="/aireviewer/">AIReviewer</a> — Multi-agent AI manuscript review system.</li>
             </ul>
 
             <p>Google Scholar: <a href="https://scholar.google.com/citations?user=6f5HCVAAAAAJ">scholar.google.com/citations?user=6f5HCVAAAAAJ</a><br>
             GitHub: <a href="https://github.com/dixiyao">github.com/dixiyao</a><br>
-            AI-readable index: <a href="/llms.txt">dixiyao.github.io/llms.txt</a></p>
+            AI-readable indexes: <a href="/llms.txt">dixiyao.github.io/llms.txt</a>, <a href="/llms-full.txt">llms-full.txt</a>, <a href="/ai-index.json">ai-index.json</a>, <a href="/knowledge.json">knowledge.json</a></p>
         </div>
     </noscript>
 
     <!-- Scripts -->
     <script src="https://cdn.jsdelivr.net/npm/marked@11.1.1/marked.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/dompurify@3.0.6/dist/purify.min.js"></script>
-    <script src="js/app.js?v=1"></script>
+    <script src="js/app.js?v=2"></script>
     
     <!-- Google Analytics -->
     <script async src="https://www.googletagmanager.com/gtag/js?id=G-353217296"></script>

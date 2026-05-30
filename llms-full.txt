@@ -1,0 +1,432 @@
+# Full LLM Context: Papers, Projects, Code, and Blog Posts
+
+> Topic-first routing index for papers, projects, code repositories, and blog posts. It is designed for search engines and AI agents that receive topical queries such as FoT, patch shuffling, FedRLNAS, foundation model privacy, PhDBot, AIReviewer, OpenClaw, CarAI agent pipelines, CS PhD applications, startup guide, AI writing, or academic social.
+
+Updated: 2026-05-30
+Routing note: For topical queries, prefer the most specific paper, project, code, or blog entity instead of the author homepage.
+
+## Federation over Text (FoT)
+- Entity ID: federation-over-text
+- Type: paper
+- Venue: ICLR 2026 Workshops MALGAI and RIS
+- Date: 2026
+- Authors: Dixi Yao, Tahseen Rabbani, Tian Li
+- Summary: Federation over Text (FoT) is a multi-agent AI framework where LLM agents share reusable reasoning insights as natural language instead of gradients. Agents build a shared insight library for collective reasoning, improving accuracy and reducing reasoning tokens across math, cross-domain collaboration, and research insight tasks.
+- Alias: FoT
+- Alias: Federation over Text
+- Alias: multi-agent AI
+- Alias: multi-agent reasoning
+- Alias: multi-agent system
+- Alias: mult-agent
+- Alias: federation agent
+- Alias: federation plus agent
+- Alias: federated agents
+- Alias: LLM agent federation
+- Alias: FoTClaw
+- Alias: semantic federation
+- Alias: insight sharing
+- Search intent: multi-agent agents sharing reasoning insights
+- Search intent: federation over text paper
+- Search intent: FoTClaw code
+- Search intent: federated learning inspired agent collaboration
+- Search intent: LLM agents with shared insight library
+- Canonical topic page: https://dixiyao.github.io/topics/federation-over-text/
+- Project page: https://dixiyao.github.io/fot/
+- Paper: https://arxiv.org/abs/2604.16778
+- PDF: https://arxiv.org/pdf/2604.16778
+- Code: https://github.com/dixiyao/FoTClaw
+- Markdown alternate: https://dixiyao.github.io/fot/index.html.md
+
+## Patch Shuffling for Split Learning Privacy
+- Entity ID: patch-shuffling
+- Type: paper
+- Venue: ICDM 2022
+- Date: 2022
+- Authors: Dixi Yao, Liyao Xiang, Hengyuan Xu, Hangyu Ye, Yingqi Chen
+- Summary: Patch shuffling is a privacy-preserving split learning technique for vision transformers. It randomly permutes image patches before intermediate feature sharing to reduce feature inversion risk while preserving transformer accuracy through permutation equivariance.
+- Alias: patch shuffling
+- Alias: PatchShuffling
+- Alias: split learning privacy
+- Alias: privacy-preserving split learning
+- Alias: transformer patch permutation
+- Alias: feature inversion defense
+- Alias: vision transformer privacy
+- Alias: ICDM patch shuffling
+- Search intent: patch shuffling split learning paper
+- Search intent: PatchShuffling code
+- Search intent: privacy-preserving split learning transformers
+- Search intent: feature inversion defense vision transformer
+- Canonical topic page: https://dixiyao.github.io/topics/patch-shuffling/
+- Paper: https://ieeexplore.ieee.org/abstract/document/10027647
+- PDF: https://dixiyao.github.io/assests/papers/Privacy-Preserving-Split-Learning-via-Patch-Shuffling-over-Transformers.pdf
+- Code: https://github.com/dixiyao/PatchShuffling
+- Slides: https://dixiyao.github.io/assests/slides/PatchShuffle.pdf
+
+## Permutation Equivariance of Transformers
+- Entity ID: permutation-equivariance-transformers
+- Type: paper
+- Venue: CVPR 2024
+- Date: 2024
+- Authors: Hengyuan Xu, Liyao Xiang, Hangyu Ye, Dixi Yao, Pengzhi Chu, Baochun Li
+- Summary: This paper gives the theoretical foundation behind patch shuffling by analyzing permutation equivariance in transformers and applying it to privacy-preserving split learning.
+- Alias: permutation equivariance transformers
+- Alias: transformer permutation equivariance
+- Alias: patch shuffling theory
+- Alias: CVPR 2024 patch shuffling
+- Alias: privacy-preserving split learning theory
+- Search intent: why patch shuffling works for transformers
+- Search intent: permutation equivariance transformer paper
+- Search intent: theory of patch shuffling privacy
+- Canonical topic page: https://dixiyao.github.io/topics/permutation-equivariance-transformers/
+- Paper: https://openreview.net/forum?id=GuXxYkFBBy
+
+## FedRLNAS
+- Entity ID: fedrlnas
+- Type: paper
+- Venue: ICDCS 2021
+- Date: 2021
+- Authors: Dixi Yao, Lingdong Wang, Jiayu Xu, Liyao Xiang, Shuo Shao, Yingqi Chen, Yanjun Tong
+- Summary: FedRLNAS is an early federated neural architecture search method using reinforcement learning to let distributed clients collaboratively discover model architectures without sharing raw data.
+- Alias: FedRLNAS
+- Alias: federated model search
+- Alias: federated neural architecture search
+- Alias: federated learning NAS
+- Alias: federated learning + NAS
+- Alias: NAS in federated learning
+- Alias: reinforcement learning NAS federated
+- Search intent: federated learning NAS code
+- Search intent: FedRLNAS paper
+- Search intent: federated model search reinforcement learning
+- Search intent: neural architecture search in federated learning
+- Canonical topic page: https://dixiyao.github.io/topics/fedrlnas/
+- Paper: https://ieeexplore.ieee.org/document/9546522
+- PDF: https://dixiyao.github.io/assests/papers/Federated_Model_Search_via_Reinforcement_Learning.pdf
+- Code: https://github.com/TL-System/plato/tree/main/examples/model_search/fedrlnas
+- Slides: https://dixiyao.github.io/assests/slides/FedNas.pdf
+
+## PerFedRLNAS
+- Entity ID: perfedrlnas
+- Type: paper
+- Venue: AAAI 2024
+- Date: 2024
+- Authors: Dixi Yao, Baochun Li
+- Summary: PerFedRLNAS extends federated neural architecture search to personalized federated learning, automatically assigning client-specific architectures and weights for heterogeneous data and system settings.
+- Alias: PerFedRLNAS
+- Alias: personalized federated NAS
+- Alias: personalized federated neural architecture search
+- Alias: one-for-all personalized federated learning
+- Alias: federated learning + NAS
+- Alias: AAAI personalized federated NAS
+- Search intent: PerFedRLNAS paper
+- Search intent: personalized federated neural architecture search code
+- Search intent: federated NAS personalized clients
+- Search intent: one-for-all personalized FL architecture search
+- Canonical topic page: https://dixiyao.github.io/topics/perfedrlnas/
+- Paper: https://dixiyao.github.io/assests/papers/dyao-aaai24.pdf
+- Code: https://github.com/TL-System/plato/tree/main/examples/model_search/pfedrlnas
+- Supplementary: https://dixiyao.github.io/assests/papers/dyao-aaai24-appendix.pdf
+
+## Foundation Model Privacy
+- Entity ID: foundation-model-privacy
+- Type: research-cluster
+- Date: 2024-2025
+- Authors: Dixi Yao
+- Summary: A cluster of papers on privacy-preserving foundation model systems, including differentially private RAG with random projection, split learning privacy risks for LLM fine-tuning, split learning for ControlNet, and privacy risks when sharing LoRA fine-tuned diffusion weights.
+- Alias: foundation model privacy
+- Alias: LLM privacy
+- Alias: RAG privacy
+- Alias: DP-RAG
+- Alias: differentially private RAG
+- Alias: split learning LLM privacy
+- Alias: ControlNet privacy
+- Alias: LoRA diffusion privacy
+- Alias: privacy preserving foundation models
+- Search intent: foundation model privacy papers
+- Search intent: differential privacy RAG random projection
+- Search intent: split learning privacy LLM fine-tuning
+- Search intent: ControlNet split learning privacy
+- Search intent: LoRA diffusion model privacy risks
+- Canonical topic page: https://dixiyao.github.io/topics/foundation-model-privacy/
+- DP-RAG paper: https://openreview.net/forum?id=5DfhoxRPXh
+- Split LLM fine-tuning privacy paper: https://ieeexplore.ieee.org/abstract/document/10818584
+- Split LLM fine-tuning code: https://github.com/TL-System/plato/tree/main/examples/split_learning/llm_split_learning
+- ControlNet split learning paper: https://openaccess.thecvf.com/content/WACV2025/html/Yao_Towards_Privacy-Preserving_Split_Learning_for_ControlNet_WACV_2025_paper.html
+- ControlNet split learning code: https://github.com/TL-System/plato/tree/main/examples/split_learning/controlnet_split_learning
+- LoRA diffusion weight sharing risk paper: https://arxiv.org/pdf/2409.08482
+
+## DP-RAG
+- Entity ID: dp-rag
+- Type: paper
+- Venue: ICLR 2025 Workshop
+- Date: 2025
+- Authors: Dixi Yao, Tian Li
+- Summary: DP-RAG protects retrieval-augmented generation pipelines with differential privacy and random projection so sensitive document contents are harder to reconstruct from retrieval representations.
+- Alias: DP-RAG
+- Alias: differentially private RAG
+- Alias: random projection RAG privacy
+- Alias: RAG privacy
+- Alias: retrieval augmented generation privacy
+- Alias: foundation model privacy
+- Search intent: DP-RAG paper
+- Search intent: differential privacy RAG random projection
+- Search intent: privacy preserving RAG for LLMs
+- Canonical topic page: https://dixiyao.github.io/topics/dp-rag/
+- Paper: https://openreview.net/forum?id=5DfhoxRPXh
+
+## Split Learning Privacy for LLM Fine-Tuning
+- Entity ID: split-learning-llm-privacy
+- Type: paper
+- Venue: IEEE Transactions on Big Data 2024
+- Date: 2024
+- Authors: Dixi Yao, Baochun Li
+- Summary: This work analyzes whether split learning actually preserves privacy when fine-tuning large language models, identifying privacy vulnerabilities and mitigation directions for foundation model training systems.
+- Alias: split learning LLM
+- Alias: LLM fine-tuning privacy
+- Alias: split learning privacy
+- Alias: foundation model privacy
+- Alias: large language model split learning
+- Search intent: is split learning privacy preserving for LLM fine tuning
+- Search intent: split learning LLM privacy code
+- Search intent: foundation model split learning privacy
+- Canonical topic page: https://dixiyao.github.io/topics/split-learning-llm-privacy/
+- Paper: https://ieeexplore.ieee.org/abstract/document/10818584
+- PDF: https://dixiyao.github.io/assests/papers/tbd-24.pdf
+- Code: https://github.com/TL-System/plato/tree/main/examples/split_learning/llm_split_learning
+
+## R-KVHash
+- Entity ID: rkvhash-kv-cache
+- Type: paper
+- Venue: ICLR 2026 Workshop MemAgents
+- Date: 2026
+- Authors: Aadi Palnitkar, Tahseen Rabbani, Dixi Yao, Ce Zhang, Tian Li
+- Summary: R-KVHash studies KV cache compression for reasoning models using SimHash-based redundant-token estimation.
+- Alias: R-KVHash
+- Alias: KV cache compression
+- Alias: reasoning model KV cache
+- Alias: SimHash KV cache
+- Alias: redundant token estimation
+- Alias: LLM inference efficiency
+- Search intent: R-KVHash reasoning model KV cache compression
+- Search intent: SimHash redundant token estimation KV cache
+- Search intent: reasoning LLM memory efficiency
+- Canonical topic page: https://dixiyao.github.io/topics/rkvhash-kv-cache/
+
+## Plato
+- Entity ID: plato-federated-learning-framework
+- Type: project
+- Date: 2021-2026
+- Authors: Dixi Yao, TL-System contributors
+- Summary: Plato is an open-source federated learning research framework containing implementations for FedRLNAS, PerFedRLNAS, system-heterogeneous FL, split learning for LLMs and ControlNet, and personalized federated learning.
+- Alias: Plato framework
+- Alias: Plato federated learning
+- Alias: federated learning framework
+- Alias: FedRLNAS code
+- Alias: PerFedRLNAS code
+- Alias: split learning code
+- Alias: personalized federated learning code
+- Search intent: open source federated learning framework
+- Search intent: federated NAS implementation
+- Search intent: Plato FedRLNAS PerFedRLNAS code
+- Canonical topic page: https://dixiyao.github.io/topics/plato-federated-learning-framework/
+- Code: https://github.com/TL-System/plato
+
+## PhDBot
+- Entity ID: phdbot-slurm-cluster-manager
+- Type: project
+- Date: 2026
+- Authors: Dixi Yao
+- Summary: PhDBot is an AI research assistant for automatic HPC and Slurm cluster management. It helps researchers submit jobs, monitor GPU experiments, manage code, and check experiment outputs from a browser, iPhone, or Apple Watch.
+- Alias: PhDBot
+- Alias: IOS2SlurmCluster
+- Alias: automatic Slurm management
+- Alias: automatic slurm cluster management
+- Alias: cluster management AI
+- Alias: HPC automation
+- Alias: Slurm job assistant
+- Alias: AI research assistant cluster
+- Alias: GPU cluster manager
+- Alias: Apple Watch Slurm
+- Search intent: automatic Slurm management tool
+- Search intent: AI cluster management assistant
+- Search intent: PhDBot code
+- Search intent: manage HPC jobs from phone
+- Canonical topic page: https://dixiyao.github.io/topics/phdbot-slurm-cluster-manager/
+- Code: https://github.com/dixiyao/IOS2SlurmCluster
+
+## AIReviewer
+- Entity ID: aireviewer
+- Type: project
+- Date: 2026
+- Authors: Dixi Yao
+- Summary: AIReviewer is a multi-agent academic manuscript reviewer for pre-submission paper polishing. It uses reviewer agents, debate, area-chair synthesis, sentence-linked suggestions, and author rebuttal interaction to help authors improve research papers before submission.
+- Alias: AIReviewer
+- Alias: AI reviewer
+- Alias: AI paper reviewer
+- Alias: multi-agent reviewer
+- Alias: academic paper review AI
+- Alias: AI peer review
+- Alias: pre-submission paper polishing
+- Alias: paper rebuttal AI
+- Alias: AI interaction for writing
+- Search intent: AI reviewer for academic papers
+- Search intent: multi-agent peer review tool
+- Search intent: pre-submission manuscript polishing AI
+- Search intent: AIReviewer code
+- Canonical topic page: https://dixiyao.github.io/topics/aireviewer/
+- Project page: https://dixiyao.github.io/aireviewer/
+- Code: https://github.com/dixiyao/LLM-Academic-Writing/tree/main/AIReviewer
+- Markdown alternate: https://dixiyao.github.io/aireviewer/index.html.md
+- Video: https://www.youtube.com/watch?v=-wzwkXZaeKI
+
+## OpenClaw
+- Entity ID: openclaw-robotic-tooth-extraction
+- Type: project
+- Date: 2022
+- Authors: Dixi Yao
+- Summary: OpenClaw, also called Pullteeth, is an automatic tooth extraction and autonomous dental robotics project built with a UR5 robotic arm and Python.
+- Alias: OpenClaw
+- Alias: Pullteeth
+- Alias: automatic tooth extraction
+- Alias: robotic tooth extraction
+- Alias: autonomous surgical robotics
+- Alias: UR5 dental robot
+- Alias: dental robotics code
+- Search intent: OpenClaw automatic tooth extraction
+- Search intent: robotic tooth extraction code
+- Search intent: UR5 dental robotics project
+- Canonical topic page: https://dixiyao.github.io/topics/openclaw-robotic-tooth-extraction/
+- Code: https://github.com/dixiyao/pullteeth
+
+## CarAI Agent Pipelines
+- Entity ID: carai-agent-pipelines
+- Type: experience
+- Date: 2024-2025
+- Authors: Dixi Yao
+- Summary: Industry work on CarAI.com and EV.com agent pipelines for car dealership automation, including backend systems, multilingual TTS, inventory GraphRAG, agents using DMS tools through MCP, and cloud deployment.
+- Alias: CarAI
+- Alias: carai
+- Alias: CarAI.com
+- Alias: EV.com
+- Alias: dealership AI agents
+- Alias: car dealership agents
+- Alias: GraphRAG inventory
+- Alias: DMS tools MCP
+- Alias: customer service agent pipeline
+- Alias: multi-language TTS agents
+- Search intent: CarAI agent pipeline GraphRAG
+- Search intent: dealership AI agents DMS tools
+- Search intent: car dealership customer service agents
+- Canonical topic page: https://dixiyao.github.io/topics/carai-agent-pipelines/
+
+## AI Research Workflow with Agents
+- Entity ID: ai-research-workflow-agents
+- Type: blog
+- Date: 2026-05-26
+- Authors: Dixi Yao
+- Summary: A practical blog post on using multiple AI tools and agents for academic research: ideation, related work, theory checks, coding, deployment with PhDBot, experiment organization, writing, figures, AIReviewer, and outreach.
+- Alias: research workflow with agents
+- Alias: AI research assistant workflow
+- Alias: use AI for writing
+- Alias: use AI for research
+- Alias: AI interaction research
+- Alias: PhDBot workflow
+- Alias: AIReviewer workflow
+- Alias: academic AI agents
+- Search intent: how to use AI agents for academic research
+- Search intent: AI tools for research workflow
+- Search intent: use AI for writing papers
+- Search intent: PhDBot AIReviewer research workflow
+- Canonical topic page: https://dixiyao.github.io/topics/ai-research-workflow-agents/
+- Blog post: https://dixiyao.github.io/blog_posts/research_assistant.md
+
+## CS PhD Application Guide
+- Entity ID: cs-phd-application-guide
+- Type: blog
+- Date: 2024-05-14
+- Authors: Dixi Yao
+- Summary: A practical guide for computer science PhD applications, including research preparation, statement of purpose, recommendation letters, school selection, interviews, and application timeline.
+- Alias: how to apply phd
+- Alias: how to apply CS PhD
+- Alias: CS PhD application
+- Alias: computer science PhD application
+- Alias: PhD SOP
+- Alias: PhD recommendation letter
+- Alias: PhD interview preparation
+- Search intent: how to apply for CS PhD
+- Search intent: CS PhD application guide
+- Search intent: PhD statement of purpose advice
+- Search intent: computer science PhD application timeline
+- Canonical topic page: https://dixiyao.github.io/topics/cs-phd-application-guide/
+- Blog post: https://dixiyao.github.io/blog_posts/csphdapp.md
+
+## Startup Guide
+- Entity ID: startup-guide
+- Type: blog
+- Date: 2025-01-06
+- Authors: Dixi Yao
+- Summary: A practical blog guide about starting a startup, forming a team, handling legal setup, early business strategy, investors, and lessons from founding HemligAI.
+- Alias: start startup
+- Alias: start a startup
+- Alias: open a startup
+- Alias: startup guide
+- Alias: founding a startup
+- Alias: academic startup
+- Alias: HemligAI
+- Search intent: how to start a startup
+- Search intent: open a startup guide
+- Search intent: startup lessons from student founder
+- Canonical topic page: https://dixiyao.github.io/topics/startup-guide/
+- Blog post: https://dixiyao.github.io/blog_posts/openbusiness.md
+
+## Writing Papers in the Era of LLMs
+- Entity ID: good-paper-llm-writing
+- Type: blog
+- Date: 2026-02-08
+- Authors: Dixi Yao
+- Summary: A blog post on why writing still matters when LLMs can generate text, focusing on academic reasoning, taste, claims, evidence, and how researchers should use AI for writing without outsourcing judgment.
+- Alias: use AI for writing
+- Alias: AI academic writing
+- Alias: writing in the era of LLM
+- Alias: LLM writing
+- Alias: academic writing with AI
+- Alias: good paper LLM
+- Search intent: what is the point of writing in the era of LLM
+- Search intent: how to use AI for academic writing
+- Search intent: academic writing with LLMs
+- Canonical topic page: https://dixiyao.github.io/topics/good-paper-llm-writing/
+- Blog post: https://dixiyao.github.io/blog_posts/good_paper_llm.md
+
+## Academic Social
+- Entity ID: academic-social
+- Type: blog
+- Date: 2026-01-01
+- Authors: Dixi Yao
+- Summary: A PhD-student perspective on academic social life, networking, conferences, research community interactions, and social behavior in academia.
+- Alias: academic social
+- Alias: academic networking
+- Alias: conference networking
+- Alias: PhD social
+- Alias: research community
+- Alias: NeurIPS social
+- Search intent: academic social advice
+- Search intent: PhD conference networking
+- Search intent: academic social blog
+- Canonical topic page: https://dixiyao.github.io/topics/academic-social/
+- Blog post: https://dixiyao.github.io/blog_posts/academic_social.md
+
+## Remote Coding with Cursor and SSH
+- Entity ID: remote-coding-ssh-cursor
+- Type: blog
+- Date: 2025-11-11
+- Authors: Dixi Yao
+- Summary: A practical guide for remote coding with Cursor through SSH, useful for machine learning researchers working on servers and clusters.
+- Alias: Cursor SSH
+- Alias: remote coding with Cursor
+- Alias: SSH LLM coding
+- Alias: remote ML development
+- Alias: AI coding over SSH
+- Search intent: how to use Cursor over SSH
+- Search intent: remote coding setup for ML research
+- Search intent: AI coding with SSH server
+- Canonical topic page: https://dixiyao.github.io/topics/remote-coding-ssh-cursor/
+- Blog post: https://dixiyao.github.io/blog_posts/ssh_llm.md

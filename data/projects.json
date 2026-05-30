@@ -10,6 +10,11 @@
           "title": "Federation over Text (FoT)",
           "url": "/fot/",
           "description": "Project page for Federation over Text: insight sharing for multi-agent reasoning."
+        },
+        {
+          "title": "Topic-first AI Search Index",
+          "url": "/topics/",
+          "description": "Static routing index for agents and search crawlers that maps FoT, patch shuffling, FedRLNAS, PerFedRLNAS, foundation model privacy, PhDBot, AIReviewer, OpenClaw, CarAI, and blog-guide queries to exact paper, code, project, and post links."
         }
       ]
     },

@@ -1,90 +1,364 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
-  <!-- Main page -->
   <url>
     <loc>https://dixiyao.github.io/</loc>
-    <lastmod>2026-05-29</lastmod>
+    <lastmod>2026-05-30</lastmod>
     <changefreq>weekly</changefreq>
     <priority>1.0</priority>
   </url>
-  <!-- Publications section -->
   <url>
-    <loc>https://dixiyao.github.io/#publications</loc>
-    <lastmod>2026-05-29</lastmod>
+    <loc>https://dixiyao.github.io/topics/</loc>
+    <lastmod>2026-05-30</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.95</priority>
+  </url>
+  <url>
+    <loc>https://dixiyao.github.io/llms.txt</loc>
+    <lastmod>2026-05-30</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.9</priority>
+  </url>
+  <url>
+    <loc>https://dixiyao.github.io/llms-full.txt</loc>
+    <lastmod>2026-05-30</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.9</priority>
+  </url>
+  <url>
+    <loc>https://dixiyao.github.io/ai-index.json</loc>
+    <lastmod>2026-05-30</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.9</priority>
+  </url>
+  <url>
+    <loc>https://dixiyao.github.io/knowledge.json</loc>
+    <lastmod>2026-05-30</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.85</priority>
+  </url>
+  <url>
+    <loc>https://dixiyao.github.io/index.html.md</loc>
+    <lastmod>2026-05-30</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.85</priority>
+  </url>
+  <url>
+    <loc>https://dixiyao.github.io/topics/federation-over-text/</loc>
+    <lastmod>2026-05-30</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.9</priority>
   </url>
-  <!-- Projects section -->
   <url>
-    <loc>https://dixiyao.github.io/#projects</loc>
-    <lastmod>2026-05-29</lastmod>
+    <loc>https://dixiyao.github.io/topics/federation-over-text/index.html.md</loc>
+    <lastmod>2026-05-30</lastmod>
     <changefreq>monthly</changefreq>
-    <priority>0.8</priority>
+    <priority>0.75</priority>
   </url>
-  <!-- Blog section -->
-  <url>
-    <loc>https://dixiyao.github.io/#blog</loc>
-    <lastmod>2026-05-29</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.7</priority>
-  </url>
-  <!-- Project: Federation over Text -->
   <url>
     <loc>https://dixiyao.github.io/fot/</loc>
-    <lastmod>2026-05-29</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.95</priority>
-  </url>
-  <!-- Project: AIReviewer -->
-  <url>
-    <loc>https://dixiyao.github.io/aireviewer/</loc>
-    <lastmod>2026-05-17</lastmod>
+    <lastmod>2026-05-30</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.85</priority>
   </url>
-  <!-- AI-readable content index -->
   <url>
-    <loc>https://dixiyao.github.io/llms.txt</loc>
-    <lastmod>2026-05-29</lastmod>
-    <changefreq>weekly</changefreq>
+    <loc>https://dixiyao.github.io/fot/index.html.md</loc>
+    <lastmod>2026-05-30</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.75</priority>
+  </url>
+  <url>
+    <loc>https://dixiyao.github.io/topics/patch-shuffling/</loc>
+    <lastmod>2026-05-30</lastmod>
+    <changefreq>monthly</changefreq>
     <priority>0.9</priority>
   </url>
-  <!-- Blog posts (direct links) -->
+  <url>
+    <loc>https://dixiyao.github.io/topics/patch-shuffling/index.html.md</loc>
+    <lastmod>2026-05-30</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.75</priority>
+  </url>
+  <url>
+    <loc>https://dixiyao.github.io/assests/papers/Privacy-Preserving-Split-Learning-via-Patch-Shuffling-over-Transformers.pdf</loc>
+    <lastmod>2022-01-01</lastmod>
+    <changefreq>yearly</changefreq>
+    <priority>0.65</priority>
+  </url>
+  <url>
+    <loc>https://dixiyao.github.io/assests/slides/PatchShuffle.pdf</loc>
+    <lastmod>2022-01-01</lastmod>
+    <changefreq>yearly</changefreq>
+    <priority>0.55</priority>
+  </url>
+  <url>
+    <loc>https://dixiyao.github.io/topics/permutation-equivariance-transformers/</loc>
+    <lastmod>2026-05-30</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.9</priority>
+  </url>
+  <url>
+    <loc>https://dixiyao.github.io/topics/permutation-equivariance-transformers/index.html.md</loc>
+    <lastmod>2026-05-30</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.75</priority>
+  </url>
+  <url>
+    <loc>https://dixiyao.github.io/topics/fedrlnas/</loc>
+    <lastmod>2026-05-30</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.9</priority>
+  </url>
+  <url>
+    <loc>https://dixiyao.github.io/topics/fedrlnas/index.html.md</loc>
+    <lastmod>2026-05-30</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.75</priority>
+  </url>
+  <url>
+    <loc>https://dixiyao.github.io/assests/papers/Federated_Model_Search_via_Reinforcement_Learning.pdf</loc>
+    <lastmod>2021-01-01</lastmod>
+    <changefreq>yearly</changefreq>
+    <priority>0.65</priority>
+  </url>
+  <url>
+    <loc>https://dixiyao.github.io/assests/slides/FedNas.pdf</loc>
+    <lastmod>2021-01-01</lastmod>
+    <changefreq>yearly</changefreq>
+    <priority>0.55</priority>
+  </url>
+  <url>
+    <loc>https://dixiyao.github.io/topics/perfedrlnas/</loc>
+    <lastmod>2026-05-30</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.9</priority>
+  </url>
+  <url>
+    <loc>https://dixiyao.github.io/topics/perfedrlnas/index.html.md</loc>
+    <lastmod>2026-05-30</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.75</priority>
+  </url>
+  <url>
+    <loc>https://dixiyao.github.io/assests/papers/dyao-aaai24.pdf</loc>
+    <lastmod>2024-01-01</lastmod>
+    <changefreq>yearly</changefreq>
+    <priority>0.65</priority>
+  </url>
+  <url>
+    <loc>https://dixiyao.github.io/assests/papers/dyao-aaai24-appendix.pdf</loc>
+    <lastmod>2024-01-01</lastmod>
+    <changefreq>yearly</changefreq>
+    <priority>0.55</priority>
+  </url>
+  <url>
+    <loc>https://dixiyao.github.io/topics/foundation-model-privacy/</loc>
+    <lastmod>2026-05-30</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.85</priority>
+  </url>
+  <url>
+    <loc>https://dixiyao.github.io/topics/foundation-model-privacy/index.html.md</loc>
+    <lastmod>2026-05-30</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.75</priority>
+  </url>
+  <url>
+    <loc>https://dixiyao.github.io/topics/dp-rag/</loc>
+    <lastmod>2026-05-30</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.9</priority>
+  </url>
+  <url>
+    <loc>https://dixiyao.github.io/topics/dp-rag/index.html.md</loc>
+    <lastmod>2026-05-30</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.75</priority>
+  </url>
+  <url>
+    <loc>https://dixiyao.github.io/topics/split-learning-llm-privacy/</loc>
+    <lastmod>2026-05-30</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.9</priority>
+  </url>
+  <url>
+    <loc>https://dixiyao.github.io/topics/split-learning-llm-privacy/index.html.md</loc>
+    <lastmod>2026-05-30</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.75</priority>
+  </url>
+  <url>
+    <loc>https://dixiyao.github.io/assests/papers/tbd-24.pdf</loc>
+    <lastmod>2024-01-01</lastmod>
+    <changefreq>yearly</changefreq>
+    <priority>0.65</priority>
+  </url>
+  <url>
+    <loc>https://dixiyao.github.io/topics/rkvhash-kv-cache/</loc>
+    <lastmod>2026-05-30</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.9</priority>
+  </url>
+  <url>
+    <loc>https://dixiyao.github.io/topics/rkvhash-kv-cache/index.html.md</loc>
+    <lastmod>2026-05-30</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.75</priority>
+  </url>
+  <url>
+    <loc>https://dixiyao.github.io/topics/plato-federated-learning-framework/</loc>
+    <lastmod>2026-05-30</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.85</priority>
+  </url>
+  <url>
+    <loc>https://dixiyao.github.io/topics/plato-federated-learning-framework/index.html.md</loc>
+    <lastmod>2026-05-30</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.75</priority>
+  </url>
+  <url>
+    <loc>https://dixiyao.github.io/topics/phdbot-slurm-cluster-manager/</loc>
+    <lastmod>2026-05-30</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.85</priority>
+  </url>
+  <url>
+    <loc>https://dixiyao.github.io/topics/phdbot-slurm-cluster-manager/index.html.md</loc>
+    <lastmod>2026-05-30</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.75</priority>
+  </url>
+  <url>
+    <loc>https://dixiyao.github.io/topics/aireviewer/</loc>
+    <lastmod>2026-05-30</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.85</priority>
+  </url>
+  <url>
+    <loc>https://dixiyao.github.io/topics/aireviewer/index.html.md</loc>
+    <lastmod>2026-05-30</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.75</priority>
+  </url>
+  <url>
+    <loc>https://dixiyao.github.io/aireviewer/</loc>
+    <lastmod>2026-05-30</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.85</priority>
+  </url>
+  <url>
+    <loc>https://dixiyao.github.io/aireviewer/index.html.md</loc>
+    <lastmod>2026-05-30</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.75</priority>
+  </url>
+  <url>
+    <loc>https://dixiyao.github.io/topics/openclaw-robotic-tooth-extraction/</loc>
+    <lastmod>2026-05-30</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.85</priority>
+  </url>
+  <url>
+    <loc>https://dixiyao.github.io/topics/openclaw-robotic-tooth-extraction/index.html.md</loc>
+    <lastmod>2026-05-30</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.75</priority>
+  </url>
+  <url>
+    <loc>https://dixiyao.github.io/topics/carai-agent-pipelines/</loc>
+    <lastmod>2026-05-30</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.85</priority>
+  </url>
+  <url>
+    <loc>https://dixiyao.github.io/topics/carai-agent-pipelines/index.html.md</loc>
+    <lastmod>2026-05-30</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.75</priority>
+  </url>
+  <url>
+    <loc>https://dixiyao.github.io/topics/ai-research-workflow-agents/</loc>
+    <lastmod>2026-05-30</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.85</priority>
+  </url>
+  <url>
+    <loc>https://dixiyao.github.io/topics/ai-research-workflow-agents/index.html.md</loc>
+    <lastmod>2026-05-30</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.75</priority>
+  </url>
+  <url>
+    <loc>https://dixiyao.github.io/blog_posts/research_assistant.md</loc>
+    <lastmod>2026-05-26</lastmod>
+    <changefreq>yearly</changefreq>
+    <priority>0.65</priority>
+  </url>
+  <url>
+    <loc>https://dixiyao.github.io/topics/cs-phd-application-guide/</loc>
+    <lastmod>2026-05-30</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.85</priority>
+  </url>
+  <url>
+    <loc>https://dixiyao.github.io/topics/cs-phd-application-guide/index.html.md</loc>
+    <lastmod>2026-05-30</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.75</priority>
+  </url>
   <url>
     <loc>https://dixiyao.github.io/blog_posts/csphdapp.md</loc>
     <lastmod>2024-05-14</lastmod>
     <changefreq>yearly</changefreq>
+    <priority>0.65</priority>
+  </url>
+  <url>
+    <loc>https://dixiyao.github.io/topics/startup-guide/</loc>
+    <lastmod>2026-05-30</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.85</priority>
+  </url>
+  <url>
+    <loc>https://dixiyao.github.io/topics/startup-guide/index.html.md</loc>
+    <lastmod>2026-05-30</lastmod>
+    <changefreq>monthly</changefreq>
     <priority>0.75</priority>
   </url>
   <url>
     <loc>https://dixiyao.github.io/blog_posts/openbusiness.md</loc>
     <lastmod>2025-01-06</lastmod>
     <changefreq>yearly</changefreq>
-    <priority>0.75</priority>
+    <priority>0.65</priority>
   </url>
   <url>
-    <loc>https://dixiyao.github.io/blog_posts/research_assistant.md</loc>
-    <lastmod>2026-05-26</lastmod>
+    <loc>https://dixiyao.github.io/topics/good-paper-llm-writing/</loc>
+    <lastmod>2026-05-30</lastmod>
     <changefreq>monthly</changefreq>
-    <priority>0.8</priority>
+    <priority>0.85</priority>
+  </url>
+  <url>
+    <loc>https://dixiyao.github.io/topics/good-paper-llm-writing/index.html.md</loc>
+    <lastmod>2026-05-30</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.75</priority>
   </url>
   <url>
     <loc>https://dixiyao.github.io/blog_posts/good_paper_llm.md</loc>
     <lastmod>2026-02-08</lastmod>
     <changefreq>yearly</changefreq>
+    <priority>0.65</priority>
+  </url>
+  <url>
+    <loc>https://dixiyao.github.io/topics/academic-social/</loc>
+    <lastmod>2026-05-30</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.85</priority>
+  </url>
+  <url>
+    <loc>https://dixiyao.github.io/topics/academic-social/index.html.md</loc>
+    <lastmod>2026-05-30</lastmod>
+    <changefreq>monthly</changefreq>
     <priority>0.75</priority>
-  </url>
-  <url>
-    <loc>https://dixiyao.github.io/blog_posts/workstation.md</loc>
-    <lastmod>2024-08-27</lastmod>
-    <changefreq>yearly</changefreq>
-    <priority>0.65</priority>
-  </url>
-  <url>
-    <loc>https://dixiyao.github.io/blog_posts/ssh_llm.md</loc>
-    <lastmod>2025-11-11</lastmod>
-    <changefreq>yearly</changefreq>
-    <priority>0.65</priority>
   </url>
   <url>
     <loc>https://dixiyao.github.io/blog_posts/academic_social.md</loc>
@@ -93,15 +367,63 @@
     <priority>0.65</priority>
   </url>
   <url>
-    <loc>https://dixiyao.github.io/blog_posts/celpip.md</loc>
-    <lastmod>2025-02-08</lastmod>
+    <loc>https://dixiyao.github.io/topics/remote-coding-ssh-cursor/</loc>
+    <lastmod>2026-05-30</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.85</priority>
+  </url>
+  <url>
+    <loc>https://dixiyao.github.io/topics/remote-coding-ssh-cursor/index.html.md</loc>
+    <lastmod>2026-05-30</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.75</priority>
+  </url>
+  <url>
+    <loc>https://dixiyao.github.io/blog_posts/ssh_llm.md</loc>
+    <lastmod>2025-11-11</lastmod>
     <changefreq>yearly</changefreq>
-    <priority>0.5</priority>
+    <priority>0.65</priority>
   </url>
   <url>
     <loc>https://dixiyao.github.io/blog_posts/codewriting.md</loc>
     <lastmod>2024-07-11</lastmod>
     <changefreq>yearly</changefreq>
-    <priority>0.6</priority>
+    <priority>0.65</priority>
+  </url>
+  <url>
+    <loc>https://dixiyao.github.io/blog_posts/celpip.md</loc>
+    <lastmod>2025-02-08</lastmod>
+    <changefreq>yearly</changefreq>
+    <priority>0.65</priority>
+  </url>
+  <url>
+    <loc>https://dixiyao.github.io/blog_posts/workstation.md</loc>
+    <lastmod>2024-08-27</lastmod>
+    <changefreq>yearly</changefreq>
+    <priority>0.65</priority>
+  </url>
+  <url>
+    <loc>https://dixiyao.github.io/assests/papers/1771.pdf</loc>
+    <lastmod>2026-05-30</lastmod>
+    <changefreq>yearly</changefreq>
+    <priority>0.5</priority>
+  </url>
+  <url>
+    <loc>https://dixiyao.github.io/assests/papers/1776.pdf</loc>
+    <lastmod>2026-05-30</lastmod>
+    <changefreq>yearly</changefreq>
+    <priority>0.5</priority>
+  </url>
+  <url>
+    <loc>https://dixiyao.github.io/assests/papers/lwang-icdcs20.pdf</loc>
+    <lastmod>2026-05-30</lastmod>
+    <changefreq>yearly</changefreq>
+    <priority>0.5</priority>
+  </url>
+  <url>
+    <loc>https://dixiyao.github.io/assests/papers/wacv-25.pdf</loc>
+    <lastmod>2026-05-30</lastmod>
+    <changefreq>yearly</changefreq>
+    <priority>0.5</priority>
   </url>
 </urlset>

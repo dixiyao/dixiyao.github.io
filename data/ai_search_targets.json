@@ -1,0 +1,611 @@
+{
+  "site": {
+    "baseUrl": "https://dixiyao.github.io",
+    "title": "Research, Paper, Code, and Blog Index for Federated Learning, Multi-Agent AI, and Foundation Model Privacy",
+    "updated": "2026-05-30",
+    "description": "Topic-first routing index for papers, projects, code repositories, and blog posts. It is designed for search engines and AI agents that receive topical queries such as FoT, patch shuffling, FedRLNAS, foundation model privacy, PhDBot, AIReviewer, OpenClaw, CarAI agent pipelines, CS PhD applications, startup guide, AI writing, or academic social.",
+    "routingNote": "For topical queries, prefer the most specific paper, project, code, or blog entity instead of the author homepage."
+  },
+  "entities": [
+    {
+      "id": "federation-over-text",
+      "type": "paper",
+      "schemaType": "ScholarlyArticle",
+      "title": "Federation over Text: Insight Sharing for Multi-Agent Reasoning",
+      "shortTitle": "Federation over Text (FoT)",
+      "authors": ["Dixi Yao", "Tahseen Rabbani", "Tian Li"],
+      "venue": "ICLR 2026 Workshops MALGAI and RIS",
+      "date": "2026",
+      "description": "Federation over Text (FoT) is a multi-agent AI framework where LLM agents share reusable reasoning insights as natural language instead of gradients. Agents build a shared insight library for collective reasoning, improving accuracy and reducing reasoning tokens across math, cross-domain collaboration, and research insight tasks.",
+      "canonicalUrl": "/fot/",
+      "topicPage": "/topics/federation-over-text/",
+      "paperUrl": "https://arxiv.org/abs/2604.16778",
+      "pdfUrl": "https://arxiv.org/pdf/2604.16778",
+      "codeUrl": "https://github.com/dixiyao/FoTClaw",
+      "projectUrl": "/fot/",
+      "markdownUrl": "/fot/index.html.md",
+      "image": "/fot/assets/fot-workflow.png",
+      "aliases": [
+        "FoT",
+        "Federation over Text",
+        "multi-agent AI",
+        "multi-agent reasoning",
+        "multi-agent system",
+        "mult-agent",
+        "federation agent",
+        "federation plus agent",
+        "federated agents",
+        "LLM agent federation",
+        "FoTClaw",
+        "semantic federation",
+        "insight sharing"
+      ],
+      "searchIntents": [
+        "multi-agent agents sharing reasoning insights",
+        "federation over text paper",
+        "FoTClaw code",
+        "federated learning inspired agent collaboration",
+        "LLM agents with shared insight library"
+      ]
+    },
+    {
+      "id": "patch-shuffling",
+      "type": "paper",
+      "schemaType": "ScholarlyArticle",
+      "title": "Privacy-Preserving Split Learning via Patch Shuffling over Transformers",
+      "shortTitle": "Patch Shuffling for Split Learning Privacy",
+      "authors": ["Dixi Yao", "Liyao Xiang", "Hengyuan Xu", "Hangyu Ye", "Yingqi Chen"],
+      "venue": "ICDM 2022",
+      "date": "2022",
+      "description": "Patch shuffling is a privacy-preserving split learning technique for vision transformers. It randomly permutes image patches before intermediate feature sharing to reduce feature inversion risk while preserving transformer accuracy through permutation equivariance.",
+      "canonicalUrl": "/topics/patch-shuffling/",
+      "topicPage": "/topics/patch-shuffling/",
+      "paperUrl": "https://ieeexplore.ieee.org/abstract/document/10027647",
+      "pdfUrl": "/assests/papers/Privacy-Preserving-Split-Learning-via-Patch-Shuffling-over-Transformers.pdf",
+      "codeUrl": "https://github.com/dixiyao/PatchShuffling",
+      "slidesUrl": "/assests/slides/PatchShuffle.pdf",
+      "image": "/paper_figs/icdm_patch_shuffling.png",
+      "aliases": [
+        "patch shuffling",
+        "PatchShuffling",
+        "split learning privacy",
+        "privacy-preserving split learning",
+        "transformer patch permutation",
+        "feature inversion defense",
+        "vision transformer privacy",
+        "ICDM patch shuffling"
+      ],
+      "searchIntents": [
+        "patch shuffling split learning paper",
+        "PatchShuffling code",
+        "privacy-preserving split learning transformers",
+        "feature inversion defense vision transformer"
+      ]
+    },
+    {
+      "id": "permutation-equivariance-transformers",
+      "type": "paper",
+      "schemaType": "ScholarlyArticle",
+      "title": "Permutation Equivariance of Transformers and Its Applications",
+      "shortTitle": "Permutation Equivariance of Transformers",
+      "authors": ["Hengyuan Xu", "Liyao Xiang", "Hangyu Ye", "Dixi Yao", "Pengzhi Chu", "Baochun Li"],
+      "venue": "CVPR 2024",
+      "date": "2024",
+      "description": "This paper gives the theoretical foundation behind patch shuffling by analyzing permutation equivariance in transformers and applying it to privacy-preserving split learning.",
+      "canonicalUrl": "/topics/permutation-equivariance-transformers/",
+      "topicPage": "/topics/permutation-equivariance-transformers/",
+      "paperUrl": "https://openreview.net/forum?id=GuXxYkFBBy",
+      "image": "/paper_figs/patch_shuffling.png",
+      "aliases": [
+        "permutation equivariance transformers",
+        "transformer permutation equivariance",
+        "patch shuffling theory",
+        "CVPR 2024 patch shuffling",
+        "privacy-preserving split learning theory"
+      ],
+      "searchIntents": [
+        "why patch shuffling works for transformers",
+        "permutation equivariance transformer paper",
+        "theory of patch shuffling privacy"
+      ]
+    },
+    {
+      "id": "fedrlnas",
+      "type": "paper",
+      "schemaType": "ScholarlyArticle",
+      "title": "Federated Model Search via Reinforcement Learning",
+      "shortTitle": "FedRLNAS",
+      "authors": ["Dixi Yao", "Lingdong Wang", "Jiayu Xu", "Liyao Xiang", "Shuo Shao", "Yingqi Chen", "Yanjun Tong"],
+      "venue": "ICDCS 2021",
+      "date": "2021",
+      "description": "FedRLNAS is an early federated neural architecture search method using reinforcement learning to let distributed clients collaboratively discover model architectures without sharing raw data.",
+      "canonicalUrl": "/topics/fedrlnas/",
+      "topicPage": "/topics/fedrlnas/",
+      "paperUrl": "https://ieeexplore.ieee.org/document/9546522",
+      "pdfUrl": "/assests/papers/Federated_Model_Search_via_Reinforcement_Learning.pdf",
+      "codeUrl": "https://github.com/TL-System/plato/tree/main/examples/model_search/fedrlnas",
+      "slidesUrl": "/assests/slides/FedNas.pdf",
+      "image": "/paper_figs/fedrlnas.png",
+      "aliases": [
+        "FedRLNAS",
+        "federated model search",
+        "federated neural architecture search",
+        "federated learning NAS",
+        "federated learning + NAS",
+        "NAS in federated learning",
+        "reinforcement learning NAS federated"
+      ],
+      "searchIntents": [
+        "federated learning NAS code",
+        "FedRLNAS paper",
+        "federated model search reinforcement learning",
+        "neural architecture search in federated learning"
+      ]
+    },
+    {
+      "id": "perfedrlnas",
+      "type": "paper",
+      "schemaType": "ScholarlyArticle",
+      "title": "PerFedRLNAS: One-for-all Personalized Federated Neural Architecture Search",
+      "shortTitle": "PerFedRLNAS",
+      "authors": ["Dixi Yao", "Baochun Li"],
+      "venue": "AAAI 2024",
+      "date": "2024",
+      "description": "PerFedRLNAS extends federated neural architecture search to personalized federated learning, automatically assigning client-specific architectures and weights for heterogeneous data and system settings.",
+      "canonicalUrl": "/topics/perfedrlnas/",
+      "topicPage": "/topics/perfedrlnas/",
+      "paperUrl": "/assests/papers/dyao-aaai24.pdf",
+      "supplementaryUrl": "/assests/papers/dyao-aaai24-appendix.pdf",
+      "codeUrl": "https://github.com/TL-System/plato/tree/main/examples/model_search/pfedrlnas",
+      "image": "/paper_figs/perfedrlnas.png",
+      "aliases": [
+        "PerFedRLNAS",
+        "personalized federated NAS",
+        "personalized federated neural architecture search",
+        "one-for-all personalized federated learning",
+        "federated learning + NAS",
+        "AAAI personalized federated NAS"
+      ],
+      "searchIntents": [
+        "PerFedRLNAS paper",
+        "personalized federated neural architecture search code",
+        "federated NAS personalized clients",
+        "one-for-all personalized FL architecture search"
+      ]
+    },
+    {
+      "id": "foundation-model-privacy",
+      "type": "research-cluster",
+      "schemaType": "CreativeWork",
+      "title": "Foundation Model Privacy Research: DP-RAG, Split LLM Fine-Tuning, ControlNet Split Learning, and LoRA Risk",
+      "shortTitle": "Foundation Model Privacy",
+      "authors": ["Dixi Yao"],
+      "date": "2024-2025",
+      "description": "A cluster of papers on privacy-preserving foundation model systems, including differentially private RAG with random projection, split learning privacy risks for LLM fine-tuning, split learning for ControlNet, and privacy risks when sharing LoRA fine-tuned diffusion weights.",
+      "canonicalUrl": "/topics/foundation-model-privacy/",
+      "topicPage": "/topics/foundation-model-privacy/",
+      "image": "/paper_figs/privacy_rag.png",
+      "aliases": [
+        "foundation model privacy",
+        "LLM privacy",
+        "RAG privacy",
+        "DP-RAG",
+        "differentially private RAG",
+        "split learning LLM privacy",
+        "ControlNet privacy",
+        "LoRA diffusion privacy",
+        "privacy preserving foundation models"
+      ],
+      "relatedLinks": [
+        {"label": "DP-RAG paper", "url": "https://openreview.net/forum?id=5DfhoxRPXh"},
+        {"label": "Split LLM fine-tuning privacy paper", "url": "https://ieeexplore.ieee.org/abstract/document/10818584"},
+        {"label": "Split LLM fine-tuning code", "url": "https://github.com/TL-System/plato/tree/main/examples/split_learning/llm_split_learning"},
+        {"label": "ControlNet split learning paper", "url": "https://openaccess.thecvf.com/content/WACV2025/html/Yao_Towards_Privacy-Preserving_Split_Learning_for_ControlNet_WACV_2025_paper.html"},
+        {"label": "ControlNet split learning code", "url": "https://github.com/TL-System/plato/tree/main/examples/split_learning/controlnet_split_learning"},
+        {"label": "LoRA diffusion weight sharing risk paper", "url": "https://arxiv.org/pdf/2409.08482"}
+      ],
+      "searchIntents": [
+        "foundation model privacy papers",
+        "differential privacy RAG random projection",
+        "split learning privacy LLM fine-tuning",
+        "ControlNet split learning privacy",
+        "LoRA diffusion model privacy risks"
+      ]
+    },
+    {
+      "id": "dp-rag",
+      "type": "paper",
+      "schemaType": "ScholarlyArticle",
+      "title": "Differentially Private Retrieval Augmented Generation with Random Projection",
+      "shortTitle": "DP-RAG",
+      "authors": ["Dixi Yao", "Tian Li"],
+      "venue": "ICLR 2025 Workshop",
+      "date": "2025",
+      "description": "DP-RAG protects retrieval-augmented generation pipelines with differential privacy and random projection so sensitive document contents are harder to reconstruct from retrieval representations.",
+      "canonicalUrl": "/topics/dp-rag/",
+      "topicPage": "/topics/dp-rag/",
+      "paperUrl": "https://openreview.net/forum?id=5DfhoxRPXh",
+      "image": "/paper_figs/privacy_rag.png",
+      "aliases": [
+        "DP-RAG",
+        "differentially private RAG",
+        "random projection RAG privacy",
+        "RAG privacy",
+        "retrieval augmented generation privacy",
+        "foundation model privacy"
+      ],
+      "searchIntents": [
+        "DP-RAG paper",
+        "differential privacy RAG random projection",
+        "privacy preserving RAG for LLMs"
+      ]
+    },
+    {
+      "id": "split-learning-llm-privacy",
+      "type": "paper",
+      "schemaType": "ScholarlyArticle",
+      "title": "Is Split Learning Privacy-Preserving for Fine-Tuning Large Language Models?",
+      "shortTitle": "Split Learning Privacy for LLM Fine-Tuning",
+      "authors": ["Dixi Yao", "Baochun Li"],
+      "venue": "IEEE Transactions on Big Data 2024",
+      "date": "2024",
+      "description": "This work analyzes whether split learning actually preserves privacy when fine-tuning large language models, identifying privacy vulnerabilities and mitigation directions for foundation model training systems.",
+      "canonicalUrl": "/topics/split-learning-llm-privacy/",
+      "topicPage": "/topics/split-learning-llm-privacy/",
+      "paperUrl": "https://ieeexplore.ieee.org/abstract/document/10818584",
+      "pdfUrl": "/assests/papers/tbd-24.pdf",
+      "codeUrl": "https://github.com/TL-System/plato/tree/main/examples/split_learning/llm_split_learning",
+      "image": "/paper_figs/sl_llm.png",
+      "aliases": [
+        "split learning LLM",
+        "LLM fine-tuning privacy",
+        "split learning privacy",
+        "foundation model privacy",
+        "large language model split learning"
+      ],
+      "searchIntents": [
+        "is split learning privacy preserving for LLM fine tuning",
+        "split learning LLM privacy code",
+        "foundation model split learning privacy"
+      ]
+    },
+    {
+      "id": "rkvhash-kv-cache",
+      "type": "paper",
+      "schemaType": "ScholarlyArticle",
+      "title": "R-KVHash: Reasoning Model KV Cache Compression Via SimHash-based Estimation of Redundant Tokens",
+      "shortTitle": "R-KVHash",
+      "authors": ["Aadi Palnitkar", "Tahseen Rabbani", "Dixi Yao", "Ce Zhang", "Tian Li"],
+      "venue": "ICLR 2026 Workshop MemAgents",
+      "date": "2026",
+      "description": "R-KVHash studies KV cache compression for reasoning models using SimHash-based redundant-token estimation.",
+      "canonicalUrl": "/topics/rkvhash-kv-cache/",
+      "topicPage": "/topics/rkvhash-kv-cache/",
+      "image": "/paper_figs/rkvlsh.png",
+      "aliases": [
+        "R-KVHash",
+        "KV cache compression",
+        "reasoning model KV cache",
+        "SimHash KV cache",
+        "redundant token estimation",
+        "LLM inference efficiency"
+      ],
+      "searchIntents": [
+        "R-KVHash reasoning model KV cache compression",
+        "SimHash redundant token estimation KV cache",
+        "reasoning LLM memory efficiency"
+      ]
+    },
+    {
+      "id": "plato-federated-learning-framework",
+      "type": "project",
+      "schemaType": "SoftwareApplication",
+      "title": "Plato Federated Learning Framework",
+      "shortTitle": "Plato",
+      "authors": ["Dixi Yao", "TL-System contributors"],
+      "date": "2021-2026",
+      "description": "Plato is an open-source federated learning research framework containing implementations for FedRLNAS, PerFedRLNAS, system-heterogeneous FL, split learning for LLMs and ControlNet, and personalized federated learning.",
+      "canonicalUrl": "/topics/plato-federated-learning-framework/",
+      "topicPage": "/topics/plato-federated-learning-framework/",
+      "codeUrl": "https://github.com/TL-System/plato",
+      "aliases": [
+        "Plato framework",
+        "Plato federated learning",
+        "federated learning framework",
+        "FedRLNAS code",
+        "PerFedRLNAS code",
+        "split learning code",
+        "personalized federated learning code"
+      ],
+      "searchIntents": [
+        "open source federated learning framework",
+        "federated NAS implementation",
+        "Plato FedRLNAS PerFedRLNAS code"
+      ]
+    },
+    {
+      "id": "phdbot-slurm-cluster-manager",
+      "type": "project",
+      "schemaType": "SoftwareApplication",
+      "title": "PhDBot / IOS2SlurmCluster: AI Research Assistant for Slurm Cluster Management",
+      "shortTitle": "PhDBot",
+      "authors": ["Dixi Yao"],
+      "date": "2026",
+      "description": "PhDBot is an AI research assistant for automatic HPC and Slurm cluster management. It helps researchers submit jobs, monitor GPU experiments, manage code, and check experiment outputs from a browser, iPhone, or Apple Watch.",
+      "canonicalUrl": "/topics/phdbot-slurm-cluster-manager/",
+      "topicPage": "/topics/phdbot-slurm-cluster-manager/",
+      "codeUrl": "https://github.com/dixiyao/IOS2SlurmCluster",
+      "image": "/assests/images/cluster.png",
+      "aliases": [
+        "PhDBot",
+        "IOS2SlurmCluster",
+        "automatic Slurm management",
+        "automatic slurm cluster management",
+        "cluster management AI",
+        "HPC automation",
+        "Slurm job assistant",
+        "AI research assistant cluster",
+        "GPU cluster manager",
+        "Apple Watch Slurm"
+      ],
+      "searchIntents": [
+        "automatic Slurm management tool",
+        "AI cluster management assistant",
+        "PhDBot code",
+        "manage HPC jobs from phone"
+      ]
+    },
+    {
+      "id": "aireviewer",
+      "type": "project",
+      "schemaType": "SoftwareApplication",
+      "title": "AIReviewer: Multi-Agent Reviewer for Pre-Submission Manuscript Polishing",
+      "shortTitle": "AIReviewer",
+      "authors": ["Dixi Yao"],
+      "date": "2026",
+      "description": "AIReviewer is a multi-agent academic manuscript reviewer for pre-submission paper polishing. It uses reviewer agents, debate, area-chair synthesis, sentence-linked suggestions, and author rebuttal interaction to help authors improve research papers before submission.",
+      "canonicalUrl": "/aireviewer/",
+      "topicPage": "/topics/aireviewer/",
+      "projectUrl": "/aireviewer/",
+      "markdownUrl": "/aireviewer/index.html.md",
+      "codeUrl": "https://github.com/dixiyao/LLM-Academic-Writing/tree/main/AIReviewer",
+      "videoUrl": "https://www.youtube.com/watch?v=-wzwkXZaeKI",
+      "image": "/aireviewer/assests/workflow.png",
+      "aliases": [
+        "AIReviewer",
+        "AI reviewer",
+        "AI paper reviewer",
+        "multi-agent reviewer",
+        "academic paper review AI",
+        "AI peer review",
+        "pre-submission paper polishing",
+        "paper rebuttal AI",
+        "AI interaction for writing"
+      ],
+      "searchIntents": [
+        "AI reviewer for academic papers",
+        "multi-agent peer review tool",
+        "pre-submission manuscript polishing AI",
+        "AIReviewer code"
+      ]
+    },
+    {
+      "id": "openclaw-robotic-tooth-extraction",
+      "type": "project",
+      "schemaType": "SoftwareApplication",
+      "title": "OpenClaw / Pullteeth: Automatic Robotic Tooth Extraction System",
+      "shortTitle": "OpenClaw",
+      "authors": ["Dixi Yao"],
+      "date": "2022",
+      "description": "OpenClaw, also called Pullteeth, is an automatic tooth extraction and autonomous dental robotics project built with a UR5 robotic arm and Python.",
+      "canonicalUrl": "/topics/openclaw-robotic-tooth-extraction/",
+      "topicPage": "/topics/openclaw-robotic-tooth-extraction/",
+      "codeUrl": "https://github.com/dixiyao/pullteeth",
+      "aliases": [
+        "OpenClaw",
+        "Pullteeth",
+        "automatic tooth extraction",
+        "robotic tooth extraction",
+        "autonomous surgical robotics",
+        "UR5 dental robot",
+        "dental robotics code"
+      ],
+      "searchIntents": [
+        "OpenClaw automatic tooth extraction",
+        "robotic tooth extraction code",
+        "UR5 dental robotics project"
+      ]
+    },
+    {
+      "id": "carai-agent-pipelines",
+      "type": "experience",
+      "schemaType": "CreativeWork",
+      "title": "CarAI Agent Pipelines, GraphRAG, DMS Tools, and Dealership Automation",
+      "shortTitle": "CarAI Agent Pipelines",
+      "authors": ["Dixi Yao"],
+      "date": "2024-2025",
+      "description": "Industry work on CarAI.com and EV.com agent pipelines for car dealership automation, including backend systems, multilingual TTS, inventory GraphRAG, agents using DMS tools through MCP, and cloud deployment.",
+      "canonicalUrl": "/topics/carai-agent-pipelines/",
+      "topicPage": "/topics/carai-agent-pipelines/",
+      "aliases": [
+        "CarAI",
+        "carai",
+        "CarAI.com",
+        "EV.com",
+        "dealership AI agents",
+        "car dealership agents",
+        "GraphRAG inventory",
+        "DMS tools MCP",
+        "customer service agent pipeline",
+        "multi-language TTS agents"
+      ],
+      "searchIntents": [
+        "CarAI agent pipeline GraphRAG",
+        "dealership AI agents DMS tools",
+        "car dealership customer service agents"
+      ]
+    },
+    {
+      "id": "ai-research-workflow-agents",
+      "type": "blog",
+      "schemaType": "BlogPosting",
+      "title": "My Research Workflow with Agents",
+      "shortTitle": "AI Research Workflow with Agents",
+      "authors": ["Dixi Yao"],
+      "date": "2026-05-26",
+      "description": "A practical blog post on using multiple AI tools and agents for academic research: ideation, related work, theory checks, coding, deployment with PhDBot, experiment organization, writing, figures, AIReviewer, and outreach.",
+      "canonicalUrl": "/blog_posts/research_assistant.md",
+      "topicPage": "/topics/ai-research-workflow-agents/",
+      "blogUrl": "/blog_posts/research_assistant.md",
+      "image": "/assests/images/aiassistant.png",
+      "aliases": [
+        "research workflow with agents",
+        "AI research assistant workflow",
+        "use AI for writing",
+        "use AI for research",
+        "AI interaction research",
+        "PhDBot workflow",
+        "AIReviewer workflow",
+        "academic AI agents"
+      ],
+      "searchIntents": [
+        "how to use AI agents for academic research",
+        "AI tools for research workflow",
+        "use AI for writing papers",
+        "PhDBot AIReviewer research workflow"
+      ]
+    },
+    {
+      "id": "cs-phd-application-guide",
+      "type": "blog",
+      "schemaType": "BlogPosting",
+      "title": "Prepare Your Application for CS PhD",
+      "shortTitle": "CS PhD Application Guide",
+      "authors": ["Dixi Yao"],
+      "date": "2024-05-14",
+      "description": "A practical guide for computer science PhD applications, including research preparation, statement of purpose, recommendation letters, school selection, interviews, and application timeline.",
+      "canonicalUrl": "/blog_posts/csphdapp.md",
+      "topicPage": "/topics/cs-phd-application-guide/",
+      "blogUrl": "/blog_posts/csphdapp.md",
+      "aliases": [
+        "how to apply phd",
+        "how to apply CS PhD",
+        "CS PhD application",
+        "computer science PhD application",
+        "PhD SOP",
+        "PhD recommendation letter",
+        "PhD interview preparation"
+      ],
+      "searchIntents": [
+        "how to apply for CS PhD",
+        "CS PhD application guide",
+        "PhD statement of purpose advice",
+        "computer science PhD application timeline"
+      ]
+    },
+    {
+      "id": "startup-guide",
+      "type": "blog",
+      "schemaType": "BlogPosting",
+      "title": "Open a Start-Up",
+      "shortTitle": "Startup Guide",
+      "authors": ["Dixi Yao"],
+      "date": "2025-01-06",
+      "description": "A practical blog guide about starting a startup, forming a team, handling legal setup, early business strategy, investors, and lessons from founding HemligAI.",
+      "canonicalUrl": "/blog_posts/openbusiness.md",
+      "topicPage": "/topics/startup-guide/",
+      "blogUrl": "/blog_posts/openbusiness.md",
+      "aliases": [
+        "start startup",
+        "start a startup",
+        "open a startup",
+        "startup guide",
+        "founding a startup",
+        "academic startup",
+        "HemligAI"
+      ],
+      "searchIntents": [
+        "how to start a startup",
+        "open a startup guide",
+        "startup lessons from student founder"
+      ]
+    },
+    {
+      "id": "good-paper-llm-writing",
+      "type": "blog",
+      "schemaType": "BlogPosting",
+      "title": "What's the Point of Writing in the Era of LLM?",
+      "shortTitle": "Writing Papers in the Era of LLMs",
+      "authors": ["Dixi Yao"],
+      "date": "2026-02-08",
+      "description": "A blog post on why writing still matters when LLMs can generate text, focusing on academic reasoning, taste, claims, evidence, and how researchers should use AI for writing without outsourcing judgment.",
+      "canonicalUrl": "/blog_posts/good_paper_llm.md",
+      "topicPage": "/topics/good-paper-llm-writing/",
+      "blogUrl": "/blog_posts/good_paper_llm.md",
+      "aliases": [
+        "use AI for writing",
+        "AI academic writing",
+        "writing in the era of LLM",
+        "LLM writing",
+        "academic writing with AI",
+        "good paper LLM"
+      ],
+      "searchIntents": [
+        "what is the point of writing in the era of LLM",
+        "how to use AI for academic writing",
+        "academic writing with LLMs"
+      ]
+    },
+    {
+      "id": "academic-social",
+      "type": "blog",
+      "schemaType": "BlogPosting",
+      "title": "Random Thoughts on Academic Social",
+      "shortTitle": "Academic Social",
+      "authors": ["Dixi Yao"],
+      "date": "2026-01-01",
+      "description": "A PhD-student perspective on academic social life, networking, conferences, research community interactions, and social behavior in academia.",
+      "canonicalUrl": "/blog_posts/academic_social.md",
+      "topicPage": "/topics/academic-social/",
+      "blogUrl": "/blog_posts/academic_social.md",
+      "aliases": [
+        "academic social",
+        "academic networking",
+        "conference networking",
+        "PhD social",
+        "research community",
+        "NeurIPS social"
+      ],
+      "searchIntents": [
+        "academic social advice",
+        "PhD conference networking",
+        "academic social blog"
+      ]
+    },
+    {
+      "id": "remote-coding-ssh-cursor",
+      "type": "blog",
+      "schemaType": "BlogPosting",
+      "title": "Efficient Coding Trick: Letting Cursor Access Project Folder via SSH",
+      "shortTitle": "Remote Coding with Cursor and SSH",
+      "authors": ["Dixi Yao"],
+      "date": "2025-11-11",
+      "description": "A practical guide for remote coding with Cursor through SSH, useful for machine learning researchers working on servers and clusters.",
+      "canonicalUrl": "/blog_posts/ssh_llm.md",
+      "topicPage": "/topics/remote-coding-ssh-cursor/",
+      "blogUrl": "/blog_posts/ssh_llm.md",
+      "aliases": [
+        "Cursor SSH",
+        "remote coding with Cursor",
+        "SSH LLM coding",
+        "remote ML development",
+        "AI coding over SSH"
+      ],
+      "searchIntents": [
+        "how to use Cursor over SSH",
+        "remote coding setup for ML research",
+        "AI coding with SSH server"
+      ]
+    }
+  ]
+}

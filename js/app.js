@@ -62,43 +62,60 @@
             .replace(/^-{3}[\s\S]*?-{3}\n?/m, '');
     }
     
-    // Load JSON data
+    function fadeIn(el) {
+        if (!el) return;
+        el.classList.remove('section-fade-in');
+        // Force reflow so re-adding the class restarts the animation
+        void el.offsetWidth;
+        el.classList.add('section-fade-in');
+    }
+
+    // Progressive data loading — show content in three phases so users see
+    // something immediately instead of waiting for all 6 JSON files.
     async function loadData() {
         try {
-            [config, homeData, publicationsData, projectsData, blogData, petsData] = await Promise.all([
+            // Phase 1 — nav + hero (tiny files, appears in ~50-100 ms)
+            [config, homeData] = await Promise.all([
                 fetchJson('data/config.json'),
                 fetchJson('data/home.json'),
+            ]);
+
+            renderNavigation();
+            renderHero();
+            renderHome();
+            updateFooter();
+            renderSidebar();
+
+            requestAnimationFrame(() => {
+                initCollapsibleSections();
+            });
+
+            // Phase 2 — publications + projects (larger, render as soon as ready)
+            [publicationsData, projectsData] = await Promise.all([
                 fetchJson('data/publications.json'),
                 fetchJson('data/projects.json'),
-                fetchJson('data/blog.json'),
-                fetchJson('data/pets.json')
             ]);
-            
-            await renderPage();
+
+            renderPublications();
+            renderProjects();
+
+            requestAnimationFrame(() => {
+                initImageModal();
+            });
+
+            // Phase 3 — blog + pets deferred to idle so the main content paints first
+            scheduleNonCriticalWork(async () => {
+                [blogData, petsData] = await Promise.all([
+                    fetchJson('data/blog.json'),
+                    fetchJson('data/pets.json'),
+                ]);
+                renderBlog();
+                renderPets();
+            });
+
         } catch (error) {
             console.error('Error loading data:', error);
         }
-    }
-    
-    // Render the entire page
-    async function renderPage() {
-        renderNavigation();
-        renderHero();
-        renderHome();
-        renderPublications();
-        renderProjects();
-        updateFooter();
-        renderSidebar();
-
-        requestAnimationFrame(() => {
-            initCollapsibleSections();
-            initImageModal();
-        });
-
-        scheduleNonCriticalWork(() => {
-            renderBlog();
-            renderPets();
-        });
     }
     
     // Render Sidebar Navigation
@@ -575,7 +592,7 @@
         // Render research content in hero section
         const heroResearch = document.getElementById('heroResearch');
         if (heroResearch && homeData.research) {
-            heroResearch.id = 'research'; // Add ID for navigation
+            heroResearch.id = 'research';
             heroResearch.innerHTML = `
                 <h2 class="section-title collapsible-heading" id="research-heading">
                     <span class="collapsible-arrow" style="margin-right: 0.5rem;">▼</span>
@@ -599,6 +616,7 @@
                     }
                 });
             }
+            fadeIn(heroResearch);
         }
     }
     
@@ -785,8 +803,9 @@
         }
         
         wrapper.innerHTML = html;
+        fadeIn(wrapper);
     }
-    
+
     // Render Publications
     function renderPublications() {
         const container = document.getElementById('publicationsContent');
@@ -906,8 +925,9 @@
         });
         
         container.innerHTML = html;
+        fadeIn(container);
     }
-    
+
     // Render Projects
     function renderProjects() {
         const container = document.getElementById('projectsContent');
@@ -1039,8 +1059,9 @@
         }
         
         container.innerHTML = html;
+        fadeIn(container);
     }
-    
+
     // Render Blog
     function renderBlog() {
         const container = document.getElementById('blogContent');
@@ -1068,28 +1089,40 @@
         </div>`;
         
         container.innerHTML = html;
+        fadeIn(container);
 
-        sortedPosts.forEach(async (post) => {
-            const excerptEl = container.querySelector(`[data-post-id="${post.id}"]`);
-            if (!excerptEl) return;
+        // Lazily load each excerpt only when its card scrolls into view,
+        // so we don't fire 9 fetch() calls all at once on page load.
+        const excerptObserver = new IntersectionObserver((entries, obs) => {
+            entries.forEach(async entry => {
+                if (!entry.isIntersecting) return;
+                obs.unobserve(entry.target);
 
-            let excerpt = 'Click to read more...';
+                const excerptEl = entry.target;
+                const postId = excerptEl.getAttribute('data-post-id');
+                const post = sortedPosts.find(p => p.id === postId);
+                if (!post) return;
 
-            if (post.excerpt) {
-                excerpt = post.excerpt;
-            } else if (post.content && post.content.endsWith('.md')) {
-                try {
-                    const text = stripFrontMatter(await fetchTextContent(post.content));
-                    excerpt = `${text.substring(0, 200).trim()}...`;
-                } catch (error) {
-                    console.error(`Error loading ${post.content}:`, error);
+                let excerpt = 'Click to read more...';
+
+                if (post.excerpt) {
+                    excerpt = post.excerpt;
+                } else if (post.content && post.content.endsWith('.md')) {
+                    try {
+                        const text = stripFrontMatter(await fetchTextContent(post.content));
+                        excerpt = `${text.substring(0, 200).trim()}...`;
+                    } catch (e) {
+                        console.error(`Error loading ${post.content}:`, e);
+                    }
+                } else if (post.content) {
+                    excerpt = `${post.content.substring(0, 200)}...`;
                 }
-            } else if (post.content) {
-                excerpt = `${post.content.substring(0, 200)}...`;
-            }
 
-            excerptEl.innerHTML = DOMPurify.sanitize(marked.parse(excerpt));
-        });
+                excerptEl.innerHTML = DOMPurify.sanitize(marked.parse(excerpt));
+            });
+        }, { rootMargin: '200px' }); // start loading 200px before visible
+
+        container.querySelectorAll('[data-post-id]').forEach(el => excerptObserver.observe(el));
     }
     
     // Render Pets

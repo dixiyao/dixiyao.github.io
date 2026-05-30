@@ -47,10 +47,14 @@
       "id": "projects"
     },
     {
+      "name": "Topics",
+      "url": "/topics/",
+      "id": "topics"
+    },
+    {
       "name": "Blogs",
       "url": "/#blog",
       "id": "blog"
     }
   ]
 }
-

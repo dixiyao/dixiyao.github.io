@@ -43,6 +43,7 @@ jobs:
           cp -r index.html _site/
           cp -r fot _site/ 2>/dev/null || true
           cp -r aireviewer _site/ 2>/dev/null || true
+          cp -r topics _site/ 2>/dev/null || true
           cp -r css _site/ 2>/dev/null || true
           cp -r js _site/ 2>/dev/null || true
           cp -r assests _site/ 2>/dev/null || true
@@ -56,6 +57,11 @@ jobs:
           # SEO files
           cp robots.txt _site/ 2>/dev/null || true
           cp sitemap.xml _site/ 2>/dev/null || true
+          cp llms.txt _site/ 2>/dev/null || true
+          cp llms-full.txt _site/ 2>/dev/null || true
+          cp ai-index.json _site/ 2>/dev/null || true
+          cp knowledge.json _site/ 2>/dev/null || true
+          cp index.html.md _site/ 2>/dev/null || true
           cp google0f6b632ff4dcfe69.html _site/ 2>/dev/null || true
           # List what's being deployed
           echo "Files to be deployed:"
