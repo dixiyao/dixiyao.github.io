@@ -553,18 +553,10 @@
     // Render Hero Section
     function renderHero() {
         // Render profile in navigation
-        const navProfileImg = document.getElementById('navProfileImage');
         const navTitle = document.getElementById('navTitle');
         const navSubtitle = document.getElementById('navSubtitle');
         const navSocialLinks = document.getElementById('navSocialLinks');
-        
-        if (navProfileImg && config.site.profilePicture) {
-            navProfileImg.src = config.site.profilePicture;
-            navProfileImg.onerror = function() {
-                console.error('Failed to load profile image:', config.site.profilePicture);
-            };
-        }
-        
+
         if (navTitle) {
             navTitle.textContent = config.site.title;
         }
@@ -627,12 +619,19 @@
         
         let html = '';
         
-        // About Section
+        // About Section — profile portrait floats right, text wraps around it
         if (homeData.about) {
+            const portraitSrc = config.site && config.site.profilePicture ? config.site.profilePicture : '';
+            const portraitHtml = portraitSrc
+                ? `<img src="${portraitSrc}" alt="Dixi Yao" class="about-portrait" loading="lazy" decoding="async">`
+                : '';
             html += `<div class="section-content" id="about">`;
             html += `<h1 class="collapsible-heading" id="about-heading">${homeData.about.title}<span class="collapsible-arrow">▼</span></h1>`;
             html += `<div class="collapsible-content">`;
+            html += `<div class="about-with-portrait">`;
+            html += portraitHtml;
             html += `<div class="markdown-content">${DOMPurify.sanitize(marked.parse(homeData.about.content))}</div>`;
+            html += `</div>`;
             html += `</div></div>`;
         }
         
@@ -804,6 +803,18 @@
         
         wrapper.innerHTML = html;
         fadeIn(wrapper);
+
+        // Fade-in the portrait once the browser has decoded it
+        const portrait = wrapper.querySelector('.about-portrait');
+        if (portrait) {
+            const revealPortrait = () => portrait.classList.add('portrait-loaded');
+            if (portrait.complete && portrait.naturalWidth) {
+                revealPortrait();
+            } else {
+                portrait.addEventListener('load', revealPortrait, { once: true });
+                portrait.addEventListener('error', revealPortrait, { once: true });
+            }
+        }
     }
 
     // Render Publications

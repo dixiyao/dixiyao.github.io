@@ -72,15 +72,6 @@ a:hover {
     flex-shrink: 0;
 }
 
-.nav-profile-img {
-    width: 50px;
-    height: 50px;
-    border-radius: 50%;
-    object-fit: cover;
-    border: 2px solid var(--primary-color);
-    flex-shrink: 0;
-}
-
 .nav-profile-text {
     display: flex;
     flex-direction: column;
@@ -1632,11 +1623,6 @@ a:hover {
         gap: 0.5rem;
     }
 
-    .nav-profile-img {
-        width: 40px;
-        height: 40px;
-    }
-
     .nav-menu {
         position: fixed;
         left: -100%;
@@ -2162,6 +2148,45 @@ html {
     margin: 0 !important;
     padding: 0 !important;
     overflow: hidden;
+}
+
+/* ── About Me portrait (floats right, text wraps) ───── */
+.about-with-portrait {
+    /* clearfix so the section height contains the float */
+}
+.about-with-portrait::after {
+    content: '';
+    display: table;
+    clear: both;
+}
+
+.about-portrait {
+    float: right;
+    width: 170px;
+    height: 170px;
+    border-radius: 50%;
+    object-fit: cover;
+    object-position: center top;
+    border: 3px solid var(--primary-color);
+    margin: 0.25rem 0 1.5rem 2rem;
+    shape-outside: circle(50%);
+    /* starts invisible, fades in once the image is decoded */
+    opacity: 0;
+    transition: opacity 0.5s ease;
+}
+.about-portrait.portrait-loaded {
+    opacity: 1;
+}
+
+@media (max-width: 540px) {
+    .about-portrait {
+        float: none;
+        display: block;
+        margin: 0 auto 1.5rem;
+        width: 130px;
+        height: 130px;
+        shape-outside: none;
+    }
 }
 
 /* ── Skeleton loading ────────────────────────────────── */
