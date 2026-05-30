@@ -1,0 +1,57 @@
+# Dixi Yao — Research in Trustworthy ML, Federated Learning & Multi-Agent AI
+
+> Dixi Yao is a PhD student at the University of Chicago (advisor: Tian Li) working on privacy-preserving machine learning, federated neural architecture search (FedRLNAS, PerFedRLNAS), multi-agent AI systems (Federation over Text / FoT), foundation model privacy (split learning, DP-RAG), and KV-cache compression for reasoning models. This site contains peer-reviewed papers at ICLR, AAAI, ICDM, CVPR, NeurIPS, and WACV; open-source tools including the Plato federated learning framework, PhDBot (AI Slurm cluster manager), and FoTClaw; and technical blog posts on CS PhD applications, starting a startup, and AI-assisted research.
+
+## Research Papers
+
+Key peer-reviewed publications with links to papers and code:
+
+- [Federation over Text (FoT) — ICLR 2026 Workshops MALGAI & RIS](https://dixiyao.github.io/fot/): Multi-agent AI framework where LLM agents share reasoning insights as natural language, enabling collective intelligence without gradient exchange. Improves accuracy +24% and reduces reasoning tokens -28%. arXiv: https://arxiv.org/abs/2604.16778 | Code: https://github.com/dixiyao/FoTClaw
+- [Privacy-Preserving Split Learning via Patch Shuffling over Transformers — ICDM 2022](https://ieeexplore.ieee.org/abstract/document/10027647): Patch shuffling for split learning privacy in vision transformers, blocking feature inversion attacks via permutation equivariance. Code: https://github.com/dixiyao/PatchShuffling
+- [Permutation Equivariance of Transformers and Its Applications — CVPR 2024](https://openreview.net/forum?id=GuXxYkFBBy): Theoretical foundation for patch shuffling privacy; shows transformers are permutation-equivariant, enabling privacy-preserving split learning.
+- [PerFedRLNAS: One-for-all Personalized Federated Neural Architecture Search — AAAI 2024](https://dixiyao.github.io/assests/papers/dyao-aaai24.pdf): Personalized federated NAS using reinforcement learning to find client-optimal architectures. Code in Plato framework.
+- [Federated Model Search via Reinforcement Learning (FedRLNAS) — ICDCS 2021](https://ieeexplore.ieee.org/document/9546522): First federated neural architecture search via RL, enabling collaborative model search without sharing raw data. Code: https://github.com/TL-System/plato/tree/main/examples/model_search/fedrlnas
+- [Differentially Private Retrieval Augmented Generation with Random Projection (DP-RAG) — ICLR 2025 Workshop](https://openreview.net/forum?id=5DfhoxRPXh): Privacy-preserving RAG using differential privacy with random projection to protect document contents.
+- [Is Split Learning Privacy-Preserving for Fine-Tuning Large Language Models? — IEEE TBD 2024](https://ieeexplore.ieee.org/abstract/document/10818584): Analysis revealing split learning privacy vulnerabilities when fine-tuning LLMs. Code: https://github.com/TL-System/plato/tree/main/examples/split_learning/llm_split_learning
+- [Towards Privacy-Preserving Split Learning for ControlNet — WACV 2025](https://openaccess.thecvf.com/content/WACV2025/html/Yao_Towards_Privacy-Preserving_Split_Learning_for_ControlNet_WACV_2025_paper.html): Split learning privacy for diffusion models and ControlNet image generation.
+- [Revisiting System-Heterogeneous Federated Learning through Dynamic Model Search — BigData 2024](https://arxiv.org/pdf/2409.08858): Dynamic model search for heterogeneous FL systems with varying client capabilities.
+- [R-KVHash: Reasoning Model KV Cache Compression — ICLR 2026 Workshop MemAgents](https://dixiyao.github.io/#publications): SimHash-based KV cache compression for reasoning LLMs by estimating redundant tokens.
+- [Hold Onto That Thought: KV Cache Compression on Reasoning — NeurIPS 2025 Workshop](https://openreview.net/forum?id=OtZtLYAdQY): Analysis of KV cache compression effects on chain-of-thought and reasoning model performance. arXiv: https://arxiv.org/abs/2512.12008
+- [Risks When Sharing LoRA Fine-Tuned Diffusion Model Weights](https://arxiv.org/pdf/2409.08482): Privacy risks when sharing LoRA-adapted diffusion model weights.
+- [Asynchronous Heavy-Tailed Optimization](https://arxiv.org/abs/2602.18002): Distributed asynchronous optimization for heavy-tailed gradient noise settings.
+
+## Open-Source Projects & Tools
+
+- [PhDBot / IOS2SlurmCluster](https://github.com/dixiyao/IOS2SlurmCluster): AI research assistant for automatic HPC cluster and Slurm job management. Accessible via iPhone, Apple Watch, and web browser. Useful for ML researchers managing GPU clusters.
+- [Plato Federated Learning Framework](https://github.com/TL-System/plato): Scalable open-source research framework for federated learning. Includes FedRLNAS, PerFedRLNAS, split learning (LLM, ControlNet), personalized FL, and system-heterogeneous FL.
+- [FoTClaw](https://github.com/dixiyao/FoTClaw): Implementation of Federation over Text for multi-agent AI reasoning collaboration.
+- [LLM Academic Writing Tools](https://github.com/dixiyao/LLM-Academic-Writing): LLM-based tools for improving academic paper writing quality.
+- [OpenClaw / Pullteeth](https://github.com/dixiyao/pullteeth): Automatic tooth extraction system using UR5 robotic arm (autonomous surgical robotics project).
+- [AIReviewer](https://dixiyao.github.io/aireviewer/): Multi-agent manuscript reviewer for pre-submission academic paper polish, simulating peer review.
+- [PatchShuffling Code](https://github.com/dixiyao/PatchShuffling): Implementation of patch shuffling for privacy-preserving split learning.
+- [Edge-Cloud DNN Training Framework](https://github.com/dixiyao/Context-Aware-Compilation-of-DNN-Training-Pipelines-across-Edge-and-Cloud): Context-aware compilation of DNN training across edge and cloud (IMWUT 2021).
+
+## Blog Posts & Guides
+
+- [How to Prepare Your CS PhD Application](https://dixiyao.github.io/blog_posts/csphdapp.md): Comprehensive guide on CS PhD applications: SOP writing, recommendation letters, school selection, interviews. (2024-05-14)
+- [Open a Start-Up: Practical Guide](https://dixiyao.github.io/blog_posts/openbusiness.md): Guide to founding a startup including legal setup, team, and early-stage strategy. (2025-01-06)
+- [My Research Workflow with AI Agents](https://dixiyao.github.io/blog_posts/research_assistant.md): How to use AI agents to accelerate academic research. (2026-05-26)
+- [What's the Point of Writing in the Era of LLM?](https://dixiyao.github.io/blog_posts/good_paper_llm.md): Perspective on academic writing when AI can generate text. (2026-02-08)
+- [Build Your Own GPU Workstation for ML Research](https://dixiyao.github.io/blog_posts/workstation.md): Step-by-step GPU workstation building guide. (2024-08-27)
+- [Efficient Remote Coding with Cursor via SSH](https://dixiyao.github.io/blog_posts/ssh_llm.md): Using Cursor IDE over SSH for ML development. (2025-11-11)
+- [Random Thoughts on Academic Social](https://dixiyao.github.io/blog_posts/academic_social.md): Reflections on networking, conferences, and academic culture. (2026-01-01)
+- [Prepare for CELPIP Test](https://dixiyao.github.io/blog_posts/celpip.md): CELPIP English test preparation guide. (2025-02-08)
+- [Write High-Quality Code](https://dixiyao.github.io/blog_posts/codewriting.md): Best practices for writing maintainable research code. (2024-07-11)
+
+## Project Pages
+
+- [Federation over Text Project Page](https://dixiyao.github.io/fot/): Full description of FoT paper with method, algorithm, applications, and citation info.
+- [AIReviewer Project Page](https://dixiyao.github.io/aireviewer/): Multi-agent AI reviewer for academic manuscript pre-submission review.
+
+## About Dixi Yao
+
+Dixi Yao is a first-year PhD student at the University of Chicago (UChicago), advised by Tian Li. Research focuses: (1) privacy-preserving ML — patch shuffling for split learning, DP-RAG, LoRA risks, split LLM/ControlNet; (2) federated learning with neural architecture search — FedRLNAS (ICDCS 2021), PerFedRLNAS (AAAI 2024); (3) multi-agent AI systems — Federation over Text/FoT (ICLR 2026); (4) KV-cache compression for reasoning models; (5) edge-cloud ML systems.
+
+Previously: ML engineer at CarAI.com building agent pipelines and GraphRAG systems; Master's at University of Toronto (iQua lab); Bachelor's CSE at Shanghai Jiao Tong University. Founded HemligAI (privacy-preserving ML startup). Reviewer at NeurIPS, ICML, CVPR, ICLR, AAAI, ACL, WACV, AISTATS.
+
+Contact: dixi@cs.uchicago.edu | https://dixiyao.github.io | GitHub: https://github.com/dixiyao | Google Scholar: https://scholar.google.com/citations?user=6f5HCVAAAAAJ
