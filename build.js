@@ -202,7 +202,6 @@ function renderTopicPage(entity, allEntities, site) {
   <header>
     <nav aria-label="Site navigation">
       <a href="/">Home</a>
-      <a href="/topics/">Topic Index</a>
       <a href="/#publications">Publications</a>
       <a href="/#projects">Projects</a>
       <a href="/llms.txt">llms.txt</a>
