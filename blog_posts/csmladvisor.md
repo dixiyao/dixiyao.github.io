@@ -9,7 +9,7 @@ When I wrote about [preparing your CS PhD application](#post:csphdapp), one piec
 I decided to find out with data. I analyzed **11,311 advisor profiles across 490 universities and 12,344 bilingual (Chinese/English) reviews** from the OpenAdvisor platform, matched them against CSRankings faculty metadata and professional metrics (h-index, citations, career stage), and distilled the results into a practical tool.
 
 🧭 **Interactive Advisor Helper:** [dixiyao.github.io/csmladvisor](https://dixiyao.github.io/csmladvisor/)
-📄 **Full paper (PDF):** [Portraits of Graduate Advising: Advisor Rating Correlates and an Evidence-Based Rubric for PhD Applicants](https://github.com/dixiyao/dixiyao.github.io/blob/master/assests/papers/portraits-of-graduate-advising.pdf)
+📄 **Full paper (PDF):** [Portraits of Graduate Advising: Advisor Rating Correlates and an Evidence-Based Rubric for PhD Applicants](assests/papers/portraits-of-graduate-advising.pdf)
 💻 **Code & data pipeline:** [github.com/dixiyao/CS-ML-Advisor-Helper](https://github.com/dixiyao/CS-ML-Advisor-Helper)
 
 ## Ratings are bimodal — the average is almost meaningless
@@ -54,6 +54,6 @@ Reviews are subjective, self-selected reports — never ground truth about a per
 
 ---
 
-**Tool:** [dixiyao.github.io/csmladvisor](https://dixiyao.github.io/csmladvisor/) · **Paper:** [PDF](https://github.com/dixiyao/dixiyao.github.io/blob/master/assests/papers/portraits-of-graduate-advising.pdf) · **Code:** [CS-ML-Advisor-Helper](https://github.com/dixiyao/CS-ML-Advisor-Helper)
+**Tool:** [dixiyao.github.io/csmladvisor](https://dixiyao.github.io/csmladvisor/) · **Paper:** [PDF](assests/papers/portraits-of-graduate-advising.pdf) · **Code:** [CS-ML-Advisor-Helper](https://github.com/dixiyao/CS-ML-Advisor-Helper)
 
 *Like the tweets paper, this study was produced with my agent-based research workflow — see ["My Research Workflow with Agents"](#post:research_assistant). All numbers were verified against the analysis pipeline in the repo; ethics protocol and limitations are in the paper's appendix.*

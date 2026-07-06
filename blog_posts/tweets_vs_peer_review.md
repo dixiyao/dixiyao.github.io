@@ -6,7 +6,7 @@ date = "2026-07-04"
 
 We all sense it: a retweet from the right account seems to do more for a paper than months of peer review. But how large is the effect, is it causal, and who benefits? I wrote a paper on exactly this, synthesizing evidence from over 500,000 publications, several large-scale observational studies, a randomized controlled trial, and a meta-analysis of 111 altmetrics studies.
 
-📄 **Full paper (PDF):** [Do Tweets Beat Peer Review? How Fame, Hype, and Social Media Drive Citations in Machine Learning](https://github.com/dixiyao/dixiyao.github.io/blob/master/assests/papers/do-tweets-beat-peer-review.pdf)
+📄 **Full paper (PDF):** [Do Tweets Beat Peer Review? How Fame, Hype, and Social Media Drive Citations in Machine Learning](assests/papers/do-tweets-beat-peer-review.pdf)
 
 This post is the short version — the headline numbers, figures, and what I think they mean for the community.
 
@@ -90,6 +90,6 @@ The gatekeepers have changed. Gatekeeping itself is not optional — attention i
 
 ---
 
-**Paper:** [Do Tweets Beat Peer Review? (PDF)](https://github.com/dixiyao/dixiyao.github.io/blob/master/assests/papers/do-tweets-beat-peer-review.pdf)
+**Paper:** [Do Tweets Beat Peer Review? (PDF)](assests/papers/do-tweets-beat-peer-review.pdf)
 
 *This paper was produced with ARIS (Automated Research Investigation System), my agent-based research workflow — see my earlier post ["My Research Workflow with Agents"](#post:research_assistant). All quantitative claims were verified by me against the original sources; a full LLM-usage disclosure is in the paper's appendix.*
