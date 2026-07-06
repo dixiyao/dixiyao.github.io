@@ -634,8 +634,10 @@ function generateRootMarkdown(data) {
 function generateProjectMarkdownAlternates(data) {
     const fot = data.entities.find(entity => entity.id === 'federation-over-text');
     const reviewer = data.entities.find(entity => entity.id === 'aireviewer');
+    const advisorHelper = data.entities.find(entity => entity.id === 'cs-ml-advisor-helper');
     if (fot) writeFile(path.join(ROOT, 'fot', 'index.html.md'), renderTopicMarkdown(fot));
     if (reviewer) writeFile(path.join(ROOT, 'aireviewer', 'index.html.md'), renderTopicMarkdown(reviewer));
+    if (advisorHelper) writeFile(path.join(ROOT, 'csmladvisor', 'index.html.md'), renderTopicMarkdown(advisorHelper));
 }
 
 function generateSeoArtifacts(data, blogData) {

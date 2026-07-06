@@ -1219,8 +1219,40 @@
         modal.addEventListener('click', (e) => {
             if (e.target === modal) modal.remove();
         });
+
+        // In-post hash links: "#post:<id>" opens another blog post; "#section" closes modal and scrolls
+        modal.querySelectorAll('.markdown-content a[href^="#"]').forEach(a => {
+            a.addEventListener('click', (e) => {
+                e.preventDefault();
+                e.stopPropagation();
+                const href = a.getAttribute('href') || '';
+                modal.remove();
+                if (href.startsWith('#post:')) {
+                    showBlogPost(href.slice('#post:'.length));
+                } else {
+                    const target = document.getElementById(href.slice(1));
+                    if (target) target.scrollIntoView({ behavior: 'smooth', block: 'start' });
+                }
+            });
+        });
+
+        // Click-to-enlarge for figures inside blog posts (same modal as publications)
+        modal.querySelectorAll('.markdown-content img').forEach(img => {
+            img.style.cursor = 'pointer';
+            img.addEventListener('click', () => {
+                const fullSrc = img.getAttribute('data-full-image') || img.src;
+                const title = img.getAttribute('data-image-title') || img.alt || '';
+                const imageModal = document.getElementById('imageModal');
+                const imageModalImg = document.getElementById('imageModalImg');
+                const imageModalTitle = document.getElementById('imageModalTitle');
+                if (!imageModal || !imageModalImg || !imageModalTitle) return;
+                imageModalImg.src = fullSrc;
+                imageModalTitle.textContent = title;
+                imageModal.style.display = 'flex';
+            });
+        });
     }
-    
+
     // Make showBlogPost global
     window.showBlogPost = showBlogPost;
     

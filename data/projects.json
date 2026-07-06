@@ -10,6 +10,21 @@
           "title": "Federation over Text (FoT)",
           "url": "/fot/",
           "description": "Project page for Federation over Text: insight sharing for multi-agent reasoning."
+        },
+        {
+          "title": "CS-ML-Advisor-Helper",
+          "url": "/csmladvisor/",
+          "description": "Evidence-based interactive tool for choosing a CS/ML PhD advisor, built from analysis of 11,311 advisor profiles and 12,344 real reviews. Answer a questionnaire, get a preliminary read and an LLM prompt for deeper analysis.",
+          "subitems": [
+            {
+              "title": "Code",
+              "url": "https://github.com/dixiyao/CS-ML-Advisor-Helper"
+            },
+            {
+              "title": "Paper (PDF)",
+              "url": "/assests/papers/portraits-of-graduate-advising.pdf"
+            }
+          ]
         }
       ]
     },

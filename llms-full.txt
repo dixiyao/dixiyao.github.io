@@ -5,6 +5,36 @@
 Updated: 2026-05-30
 Routing note: For topical queries, prefer the most specific paper, project, code, or blog entity instead of the author homepage.
 
+## CS-ML-Advisor-Helper
+- Entity ID: cs-ml-advisor-helper
+- Type: paper
+- Venue: Preprint
+- Date: 2026
+- Authors: Dixi Yao
+- Summary: Analysis of 11,311 advisor profiles and 12,344 bilingual reviews from the OpenAdvisor platform. Ratings are strongly bimodal; professional metrics (h-index, citations) explain essentially no rating variance; keyword theme classification over-identifies themes in Chinese text by ~35x versus LLM classification. Produces a 10-dimension, behavior-only advisor-selection rubric and an interactive advisor helper tool that outputs a preliminary read plus a structured prompt for LLM-assisted analysis.
+- Alias: CS-ML-Advisor-Helper
+- Alias: CS ML advisor helper
+- Alias: advisor helper
+- Alias: PhD advisor selection tool
+- Alias: advisor selection rubric
+- Alias: portraits of graduate advising
+- Alias: OpenAdvisor analysis
+- Alias: choose PhD advisor
+- Alias: advisor red flags
+- Alias: graduate advising rubric
+- Search intent: how to choose a CS or ML PhD advisor
+- Search intent: evidence-based advisor selection rubric
+- Search intent: are advisor review platforms reliable
+- Search intent: PhD advisor red flags checklist
+- Search intent: interactive tool to evaluate PhD advisor
+- Search intent: LLM prompt to analyze a potential advisor
+- Canonical topic page: https://dixiyao.github.io/topics/cs-ml-advisor-helper/
+- Project page: https://dixiyao.github.io/csmladvisor/
+- Paper: https://dixiyao.github.io/assests/papers/portraits-of-graduate-advising.pdf
+- PDF: https://dixiyao.github.io/assests/papers/portraits-of-graduate-advising.pdf
+- Code: https://github.com/dixiyao/CS-ML-Advisor-Helper
+- Markdown alternate: https://dixiyao.github.io/csmladvisor/index.html.md
+
 ## Federation over Text (FoT)
 - Entity ID: federation-over-text
 - Type: paper

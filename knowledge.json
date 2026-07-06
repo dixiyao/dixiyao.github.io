@@ -22,6 +22,16 @@
         "https://www.semanticscholar.org/author/Dixi-Yao/2051655806"
       ],
       "knowsAbout": [
+        "CS-ML-Advisor-Helper",
+        "CS ML advisor helper",
+        "advisor helper",
+        "PhD advisor selection tool",
+        "advisor selection rubric",
+        "portraits of graduate advising",
+        "OpenAdvisor analysis",
+        "choose PhD advisor",
+        "advisor red flags",
+        "graduate advising rubric",
         "FoT",
         "Federation over Text",
         "multi-agent AI",
@@ -162,6 +172,48 @@
         "remote ML development",
         "AI coding over SSH"
       ]
+    },
+    {
+      "@context": "https://schema.org",
+      "@type": "ScholarlyArticle",
+      "@id": "https://dixiyao.github.io/topics/cs-ml-advisor-helper/",
+      "name": "Portraits of Graduate Advising: Advisor Rating Correlates and an Evidence-Based Rubric for PhD Applicants",
+      "alternateName": [
+        "CS-ML-Advisor-Helper",
+        "CS-ML-Advisor-Helper",
+        "CS ML advisor helper",
+        "advisor helper",
+        "PhD advisor selection tool",
+        "advisor selection rubric",
+        "portraits of graduate advising",
+        "OpenAdvisor analysis",
+        "choose PhD advisor",
+        "advisor red flags",
+        "graduate advising rubric"
+      ],
+      "description": "Analysis of 11,311 advisor profiles and 12,344 bilingual reviews from the OpenAdvisor platform. Ratings are strongly bimodal; professional metrics (h-index, citations) explain essentially no rating variance; keyword theme classification over-identifies themes in Chinese text by ~35x versus LLM classification. Produces a 10-dimension, behavior-only advisor-selection rubric and an interactive advisor helper tool that outputs a preliminary read plus a structured prompt for LLM-assisted analysis.",
+      "url": "https://dixiyao.github.io/topics/cs-ml-advisor-helper/",
+      "datePublished": "2026",
+      "keywords": "CS-ML-Advisor-Helper, CS ML advisor helper, advisor helper, PhD advisor selection tool, advisor selection rubric, portraits of graduate advising, OpenAdvisor analysis, choose PhD advisor, advisor red flags, graduate advising rubric",
+      "author": [
+        {
+          "@type": "Person",
+          "name": "Dixi Yao"
+        }
+      ],
+      "sameAs": [
+        "https://dixiyao.github.io/csmladvisor/",
+        "https://dixiyao.github.io/assests/papers/portraits-of-graduate-advising.pdf",
+        "https://dixiyao.github.io/assests/papers/portraits-of-graduate-advising.pdf",
+        "https://github.com/dixiyao/CS-ML-Advisor-Helper",
+        "https://dixiyao.github.io/csmladvisor/index.html.md"
+      ],
+      "image": "https://dixiyao.github.io/csmladvisor/assets/rubric-dimensions.png",
+      "codeRepository": "https://github.com/dixiyao/CS-ML-Advisor-Helper",
+      "isPartOf": {
+        "@type": "Event",
+        "name": "Preprint"
+      }
     },
     {
       "@context": "https://schema.org",

@@ -63,6 +63,20 @@
       "author": "Dixi Yao",
       "date": "2026-05-26",
       "content": "blog_posts/research_assistant.md"
+    },
+    {
+      "id": "tweets_vs_peer_review",
+      "title": "Do Tweets Beat Peer Review? How Fame, Hype, and Social Media Drive Citations in ML",
+      "author": "Dixi Yao",
+      "date": "2026-07-04",
+      "content": "blog_posts/tweets_vs_peer_review.md"
+    },
+    {
+      "id": "csmladvisor",
+      "title": "How to Pick a PhD Advisor, According to 12,344 Reviews (Plus an Interactive Helper)",
+      "author": "Dixi Yao",
+      "date": "2026-07-06",
+      "content": "blog_posts/csmladvisor.md"
     }
   ]
 }

@@ -8,6 +8,45 @@
   },
   "entities": [
     {
+      "id": "cs-ml-advisor-helper",
+      "type": "paper",
+      "schemaType": "ScholarlyArticle",
+      "title": "Portraits of Graduate Advising: Advisor Rating Correlates and an Evidence-Based Rubric for PhD Applicants",
+      "shortTitle": "CS-ML-Advisor-Helper",
+      "authors": ["Dixi Yao"],
+      "venue": "Preprint",
+      "date": "2026",
+      "description": "Analysis of 11,311 advisor profiles and 12,344 bilingual reviews from the OpenAdvisor platform. Ratings are strongly bimodal; professional metrics (h-index, citations) explain essentially no rating variance; keyword theme classification over-identifies themes in Chinese text by ~35x versus LLM classification. Produces a 10-dimension, behavior-only advisor-selection rubric and an interactive advisor helper tool that outputs a preliminary read plus a structured prompt for LLM-assisted analysis.",
+      "canonicalUrl": "/csmladvisor/",
+      "topicPage": "/topics/cs-ml-advisor-helper/",
+      "paperUrl": "/assests/papers/portraits-of-graduate-advising.pdf",
+      "pdfUrl": "/assests/papers/portraits-of-graduate-advising.pdf",
+      "codeUrl": "https://github.com/dixiyao/CS-ML-Advisor-Helper",
+      "projectUrl": "/csmladvisor/",
+      "markdownUrl": "/csmladvisor/index.html.md",
+      "image": "/csmladvisor/assets/rubric-dimensions.png",
+      "aliases": [
+        "CS-ML-Advisor-Helper",
+        "CS ML advisor helper",
+        "advisor helper",
+        "PhD advisor selection tool",
+        "advisor selection rubric",
+        "portraits of graduate advising",
+        "OpenAdvisor analysis",
+        "choose PhD advisor",
+        "advisor red flags",
+        "graduate advising rubric"
+      ],
+      "searchIntents": [
+        "how to choose a CS or ML PhD advisor",
+        "evidence-based advisor selection rubric",
+        "are advisor review platforms reliable",
+        "PhD advisor red flags checklist",
+        "interactive tool to evaluate PhD advisor",
+        "LLM prompt to analyze a potential advisor"
+      ]
+    },
+    {
       "id": "federation-over-text",
       "type": "paper",
       "schemaType": "ScholarlyArticle",

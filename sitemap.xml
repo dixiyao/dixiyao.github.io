@@ -43,6 +43,36 @@
     <priority>0.85</priority>
   </url>
   <url>
+    <loc>https://dixiyao.github.io/topics/cs-ml-advisor-helper/</loc>
+    <lastmod>2026-05-30</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.9</priority>
+  </url>
+  <url>
+    <loc>https://dixiyao.github.io/topics/cs-ml-advisor-helper/index.html.md</loc>
+    <lastmod>2026-05-30</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.75</priority>
+  </url>
+  <url>
+    <loc>https://dixiyao.github.io/csmladvisor/</loc>
+    <lastmod>2026-05-30</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.85</priority>
+  </url>
+  <url>
+    <loc>https://dixiyao.github.io/csmladvisor/index.html.md</loc>
+    <lastmod>2026-05-30</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.75</priority>
+  </url>
+  <url>
+    <loc>https://dixiyao.github.io/assests/papers/portraits-of-graduate-advising.pdf</loc>
+    <lastmod>2026-01-01</lastmod>
+    <changefreq>yearly</changefreq>
+    <priority>0.65</priority>
+  </url>
+  <url>
     <loc>https://dixiyao.github.io/topics/federation-over-text/</loc>
     <lastmod>2026-05-30</lastmod>
     <changefreq>monthly</changefreq>
@@ -399,6 +429,18 @@
   <url>
     <loc>https://dixiyao.github.io/blog_posts/workstation.md</loc>
     <lastmod>2024-08-27</lastmod>
+    <changefreq>yearly</changefreq>
+    <priority>0.65</priority>
+  </url>
+  <url>
+    <loc>https://dixiyao.github.io/blog_posts/tweets_vs_peer_review.md</loc>
+    <lastmod>2026-07-04</lastmod>
+    <changefreq>yearly</changefreq>
+    <priority>0.65</priority>
+  </url>
+  <url>
+    <loc>https://dixiyao.github.io/blog_posts/csmladvisor.md</loc>
+    <lastmod>2026-07-06</lastmod>
     <changefreq>yearly</changefreq>
     <priority>0.65</priority>
   </url>

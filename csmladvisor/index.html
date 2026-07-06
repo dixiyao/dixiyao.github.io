@@ -1,0 +1,637 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="CS-ML-Advisor-Helper: an evidence-based interactive tool for choosing a CS/ML PhD advisor. Built from analysis of 11,311 advisor profiles and 12,344 reviews on OpenAdvisor. Answer a short questionnaire and get a preliminary read plus a structured prompt for LLM-assisted advisor analysis.">
+  <meta name="keywords" content="PhD advisor selection, CS PhD advisor, ML PhD advisor, advisor rubric, OpenAdvisor analysis, graduate advising, advisor red flags, PhD application, advisor helper tool, evidence-based advisor selection, Dixi Yao">
+  <meta name="author" content="Dixi Yao">
+  <meta name="robots" content="index, follow, max-snippet:-1, max-image-preview:large">
+
+  <!-- Open Graph -->
+  <meta property="og:type" content="website">
+  <meta property="og:title" content="CS-ML-Advisor-Helper — Evidence-Based PhD Advisor Selection Tool">
+  <meta property="og:description" content="Interactive questionnaire built from 12,344 real advisor reviews. Get a preliminary read on a potential PhD advisor and a structured prompt for deeper LLM analysis.">
+  <meta property="og:url" content="https://dixiyao.github.io/csmladvisor/">
+  <meta property="og:image" content="https://dixiyao.github.io/csmladvisor/assets/rubric-dimensions.png">
+
+  <!-- Twitter Card -->
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="CS-ML-Advisor-Helper — Evidence-Based PhD Advisor Selection Tool">
+  <meta name="twitter:description" content="Answer 12 questions about a potential PhD advisor, get a preliminary read and an LLM prompt for deeper analysis. Built from 12,344 real reviews.">
+  <meta name="twitter:image" content="https://dixiyao.github.io/csmladvisor/assets/rubric-dimensions.png">
+
+  <!-- Canonical -->
+  <link rel="canonical" href="https://dixiyao.github.io/csmladvisor/">
+  <link rel="alternate" type="text/markdown" href="/csmladvisor/index.html.md" title="Markdown summary for LLM agents">
+  <link rel="alternate" type="text/plain" href="/llms.txt" title="LLM-readable site index">
+  <link rel="alternate" type="application/json" href="/ai-index.json" title="Structured AI search index">
+
+  <!-- JSON-LD: SoftwareApplication -->
+  <script type="application/ld+json">
+  {
+      "@context": "https://schema.org",
+      "@type": "SoftwareApplication",
+      "name": "CS-ML-Advisor-Helper — Evidence-Based PhD Advisor Selection Tool",
+      "url": "https://dixiyao.github.io/csmladvisor/",
+      "description": "Interactive questionnaire tool for prospective CS/ML PhD students evaluating a potential advisor. Based on a 10-dimension, behavior-only rubric derived from analysis of 11,311 advisor profiles and 12,344 bilingual reviews on the OpenAdvisor platform. Produces a preliminary assessment and a structured prompt for further LLM analysis.",
+      "keywords": "PhD advisor selection, advisor rubric, CS PhD, ML PhD, graduate advising, advisor helper, OpenAdvisor",
+      "applicationCategory": "EducationalApplication",
+      "operatingSystem": "Web",
+      "author": {
+          "@type": "Person",
+          "name": "Dixi Yao",
+          "url": "https://dixiyao.github.io",
+          "affiliation": {"@type": "Organization", "name": "University of Chicago"}
+      },
+      "featureList": [
+          "10-dimension behavior-only advisor rubric questionnaire",
+          "Multiple-choice and numeric inputs",
+          "Weighted preliminary score with red-flag detection",
+          "Checklist of unanswered questions to ask current students",
+          "Structured prompt generation for LLM-assisted advisor analysis"
+      ]
+  }
+  </script>
+
+  <!-- JSON-LD: ScholarlyArticle -->
+  <script type="application/ld+json">
+  {
+      "@context": "https://schema.org",
+      "@type": "ScholarlyArticle",
+      "name": "Portraits of Graduate Advising: Advisor Rating Correlates and an Evidence-Based Rubric for PhD Applicants",
+      "author": [{"@type": "Person", "name": "Dixi Yao", "affiliation": {"@type": "Organization", "name": "University of Chicago"}, "url": "https://dixiyao.github.io"}],
+      "datePublished": "2026",
+      "url": "https://dixiyao.github.io/csmladvisor/",
+      "sameAs": ["https://github.com/dixiyao/CS-ML-Advisor-Helper"],
+      "abstract": "We analyze real review data from the OpenAdvisor platform, covering 11,311 advisor profiles across 490 universities and 12,344 bilingual reviews, integrated with CSRankings metadata and professional metrics. Ratings are strongly bimodal; professional factors explain essentially no rating variance; keyword-based theme classification over-identifies themes in Chinese text by ~35x versus LLM classification. We construct a 10-dimension, behavior-only advisor-selection rubric for PhD applicants.",
+      "keywords": "graduate advising, PhD advisor, advisor reviews, OpenAdvisor, advisor selection rubric, bimodal ratings",
+      "codeRepository": "https://github.com/dixiyao/CS-ML-Advisor-Helper",
+      "image": "https://dixiyao.github.io/csmladvisor/assets/rating-distributions.png"
+  }
+  </script>
+
+  <title>CS-ML-Advisor-Helper — Evidence-Based PhD Advisor Selection Tool | Dixi Yao</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&family=JetBrains+Mono:wght@400;600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <header class="site-header">
+    <div class="container topbar">
+      <a class="home-link" href="/">Dixi Yao</a>
+      <nav class="section-nav" aria-label="Section navigation">
+        <a href="#tool">Advisor Helper</a>
+        <a href="#findings">Findings</a>
+        <a href="#rubric">Rubric</a>
+        <a href="#citation">Paper</a>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+    <section class="hero">
+      <div class="container narrow">
+        <div class="hero-copy">
+          <h1>CS-ML-Advisor-Helper: An Evidence-Based Tool for Choosing Your PhD Advisor</h1>
+          <p class="authors">Dixi Yao</p>
+          <p class="affiliation">University of Chicago</p>
+          <div class="action-row">
+            <a class="action-pill" href="/assests/papers/portraits-of-graduate-advising.pdf" aria-label="Paper PDF">
+              <span class="icon" aria-hidden="true">
+                <svg viewBox="0 0 24 24" role="img">
+                  <path d="M6 3.5h8.5L20.5 9v11a1.5 1.5 0 0 1-1.5 1.5h-13A1.5 1.5 0 0 1 4.5 20V5A1.5 1.5 0 0 1 6 3.5Z"></path>
+                  <path d="M14.5 3.5V9H20"></path>
+                </svg>
+              </span>
+              <span>Paper (PDF)</span>
+            </a>
+            <a class="action-pill" href="https://github.com/dixiyao/CS-ML-Advisor-Helper" aria-label="Code repository">
+              <span class="icon" aria-hidden="true">
+                <svg viewBox="0 0 24 24" role="img">
+                  <path d="M12 .5C5.65.5.5 5.8.5 12.32c0 5.22 3.3 9.64 7.88 11.2.58.1.78-.25.78-.57 0-.28-.01-1.22-.02-2.21-3.2.71-3.88-1.39-3.88-1.39-.52-1.37-1.28-1.73-1.28-1.73-1.05-.73.08-.71.08-.71 1.16.08 1.77 1.23 1.77 1.23 1.03 1.8 2.7 1.28 3.35.98.1-.76.4-1.28.72-1.57-2.56-.3-5.26-1.32-5.26-5.9 0-1.3.46-2.36 1.21-3.2-.12-.3-.52-1.52.12-3.18 0 0 .99-.33 3.25 1.22a11.04 11.04 0 0 1 5.92 0c2.26-1.55 3.25-1.22 3.25-1.22.64 1.66.24 2.88.12 3.18.76.84 1.21 1.9 1.21 3.2 0 4.59-2.7 5.6-5.28 5.89.42.37.78 1.08.78 2.19 0 1.58-.01 2.84-.01 3.23 0 .31.2.68.79.56 4.57-1.56 7.86-5.98 7.86-11.2C23.5 5.8 18.35.5 12 .5Z"></path>
+                </svg>
+              </span>
+              <span>GitHub</span>
+            </a>
+          </div>
+          <p class="lead hero-abstract">
+            Choosing a PhD advisor is one of the highest-stakes decisions in a research career. We analyzed
+            <strong>11,311 advisor profiles</strong> across <strong>490 universities</strong> and
+            <strong>12,344 real reviews</strong> from the OpenAdvisor platform, and distilled what actually matters into a
+            10-dimension, behavior-only rubric. Answer the short questionnaire below about an advisor you are
+            considering: the tool gives you a preliminary read, flags what you still need to find out, and generates a
+            structured prompt you can paste into any LLM (Claude, ChatGPT, DeepSeek, …) for a deeper analysis of
+            whether this advisor is a good fit for you.
+          </p>
+        </div>
+      </div>
+    </section>
+
+    <section class="section alt" id="tool">
+      <div class="container narrow">
+        <div class="section-heading">
+          <h2>The Advisor Helper</h2>
+        </div>
+        <div class="tool-card">
+          <p class="tool-intro">
+            Answer what you know about the advisor — from talking to current or former students, lab pages, or review
+            platforms. Choose <em>"I don't know yet"</em> (or leave numbers blank) freely: unanswered dimensions become
+            your checklist of questions to ask. Nothing you type leaves this page.
+          </p>
+          <form id="advisor-form">
+            <div id="questions"></div>
+            <div class="tool-actions">
+              <button type="button" class="btn" id="analyze-btn">Get suggestion &amp; LLM prompt</button>
+              <button type="button" class="btn ghost" id="reset-btn">Reset</button>
+            </div>
+          </form>
+          <div class="results" id="results" hidden>
+            <div class="result-summary">
+              <div class="result-box">
+                <span class="value" id="score-value">—</span>
+                <span class="label">Preliminary rubric score (0–100, weighted)</span>
+              </div>
+              <div class="result-box">
+                <span class="value" id="coverage-value">—</span>
+                <span class="label">Information coverage (share of rubric weight you could answer)</span>
+              </div>
+              <div class="result-box">
+                <span class="value" id="flag-value">—</span>
+                <span class="label">Red flags detected</span>
+              </div>
+            </div>
+            <div class="verdict" id="verdict"></div>
+            <div id="flags-section" hidden>
+              <h3>⚠ Red flags</h3>
+              <ul class="flag-list" id="flag-list"></ul>
+            </div>
+            <div id="unknown-section" hidden>
+              <h3>❓ Highest-weight things you still need to find out</h3>
+              <ul class="flag-list" id="unknown-list"></ul>
+            </div>
+            <div id="platform-section" hidden>
+              <h3>📊 Reading the platform rating</h3>
+              <p class="tool-intro" id="platform-note"></p>
+            </div>
+            <div class="prompt-shell">
+              <h3>🤖 Your prompt for deeper LLM analysis</h3>
+              <p class="tool-intro">
+                This tool stops here by design — a questionnaire cannot decide for you. Copy the prompt below and paste
+                it into an LLM of your choice to get a personalized analysis of whether this advisor is likely a good
+                fit, and what to verify before you commit.
+              </p>
+              <textarea id="llm-prompt" readonly spellcheck="false"></textarea>
+              <div class="tool-actions">
+                <button type="button" class="btn" id="copy-btn">Copy prompt</button>
+              </div>
+              <p class="copy-note">
+                Tip: after the LLM answers, ask it to role-play a current student of this advisor and interview it with
+                the unanswered rubric questions — then go ask real students the same things.
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="section" id="findings">
+      <div class="container narrow">
+        <div class="section-heading">
+          <h2>What the data says</h2>
+        </div>
+        <div class="stats-grid">
+          <article class="stat-card">
+            <span class="stat-value">32.7% / 20.8%</span>
+            <p class="stat-label">Share of profiles rated 1★ vs. 5★ (mean 2.74). Ratings are strongly bimodal: anonymous platforms attract extreme experiences, so a single number is nearly uninformative — read the review text.</p>
+          </article>
+          <article class="stat-card">
+            <span class="stat-value">R² ≈ 0.000</span>
+            <p class="stat-label">Rating variance explained by professional metrics (h-index, citations, career stage) in the matched subset. Fame is not mentorship: student experience is driven by behavior, not CV.</p>
+          </article>
+          <article class="stat-card">
+            <span class="stat-value">~35×</span>
+            <p class="stat-label">Factor by which keyword-based theme classification over-identifies themes in Chinese review text versus LLM (DeepSeek) classification — a caution for anyone mining bilingual review platforms.</p>
+          </article>
+        </div>
+        <figure class="hero-figure hero-figure-wide">
+          <img src="assets/rating-distributions.png" alt="Bimodal distribution of advisor ratings on OpenAdvisor, with mass concentrated at 1 and 5 stars" loading="lazy">
+        </figure>
+        <div class="prose" style="margin-top:1.2rem">
+          <p>
+            The practical consequences for applicants: (1) expect bimodal ratings and never trust a platform score
+            alone; (2) read review text, not numbers — the scores are uncalibrated; (3) use behavioral questions as a
+            checklist when talking to current and former students; and (4) triangulate multiple sources, because no
+            single platform or metric substitutes for direct investigation. The questionnaire above operationalizes
+            exactly this.
+          </p>
+        </div>
+      </div>
+    </section>
+
+    <section class="section alt" id="rubric">
+      <div class="container narrow">
+        <div class="section-heading">
+          <h2>The 10-dimension, behavior-only rubric</h2>
+        </div>
+        <div class="comparison-card">
+          <div class="comparison-table-wrap">
+            <table class="comparison-table">
+              <thead>
+                <tr>
+                  <th>Dimension</th>
+                  <th>Key question for applicants</th>
+                  <th>Weight</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr><td>Meeting Availability</td><td>How often does the advisor meet with students? Typical duration?</td><td>0.20</td></tr>
+                <tr><td>Respect &amp; Communication</td><td>How do current students describe the advisor's communication style?</td><td>0.18</td></tr>
+                <tr><td>Funding Support</td><td>What is the funding situation? Guaranteed RA/TA semesters?</td><td>0.15</td></tr>
+                <tr><td>Work Pressure</td><td>What are work expectations? Attrition rate in the lab?</td><td>0.12</td></tr>
+                <tr><td>Career Development</td><td>Where do alumni go? Does the advisor support internships?</td><td>0.10</td></tr>
+                <tr><td>Research Direction</td><td>How are projects assigned? Student autonomy in direction?</td><td>0.10</td></tr>
+                <tr><td>Lab Culture</td><td>Collaborative or competitive? How do lab members interact?</td><td>0.07</td></tr>
+                <tr><td>Graduation Timeline</td><td>Average time to degree? Students who left without completing?</td><td>0.05</td></tr>
+                <tr><td>Authorship Credit</td><td>What are authorship norms? How are contributions credited?</td><td>0.02</td></tr>
+                <tr><td>Immigration/Visa</td><td>How does the advisor support international students' visa needs?</td><td>0.01</td></tr>
+              </tbody>
+            </table>
+          </div>
+        </div>
+        <p class="rubric-note">
+          All dimensions are behavioral and structural — the rubric deliberately excludes demographic factors. Weights
+          blend theme prevalence in 12,344 reviews with qualitative judgment, and should be read as starting points
+          rather than precise measurements (keyword theme detection over-identifies in Chinese text; see the paper).
+          The rubric is a tool for <em>investigation</em>, not for ranking people.
+        </p>
+        <figure class="hero-figure hero-figure-wide">
+          <img src="assets/rubric-dimensions.png" alt="Bar chart of the ten rubric dimension weights, led by Meeting Availability and Respect and Communication" loading="lazy">
+        </figure>
+      </div>
+    </section>
+
+    <section class="section" id="citation">
+      <div class="container narrow">
+        <div class="section-heading">
+          <h2>Paper &amp; citation</h2>
+        </div>
+        <div class="prose">
+          <p>
+            Full methodology, ethics protocol, and limitations are in the paper:
+            <a href="/assests/papers/portraits-of-graduate-advising.pdf" style="color:var(--primary-color);font-weight:600">
+              Portraits of Graduate Advising: Advisor Rating Correlates and an Evidence-Based Rubric for PhD Applicants (PDF)</a>.
+            Analysis code, scrapers, and LaTeX source live in the
+            <a href="https://github.com/dixiyao/CS-ML-Advisor-Helper" style="color:var(--primary-color);font-weight:600">CS-ML-Advisor-Helper repository</a>.
+            No named individuals appear in the paper or code output; reviews are treated as subjective reports, never
+            as ground truth about any person.
+          </p>
+        </div>
+        <article class="code-card citation-card">
+          <div class="algorithm-shell">
+            <pre><code>@misc{yao2026portraits,
+  title  = {Portraits of Graduate Advising: Advisor Rating Correlates and an
+            Evidence-Based Rubric for PhD Applicants},
+  author = {Dixi Yao},
+  year   = {2026},
+  url    = {https://dixiyao.github.io/csmladvisor/},
+}</code></pre>
+          </div>
+        </article>
+      </div>
+    </section>
+  </main>
+
+  <script>
+  (function () {
+    'use strict';
+
+    var QUESTIONS = [
+      {
+        id: 'meetings', dim: 'Meeting Availability', weight: 0.20, type: 'number',
+        text: 'How many one-on-one meetings does the advisor typically have with each student per month?',
+        unit: 'meetings / month', min: 0, max: 31, step: 0.5,
+        hint: 'Weekly ≈ 4, biweekly ≈ 2, monthly ≈ 1. Leave blank if you don\'t know yet.',
+        map: function (v) { if (v >= 4) return 1.0; if (v >= 2) return 0.7; if (v >= 1) return 0.4; return 0.15; },
+        flagIf: function (v) { return v < 1 ? 'Students see the advisor less than once a month — the highest-weight dimension in the rubric.' : null; },
+        describe: function (v) { return v + ' one-on-one meeting(s) per month'; }
+      },
+      {
+        id: 'respect', dim: 'Respect & Communication', weight: 0.18, type: 'choice',
+        text: 'How do current students describe the advisor\'s communication style?',
+        options: [
+          { label: 'Consistently respectful and constructive, even under deadline pressure', score: 1.0 },
+          { label: 'Generally fine; occasional bluntness or slow replies', score: 0.6 },
+          { label: 'Often dismissive or harsh; students report public criticism', score: 0.0, flag: 'Students report disrespectful communication — the second highest-weight dimension.' },
+          { label: 'I don\'t know yet', score: null }
+        ]
+      },
+      {
+        id: 'funding', dim: 'Funding Support', weight: 0.15, type: 'choice',
+        text: 'What is the funding situation in the lab?',
+        options: [
+          { label: 'Guaranteed funding (RA/TA/fellowship) for the full PhD', score: 1.0 },
+          { label: 'Year-to-year funding, historically stable', score: 0.65 },
+          { label: 'Funding uncertain, or students are expected to self-fund', score: 0.1, flag: 'Uncertain funding.' },
+          { label: 'I don\'t know yet', score: null }
+        ]
+      },
+      {
+        id: 'pressure', dim: 'Work Pressure', weight: 0.12, type: 'choice',
+        text: 'What are the work expectations?',
+        options: [
+          { label: 'Outcome-based and flexible; healthy work–life balance reported', score: 1.0 },
+          { label: 'Full-time intensity with occasional deadline crunch', score: 0.6 },
+          { label: 'Explicit long-hours culture (nights/weekends expected); notable attrition', score: 0.0, flag: 'Long-hours culture and/or attrition reported.' },
+          { label: 'I don\'t know yet', score: null }
+        ]
+      },
+      {
+        id: 'career', dim: 'Career Development', weight: 0.10, type: 'choice',
+        text: 'Where do lab alumni go, and does the advisor support internships?',
+        options: [
+          { label: 'Alumni consistently reach the kind of positions I want; internships encouraged', score: 1.0 },
+          { label: 'Mixed alumni outcomes; internships allowed case-by-case', score: 0.6 },
+          { label: 'Weak placement record, or the advisor discourages/blocks internships', score: 0.15, flag: 'Career development concerns (placement or internships).' },
+          { label: 'I don\'t know yet', score: null }
+        ]
+      },
+      {
+        id: 'direction', dim: 'Research Direction', weight: 0.10, type: 'choice',
+        text: 'How are research projects assigned?',
+        options: [
+          { label: 'Students co-define their direction, with growing autonomy', score: 1.0 },
+          { label: 'Topics come from the advisor\'s agenda, with some flexibility', score: 0.65 },
+          { label: 'Strictly assigned to grant deliverables; no room for own ideas', score: 0.2 },
+          { label: 'I don\'t know yet', score: null }
+        ]
+      },
+      {
+        id: 'culture', dim: 'Lab Culture', weight: 0.07, type: 'choice',
+        text: 'How do lab members interact?',
+        options: [
+          { label: 'Collaborative — students co-author and help each other', score: 1.0 },
+          { label: 'Independent and siloed, but civil', score: 0.6 },
+          { label: 'Competitive or cliquey; rivalry over resources and credit', score: 0.1, flag: 'Competitive/toxic lab culture reported.' },
+          { label: 'I don\'t know yet', score: null }
+        ]
+      },
+      {
+        id: 'timeline', dim: 'Graduation Timeline', weight: 0.05, type: 'number',
+        text: 'What is the average time to PhD in this lab, in years?',
+        unit: 'years', min: 3, max: 12, step: 0.5,
+        hint: 'Also ask how many students left without finishing. Leave blank if unknown.',
+        map: function (v) { if (v <= 5.5) return 1.0; if (v <= 6.5) return 0.7; if (v <= 7.5) return 0.4; return 0.1; },
+        flagIf: function (v) { return v > 7.5 ? 'Average time-to-degree exceeds 7.5 years.' : null; },
+        describe: function (v) { return v + ' years average time to degree'; }
+      },
+      {
+        id: 'authorship', dim: 'Authorship Credit', weight: 0.02, type: 'choice',
+        text: 'What are the authorship norms?',
+        options: [
+          { label: 'Clear and fair; students first-author their own work', score: 1.0 },
+          { label: 'Mostly fair; occasional ambiguity about credit', score: 0.6 },
+          { label: 'Advisor or senior members take first authorship of student work', score: 0.0, flag: 'Authorship credit taken from students.' },
+          { label: 'I don\'t know yet', score: null }
+        ]
+      },
+      {
+        id: 'visa', dim: 'Immigration/Visa Support', weight: 0.01, type: 'choice',
+        text: 'For international students: how does the advisor handle visa needs?',
+        options: [
+          { label: 'Proactive support with timelines, letters, and paperwork', score: 1.0 },
+          { label: 'Neutral — standard university process only', score: 0.6 },
+          { label: 'Students report visa status being used as leverage', score: 0.0, flag: 'Visa status reportedly used as leverage — serious ethical concern.' },
+          { label: 'Not applicable to me / I don\'t know', score: null }
+        ]
+      }
+    ];
+
+    var PLATFORM = [
+      { id: 'prating', text: 'If the advisor appears on an anonymous review platform (OpenAdvisor, RateMyProfessors, …): average rating?', unit: 'stars, 1–5', min: 1, max: 5, step: 0.1, hint: 'Leave blank if no profile exists.' },
+      { id: 'pcount', text: 'How many reviews does that profile have?', unit: 'reviews', min: 0, max: 10000, step: 1, hint: 'Leave blank if no profile exists.' }
+    ];
+
+    var LETTERS = ['a', 'b', 'c', 'd'];
+
+    function el(tag, cls, html) {
+      var e = document.createElement(tag);
+      if (cls) e.className = cls;
+      if (html !== undefined) e.innerHTML = html;
+      return e;
+    }
+
+    function render() {
+      var host = document.getElementById('questions');
+      QUESTIONS.forEach(function (q, qi) {
+        var block = el('div', 'q-block');
+        block.appendChild(el('span', 'q-dim', q.dim + '<span class="q-weight">weight ' + q.weight.toFixed(2) + '</span>'));
+        block.appendChild(el('p', 'q-text', 'Q' + (qi + 1) + '. ' + q.text));
+        if (q.type === 'choice') {
+          var opts = el('div', 'q-options');
+          q.options.forEach(function (o, oi) {
+            var lab = el('label', 'q-option');
+            lab.innerHTML = '<input type="radio" name="' + q.id + '" value="' + oi + '">' +
+              '<span><span class="q-letter">' + LETTERS[oi] + ')</span> ' + o.label + '</span>';
+            lab.querySelector('input').addEventListener('change', function () {
+              opts.querySelectorAll('.q-option').forEach(function (x) { x.classList.remove('selected'); });
+              lab.classList.add('selected');
+            });
+            opts.appendChild(lab);
+          });
+          block.appendChild(opts);
+        } else {
+          var num = el('div', 'q-number');
+          num.innerHTML = '<input type="number" id="' + q.id + '" min="' + q.min + '" max="' + q.max + '" step="' + q.step + '" inputmode="decimal">' +
+            '<span class="q-unit">' + q.unit + '</span>';
+          block.appendChild(num);
+          if (q.hint) block.appendChild(el('p', 'q-hint', q.hint));
+        }
+        host.appendChild(block);
+      });
+
+      var pb = el('div', 'q-block');
+      pb.appendChild(el('span', 'q-dim', 'Platform signal <span class="q-weight">interpreted, not scored</span>'));
+      PLATFORM.forEach(function (p, pi) {
+        pb.appendChild(el('p', 'q-text', 'P' + (pi + 1) + '. ' + p.text));
+        var num = el('div', 'q-number');
+        num.innerHTML = '<input type="number" id="' + p.id + '" min="' + p.min + '" max="' + p.max + '" step="' + p.step + '" inputmode="decimal">' +
+          '<span class="q-unit">' + p.unit + '</span>';
+        pb.appendChild(num);
+        if (p.hint) pb.appendChild(el('p', 'q-hint', p.hint));
+      });
+      document.getElementById('questions').appendChild(pb);
+    }
+
+    function collect() {
+      var answers = [], flags = [], unknown = [];
+      var wSum = 0, wAns = 0, sSum = 0;
+      QUESTIONS.forEach(function (q) {
+        wSum += q.weight;
+        var entry = { dim: q.dim, weight: q.weight, text: null, score: null };
+        if (q.type === 'choice') {
+          var sel = document.querySelector('input[name="' + q.id + '"]:checked');
+          if (sel) {
+            var o = q.options[parseInt(sel.value, 10)];
+            entry.text = o.label;
+            entry.score = o.score;
+            if (o.score === null) { unknown.push(q); }
+            else {
+              wAns += q.weight; sSum += q.weight * o.score;
+              if (o.flag) flags.push({ dim: q.dim, note: o.flag });
+            }
+          } else { unknown.push(q); entry.text = null; }
+        } else {
+          var raw = document.getElementById(q.id).value;
+          if (raw !== '' && !isNaN(parseFloat(raw))) {
+            var v = parseFloat(raw);
+            entry.text = q.describe(v);
+            entry.score = q.map(v);
+            wAns += q.weight; sSum += q.weight * entry.score;
+            var f = q.flagIf(v);
+            if (f) flags.push({ dim: q.dim, note: f });
+          } else { unknown.push(q); }
+        }
+        answers.push(entry);
+      });
+      var prating = parseFloat(document.getElementById('prating').value);
+      var pcount = parseFloat(document.getElementById('pcount').value);
+      return {
+        answers: answers, flags: flags, unknown: unknown,
+        score: wAns > 0 ? Math.round((sSum / wAns) * 100) : null,
+        coverage: Math.round((wAns / wSum) * 100),
+        prating: isNaN(prating) ? null : prating,
+        pcount: isNaN(pcount) ? null : pcount
+      };
+    }
+
+    function verdictFor(r) {
+      if (r.score === null) {
+        return { cls: 'warn', text: 'You haven\'t answered any rubric questions yet — which is itself the finding: you don\'t have enough information to judge this advisor. Use the question list below (and the LLM prompt) as your investigation plan, then come back.' };
+      }
+      var v;
+      if (r.flags.length >= 2) v = { cls: 'bad', text: 'Multiple red flags detected. In our review data, negative experiences concentrate in exactly these behavioral dimensions. Treat this as a serious warning: verify each flag independently with current and former students before proceeding.' };
+      else if (r.score >= 75 && r.flags.length === 0) v = { cls: '', text: 'Strong signal so far. What you know about this advisor looks healthy on the highest-weight behavioral dimensions. Confirm the remaining unknowns with students — and remember our finding that platform scores and professional metrics alone predict almost nothing.' };
+      else if (r.score >= 55) v = { cls: '', text: 'Promising, but verify. The picture is decent yet incomplete or mixed. Focus your remaining conversations on the unanswered and lower-scoring dimensions below.' };
+      else if (r.score >= 35) v = { cls: 'warn', text: 'Proceed with caution. Several behavioral dimensions score low. Our data says these are precisely the themes students complain about — dig deeper before committing.' };
+      else v = { cls: 'bad', text: 'Serious concerns. What you\'ve described scores low on the dimensions that matter most to student experience. Unless multiple independent sources contradict this picture, consider other options.' };
+      if (r.coverage < 40 && r.score !== null) v.text += ' (Note: you answered under 40% of the rubric weight, so this read is highly provisional.)';
+      return v;
+    }
+
+    function platformNote(r) {
+      if (r.prating === null) return null;
+      var n = r.pcount === null ? 0 : r.pcount;
+      var base;
+      if (n < 5) base = 'With ' + (r.pcount === null ? 'an unknown number of' : 'only ' + n) + ' review(s), the rating of ' + r.prating.toFixed(1) + '★ means very little. Platform scores are uncalibrated (platform mean 2.74, mass at 1★ and 5★).';
+      else if (r.prating <= 2) base = 'A sustained ' + r.prating.toFixed(1) + '★ across ' + n + ' reviews is the strongest negative signal in our data — the 1–2★ mass on a bimodal platform. Read every review text and ask students directly about the recurring themes.';
+      else if (r.prating >= 4.5) base = r.prating.toFixed(1) + '★ across ' + n + ' reviews is a positive signal, but remember selection effects: extremes are over-represented. Verify with current students.';
+      else base = 'A mid rating (' + r.prating.toFixed(1) + '★, ' + n + ' reviews) on a bimodal platform usually means mixed extreme experiences, not uniform mediocrity. The texts matter far more than the average.';
+      return base + ' Also recall: professional metrics explain essentially no rating variance (R² ≈ 0.000) — judge behavior, not fame.';
+    }
+
+    function buildPrompt(r) {
+      var lines = [];
+      lines.push('You are an experienced graduate-school mentor helping me, a prospective CS/ML PhD student, decide whether a specific potential advisor is a good fit for me. Be direct, evidence-minded, and balanced; do not sugar-coat, but do not catastrophize.');
+      lines.push('');
+      lines.push('CONTEXT — findings from "Portraits of Graduate Advising" (analysis of 11,311 advisor profiles and 12,344 real reviews on the OpenAdvisor platform; paper: https://dixiyao.github.io/csmladvisor/):');
+      lines.push('- Ratings on anonymous advisor-review platforms are strongly bimodal (32.7% of profiles at 1 star, 20.8% at 5; mean 2.74). Extreme experiences are over-represented; numeric scores are uncalibrated, so review TEXT matters more than averages.');
+      lines.push('- Professional metrics (h-index, citations, career stage) explain essentially no variance in student ratings (R-squared ~ 0.000 in the matched subset). Fame is not mentorship.');
+      lines.push('- Student complaints concentrate in recurring behavioral themes, summarized as a 10-dimension behavior-only rubric with qualitative weights: Meeting Availability (0.20), Respect & Communication (0.18), Funding Support (0.15), Work Pressure (0.12), Career Development (0.10), Research Direction (0.10), Lab Culture (0.07), Graduation Timeline (0.05), Authorship Credit (0.02), Immigration/Visa (0.01).');
+      lines.push('- Reviews are subjective self-selected reports, never ground truth about a person; the rubric is for structuring investigation, not for ranking people.');
+      lines.push('');
+      lines.push('MY QUESTIONNAIRE ANSWERS ABOUT THIS ADVISOR:');
+      r.answers.forEach(function (a) {
+        lines.push('- ' + a.dim + ' (weight ' + a.weight.toFixed(2) + '): ' + (a.text === null ? 'UNKNOWN — I could not find out yet' : a.text + (a.score !== null ? ' [tool sub-score ' + a.score.toFixed(2) + '/1]' : '')));
+      });
+      lines.push('');
+      lines.push('PLATFORM SIGNAL: ' + (r.prating === null ? 'No anonymous-platform rating found for this advisor.' : 'Average rating ' + r.prating + '/5 across ' + (r.pcount === null ? 'an unknown number of' : r.pcount) + ' reviews.'));
+      lines.push('');
+      lines.push('PRELIMINARY TOOL OUTPUT: weighted rubric score ' + (r.score === null ? 'n/a (no answers)' : r.score + '/100') + '; information coverage ' + r.coverage + '% of rubric weight; red flags: ' + (r.flags.length ? r.flags.map(function (f) { return f.dim; }).join(', ') : 'none') + '.');
+      lines.push('');
+      lines.push('YOUR TASKS:');
+      lines.push('1. Assess how good a fit this advisor looks for me based on the evidence above, dimension by dimension. Weigh dimensions by the rubric weights, state your uncertainty explicitly, and clearly separate what is well-supported from what is thin.');
+      lines.push('2. Analyze the red flags (if any): how serious is each, what benign explanations exist, and what specific evidence would confirm or rule them out?');
+      lines.push('3. For every UNKNOWN dimension, rank them by weight and give me 2-3 concrete, polite questions I can ask current or former students of this advisor to fill the gap (questions that get honest answers, not yes/no).');
+      lines.push('4. Tell me what additional sources to check beyond reviews and student interviews (e.g., alumni placement pages, co-authorship patterns on the advisor\'s recent papers, funding databases), and what to look for in each.');
+      lines.push('5. Finish with a balanced bottom line: given what is known so far, should I lean toward or away from this advisor, and what single piece of missing information would most change your answer?');
+      return lines.join('\n');
+    }
+
+    function analyze() {
+      var r = collect();
+      var res = document.getElementById('results');
+      res.hidden = false;
+      document.getElementById('score-value').textContent = r.score === null ? '—' : r.score + '/100';
+      document.getElementById('coverage-value').textContent = r.coverage + '%';
+      document.getElementById('flag-value').textContent = r.flags.length;
+
+      var v = verdictFor(r);
+      var vd = document.getElementById('verdict');
+      vd.className = 'verdict' + (v.cls ? ' ' + v.cls : '');
+      vd.textContent = v.text;
+
+      var fs = document.getElementById('flags-section');
+      var fl = document.getElementById('flag-list');
+      fl.innerHTML = '';
+      if (r.flags.length) {
+        fs.hidden = false;
+        r.flags.forEach(function (f) {
+          var li = document.createElement('li');
+          li.innerHTML = '<span class="flag-red"><strong>' + f.dim + ':</strong> ' + f.note + '</span>';
+          fl.appendChild(li);
+        });
+      } else { fs.hidden = true; }
+
+      var us = document.getElementById('unknown-section');
+      var ul = document.getElementById('unknown-list');
+      ul.innerHTML = '';
+      if (r.unknown.length) {
+        us.hidden = false;
+        r.unknown.slice().sort(function (a, b) { return b.weight - a.weight; }).forEach(function (q) {
+          var li = document.createElement('li');
+          li.innerHTML = '<strong>' + q.dim + '</strong> (weight ' + q.weight.toFixed(2) + '): ' + q.text;
+          ul.appendChild(li);
+        });
+      } else { us.hidden = true; }
+
+      var pn = platformNote(r);
+      var ps = document.getElementById('platform-section');
+      if (pn) { ps.hidden = false; document.getElementById('platform-note').textContent = pn; }
+      else { ps.hidden = true; }
+
+      document.getElementById('llm-prompt').value = buildPrompt(r);
+      res.scrollIntoView({ behavior: 'smooth', block: 'start' });
+    }
+
+    function copyPrompt() {
+      var ta = document.getElementById('llm-prompt');
+      var btn = document.getElementById('copy-btn');
+      function done() {
+        var old = btn.textContent;
+        btn.textContent = '✓ Copied — paste it into your LLM';
+        setTimeout(function () { btn.textContent = old; }, 2500);
+      }
+      if (navigator.clipboard && navigator.clipboard.writeText) {
+        navigator.clipboard.writeText(ta.value).then(done, function () { ta.select(); document.execCommand('copy'); done(); });
+      } else {
+        ta.select(); document.execCommand('copy'); done();
+      }
+    }
+
+    function reset() {
+      document.getElementById('advisor-form').reset();
+      document.querySelectorAll('.q-option.selected').forEach(function (x) { x.classList.remove('selected'); });
+      document.getElementById('results').hidden = true;
+      window.scrollTo({ top: document.getElementById('tool').offsetTop - 60, behavior: 'smooth' });
+    }
+
+    render();
+    document.getElementById('analyze-btn').addEventListener('click', analyze);
+    document.getElementById('copy-btn').addEventListener('click', copyPrompt);
+    document.getElementById('reset-btn').addEventListener('click', reset);
+  })();
+  </script>
+</body>
+</html>

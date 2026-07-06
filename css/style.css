@@ -1773,6 +1773,101 @@ a:hover {
     }
 }
 
+/* Blog figures: constrained thumbnails, click to enlarge via image modal */
+.markdown-content img {
+    max-width: 100%;
+    height: auto;
+}
+
+.blog-figure {
+    margin: 1.5rem auto;
+    max-width: 480px;
+    text-align: center;
+}
+
+.blog-figure-image {
+    display: block;
+    width: 100%;
+    height: auto;
+    border: 1px solid var(--border-color);
+    border-radius: 8px;
+    box-shadow: var(--shadow);
+    cursor: pointer;
+    transition: var(--transition);
+    background: #ffffff;
+}
+
+.blog-figure-image:hover {
+    transform: scale(1.02);
+    box-shadow: var(--shadow-hover);
+}
+
+.blog-figure-caption {
+    margin-top: 0.5rem;
+    font-size: 0.85rem;
+    color: var(--text-light);
+    font-style: italic;
+}
+
+/* Blog tables: same pattern as /fot/ comparison tables */
+.markdown-content table {
+    width: 100%;
+    border-collapse: separate;
+    border-spacing: 0;
+    margin: 1.5rem 0;
+    border: 1px solid var(--border-color);
+    border-radius: 12px;
+    overflow: hidden;
+    box-shadow: var(--shadow);
+}
+
+.markdown-content table th,
+.markdown-content table td {
+    padding: 0.9rem 0.95rem;
+    border-bottom: 1px solid var(--border-color);
+    text-align: left;
+    vertical-align: top;
+    font-size: 0.95rem;
+}
+
+.markdown-content table th {
+    color: var(--text-color);
+    background: #e4eefb;
+    font-weight: 700;
+}
+
+.markdown-content table td {
+    color: var(--text-light);
+}
+
+.markdown-content table tbody tr:nth-child(odd) td {
+    background: #f3f8ff;
+}
+
+.markdown-content table tbody tr:nth-child(even) td {
+    background: #ffffff;
+}
+
+.markdown-content table tbody tr:last-child td {
+    border-bottom: none;
+}
+
+.markdown-content table thead th:first-child {
+    border-top-left-radius: 12px;
+}
+
+.markdown-content table thead th:last-child {
+    border-top-right-radius: 12px;
+}
+
+.markdown-content table tbody tr:last-child td:first-child {
+    border-bottom-left-radius: 12px;
+}
+
+.markdown-content table tbody tr:last-child td:last-child {
+    border-bottom-right-radius: 12px;
+}
+
 /* Pets Section - Light Theme */
 #pets.content-section {
     background: linear-gradient(135deg, #FAFAFA 0%, #F5F5F5 50%, #F0F0F0 100%);
