@@ -43,6 +43,7 @@ jobs:
           cp -r index.html _site/
           cp -r fot _site/ 2>/dev/null || true
           cp -r aireviewer _site/ 2>/dev/null || true
+          cp -r csmladvisor _site/ 2>/dev/null || true
           cp -r topics _site/ 2>/dev/null || true
           cp -r css _site/ 2>/dev/null || true
           cp -r js _site/ 2>/dev/null || true
