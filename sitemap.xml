@@ -445,6 +445,12 @@
     <priority>0.65</priority>
   </url>
   <url>
+    <loc>https://dixiyao.github.io/blog_posts/homo_carbonis.md</loc>
+    <lastmod>2026-07-19</lastmod>
+    <changefreq>yearly</changefreq>
+    <priority>0.65</priority>
+  </url>
+  <url>
     <loc>https://dixiyao.github.io/assests/papers/1771.pdf</loc>
     <lastmod>2026-05-30</lastmod>
     <changefreq>yearly</changefreq>
