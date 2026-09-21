@@ -12,7 +12,8 @@
     "reviewer": {
       "content": "I am active in the machine learning community and have served as a reviewer in",
       "conferences": {
-        "2026": ["NeurIPS", "ICML","CVPR", "ICLR", "AISTATS", "AAAI"],
+        "2027": ["ICLR"],
+        "2026": ["NeurIPS", "ICML","CVPR", "ICLR", "AISTATS", "AAAI","ARR"],
         "2025": ["NeurIPS", "ICML", "AISTATS", "WACV", "ICLR", "ACL"],
         "2024": ["NeurIPS", "CVPR"]
       },
@@ -55,7 +56,8 @@
     ],
     "fundings": [
       "[Mitacs Accelerate Program](https://www.mitacs.ca/our-programs/accelerate/)",
-      "[UofT ZJU Joint Seed Fund](https://research.utoronto.ca/sites/default/files/2024-01/UofT-ZJUJointSeedFundCallforProposal2024-Final.pdf)"
+      "[UofT ZJU Joint Seed Fund](https://research.utoronto.ca/sites/default/files/2024-01/UofT-ZJUJointSeedFundCallforProposal2024-Final.pdf)",
+      "Google Cloud Research Credits Program: 1000 Credits."
     ],
     "scholarships": {
       "graduate": [
