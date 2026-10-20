@@ -654,6 +654,13 @@
                     html += `</div>`;
                 }
                 
+                if (homeData.academia.reviewer.workshops) {
+                    html += `<h3>Workshops</h3>`;
+                    html += `<div class="markdown-content">`;
+                    html += `<p>${homeData.academia.reviewer.workshops.join(', ')}</p>`;
+                    html += `</div>`;
+                }
+                
                 if (homeData.academia.reviewer.journals) {
                     html += `<h3>Journals</h3>`;
                     html += `<div class="markdown-content">`;
@@ -966,7 +973,7 @@
         
         if (projectsData.githubGraph) {
             html += `<div style="text-align: center; margin: 2rem 0;">`;
-            html += `<img src="${projectsData.githubGraph}" alt="GitHub Activity Graph" loading="lazy" decoding="async" style="max-width: 70%; height: auto; margin: 0 auto; display: block;">`;
+            html += `<img src="${projectsData.githubGraph}" alt="GitHub Contribution Graph" loading="lazy" decoding="async" style="max-width: 70%; height: auto; margin: 0 auto; display: block;">`;
             html += `</div>`;
         }
         

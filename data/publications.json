@@ -8,14 +8,15 @@
           "name": "Foundation Models",
           "publications": [
             {
-              "authors": "**Dixi Yao**, Tian Li",
-              "title": "Differentially Private Retrieval Augmented Generation with Random Projection",
-              "venue": "ICLR 2025 Workshop",
+              "authors": "**Dixi Yao**, Tahseen Rabbani, Tian Li",
+              "title": "Private Retrieval Augmented Generation via Random Projection",
+              "venue": "arXiv 2026 (ICLR 2025 Workshop)",
               "venueType": "workshop",
               "links": {
-                "paper": "https://openreview.net/forum?id=5DfhoxRPXh"
+                "paper": "https://arxiv.org/abs/2610.22297",
+                "arxiv": "https://arxiv.org/abs/2610.22297"
               },
-              "image": "paper_figs/privacy_rag.png"
+              "image": "paper_figs/private_rag.svg"
             },
             {
               "authors": "**Dixi Yao**",
@@ -28,7 +29,7 @@
                 "poster": "https://ieeecs-media.computer.org/media/conferences/wacv/2025/posters/Towards%20Privacy-Preserving%20Split%20Learning%20for%20ControlNet.pdf",
                 "video": "https://video.computer.org/WACV-Posters25/4nqxoCyiSwisBpdnpnO3jS-wacv25-1723.mp4"
               },
-              "image":"paper_figs/sl_controlnet.png"
+              "image": "paper_figs/sl_controlnet.png"
             },
             {
               "authors": "**Dixi Yao**, Baochun Li",
@@ -50,6 +51,22 @@
                 "paper": "https://arxiv.org/pdf/2409.08482"
               },
               "image": "paper_figs/lora_controlnet.png"
+            }
+          ]
+        },
+        {
+          "name": "Ownership Verification",
+          "publications": [
+            {
+              "authors": "**Dixi Yao**, Kaiwen Chen, Tahseen Rabbani, Tian Li",
+              "title": "Persistent Watermarking of Text-to-Image Models",
+              "venue": "arXiv 2026",
+              "venueType": "workshop",
+              "links": {
+                "paper": "https://arxiv.org/abs/2609.39024",
+                "arxiv": "https://arxiv.org/abs/2609.39024"
+              },
+              "image": "paper_figs/persistent_watermark.png"
             }
           ]
         },
@@ -85,26 +102,48 @@
     {
       "name": "Optimization",
       "subcategories": [
-          {
-            "name":"Federation over Text",
-            "publications":[
-              {
-                "authors": "**Dixi Yao**, Tahseen Rabbani, Tian Li",
-                "title": "Federation over Text",
-                "venue": "ICLR 2026 Workshop MALGAI, RIS",
-                "venueType": "workshop",
-                "links": {
-                    "paper": "https://arxiv.org/pdf/2604.16778",
-                    "code": "https://github.com/dixiyao/FoTClaw",
-                    "project":"https://dixiyao.github.io/fot"
-                },
-                "image": "paper_figs/fot.png"
-              }
-            ]
-          },
-          {
-          "name":"Distributed Training",
-          "publications":[
+        {
+          "name": "LLM Agents and Multi-Agent Systems",
+          "publications": [
+            {
+              "authors": "**Dixi Yao**, Tahseen Rabbani, Tian Li",
+              "title": "Federation over Harness",
+              "venue": "arXiv 2026",
+              "venueType": "workshop",
+              "links": {
+                "paper": "https://arxiv.org/abs/2610.24007",
+                "arxiv": "https://arxiv.org/abs/2610.24007"
+              },
+              "image": "paper_figs/foh.svg"
+            },
+            {
+              "authors": "**Dixi Yao**, Tahseen Rabbani, Tian Li",
+              "title": "Federation over Text",
+              "venue": "ICLR 2026 Workshop MALGAI, RIS",
+              "venueType": "workshop",
+              "links": {
+                "paper": "https://arxiv.org/pdf/2604.16778",
+                "code": "https://github.com/dixiyao/FoTClaw",
+                "project": "https://dixiyao.github.io/fot"
+              },
+              "image": "paper_figs/fot.png"
+            },
+            {
+              "authors": "Xuchen Gong, Shane Gu, Haokun Liu, **Dixi Yao**, Chenhao Tan, Tian Li",
+              "title": "Learning Scientific Exploration from Human Research Decision Trajectories",
+              "venue": "arXiv 2026",
+              "venueType": "workshop",
+              "links": {
+                "paper": "https://arxiv.org/abs/2610.07184",
+                "arxiv": "https://arxiv.org/abs/2610.07184"
+              },
+              "image": "paper_figs/research_trails.png"
+            }
+          ]
+        },
+        {
+          "name": "Distributed Training",
+          "publications": [
             {
               "authors": "Junfei Sun, **Dixi Yao**, Xuchen Gong, Tahseen Rabbani, Manzil Zaheer, Tian Li",
               "title": "Asynchronous Heavy-Tailed Optimization",
@@ -206,8 +245,7 @@
               "title": "R-KVHash: Reasoning Model KV Cache Compression Via SimHash-based Estimation of Redundant Tokens",
               "venue": "ICLR 2026 Workshop MemAgents",
               "venueType": "workshop",
-              "links": {
-              },
+              "links": {},
               "image": "paper_figs/rkvlsh.png"
             },
             {
@@ -217,7 +255,7 @@
               "venueType": "workshop",
               "links": {
                 "paper": "https://openreview.net/forum?id=OtZtLYAdQY",
-                "arxiv":"https://arxiv.org/abs/2512.12008"
+                "arxiv": "https://arxiv.org/abs/2512.12008"
               },
               "image": "paper_figs/kvcache_compression.png"
             }
@@ -227,4 +265,3 @@
     }
   ]
 }
-
